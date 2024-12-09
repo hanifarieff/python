@@ -1,0 +1,158 @@
+Memory before: 66.50390625 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+        OrderID  PatientID  AdmissionID  ...                 NIP               NIK                                  KSM
+0     161643979    1456190           15  ...  198307052018012001  3171054507830001   Kelompok Staf Medis Penyakit Dalam
+1     161922093    1082771           28  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+2     161922094    1082771           28  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+3     161922095    1082771           28  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+4     161922096    1082771           28  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+...         ...        ...          ...  ...                 ...               ...                                  ...
+9143  162089314    1154315           23  ...  198403182024211004  3275011803840022   Kelompok Staf Medis Penyakit Dalam
+9144  162089328    2209408            1  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+9145  162089329     647147           79  ...  198410252018012001  3172026510840001   Kelompok Staf Medis Penyakit Dalam
+9146  162089332    1154315           23  ...  199010172024212035  3171065710900002   Kelompok Staf Medis Penyakit Dalam
+9147  162089347    2209409            1  ...  198609082018012001  1271054809860002  Kelompok Staf Medis Patologi Klinik
+
+[9148 rows x 33 columns]
+Source Data:
+        OrderID  PatientID  AdmissionID  EmployeeID  ... Type  Status ObjectGroupingName BillingPaid
+0     161643979    1456190           15        2730  ...    K  normal         konsultasi           1
+1     161922093    1082771           28        5655  ...    K  normal       laboratorium           1
+2     161922094    1082771           28        5655  ...    K  normal       laboratorium           1
+3     161922095    1082771           28        5655  ...    K  normal       laboratorium           1
+4     161922096    1082771           28        5655  ...    K  normal       laboratorium           1
+...         ...        ...          ...         ...  ...  ...     ...                ...         ...
+9143  162089314    1154315           23       17353  ...    K  normal                NaN           0
+9144  162089328    2209408            1        5655  ...    K  normal                NaN           1
+9145  162089329     647147           79        2612  ...    K  normal         konsultasi           0
+9146  162089332    1154315           23       19971  ...    K  normal          penunjang           0
+9147  162089347    2209409            1        5655  ...    K  normal                NaN           0
+
+[9148 rows x 34 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+ObjectGroupingName            object
+BillingPaid                   object
+dtype: object
+Target Data:
+        OrderID  PatientID  AdmissionID  EmployeeID  ... Type     Status ObjectGroupingName BillingPaid
+0     161643979    1456190           15        2730  ...    K     normal         konsultasi           0
+1     161922093    1082771           28        5655  ...    K     normal       laboratorium           1
+2     161922094    1082771           28        5655  ...    K     normal       laboratorium           1
+3     161922095    1082771           28        5655  ...    K     normal       laboratorium           1
+4     161922096    1082771           28        5655  ...    K     normal       laboratorium           1
+...         ...        ...          ...         ...  ...  ...        ...                ...         ...
+8139  162067855    2132951            4        2019  ...    K     normal       laboratorium           0
+8140  162067856    2132951            4        2019  ...    K     normal       laboratorium           0
+8141  162067976      53027           58       19971  ...    K  nullified               None           0
+8142  162067977      53027           58       19971  ...    K     normal         konsultasi           1
+8143  162068012      53027           58        2019  ...    K     normal       laboratorium           1
+
+[8144 rows x 34 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+ObjectGroupingName            object
+BillingPaid                   object
+dtype: object
+Changes Detected:
+Modified Data:
+        OrderID  PatientID  AdmissionID  EmployeeID  ... Type     Status ObjectGroupingName BillingPaid
+0     161643979    1456190           15        2730  ...    K     normal         konsultasi           1
+10    161922299    1082771           28        3371  ...    K     normal                NaN           1
+12    161924149    1824580          107        5655  ...    K     normal                NaN           0
+16    161924190    1947421           67        5655  ...    K     normal                NaN           0
+34    161924510    2073810            7        5655  ...    K     normal       laboratorium           1
+...         ...        ...          ...         ...  ...  ...        ...                ...         ...
+8125  162067116    1969242           64       10787  ...    K     normal                NaN           0
+8128  162067166    1304451           35        1547  ...    K     normal                NaN           1
+8139  162067562    1252739           54       17353  ...    K     normal                NaN           0
+8142  162067584    1740754          112       21064  ...    K     normal                NaN           0
+8156  162067976      53027           58       19971  ...    K  nullified                NaN           0
+
+[3651 rows x 34 columns]
+Inserted Data:
+        OrderID  PatientID  AdmissionID  EmployeeID  ... Type  Status ObjectGroupingName BillingPaid
+727   161944403    1568031           43       17220  ...    K  normal          radiologi           1
+3801  161997800    1348014           72       10567  ...    K  normal                NaN           1
+3855  161998675    2097193           15        1981  ...    K  normal                NaN           1
+4109  162002414    2097193           15       10389  ...    K  normal                NaN           1
+4247  162004179    1552943           72       10389  ...    K  normal          radiologi           1
+...         ...        ...          ...         ...  ...  ...     ...                ...         ...
+9143  162089314    1154315           23       17353  ...    K  normal                NaN           0
+9144  162089328    2209408            1        5655  ...    K  normal                NaN           1
+9145  162089329     647147           79        2612  ...    K  normal         konsultasi           0
+9146  162089332    1154315           23       19971  ...    K  normal          penunjang           0
+9147  162089347    2209409            1        5655  ...    K  normal                NaN           0
+
+[1004 rows x 34 columns]
+
+Data Success Updated
+Data Success Inserted
+36.72627282142639
+Memory after: 131.37109375 MB
+Memory used: 64.8671875 MB
+scheduler tanggal : 2024-12-05 11:25:29.743948

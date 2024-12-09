@@ -1,0 +1,56 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+        OrderID  PatientID  ...  Status BillingPaid
+0     161718467    2156788  ...  normal           0
+1     161718470    2156788  ...  normal           0
+2     161718472    2156788  ...  normal           0
+3     161718692    2156788  ...  normal           0
+4     161718693    2156788  ...  normal           0
+...         ...        ...  ...     ...         ...
+3411  162183177    1999021  ...  normal           1
+3412  162183178    1999021  ...  normal           1
+3413  162183179    1999021  ...  normal           1
+3414  162183180    1999021  ...  normal           1
+3415  162183562    2211629  ...  normal           1
+
+[3416 rows x 12 columns]
+        OrderID  PatientID  ...  Status BillingPaid
+0     161718467    2156788  ...  normal           0
+1     161718470    2156788  ...  normal           0
+2     161718472    2156788  ...  normal           0
+3     161718692    2156788  ...  normal           0
+4     161718693    2156788  ...  normal           0
+...         ...        ...  ...     ...         ...
+3346  162155859    2210156  ...  normal           1
+3347  162155860    2210156  ...  normal           1
+3348  162172905    2211309  ...  normal           0
+3349  162172906    2211309  ...  normal           0
+3350  162172907    2211309  ...  normal           0
+
+[3351 rows x 12 columns]
+total row update : 3
+        OrderID  PatientID  ...       AdmissionDate           OrderDate
+3348  162172905    2211309  ... 2024-12-07 21:10:00 2024-12-08 01:37:25
+3349  162172906    2211309  ... 2024-12-07 21:10:00 2024-12-08 01:37:26
+3350  162172907    2211309  ... 2024-12-07 21:10:00 2024-12-08 01:37:28
+
+[3 rows x 6 columns]
+total row inserted : 65
+        OrderID  PatientID  ...       AdmissionDate           OrderDate
+3351  162176270    2206123  ... 2024-11-30 21:18:57 2024-12-08 08:40:37
+3352  162176271    2206123  ... 2024-11-30 21:18:57 2024-12-08 08:40:38
+3353  162176335     606372  ... 2024-12-07 18:31:16 2024-12-08 08:43:54
+3354  162176336     606372  ... 2024-12-07 18:31:16 2024-12-08 08:43:56
+3355  162176379    2177262  ... 2024-12-07 20:58:41 2024-12-08 08:45:59
+...         ...        ...  ...                 ...                 ...
+3411  162183177    1999021  ... 2024-12-07 22:12:34 2024-12-08 14:57:45
+3412  162183178    1999021  ... 2024-12-07 22:12:34 2024-12-08 14:57:46
+3413  162183179    1999021  ... 2024-12-07 22:12:34 2024-12-08 14:57:48
+3414  162183180    1999021  ... 2024-12-07 22:12:34 2024-12-08 14:57:49
+3415  162183562    2211629  ... 2024-12-08 13:20:44 2024-12-08 15:29:27
+
+[65 rows x 6 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.AdmissionDate = t.AdmissionDate, r.OrderDate = t.OrderDate, r.OrgID = t.OrgID, r.OrgName = t.OrgName, r.ObjID = t.ObjID, r.ObjName = t.ObjName, r.Status = t.Status, r.BillingPaid = t.BillingPaid FROM dwhrscm_talend.FactPatientForensic r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientForensic_temporary_table) as t ON r.OrderID = t.OrderID  WHERE r.OrderID = t.OrderID ;
+success update and insert all data
+16.171876430511475
+scheduler tanggal : 2024-12-09 03:00:01.855198

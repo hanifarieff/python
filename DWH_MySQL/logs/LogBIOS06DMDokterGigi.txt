@@ -1,0 +1,9 @@
+successfully connect to all database
+success insert
+  TglTransaksi  Total    EmployeeGroup  IsSent
+0   2023-08-31     11  Tidak Diketahui       0
+1   2023-08-31      1          Kontrak       0
+2   2023-08-31      1    Non PNS Tetap       0
+3   2023-08-31      3              PNS       0
+0.158003568649292
+scheduler tanggal : 2023-08-31 07:40:00.544317

@@ -1,0 +1,101 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+      PrescriptionID  PatientID  ...                   GivenUser TransactionTime
+0     00150002519080    2205758  ...   Devianti Dwi Safitri, AMF        02:08:52
+1     00150002536028     583276  ...                           -        00:00:00
+2     00150002534694    1990885  ...                           -        00:00:00
+3     00150002496327     994562  ...  Rima Yuniasari Rohmah, AMF        00:07:52
+4     00150002520947    2145975  ...           Siti Nuraida, AMF        00:31:06
+...              ...        ...  ...                         ...             ...
+9500  00150002528892     819857  ...  Dyah Triaritami, Am.d.Farm        01:52:19
+9501  00150002525118    1883816  ...    Kasmilasari, S.Farm.,Apt        01:12:22
+9502  00150002522505    2154612  ...                Susanti, Amd        00:22:48
+9503  00150002525121    2144320  ...          Tutut Puji Lestari        00:09:59
+9504  00150002523063    2210174  ...     Ismah Nizza, S.Farm,Apt        00:19:11
+
+[9505 rows x 25 columns]
+PrescriptionID                  object
+PatientID                        int64
+AdmissionID                      int64
+MedicalNo                       object
+PatientName                     object
+AdmissionDate           datetime64[ns]
+OrgID                            int64
+RegistrationType                object
+ResponTimeID                    object
+ResponTimeType                  object
+ResponTimeName                  object
+ItemAmountNonRacikan             int64
+ItemAmountRacikan                int64
+OrderDate               datetime64[ns]
+DispenseDate            datetime64[ns]
+PreparedDate            datetime64[ns]
+CheckedDate             datetime64[ns]
+FinishedDate            datetime64[ns]
+GivenDate               datetime64[ns]
+DispenseUser                    object
+PreparedUser                    object
+CheckedUser                     object
+FinishedUser                    object
+GivenUser                       object
+TransactionTime                 object
+dtype: object
+PrescriptionID                  object
+PatientID                        int64
+AdmissionID                      int64
+MedicalNo                       object
+PatientName                     object
+AdmissionDate           datetime64[ns]
+OrgID                            int64
+RegistrationType                object
+ResponTimeID                    object
+ResponTimeType                  object
+ResponTimeName                  object
+ItemAmountNonRacikan             int64
+ItemAmountRacikan                int64
+OrderDate               datetime64[ns]
+DispenseDate            datetime64[ns]
+PreparedDate            datetime64[ns]
+CheckedDate             datetime64[ns]
+FinishedDate            datetime64[ns]
+GivenDate               datetime64[ns]
+DispenseUser                    object
+PreparedUser                    object
+CheckedUser                     object
+FinishedUser                    object
+GivenUser                       object
+TransactionTime                 object
+dtype: object
+total row update : 86
+      PrescriptionID  ...  TransactionTime
+92    00150002531356  ...         00:07:04
+181   00150002528924  ...         00:00:24
+482   00150002529204  ...         00:04:03
+584   00150002528986  ...         00:07:33
+685   00150002530809  ...         00:23:47
+...              ...  ...              ...
+8576  00150002531160  ...         00:01:16
+8762  00150002529313  ...         00:02:06
+8823  00150002528854  ...         01:28:51
+9016  00150002528894  ...         00:06:14
+9500  00150002528892  ...         01:52:19
+
+[86 rows x 25 columns]
+total row inserted : 1640
+      PrescriptionID  PatientID  ...                     GivenUser TransactionTime
+1     00150002536028     583276  ...                             -        00:00:00
+2     00150002534694    1990885  ...                             -        00:00:00
+7     00150002534991    2204221  ...  Nanang Supriyatna, A.Md.Farm        00:18:05
+10    00150002533693    1175443  ...        Ana Nuraini, A.Md.Farm        01:24:18
+21    00150002535778    1534318  ...                             -        00:00:00
+...              ...        ...  ...                           ...             ...
+9468  00150002534311    2159490  ...                             -        00:00:00
+9473  00150002532940    2208468  ...             Endah Puspitasari        05:05:08
+9480  00150002528048    2210116  ...                             -        00:00:00
+9488  00150002534753    2206509  ...                             -        00:00:00
+9494  00150002536268    1847291  ...                             -        00:00:00
+
+[1640 rows x 25 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.PatientName = t.PatientName, r.AdmissionDate = t.AdmissionDate, r.OrgID = t.OrgID, r.RegistrationType = t.RegistrationType, r.ResponTimeID = t.ResponTimeID, r.ResponTimeType = t.ResponTimeType, r.ResponTimeName = t.ResponTimeName, r.ItemAmountNonRacikan = t.ItemAmountNonRacikan, r.ItemAmountRacikan = t.ItemAmountRacikan, r.OrderDate = t.OrderDate, r.DispenseDate = t.DispenseDate, r.PreparedDate = t.PreparedDate, r.CheckedDate = t.CheckedDate, r.FinishedDate = t.FinishedDate, r.GivenDate = t.GivenDate, r.DispenseUser = t.DispenseUser, r.PreparedUser = t.PreparedUser, r.CheckedUser = t.CheckedUser, r.FinishedUser = t.FinishedUser, r.GivenUser = t.GivenUser, r.TransactionTime = t.TransactionTime , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPrescriptionResponsTime r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPrescriptionResponsTime_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID WHERE r.PrescriptionID = t.PrescriptionID ;
+success update and insert all data
+43.02227973937988

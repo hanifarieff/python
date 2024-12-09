@@ -1,0 +1,39 @@
+successfully connect to HIS & DWH SQL Server database
+       PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0            519           77  288-01-08 2022-11-04 01:33:09       n     2
+1            519           79  288-01-08 2022-11-18 08:28:25       n     2
+2            519           80  288-01-08 2022-11-21 12:06:52       n     2
+3            519           81  288-01-08 2022-11-29 06:52:07       n     2
+4           1011          169  288-03-68 2022-11-26 23:09:53       n     2
+...          ...          ...        ...                 ...     ...   ...
+14287    1617721            1  464-64-78 2022-11-30 16:35:16       n     2
+14288    1617723            1  464-64-79 2022-11-30 16:49:29       n     2
+14289    1617726            1  464-64-80 2022-11-30 17:20:22       n     2
+14290    1617729            1  464-64-81 2022-11-30 17:44:05       n     2
+14291    1617730            1  464-64-82 2022-11-30 18:24:56       n     2
+
+[14292 rows x 6 columns]
+total row update : 14291
+       PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0            519           77  288-01-08 2022-11-04 01:33:09       n     2
+1            519           79  288-01-08 2022-11-18 08:28:25       n     2
+2            519           80  288-01-08 2022-11-21 12:06:52       n     2
+3            519           81  288-01-08 2022-11-29 06:52:07       n     2
+4           1011          169  288-03-68 2022-11-26 23:09:53       n     2
+...          ...          ...        ...                 ...     ...   ...
+14287    1617721            1  464-64-78 2022-11-30 16:35:16       n     2
+14288    1617723            1  464-64-79 2022-11-30 16:49:29       n     2
+14289    1617726            1  464-64-80 2022-11-30 17:20:22       n     2
+14290    1617729            1  464-64-81 2022-11-30 17:44:05       n     2
+14291    1617730            1  464-64-82 2022-11-30 18:24:56       n     2
+
+[14291 rows x 6 columns]
+total row inserted : 1
+       PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+11452    1606115            5  460-22-28 2022-11-16 08:43:39       n     2
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.AdmissionDate = s.AdmissionDate, t.StayInd = s.StayInd FROM dwhrscm_talend.FactPatientStay t INNER JOIN (SELECT * from dwhrscm_talend.FactPatientStay_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag;
+
+
+success update dan insert
+8.015711069107056
+scheduler tanggal : 2022-12-01 15:12:30.452199

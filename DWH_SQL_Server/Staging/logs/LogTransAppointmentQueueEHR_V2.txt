@@ -1,0 +1,102 @@
+successfully connect to all database
+       AppointmentID KodeBooking       AdmissionDate  PatientID  AdmissionID  ... QuotaJKN RestQuotaNonJKN QuotaNonJKN Notes Flag
+0                  0   1000197-8 2023-06-05 07:33:01    1000197            8  ...       50               0           0     -    1
+1                  0  1000383-57 2023-06-05 08:42:46    1000383           57  ...        0               0           0     -    1
+2                  0   1002430-9 2023-06-07 07:31:37    1002430            9  ...       50               0           0     -    1
+3                  0   1002670-9 2023-06-05 15:52:52    1002670            9  ...       50               0           0     -    1
+4                  0   1002710-2 2023-06-06 09:32:54    1002710            2  ...       50               0           0     -    1
+...              ...         ...                 ...        ...          ...  ...      ...             ...         ...   ...  ...
+15472       13586016    574086-2 2023-06-06 11:23:53     574086            2  ...        0               0           0     -    1
+15473       13586315   1685860-2 2023-06-05 11:30:02    1685860            2  ...        0               0           0     -    1
+15474       13586684  738019-216 2023-06-05 07:20:04     738019          216  ...        0               0           0     -    1
+15475       13588759  1650311-12 2023-06-05 08:13:30    1650311           12  ...        0               0           0     -    1
+15476       13588806   1547931-3 2023-06-05 10:44:30    1547931            3  ...        0               0           0     -    1
+
+[15477 rows x 32 columns]
+AppointmentID                        int64
+KodeBooking                         object
+AdmissionDate               datetime64[ns]
+PatientID                            int64
+AdmissionID                          int64
+MedicalNo                           object
+PatientType                         object
+CardNo                              object
+SEPNo                               object
+ReferenceNo                         object
+NIK                                 object
+PhoneNo                             object
+PoliCode                            object
+PoliName                            object
+NewPatient                          object
+DoctorCode                          object
+DoctorName                          object
+AppointmentDate                     object
+AppointmentTime                     object
+DoctorPracticeStartTime             object
+DoctorPracticeFinishTime            object
+VisitType                           object
+AppointmentMethod                   object
+QueueNumber                         object
+QueueNo                             object
+ServedEstimated                     object
+RestQuotaJKN                         int64
+QuotaJKN                             int64
+RestQuotaNonJKN                      int64
+QuotaNonJKN                          int64
+Notes                               object
+Flag                                object
+dtype: object
+AppointmentID                        int64
+KodeBooking                         object
+AdmissionDate               datetime64[ns]
+PatientID                            int64
+AdmissionID                          int64
+MedicalNo                           object
+PatientType                         object
+CardNo                              object
+SEPNo                               object
+ReferenceNo                         object
+NIK                                 object
+PhoneNo                             object
+PoliCode                            object
+PoliName                            object
+NewPatient                          object
+DoctorCode                          object
+DoctorName                          object
+AppointmentDate                     object
+AppointmentTime                     object
+DoctorPracticeStartTime             object
+DoctorPracticeFinishTime            object
+VisitType                           object
+AppointmentMethod                   object
+QueueNumber                         object
+QueueNo                             object
+ServedEstimated                     object
+RestQuotaJKN                         int64
+QuotaJKN                             int64
+RestQuotaNonJKN                      int64
+QuotaNonJKN                          int64
+Notes                               object
+Flag                                object
+dtype: object
+total row update : 750
+       AppointmentID  KodeBooking       AdmissionDate  PatientID  AdmissionID  MedicalNo
+84                 0  1040002-104 2023-06-07 12:01:00    1040002          104  416-84-69
+129                0    1055959-4 2023-06-07 09:17:05    1055959            4  418-33-87
+172                0   1080308-10 2023-06-07 09:48:58    1080308           10  419-88-35
+176                0   1082283-21 2023-06-07 12:30:06    1082283           21  421-41-43
+186                0   1087534-67 2023-06-08 15:38:07    1087534           67  420-47-03
+...              ...          ...                 ...        ...          ...        ...
+15455       13585144   1674900-21 2023-06-08 08:44:47    1674900           21  470-58-19
+15457       13585211   1517630-91 2023-06-08 10:02:16    1517630           91  459-26-97
+15461       13585324   1599862-13 2023-06-08 07:42:30    1599862           13  465-68-49
+15467       13585479   1622458-45 2023-06-08 13:46:34    1622458           45  467-87-80
+15470       13585979   1359680-31 2023-06-08 07:56:03    1359680           31  448-28-56
+
+[750 rows x 6 columns]
+total row inserted : 1
+      AppointmentID KodeBooking       AdmissionDate  PatientID  AdmissionID  MedicalNo
+5210              0   1689369-1 2023-06-08 09:38:33    1689369            1  470-99-36
+UPDATE r SET r.KodeBooking = t.KodeBooking, r.AdmissionDate = t.AdmissionDate, r.MedicalNo = t.MedicalNo, r.PatientType = t.PatientType, r.CardNo = t.CardNo, r.SEPNo = t.SEPNo, r.ReferenceNo = t.ReferenceNo, r.NIK = t.NIK, r.PhoneNo = t.PhoneNo, r.PoliCode = t.PoliCode, r.PoliName = t.PoliName, r.NewPatient = t.NewPatient, r.DoctorCode = t.DoctorCode, r.DoctorName = t.DoctorName, r.AppointmentDate = t.AppointmentDate, r.AppointmentTime = t.AppointmentTime, r.DoctorPracticeStartTime = t.DoctorPracticeStartTime, r.DoctorPracticeFinishTime = t.DoctorPracticeFinishTime, r.VisitType = t.VisitType, r.AppointmentMethod = t.AppointmentMethod, r.QueueNumber = t.QueueNumber, r.QueueNo = t.QueueNo, r.ServedEstimated = t.ServedEstimated, r.RestQuotaJKN = t.RestQuotaJKN, r.QuotaJKN = t.QuotaJKN, r.RestQuotaNonJKN = t.RestQuotaNonJKN, r.QuotaNonJKN = t.QuotaNonJKN, r.Notes = t.Notes , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransAppointmentQueue2 r INNER JOIN (SELECT * FROM staging_rscm.TransAppointmentQueue2_temporary_table) as t ON r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag WHERE r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag ;
+success update and insert all data
+34.29199719429016

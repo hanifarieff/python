@@ -1,0 +1,86 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
+     TglTransaksi             NamaLayanan  Jumlah
+0      2024-11-29     AGGREGASI TROMBOSIT       1
+1      2024-11-29                     ANA      11
+2      2024-11-29  ALKALI PHOSOPAT PRODIA       1
+3      2024-11-29   25-OH VITAMIN D TOTAL       6
+4      2024-11-29           ALBUMIN (ALB)      44
+...           ...                     ...     ...
+1081   2024-12-08                     TSH       2
+1082   2024-12-08            TRIGLISERIDA       1
+1083   2024-12-08            URIN LENGKAP       3
+1084   2024-12-08             UREUM DARAH       7
+1085   2024-12-08             WING NEEDLE      12
+
+[1086 rows x 3 columns]
+TglTransaksi    object
+NamaLayanan     object
+Jumlah           int64
+dtype: object
+     TglTransaksi             NamaLayanan  Jumlah
+0      2024-11-29   25-OH VITAMIN D TOTAL       6
+1      2024-11-29                     AFP      15
+2      2024-11-29     AGGREGASI TROMBOSIT       1
+3      2024-11-29           ALBUMIN (ALB)      44
+4      2024-11-29  ALKALI PHOSOPAT PRODIA       1
+...           ...                     ...     ...
+1038   2024-12-07                     TSH       6
+1039   2024-12-07             UREUM DARAH      29
+1040   2024-12-07            URIN LENGKAP       9
+1041   2024-12-07                    VDRL       1
+1042   2024-12-07             WING NEEDLE      38
+
+[1043 rows x 3 columns]
+total row update : 0
+Empty DataFrame
+Columns: [TglTransaksi, NamaLayanan, Jumlah]
+Index: []
+total row inserted : 43
+     TglTransaksi                                        NamaLayanan  Jumlah
+1043   2024-12-08                                AGGREGASI TROMBOSIT       1
+1044   2024-12-08                               ANALISA FESES KHUSUS       1
+1045   2024-12-08                              25-OH VITAMIN D TOTAL       2
+1046   2024-12-08                       BIAKAN+RES ANAEROB STD DARAH       1
+1047   2024-12-08                                      ALBUMIN (ALB)       2
+1048   2024-12-08                              BETA HIDROKSI BUTIRAT       4
+1049   2024-12-08                                  CHOLESTEROL TOTAL       1
+1050   2024-12-08                                        CALSIUM ION       2
+1051   2024-12-08                                    CLOTT ACTIVATOR      10
+1052   2024-12-08                                             CRP HS       1
+1053   2024-12-08                                       CITRATE 3 ML      10
+1054   2024-12-08                          DARAH SAMAR AB MONOKLONAL       1
+1055   2024-12-08                                  CRP (KUANTITATIF)       2
+1056   2024-12-08                                            D-DIMER       3
+1057   2024-12-08                                               EDTA      30
+1058   2024-12-08                                                DPL       4
+1059   2024-12-08                       ELEKTROLIT DARAH (NA, K, CL)       7
+1060   2024-12-08                                         FIBRINOGEN       2
+1061   2024-12-08                                          EDTA 3 ML      12
+1062   2024-12-08                                   GLUKOSA 2 JAM PP       1
+1063   2024-12-08                                           FERRITIN       1
+1064   2024-12-08                                            FREE T4       1
+1065   2024-12-08                               GLUKOSA RAPID (POCT)       8
+1066   2024-12-08                                      GLUKOSA PUASA       1
+1067   2024-12-08                       HEMATOLOGI LENGKAP TANPA LED      16
+1068   2024-12-08                                     JARUM VACUETTE       4
+1069   2024-12-08                                    GLUKOSA SEWAKTU       1
+1070   2024-12-08                                   LAJU ENDAP DARAH      10
+1071   2024-12-08                                   HEMATOLOGI RUTIN       2
+1072   2024-12-08                                    KREATININ DARAH       7
+1073   2024-12-08  PAKET HEMATOLOGI ONKOLOGI (HEMA LENGKAP TANPA ...       2
+1074   2024-12-08                                          MAGNESIUM       2
+1075   2024-12-08                                      PROCALCITONIN       1
+1076   2024-12-08                                         SGOT (AST)       8
+1077   2024-12-08    PAKET HEMATOLOGI ONKOLOGI + GAMBARAN DARAH TEPI       3
+1078   2024-12-08                                         TACROLIMUS       2
+1079   2024-12-08                                           PT + INR       1
+1080   2024-12-08                                         SGPT (ALT)       8
+1081   2024-12-08                                                TSH       2
+1082   2024-12-08                                       TRIGLISERIDA       1
+1083   2024-12-08                                       URIN LENGKAP       3
+1084   2024-12-08                                        UREUM DARAH       7
+1085   2024-12-08                                        WING NEEDLE      12
+success insert all data without update
+171.091233253479
+scheduler tanggal : 2024-12-09 07:07:01.737671

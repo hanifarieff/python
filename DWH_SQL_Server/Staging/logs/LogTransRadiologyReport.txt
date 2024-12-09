@@ -1,0 +1,55 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+      ReportID  ... IsAddendum
+0      1759883  ...          n
+1      1759884  ...          n
+2      1759885  ...          n
+3      1759886  ...          n
+4      1759887  ...          n
+...        ...  ...        ...
+2045   1761928  ...          n
+2046   1761929  ...          n
+2047   1761930  ...          n
+2048   1761931  ...          n
+2049   1761932  ...          n
+
+[2050 rows x 12 columns]
+      ReportID  MedicalNo  ...             ResponsibleObserverName IsAddendum
+0      1760520  472-40-63  ...  Dr. dr. Marcel Prasetyo, SpRad (K)          n
+1      1760503  477-78-78  ...  Dr. dr. Marcel Prasetyo, SpRad (K)          n
+2      1760708  465-62-67  ...    dr Mohammad Reynalzi Yugo, SpRad          n
+3      1761207  479-45-87  ...  Dr. dr. Marcel Prasetyo, SpRad (K)          n
+4      1760519  475-48-22  ...  Dr. dr. Marcel Prasetyo, SpRad (K)          n
+...        ...        ...  ...                                 ...        ...
+1883   1761761  418-12-14  ...     dr. Thariqah Salamah, SpRad (K)          n
+1884   1761768  472-79-91  ...     dr. Thariqah Salamah, SpRad (K)          n
+1885   1761760  479-04-16  ...     dr. Thariqah Salamah, SpRad (K)          n
+1886   1761769  482-08-25  ...     dr. Thariqah Salamah, SpRad (K)          n
+1887   1761770  472-98-90  ...     dr. Thariqah Salamah, SpRad (K)          n
+
+[1888 rows x 12 columns]
+total row update : 0
+Empty DataFrame
+Columns: [ReportID, MedicalNo, AccessionNumber, OrderID, OrderDate, ObservationDate, ServiceID, ServiceName]
+Index: []
+Empty DataFrame
+Columns: [ServiceName, Report, ResponsibleObserverID, ResponsibleObserverName, IsAddendum]
+Index: []
+total row inserted : 162
+      ReportID  MedicalNo  ...              ResponsibleObserverName IsAddendum
+1888   1761822  482-01-77  ...      dr. Thariqah Salamah, SpRad (K)          n
+1889   1761804  448-17-92  ...       dr. I Wayan Murna Y, SpRad (K)          n
+1890   1761823  481-05-15  ...        dr Mohamad Yanuar Amal, SpRad          n
+1891   1761824  481-08-72  ...        dr Mohamad Yanuar Amal, SpRad          n
+1892   1761840  474-31-30  ...        dr Mohamad Yanuar Amal, SpRad          n
+...        ...        ...  ...                                  ...        ...
+2045   1761928  472-99-36  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+2046   1761929  472-94-80  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+2047   1761930  472-99-41  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+2048   1761931  472-99-45  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+2049   1761932  375-48-88  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+
+[162 rows x 12 columns]
+success insert all data without update
+13.546867847442627
+scheduler tanggal : 2024-12-08 23:30:01.755655

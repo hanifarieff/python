@@ -1,0 +1,19 @@
+successfully connect to all database
+('2024-01-08', '2024-01-09', '2024-01-10')
+  TglTransaksi  Jumlah
+0   2024-01-08      39
+1   2024-01-09       1
+2   2024-01-10      48
+  TglTransaksi  Jumlah
+0   2024-01-08      40
+1   2024-01-10      48
+total row update : 1
+  TglTransaksi  Jumlah
+0   2024-01-08      39
+total row inserted : 1
+  TglTransaksi  Jumlah
+1   2024-01-09       1
+UPDATE BIOS21DMJumlahPasienBPJS r INNER JOIN (SELECT * FROM BIOS21DMJumlahPasienBPJS_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi SET r.Jumlah=t.Jumlah WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+38.87499737739563
+scheduler tanggal : 2024-01-12 05:50:02.038035

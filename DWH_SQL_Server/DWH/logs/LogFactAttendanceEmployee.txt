@@ -1,0 +1,165 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/db_attendance)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.32/idpadmin)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+        EmployeeID AttendanceDate  ... EmployeeOrgID          EmployeeNo
+0            18052     2024-10-10  ...        1979.0          2106763915
+1            18052     2024-10-11  ...        1979.0          2106763915
+2            18052     2024-10-12  ...        1979.0          2106763915
+3            18052     2024-10-14  ...        1979.0          2106763915
+4            18052     2024-10-15  ...        1979.0          2106763915
+...            ...            ...  ...           ...                 ...
+211749       11413     2024-12-03  ...        2707.0  198409022012122001
+211750       11413     2024-12-04  ...        2707.0  198409022012122001
+211751       11413     2024-12-05  ...        2707.0  198409022012122001
+211752       11413     2024-12-06  ...        2707.0  198409022012122001
+211753       11413     2024-12-09  ...        2707.0  198409022012122001
+
+[211754 rows x 7 columns]
+dari siknet
+        EmployeeNo AttendanceDate AttendanceStart AttendanceStop
+0       0100500075     2024-10-10      2024-10-10     2024-10-10
+1       0100500075     2024-10-11      2024-10-11     2024-10-11
+2       0100500075     2024-10-12      2024-10-12     2024-10-12
+3       0100500075     2024-10-13      2024-10-13     2024-10-13
+4       0100500075     2024-10-14      2024-10-14     2024-10-14
+...            ...            ...             ...            ...
+622637       ZIKO2     2024-11-27      2024-11-27     2024-11-27
+622638       ZIKO2     2024-11-28      2024-11-28     2024-11-28
+622639       ZIKO2     2024-11-29      2024-11-29     2024-11-29
+622640       ZIKO2     2024-11-30      2024-11-30     2024-11-30
+622641       ZIKO2     2024-12-01      2024-12-01     2024-12-01
+
+[622642 rows x 4 columns]
+ini fix
+        EmployeeID AttendanceDate  ...          EmployeeNo AttendanceStart_siknet
+120605        13.0     2024-10-10  ...  196410291990021001             2024-10-10
+120606        13.0     2024-10-11  ...  196410291990021001             2024-10-11
+120607        13.0     2024-10-14  ...  196410291990021001             2024-10-14
+120608        13.0     2024-10-15  ...  196410291990021001             2024-10-15
+120609        13.0     2024-10-16  ...  196410291990021001             2024-10-16
+...            ...            ...  ...                 ...                    ...
+623192         NaN     2024-12-09  ...           NPS146513             2024-12-09
+625517         NaN     2024-12-09  ...           NPS146617             2024-12-09
+645840         NaN     2024-12-09  ...                  O1             2024-12-09
+665417         NaN     2024-12-09  ...             THLSDM4             2024-12-09
+665478         NaN     2024-12-09  ...             THLSDM7             2024-12-09
+
+[665802 rows x 8 columns]
+        EmployeeID  ...     AttendanceStart
+10202      17297.0  ... 1970-01-01 00:00:00
+204793      5198.0  ... 1970-01-01 00:00:00
+0          18052.0  ... 2024-10-10 14:45:20
+542291         NaN  ... 2024-10-10 00:00:00
+440110         NaN  ... 2024-10-10 00:00:00
+...            ...  ...                 ...
+131928      9984.0  ... 2024-12-09 13:25:03
+10310      18142.0  ... 2024-12-09 05:55:35
+10314      19265.0  ... 2024-12-09 06:52:17
+80545      19879.0  ... 2024-12-09 06:47:10
+159934      8179.0  ... 2024-12-09 07:07:54
+
+[665802 rows x 4 columns]
+        EmployeeID  ...     AttendanceStart
+10202      17297.0  ... 1970-01-01 00:00:00
+204793      5198.0  ... 1970-01-01 00:00:00
+0          18052.0  ... 2024-10-10 14:45:20
+542291         NaN  ... 2024-10-10 00:00:00
+440110         NaN  ... 2024-10-10 00:00:00
+...            ...  ...                 ...
+131928      9984.0  ... 2024-12-09 13:25:03
+10310      18142.0  ... 2024-12-09 05:55:35
+10314      19265.0  ... 2024-12-09 06:52:17
+80545      19879.0  ... 2024-12-09 06:47:10
+159934      8179.0  ... 2024-12-09 07:07:54
+
+[665802 rows x 4 columns]
+ini udah fix banget
+        EmployeeID  ... IsAttend
+120724          13  ...        1
+120725          13  ...        1
+441890          13  ...        0
+441891          13  ...        0
+120726          13  ...        1
+...            ...  ...      ...
+29436        21524  ...        1
+29437        21524  ...        1
+29438        21524  ...        1
+29439        21524  ...        1
+29440        21524  ...        1
+
+[493273 rows x 6 columns]
+ini target
+        EmployeeID  EmployeeOrgID  ... IsSiknetStop WorkingHours
+0              160           1981  ...            0     09:38:51
+1              160           1981  ...            0     09:24:48
+2              160           1981  ...            1     00:00:00
+3              160           1981  ...            1     00:00:00
+4              160           1981  ...            0     09:08:40
+...            ...            ...  ...          ...          ...
+494340       17896           1889  ...            1     00:00:00
+494341       17896           1889  ...            1     00:00:00
+494342       17896           1889  ...            1     00:00:00
+494343       17896           1889  ...            1     00:00:00
+494344       17896           1889  ...            1     00:00:00
+
+[494345 rows x 10 columns]
+EmployeeID                  int64
+EmployeeOrgID               int64
+EmployeeNo                 object
+EmployeeName               object
+AttendanceDate             object
+AttendanceStart    datetime64[ns]
+IsSiknetStart               int64
+AttendanceStop     datetime64[ns]
+IsSiknetStop                int64
+WorkingHours               object
+IsAttend                  float64
+dtype: object
+total row update : 36
+        EmployeeID                                EmployeeName AttendanceDate
+17475         2232                             Apriani Saulina     2024-12-09
+17553        17899               Aprilia Asthasari Siregar, dr     2024-12-09
+20657        20786                        Arsy Indrafatina, dr     2024-12-09
+24650        17064                           Bakri, S.Kep.Ners     2024-12-09
+28464         7108                               Caswandi, AMK     2024-12-09
+31382        20092                  Cynthia Centauri, dr., SpA     2024-12-09
+46656         7936                           Dosi Eka Ariyanti     2024-12-09
+50106         4735                                Effendy, AMK     2024-12-09
+51837         2555                   Eka Yuli Lestari, S. Farm     2024-12-09
+62133        21166  Faiqueen Dhia Salsabila Firlana Adnan, dr.     2024-12-09
+64448        18469                         Fatmawati, A.Md.Kep     2024-12-09
+67662        14847                     Firda Melinda, A.Md.Kep     2024-12-09
+68031        13581                     Firohmatin, S.Kep, Ners     2024-12-09
+72768         6667                                     Gunawan     2024-12-09
+75018        16209                       Haqnas Prahasta Hakim     2024-12-09
+87904          664                      Inna Diena Fitrah, AMK     2024-12-09
+100478        8063                        Laelatul Farkha, AMd     2024-12-09
+100585        5923                              Laili Lathifah     2024-12-09
+118754        9973                          Muhammad Anen, AMK     2024-12-09
+119498        3533                              Muhammad Kamil     2024-12-09
+120206       17576              Muhammad Vardian Mahardika, dr     2024-12-09
+121455        9978                                   Musfaidah     2024-12-09
+124994        2184                Nawang Romadoni Riyanto, AMK     2024-12-09
+136760       14367                    Nurul Fajriah, A.Md.Farm     2024-12-09
+137689       11380                 Nurwulandari Putri, Amd.Kep     2024-12-09
+145319       17579                       Radita Ikapratiwi, dr     2024-12-09
+164171       18543       Sarah Catherine Sabatina, S.Kep, Ners     2024-12-09
+164990        4879                    Satria Efriani, S.Tr.Keb     2024-12-09
+166448       20789                         Sesilia Sutanto, dr     2024-12-09
+187692        7631                         Tim Tim Nurmalasari     2024-12-09
+189685        9715                              Tri Esti Utami     2024-12-09
+192177        4586                              Trisna Susanti     2024-12-09
+199230         545                     Warsiti, S.Tr.Kep, Ners     2024-12-09
+203468       17169           Wulan Wasiatiningsih, S.Kep, Ners     2024-12-09
+205368        7830                           Yeti Alirani, AMF     2024-12-09
+208700        1349                     Yuliati Widyastuti, AMK     2024-12-09
+total row inserted : 1
+        EmployeeID  ... AttendanceDate
+109383       21239  ...     2024-12-09
+
+[1 rows x 3 columns]
+UPDATE r SET r.EmployeeOrgID = t.EmployeeOrgID, r.EmployeeNo = t.EmployeeNo, r.EmployeeName = t.EmployeeName, r.AttendanceStart = t.AttendanceStart, r.IsSiknetStart = t.IsSiknetStart, r.AttendanceStop = t.AttendanceStop, r.IsSiknetStop = t.IsSiknetStop, r.WorkingHours = t.WorkingHours, r.IsAttend = t.IsAttend , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactAttendanceEmployee r INNER JOIN (SELECT * FROM dwhrscm_talend.FactAttendanceEmployee_temporary_table) as t ON r.EmployeeID = t.EmployeeID AND r.AttendanceDate = t.AttendanceDate  WHERE r.EmployeeID = t.EmployeeID AND r.AttendanceDate = t.AttendanceDate ;
+success update and insert all data
+208.72599864006042
+scheduler tanggal : 2024-12-09 15:20:00.712205

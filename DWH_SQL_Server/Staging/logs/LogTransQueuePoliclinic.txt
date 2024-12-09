@@ -1,0 +1,38 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              4743835              0  ...           0           None
+1              4743836              0  ...           0           None
+2              4743837              0  ...           0           None
+3              4743838              0  ...           0           None
+4              4743839              0  ...           0           None
+..                 ...            ...  ...         ...            ...
+150            4743985              0  ...           0           None
+151            4743986              0  ...           0           None
+152            4743987              0  ...           0           None
+153            4743988              0  ...           0           None
+154            4743989              0  ...           0           None
+
+[155 rows x 33 columns]
+total row update : 0
+Empty DataFrame
+Columns: [QueuePoliclinicID, AppointmentID, ActID, PatientID, AdmissionID, Method, QueueNum, QueueDate, DestOrgID, ParentOrgID, StatusCode, CreatedDate, CreatedBy, CallDate, CallBy, CallTotal, NurseStartDate, NurseStopDate, NurseIDStart, NurseIDStop, DocIDStart, DocIDStop, StatusCodeAnalis, CallTotalAnalis, CallDateAnalis, AnalisID, AnalisIDStart, AnalisIDStop, AnalisStartDate, AnalisStopDate, UpdateDate, CancelledBy, CancelledDate]
+Index: []
+total row inserted : 155
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              4743835              0  ...           0           None
+1              4743836              0  ...           0           None
+2              4743837              0  ...           0           None
+3              4743838              0  ...           0           None
+4              4743839              0  ...           0           None
+..                 ...            ...  ...         ...            ...
+150            4743985              0  ...           0           None
+151            4743986              0  ...           0           None
+152            4743987              0  ...           0           None
+153            4743988              0  ...           0           None
+154            4743989              0  ...           0           None
+
+[155 rows x 33 columns]
+success insert all data without update
+36.89062738418579
+scheduler tanggal : 2024-12-09 06:00:38.818288

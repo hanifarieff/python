@@ -1,0 +1,47 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+      OrderID  PatientID  ...  StatusForm CreatedUserID
+0   162121271    1999451  ...      normal         19913
+1   162121271    1999451  ...      normal         19913
+2   162121271    1999451  ...      normal         19913
+3   162121271    1999451  ...      normal         19913
+4   162121271    1999451  ...      normal         19913
+..        ...        ...  ...         ...           ...
+74  162145179    2179652  ...      normal         18857
+75  162145179    2179652  ...      normal         18857
+76  162145179    2179652  ...      normal         18857
+77  162145179    2179652  ...      normal         18857
+78  162145179    2179652  ...      normal         18857
+
+[79 rows x 14 columns]
+      OrderID  PatientID  ...  StatusForm CreatedUserID
+0   162121271    1999451  ...      normal         19913
+1   162121271    1999451  ...      normal         19913
+2   162121271    1999451  ...      normal         19913
+3   162121271    1999451  ...      normal         19913
+4   162121271    1999451  ...      normal         19913
+..        ...        ...  ...         ...           ...
+74  162150754    2014883  ...      normal         20654
+75  162150754    2014883  ...      normal         20654
+76  162150754    2014883  ...      normal         20654
+77  162150754    2014883  ...      normal         20654
+78  162150754    2014883  ...      normal         20654
+
+[79 rows x 14 columns]
+total row update : 3
+      OrderID  PatientID  ...  StatusForm CreatedUserID
+47  162142858    2207348  ...      normal         20645
+48  162142858    2207348  ...      normal         20645
+53  162142858    2207348  ...      normal         20645
+
+[3 rows x 14 columns]
+total row inserted : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
+Index: []
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.ObservationDate = s.ObservationDate, t.ObjName = s.ObjName, t.Checkup = s.Checkup, t.CheckupDate = s.CheckupDate, t.Result = s.Result, t.SatuSehatCancerResult = s.SatuSehatCancerResult, t.StatusForm = s.StatusForm, t.CreatedUserID = s.CreatedUserID , t.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactResultFormRadiotherapy t INNER JOIN (SELECT * FROM dwhrscm_talend.FactResultFormRadiotherapy_temporary_table) AS s ON t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID AND t.SequenceID = s.SequenceID  WHERE t.OrderID = s.OrderID  AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID AND t.SequenceID = s.SequenceID ;
+all success updated and inserted
+2.1406219005584717
+
+
+scheduler tanggal : 2024-12-09 04:45:01.669477

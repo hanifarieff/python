@@ -1,0 +1,15 @@
+successfully connect to HIS & DWH SQL Server database
+   PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0     774117            1  390-58-31 2014-03-28 00:00:00       n     2
+1    1029694            1  416-60-98 2016-08-30 13:05:14       n     2
+total row update : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, MedicalNo, AdmissionDate, StayInd, Flag]
+Index: []
+total row inserted : 2
+   PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0     774117            1  390-58-31 2014-03-28 00:00:00       n     2
+1    1029694            1  416-60-98 2016-08-30 13:05:14       n     2
+success insert without update
+0.8520076274871826
+scheduler tanggal : 2023-01-24 09:22:14.479205

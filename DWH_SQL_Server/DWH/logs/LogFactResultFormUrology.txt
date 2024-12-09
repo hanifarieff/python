@@ -1,0 +1,31 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+     OrderID  PatientID  AdmissionID  ...  SnomedID StatusForm  CreatedUserID
+0  162121226      91441           10  ...  18639004     normal          20024
+1  162121226      91441           10  ...  OV000352     normal          20024
+2  162121226      91441           10  ...         -     normal          20024
+3  162121226      91441           10  ...         -     normal          20024
+4  162121226      91441           10  ...  55189008     normal          20024
+
+[5 rows x 12 columns]
+     OrderID  PatientID  AdmissionID  ...  SnomedID StatusForm  CreatedUserID
+0  162121226      91441           10  ...  18639004     normal          20024
+1  162121226      91441           10  ...  OV000352     normal          20024
+2  162121226      91441           10  ...         -     normal          20024
+3  162121226      91441           10  ...         -     normal          20024
+4  162121226      91441           10  ...  55189008     normal          20024
+
+[5 rows x 12 columns]
+total row update : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+total row inserted : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+tidak ada data yang baru dan berubah
+2.0624990463256836
+
+
+scheduler tanggal : 2024-12-09 05:10:01.824075

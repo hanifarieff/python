@@ -1,0 +1,163 @@
+Memory before: 66.1640625 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+              OrderID  PatientID  AdmissionID  EmployeeID  ... PayplanKemkes Type  Status BillingPaid
+0      00210007250778    2153475            6     14222.0  ...          BPJS    P  normal           1
+1      00210007302187    1355328           62      5936.0  ...          BPJS    P  normal           1
+2      00210007370412    2203109            1      2012.0  ...          BPJS    P  normal           1
+3      00210007370413    2201339            1      2012.0  ...          BPJS    P  normal           1
+4      00210007370416    2153320            4     10905.0  ...          BPJS    P  normal           1
+...               ...        ...          ...         ...  ...           ...  ...     ...         ...
+16070  00210007600299    2203684            1        18.0  ...          BPJS    P  normal           0
+16071  00210007600299    2203684            1       877.0  ...          BPJS    P  normal           0
+16072  00210007600447    1802994           62     18117.0  ...          BPJS    P  normal           1
+16073  00210007601259    1479339           89      3260.0  ...          BPJS    P  normal           0
+16074  00210007601282    1479339           89      1047.0  ...          BPJS    P  normal           0
+
+[16075 rows x 33 columns]
+Source Data:
+              OrderID  PatientID  AdmissionID  EmployeeID  ... Type  Status BillingPaid  ObjectGroupingName
+0      00210007250778    2153475            6       14222  ...    P  normal           1                None
+1      00210007302187    1355328           62        5936  ...    P  normal           1                None
+2      00210007370412    2203109            1        2012  ...    P  normal           1                None
+3      00210007370413    2201339            1        2012  ...    P  normal           1        laboratorium
+4      00210007370416    2153320            4       10905  ...    P  normal           1        laboratorium
+...               ...        ...          ...         ...  ...  ...     ...         ...                 ...
+16070  00210007600299    2203684            1          18  ...    P  normal           0                None
+16071  00210007600299    2203684            1         877  ...    P  normal           0                None
+16072  00210007600447    1802994           62       18117  ...    P  normal           1                None
+16073  00210007601259    1479339           89        3260  ...    P  normal           0  Prosedur Non Bedah
+16074  00210007601282    1479339           89        1047  ...    P  normal           0         tenaga_ahli
+
+[16075 rows x 34 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+ObjectGroupingName            object
+dtype: object
+Target Data:
+              OrderID  PatientID  AdmissionID  EmployeeID  ... Type  Status BillingPaid  ObjectGroupingName
+0      00210007250778    2153475            6       14222  ...    P  normal           1                None
+1      00210007302187    1355328           62        5936  ...    P  normal           1                None
+2      00210007370412    2203109            1        2012  ...    P  normal           1                None
+3      00210007370413    2201339            1        2012  ...    P  normal           1        laboratorium
+4      00210007370416    2153320            4       10905  ...    P  normal           1        laboratorium
+...               ...        ...          ...         ...  ...  ...     ...         ...                 ...
+16052  00210007597911    2109907           31        7336  ...    P  normal           0                None
+16053  00210007597948    2109907           31        7336  ...    P  normal           0  Prosedur Non Bedah
+16054  00210007597975    2109907           31        7336  ...    P  normal           0  Prosedur Non Bedah
+16055  00210007598040    2109907           31       10914  ...    P  normal           0          konsultasi
+16056  00210007598076    2109907           31       10914  ...    P  normal           0                None
+
+[16057 rows x 34 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+ObjectGroupingName            object
+dtype: object
+Changes Detected:
+Modified Data:
+              OrderID  PatientID  AdmissionID  EmployeeID  ... Type  Status BillingPaid ObjectGroupingName
+45     00210007370517    2200702            1        2012  ...    P  normal           1       laboratorium
+46     00210007370518    2200702            1        2012  ...    P  normal           1       laboratorium
+47     00210007370519    2200702            1        2012  ...    P  normal           1               None
+118    00210007370656    1534719           39        2012  ...    P  normal           1       laboratorium
+119    00210007370657    1534719           39        2012  ...    P  normal           1               None
+...               ...        ...          ...         ...  ...  ...     ...         ...                ...
+15727  00210007513532    1534719           39       17219  ...    P  normal           1         konsultasi
+15731  00210007513622    1534719           39        3371  ...    P  normal           1         konsultasi
+16013  00210007574004    1807614           54        5915  ...    P  normal           1         konsultasi
+16014  00210007574008    1807614           54        2051  ...    P  normal           1         konsultasi
+16052  00210007596947    1713917           43        4092  ...    P  normal           1         konsultasi
+
+[117 rows x 34 columns]
+Inserted Data:
+              OrderID  EmployeeID                              OrgName CategoryName  ObjectGroupingName
+2820   00210007377052        1981      Radiologi Dan Kedokteran Nuklir    penunjang           radiologi
+3757   00210007379039         861                       A - Bedah LT 4     visitasi          konsultasi
+8076   00210007389327        2124              URJT - Poli Bedah Saraf     tindakan           radiologi
+9146   00210007391246        2125  Kiara - Poli Anak Nefrologi, Ginjal    penunjang           radiologi
+10967  00210007394979       17348      IGD - Intensive Care Unit (ICU)     visitasi          konsultasi
+16060  00210007598320        5852      IGD - Intensive Care Unit (ICU)     visitasi          konsultasi
+16061  00210007598399        1643      IGD - Intensive Care Unit (ICU)     visitasi          konsultasi
+16062  00210007598507        5692      IGD - Intensive Care Unit (ICU)     tindakan  Prosedur Non Bedah
+16063  00210007599323        1710                              A - THT     visitasi          konsultasi
+16064  00210007599327       14208                              A - THT     visitasi          konsultasi
+16065  00210007599933          21                          IPKT - ICCU     visitasi                None
+16066  00210007600002          21                          IPKT - ICCU     tindakan  Prosedur Non Bedah
+16067  00210007600014          21                          IPKT - ICCU     tindakan  Prosedur Non Bedah
+16068  00210007600048        2097                         Kiara - Anak     visitasi          konsultasi
+16069  00210007600269         877                          IPKT - ICCU     visitasi          konsultasi
+16070  00210007600299          18                       IPKT - CathLab    penunjang                None
+16071  00210007600299         877                       IPKT - CathLab    penunjang                None
+16072  00210007600447       18117       URJT - Poli Rehabilitasi Medik     tindakan                None
+16073  00210007601259        3260                   A - Psikiatri Lt 1     tindakan  Prosedur Non Bedah
+16074  00210007601282        1047                   A - Psikiatri Lt 1     tindakan         tenaga_ahli
+
+Data Success Updated
+Data Success Inserted
+195.51293301582336
+Memory after: 110.58203125 MB
+Memory used: 44.41796875 MB
+scheduler tanggal : 2024-12-05 13:13:49.151659

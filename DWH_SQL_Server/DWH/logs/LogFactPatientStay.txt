@@ -1,0 +1,77 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+     PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+0        81876          641  334-60-55  ...       y                y    1
+1       600032          194  354-91-99  ...       y                y    1
+2      1138597           54  426-58-75  ...       y                y    1
+3      1175443          357  429-47-71  ...       y                y    1
+4      1237688           17  436-33-84  ...       n                y    1
+..         ...          ...        ...  ...     ...              ...  ...
+554    2169958            7  482-04-34  ...       y                y    1
+555    2170409            6  482-04-94  ...       y                y    1
+556    2170520            8  482-05-23  ...       y                y    1
+557    2172393            9  482-08-64  ...       y                y    1
+558    2173566            7  482-10-99  ...       y                y    1
+
+[559 rows x 7 columns]
+      PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+0         24749           96  247-52-57  ...       n             None    1
+1         24749           97  247-52-57  ...       n             None    1
+2         24749          110  247-52-57  ...       n             None    1
+3         24749          111  247-52-57  ...       n             None    1
+4         24749          112  247-52-57  ...       n             None    1
+...         ...          ...        ...  ...     ...              ...  ...
+3536    2211291            1  472-99-03  ...       n                y    1
+3537    2211292            1  472-99-04  ...       n                y    1
+3538    2211311            1  472-99-12  ...       n                y    1
+3539    2211312            1  472-99-13  ...       n                y    1
+3540    2211314            1  472-99-15  ...       n                y    1
+
+[3541 rows x 7 columns]
+total row update : 22
+     PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+8      1677642          136  470-64-80  ...       y                y    1
+58     1932789           44  477-56-09  ...       n                n    1
+76     2115464           38  472-60-06  ...       y                y    1
+77     2121077           11  481-18-89  ...       y                y    1
+82      857179           74  397-38-01  ...       n                n    2
+94     1857613           36  476-02-81  ...       y                y    1
+101    2177573            3  482-17-89  ...       y                y    1
+123    2206951            2  483-18-09  ...       y                y    1
+127    2208904            2  483-22-00  ...       y                y    1
+133    2210739            1  472-98-62  ...       y                y    1
+134    2210757            1  472-98-65  ...       y                y    1
+136    2211291            1  472-99-03  ...       y                y    1
+137    2211292            1  472-99-04  ...       y                y    1
+138    2211311            1  472-99-12  ...       y                y    1
+139    2211312            1  472-99-13  ...       y                y    1
+140    2211314            1  472-99-15  ...       y                y    1
+218    1126277           51  426-14-36  ...       y                y    1
+517    1051291           97  418-12-14  ...       y                y    1
+530    2127518           16  481-29-54  ...       y                y    1
+541    2143050           15  481-56-88  ...       y                y    1
+545    2147415           10  481-63-47  ...       y                y    1
+549    2154822           21  481-76-77  ...       y                y    1
+
+[22 rows x 7 columns]
+total row inserted : 537
+     PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+0        81876          641  334-60-55  ...       y                y    1
+1       600032          194  354-91-99  ...       y                y    1
+2      1138597           54  426-58-75  ...       y                y    1
+3      1175443          357  429-47-71  ...       y                y    1
+4      1237688           17  436-33-84  ...       n                y    1
+..         ...          ...        ...  ...     ...              ...  ...
+554    2169958            7  482-04-34  ...       y                y    1
+555    2170409            6  482-04-94  ...       y                y    1
+556    2170520            8  482-05-23  ...       y                y    1
+557    2172393            9  482-08-64  ...       y                y    1
+558    2173566            7  482-10-99  ...       y                y    1
+
+[537 rows x 7 columns]
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.AdmissionDate = s.AdmissionDate, t.StayInd = s.StayInd, t.StayIndAdmission = s.StayIndAdmission , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientStay t INNER JOIN (SELECT * from dwhrscm_talend.FactPatientStay_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag;
+
+
+success update dan insert
+20.046876192092896
+scheduler tanggal : 2024-12-09 03:00:01.855198

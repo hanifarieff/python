@@ -1,0 +1,92 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+    PatientID  AdmissionID  FormNumber  ... TissueSource            DiagnosticHistory PADiagnose
+0       64791          271       44638  ...     aspirasi                         SMNT       None
+1       82029            4       44543  ...      operasi            TUMOR GINJAL KIRI       None
+2      753454           30       44579  ...    lain_lain                     SUSP MDS       None
+3      866249           41       44556  ...     aspirasi                            -       None
+4      887960            3       44629  ...     aspirasi          POLIP RECTO SIGMOID       None
+..        ...          ...         ...  ...          ...                          ...        ...
+75    2179192            1       44628  ...     aspirasi                 MASSA GASTER       None
+76    2180064            1       44555  ...     aspirasi  TUMOR PAPILER MAMMAE DEXTRA       None
+77    2181174            1       44601  ...    lain_lain                            -       None
+78    2181196            1       44604  ...      operasi                            -       None
+79    2181257            1       44648  ...      operasi                NEVUS SEBASEA       None
+
+[80 rows x 22 columns]
+    PatientID  AdmissionID     TransactionDate       BillingID BillingTransactID
+0       64791          271 2024-10-31 17:30:16  00210001583653    00210001129817
+1       82029            4 2024-11-04 11:48:58  00210001564450    00210001138053
+2      753454           30 2024-10-31 13:29:30  00210001584504    00210001127550
+3      866249           41 2024-11-03 15:30:46         1072094           1009603
+4      887960            3 2024-11-04 10:13:37  00210001570791    00210001137036
+..        ...          ...                 ...             ...               ...
+81    2179192            1 2024-11-06 09:29:27  00210001575508    00210001148197
+82    2180064            1 2024-10-31 11:40:34  00210001582923    00210001126373
+83    2181174            1 2024-10-31 15:06:56  00210001588128    00210000052396
+84    2181196            1 2024-10-31 15:12:45  00210001588207    00210000052397
+85    2181257            1                 NaT             NaN               NaN
+
+[86 rows x 5 columns]
+data source setelah join ke billing yang dari EHR
+fix source data types
+PatientID                     int64
+AdmissionID                   int64
+FormNumber                    int64
+RegistrationNo               object
+FormStatus                   object
+Type                         object
+ObjID                        object
+ObjName                      object
+DoctorID                      int64
+DoctorName                   object
+Hospital                     object
+FormCreatedDate      datetime64[ns]
+OrgID                         int64
+ParentOrgID                 float64
+BillingTransactID            object
+BillingID                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+PayplanID                    object
+TissueSource                 object
+DiagnosticHistory            object
+PADiagnose                   object
+dtype: object
+PatientID                     int64
+AdmissionID                   int64
+FormNumber                    int64
+RegistrationNo               object
+FormStatus                   object
+Type                         object
+ObjID                        object
+ObjName                      object
+DoctorID                      int64
+DoctorName                   object
+Hospital                     object
+FormCreatedDate      datetime64[ns]
+OrgID                         int64
+ParentOrgID                 float64
+BillingTransactID            object
+BillingID                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+PayplanID                    object
+TissueSource                 object
+DiagnosticHistory            object
+PADiagnose                   object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, RegistrationNo, FormStatus, Type, ObjID, ObjName, DoctorID, DoctorName, Hospital, FormCreatedDate, OrgID, ParentOrgID, BillingTransactID, BillingID, AdmissionDate, TransactionDate, PayplanID, TissueSource, DiagnosticHistory, PADiagnose]
+Index: []
+total row inserted : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, RegistrationNo, FormStatus, Type, ObjID, ObjName, DoctorID, DoctorName, Hospital, FormCreatedDate, OrgID, ParentOrgID, BillingTransactID, BillingID, AdmissionDate, TransactionDate, PayplanID, TissueSource, DiagnosticHistory, PADiagnose]
+Index: []
+tidak ada data yang baru dan berubah
+0.4436955451965332
+
+
+scheduler tanggal : 2024-11-28 13:23:13.659098

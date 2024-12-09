@@ -1,0 +1,86 @@
+Memory before: 66.484375 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+Source Data:
+       OrderID  PatientID  ...  StatusForm  CreatedUserID
+0    161526836    1778857  ...      normal          20086
+1    161526836    1778857  ...      normal          20086
+2    161526836    1778857  ...      normal          20086
+3    161526836    1778857  ...      normal          20086
+4    161526836    1778857  ...      normal          20086
+..         ...        ...  ...         ...            ...
+802  162150754    2014883  ...      normal          20654
+803  162150754    2014883  ...      normal          20654
+804  162150754    2014883  ...      normal          20654
+805  162150754    2014883  ...      normal          20654
+806  162150754    2014883  ...      normal          20654
+
+[807 rows x 9 columns]
+setelah ditambahkan kolom baru
+                                                Result  SatuSehatCancerResult
+0    2021 - 2022: pasien merasakan hidung tersumbat...                      0
+1    keadaan umum baik\nkarnofsky scale 90\n\nRegio...                      0
+2    Extranodal NK-T Cell Lymphoma nasal type T3N0M...                      0
+3    Cek DPL, Ur, Cr\nCT simulator kepala-leher kon...                      0
+4                                            tidak ada                      0
+..                                                 ...                    ...
+802  Meningioma atipik CNS WHO grade II regio tento...                      0
+803  Cek lab, DPL, ur, cr\nCT simulator kepala kont...                      0
+804  {"header":{"Pemeriksaan/Konsultasi":1,"Tanggal...                      0
+805                                              1|2|7                      7
+806                                                  4                      4
+
+[807 rows x 2 columns]
+Invalid JSON: Unterminated string starting at: line 1 column 98 (char 97)
+setelah dijalankan fungsi transform regex
+        OrderID  PatientID  ...  StatusForm CreatedUserID
+0     161526836    1778857  ...      normal         20086
+1     161526836    1778857  ...      normal         20086
+2     161526836    1778857  ...      normal         20086
+3     161526836    1778857  ...      normal         20086
+4     161526836    1778857  ...      normal         20086
+...         ...        ...  ...         ...           ...
+1013  162150754    2014883  ...      normal         20654
+1014  162150754    2014883  ...      normal         20654
+1015  162150754    2014883  ...      normal         20654
+1016  162150754    2014883  ...      normal         20654
+1017  162150754    2014883  ...      normal         20654
+
+[1018 rows x 13 columns]
+        OrderID PatientID  ... StatusForm CreatedUserID
+0     161526836   1778857  ...     normal         20086
+1     161526836   1778857  ...     normal         20086
+2     161526836   1778857  ...     normal         20086
+3     161526836   1778857  ...     normal         20086
+4     161526836   1778857  ...     normal         20086
+...         ...       ...  ...        ...           ...
+1013  162150754   2014883  ...     normal         20654
+1014  162150754   2014883  ...     normal         20654
+1015  162150754   2014883  ...     normal         20654
+1016  162150754   2014883  ...     normal         20654
+1017  162150754   2014883  ...     normal         20654
+
+[1018 rows x 13 columns]
+Changes Detected:
+Modified Data:
+       OrderID  PatientID  ...  StatusForm CreatedUserID
+978  162142858    2207348  ...      normal         20645
+979  162142858    2207348  ...      normal         20645
+984  162142858    2207348  ...      normal         20645
+
+[3 rows x 13 columns]
+Inserted Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
+Index: []
+UPDATE t SET t.ObservationDate = s.ObservationDate, t.ObjName = s.ObjName, t.Checkup = s.Checkup, t.CheckupDate = s.CheckupDate, t.Result = s.Result, t.SatuSehatCancerResult = s.SatuSehatCancerResult, t.StatusForm = s.StatusForm, t.CreatedUserID = s.CreatedUserID, t.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransResultFormRadiotherapy t INNER JOIN (SELECT * FROM staging_rscm.TransResultFormRadiotherapy_temporary_table) AS s ON t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID AND t.SequenceID = s.SequenceID WHERE t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID AND t.SequenceID = s.SequenceID;
+
+Data Success Updated
+Tidak ada data yang baru
+23.375003814697266
+
+
+Memory after: 84.32421875 MB
+Memory used: 17.83984375 MB
+scheduler tanggal : 2024-12-09 04:30:25.933364

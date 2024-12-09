@@ -1,0 +1,137 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+                           ObjectName        AdmissionDate          CreatedDate
+0        ELEKTROLIT DARAH (Na, K, Cl)  2024-12-04 08:55:15  2024-12-07 13:50:22
+1                               JARUM  2024-12-04 08:55:15  2024-12-07 21:38:13
+2                     CLOTT ACTIVATOR  2024-12-04 08:55:15  2024-12-07 21:38:13
+3     BILIRUBIN TOTAL + DIREK+INDIREK  2024-12-08 22:43:04  2024-12-08 23:35:39
+4        ELEKTROLIT DARAH (Na, K, Cl)  2024-12-08 22:43:04  2024-12-08 23:35:39
+...                               ...                  ...                  ...
+4239       BIAKAN+RES AEROB LKP DARAH  2024-12-08 21:57:49  2024-12-08 22:58:19
+4240                            JARUM  2024-12-08 21:57:49  2024-12-08 23:01:33
+4241                             EDTA  2024-12-08 21:57:49  2024-12-08 23:01:12
+4242                  BACT/ALERT ANAK  2024-12-08 21:57:49  2024-12-08 23:01:33
+4243            BETA HIDROKSI BUTIRAT  2024-12-08 23:00:18  2024-12-08 23:01:12
+
+[4244 rows x 3 columns]
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+0         13824          110   411921247  ...     1               0  55231-5
+1         13824          110   411921247  ...     1               0     None
+2         13824          110   411921247  ...     1               0     None
+3         24749          297   411922303  ...     1               0  34543-9
+4         24749          297   411922303  ...     1               0  55231-5
+...         ...          ...         ...  ...   ...             ...      ...
+4239    2211679            1   411922279  ...     1               0  29576-6
+4240    2211679            1   411922279  ...     1               0     None
+4241    2211679            1   411922278  ...     1               0     None
+4242    2211679            1   411922279  ...     1               0     None
+4243    2211680            1   411922282  ...     1               0   6873-4
+
+[4244 rows x 39 columns]
+PatientID                      int64
+AdmissionID                    int64
+FormNumber                     int64
+OrgID                          int64
+ObjectID                      object
+ObjectName                    object
+AdmissionDate                 object
+CreatedDate                   object
+CreatedBy                      int64
+StatusCode                    object
+OrderLab                      object
+OrderID                       object
+PriorityPatient               object
+DoctorEmployeeID               int64
+VerifiedBy                     int64
+VerifiedDate                  object
+RejectedBy                     int64
+RejectedDate                  object
+ApprovedBy                     int64
+ApprovedDate                  object
+CancelledBy                    int64
+CancelledDate                 object
+DstOrg                         int64
+ApprovalOrg                    int64
+Diagnose                      object
+AddedNotes                    object
+Modality                      object
+PatientStatus                 object
+FastingStatus                 object
+UrineStatus                   object
+ThalasemiaStatus              object
+LiquidSamplingStatus          object
+OperationPreparationStatus    object
+OrderNo                       object
+OrderIDRME                     int64
+ScheduleID                     int64
+Flag                           int64
+FormLabDetailID                int64
+LoincID                       object
+dtype: object
+ini changes
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+3         24749          297   411922303  ...     1               0  34543-9
+4         24749          297   411922303  ...     1               0  55231-5
+5         24749          297   411922303  ...     1               0   2345-7
+6         24749          297   411922303  ...     1               0     None
+7         24749          297   411922303  ...     1               0     None
+...         ...          ...         ...  ...   ...             ...      ...
+4239    2211679            1   411922279  ...     1               0  29576-6
+4240    2211679            1   411922279  ...     1               0     None
+4241    2211679            1   411922278  ...     1               0     None
+4242    2211679            1   411922279  ...     1               0     None
+4243    2211680            1   411922282  ...     1               0   6873-4
+
+[3733 rows x 39 columns]
+
+
+total row update except new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, ApprovalOrg, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row update new : 90
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+56       570086          175   411920755  ...     1               0     None
+134      760508          469   411921529  ...     1               0     None
+135      760508          469   411921529  ...     1               0     None
+354     1336466          121   411921262  ...     1               0     None
+439     1481576          315   411921532  ...     1               0     None
+...         ...          ...         ...  ...   ...             ...      ...
+3576    2210788            1   411921479  ...     1               0     None
+3577    2210788            1   411921482  ...     1               0     None
+3578    2210788            1   411921482  ...     1               0     None
+3607    2211291            1   411921515  ...     1               0  88112-8
+3608    2211291            1   411921515  ...     1               0   1744-2
+
+[90 rows x 39 columns]
+
+
+total row inserted : 3643
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+3         24749          297   411922303  ...     1               0  34543-9
+4         24749          297   411922303  ...     1               0  55231-5
+5         24749          297   411922303  ...     1               0   2345-7
+6         24749          297   411922303  ...     1               0     None
+7         24749          297   411922303  ...     1               0     None
+...         ...          ...         ...  ...   ...             ...      ...
+4239    2211679            1   411922279  ...     1               0  29576-6
+4240    2211679            1   411922279  ...     1               0     None
+4241    2211679            1   411922278  ...     1               0     None
+4242    2211679            1   411922279  ...     1               0     None
+4243    2211680            1   411922282  ...     1               0   6873-4
+
+[3643 rows x 39 columns]
+
+
+UPDATE r SET r.OrgID = t.OrgID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.OrderID = t.OrderID, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.ApprovalOrg = t.ApprovalOrg, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransFormulirLab r INNER JOIN (SELECT * FROM staging_rscm.TransFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo ;
+DROP TABLE staging_rscm.TransFormulirLab_temporary_table
+
+
+UPDATE r SET r.OrgID = t.OrgID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.ApprovalOrg = t.ApprovalOrg, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransFormulirLab r INNER JOIN (SELECT * FROM staging_rscm.TransFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo ;
+DROP TABLE staging_rscm.TransFormulirLab_temporary_table
+success update and insert all data
+32.36661338806152
+scheduler tanggal : 2024-12-09 01:00:01.793517

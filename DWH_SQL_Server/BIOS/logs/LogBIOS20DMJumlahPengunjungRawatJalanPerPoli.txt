@@ -1,0 +1,42 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
+('2024-12-04', '2024-12-05', '2024-12-06', '2024-12-07', '2024-12-08')
+    TglTransaksi                                           NamaPoli  Jumlah
+0     2024-12-04                           A - Lab. Patologi Klinik     215
+1     2024-12-04                                     Cluster Breast       5
+2     2024-12-04                             Cluster Cardiovascular      24
+3     2024-12-04                                  Cluster Dentistry      10
+4     2024-12-04                                  Cluster Digestive      36
+..           ...                                                ...     ...
+617   2024-12-07   URJT - Poli Rehabilitasi Medik Fisioterapis Anak       8
+618   2024-12-07  URJT - Poli Rehabilitasi Medik Fisioterapis De...       2
+619   2024-12-07  URJT - Poli Rehabilitasi Medik Okupasi Terapi ...       7
+620   2024-12-07                                  URJT - Poli Saraf       6
+621   2024-12-07                                URJT - Poli Urologi       5
+
+[622 rows x 3 columns]
+total row update : 1
+    TglTransaksi                        NamaPoli  Jumlah
+609   2024-12-07  Unit Pelayanan Transfusi Darah      83
+total row inserted : 16
+    TglTransaksi                             NamaPoli  Jumlah
+622   2024-12-08             A - Lab. Patologi Klinik     140
+623   2024-12-08                      IGD - Radiologi      49
+624   2024-12-08                    KIARA - Radiologi      10
+625   2024-12-08       Kencana - Satelit Farmasi Lt.1      11
+626   2024-12-08           IGD - Lab. Patologi Klinik      84
+627   2024-12-08  Kedokteran Forensik dan Medikolegal       3
+628   2024-12-08                Kirana - Poli Anugrah       3
+629   2024-12-08            KIARA - LABORATORIUM ANAK       2
+630   2024-12-08          Lab. Patologi Klinik 24 Jam     127
+631   2024-12-08                Laboratorium External     315
+632   2024-12-08       Unit Pelayanan Transfusi Darah      83
+633   2024-12-08      Radiologi Dan Kedokteran Nuklir      34
+634   2024-12-08                      Lab. PK Kencana      11
+635   2024-12-08    Mikrobiologi Laboratorium Terpadu      48
+636   2024-12-08             URJT -  Poli Hemodialisa       1
+637   2024-12-08                    Radiologi Kencana      12
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli  WHERE r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli ;
+success update and insert all data
+337.84262347221375
+scheduler tanggal : 2024-12-09 06:40:01.597596

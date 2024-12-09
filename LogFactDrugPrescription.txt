@@ -1,0 +1,75 @@
+successfully connect to all database
+       PrescriptionID  SequenceID  ...  DispenseUnitCode       InsertDateApp
+0      00140001703517           1  ...               UNT 2023-09-05 07:59:34
+1      00140001700389           8  ...               UNT 2023-09-04 15:46:51
+2      00140001704576           1  ...                ML 2023-09-05 09:51:06
+3      00140001703826           5  ...                MG 2023-09-05 08:44:10
+4      00140001703826           3  ...                MG 2023-09-05 08:44:10
+...               ...         ...  ...               ...                 ...
+40235  00140001711191           4  ...               TAB 2023-09-05 23:59:57
+40236  00140001711079           1  ...                MG 2023-09-05 23:05:43
+40237  00140001711108           1  ...                MG 2023-09-05 23:20:26
+40238  00140001711191          14  ...               MCG 2023-09-05 23:59:57
+40239  00140001711191          13  ...                GM 2023-09-05 23:59:57
+
+[40240 rows x 12 columns]
+PrescriptionID               object
+SequenceID                    int64
+PatientID                     int64
+AdmissionID                   int64
+PrescriptionOrgID             int64
+DrugID                       object
+DrugQuantity                 object
+FrequencyCode                object
+UnitCode                     object
+DispenseQuantity             object
+DispenseUnitCode             object
+InsertDateApp        datetime64[ns]
+dtype: object
+PrescriptionID               object
+SequenceID                    int64
+PatientID                     int64
+AdmissionID                   int64
+PrescriptionOrgID             int64
+DrugID                       object
+DrugQuantity                 object
+FrequencyCode                object
+UnitCode                     object
+DispenseQuantity             object
+DispenseUnitCode             object
+InsertDateApp        datetime64[ns]
+dtype: object
+total row update : 120
+       PrescriptionID  SequenceID  ...  DispenseUnitCode       InsertDateApp
+2111   00140001694311           1  ...                MG 2023-09-04 07:18:39
+2148   00140001694324           1  ...                MG 2023-09-04 07:21:30
+2234   00140001694355           1  ...                MG 2023-09-04 07:30:09
+2248   00140001694359           1  ...                MG 2023-09-04 07:30:51
+2256   00140001694363           1  ...                MG 2023-09-04 07:31:45
+...               ...         ...  ...               ...                 ...
+20350  00140001702418           6  ...                MG 2023-09-04 22:20:12
+20352  00140001702418           5  ...                ML 2023-09-04 22:20:12
+20390  00140001702439           1  ...                ML 2023-09-04 22:27:42
+20392  00140001702439           2  ...                ML 2023-09-04 22:27:42
+20394  00140001702439           3  ...                ML 2023-09-04 22:27:42
+
+[120 rows x 12 columns]
+total row inserted : 19276
+       PrescriptionID  SequenceID  ...  DispenseUnitCode       InsertDateApp
+0      00140001703517           1  ...               UNT 2023-09-05 07:59:34
+2      00140001704576           1  ...                ML 2023-09-05 09:51:06
+3      00140001703826           5  ...                MG 2023-09-05 08:44:10
+4      00140001703826           3  ...                MG 2023-09-05 08:44:10
+29     00140001709222           1  ...                MG 2023-09-05 16:12:25
+...               ...         ...  ...               ...                 ...
+40235  00140001711191           4  ...               TAB 2023-09-05 23:59:57
+40236  00140001711079           1  ...                MG 2023-09-05 23:05:43
+40237  00140001711108           1  ...                MG 2023-09-05 23:20:26
+40238  00140001711191          14  ...               MCG 2023-09-05 23:59:57
+40239  00140001711191          13  ...                GM 2023-09-05 23:59:57
+
+[19276 rows x 12 columns]
+UPDATE FactDrugPrescription r INNER JOIN (SELECT * FROM FactDrugPrescription_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.PrescriptionOrgID = t.PrescriptionOrgID, r.DrugID = t.DrugID, r.DrugQuantity = t.DrugQuantity, r.FrequencyCode = t.FrequencyCode, r.UnitCode = t.UnitCode, r.DispenseQuantity = t.DispenseQuantity, r.DispenseUnitCode = t.DispenseUnitCode, r.InsertDateApp = t.InsertDateApp WHERE r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+352.529004573822
+scheduler tanggal : 2023-09-06 02:15:02.452333

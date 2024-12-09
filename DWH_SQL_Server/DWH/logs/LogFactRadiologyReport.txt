@@ -1,0 +1,55 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+     ReportID AccessionNumber  ...              ResponsibleObserverName IsAddendum
+0     1761593              CT  ...       dr. I Wayan Murna Y, SpRad (K)          n
+1     1761594              GD  ...       dr. I Wayan Murna Y, SpRad (K)          n
+2     1761595              DX  ...       dr. I Wayan Murna Y, SpRad (K)          n
+3     1761596              GD  ...       dr. I Wayan Murna Y, SpRad (K)          n
+4     1761597              DX  ...       dr. I Wayan Murna Y, SpRad (K)          n
+..        ...             ...  ...                                  ...        ...
+335   1761928              KA  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+336   1761929              GD  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+337   1761930              GD  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+338   1761931              CT  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+339   1761932              GD  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+
+[340 rows x 12 columns]
+     ReportID AccessionNumber  ...          ResponsibleObserverName IsAddendum
+0     1761712               R  ...   dr. Sahat Matondang, SpRad (K)          y
+1     1761702               R  ...   dr. Sahat Matondang, SpRad (K)          n
+2     1761714              CT  ...   dr. Sahat Matondang, SpRad (K)          n
+3     1761713               R  ...   dr. Sahat Matondang, SpRad (K)          y
+4     1761625              MG  ...       dr. Rahmi Afifi, SpRad (K)          n
+..        ...             ...  ...                              ...        ...
+173   1761761              GD  ...  dr. Thariqah Salamah, SpRad (K)          n
+174   1761768              GD  ...  dr. Thariqah Salamah, SpRad (K)          n
+175   1761760              GD  ...  dr. Thariqah Salamah, SpRad (K)          n
+176   1761769              GD  ...  dr. Thariqah Salamah, SpRad (K)          n
+177   1761770              GD  ...  dr. Thariqah Salamah, SpRad (K)          n
+
+[178 rows x 12 columns]
+total row update : 0
+Empty DataFrame
+Columns: [ReportID, AccessionNumber, OrderID, MedicalNo, OrderDate, ObservationDate, ServiceID, ServiceName]
+Index: []
+Empty DataFrame
+Columns: [ServiceName, Report, ResponsibleObserverID, ResponsibleObserverName, IsAddendum]
+Index: []
+total row inserted : 162
+     ReportID AccessionNumber  ...                ResponsibleObserverName IsAddendum
+178   1761771              GD  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+179   1761772              GD  ...      Dr. dr. Rahmad Mulyadi, SpRad (K)          n
+180   1761773              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
+181   1761774              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
+182   1761775              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
+..        ...             ...  ...                                    ...        ...
+335   1761928              KA  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+336   1761929              GD  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+337   1761930              GD  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+338   1761931              CT  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+339   1761932              GD  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+
+[162 rows x 12 columns]
+success insert all data without update
+7.640624284744263
+scheduler tanggal : 2024-12-08 23:35:01.993359

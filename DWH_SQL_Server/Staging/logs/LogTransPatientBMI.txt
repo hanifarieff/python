@@ -1,0 +1,40 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+0      162084125        676  ...        Overweight          normal
+1      162082603       1526  ...            Normal          normal
+2      162128878       1526  ...            Normal          normal
+3      162117460       3316  ...  Obesitas grade 2          normal
+4      162142777       5316  ...            Normal          normal
+...          ...        ...  ...               ...             ...
+7244   162173626    2211321  ...             Kurus          normal
+7245   162177255    2211322  ...            Normal          normal
+7246   162188224    2211524  ...  Obesitas grade 2          normal
+7247   162182218    2211583  ...             Kurus          normal
+7248   162184618    2211659  ...            Normal          normal
+
+[7249 rows x 9 columns]
+total row update : 0
+Empty DataFrame
+Columns: [OrderObsID, PatientID, AdmissionID, ObservationDate, PanelName, BMI, BMIStatus, BMIDetail, BMIDetailStatus]
+Index: []
+total row inserted : 198
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+105    162181473      81876  ...            Normal          normal
+148    162186177     109597  ...            Normal          normal
+164    162184001     144573  ...            Normal          normal
+398    162183550     600032  ...        Overweight          normal
+591    162186320     696757  ...            Normal          normal
+...          ...        ...  ...               ...             ...
+7244   162173626    2211321  ...             Kurus          normal
+7245   162177255    2211322  ...            Normal          normal
+7246   162188224    2211524  ...  Obesitas grade 2          normal
+7247   162182218    2211583  ...             Kurus          normal
+7248   162184618    2211659  ...            Normal          normal
+
+[198 rows x 9 columns]
+success insert without update
+23.953123569488525
+
+
+scheduler tanggal : 2024-12-09 03:30:01.926516

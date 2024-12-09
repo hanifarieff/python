@@ -1,0 +1,46 @@
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.11/ehr)
+        order_id  role_no
+0      147473387        1
+1      147473393        1
+2      147473400        1
+3      147271832        1
+4      147479742        1
+...          ...      ...
+10227  147602211        1
+10228  147604187        1
+10229  147604189        1
+10230  147604269        1
+10231  147604270        1
+
+[10232 rows x 2 columns]
+order_id    int64
+proc_id     int64
+dtype: object
+order_id       int64
+proc_tarif    object
+dtype: object
+order_id    int64
+role_no     int64
+role_id     int64
+dtype: object
+ini source
+order_id      object
+proc_id       object
+role_id       object
+proc_tarif     int64
+dtype: object
+        order_id proc_id role_id  proc_tarif
+0      147473387   42815   28926      850000
+1      147473393   49423   45573      340000
+2      147473400   43253   29364      100000
+3      147271832   32339   39896     1220000
+4      147479742   45606   32860      479000
+...          ...     ...     ...         ...
+10225  147602211   45155   32409      575000
+10226  147604187   45606   32860      479000
+10227  147604189   47905   41280      294000
+10228  147604269   45606   32860      479000
+10229  147604270   47905   41280      294000
+
+[10224 rows x 4 columns]

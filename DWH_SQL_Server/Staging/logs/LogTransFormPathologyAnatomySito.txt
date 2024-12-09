@@ -1,0 +1,117 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+    PatientID  AdmissionID  FormNumber RegistrationNo  ... PayplanID TissueSource DiagnosticHistory PADiagnose
+0      578523           16       44631      C24-04434  ...        71    lain_lain                 -       None
+1      606372           25       44384      C24-04395  ...        71     aspirasi     SINOSIS HEPAR       None
+2      797160           84       44188      C24-04362  ...        71    lain_lain                 -       None
+3      814620           55       44185      C24-04361  ...         8     aspirasi                 -       None
+4      836861          134       44515      C24-04416  ...        71    lain_lain      EFUSI PLEURA       None
+..        ...          ...         ...            ...  ...       ...          ...               ...        ...
+81    2176801            1       44371      C24-04393  ...        71     aspirasi      STENOSIS CBD       None
+82    2177808            1       44489      C24-04408  ...        71     aspirasi      EFUSI PLEURA       None
+83    2177978            3       44618      C24-04432  ...        71     aspirasi              SNNT       None
+84    2178038            2       44425      C24-04402  ...         8     aspirasi                 -       None
+85    2180182            1       44591      C24-04427  ...        71       apusan        SERVISITIS       None
+
+[86 rows x 22 columns]
+     PatientID  AdmissionID     TransactionDate       BillingID BillingTransactID
+0       578523           16 2024-11-01 10:15:03  00210001572715    00210001131187
+1       606372           25 2024-10-31 14:44:16  00210001556368    00210001128497
+2       797160           84 2024-10-28 13:29:24  00210001562430    00210001109282
+3       814620           55                 NaT  00210001562242              None
+4       836861          134 2024-11-05 13:22:30  00210001560155    00210001144948
+..         ...          ...                 ...             ...               ...
+98     2176801            1 2024-10-31 09:10:50  00210001556178    00210001124744
+99     2177808            1 2024-11-06 09:34:37  00210001564220    00210001148260
+100    2177978            3 2024-10-31 15:52:54  00210001588563    00210001129441
+101    2178038            2 2024-10-30 11:11:28  00210001576583    00210000052036
+102    2180182            1 2024-10-31 14:23:52  00210001587278    00210001128209
+
+[103 rows x 5 columns]
+data source setelah join ke billing yang dari EHR
+fix source data types
+PatientID                     int64
+AdmissionID                   int64
+FormNumber                    int64
+RegistrationNo               object
+FormStatus                   object
+Type                         object
+ObjID                        object
+ObjName                      object
+DoctorID                      int64
+DoctorName                   object
+Hospital                     object
+FormCreatedDate      datetime64[ns]
+OrgID                         int64
+ParentOrgID                 float64
+BillingTransactID            object
+BillingID                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+PayplanID                    object
+TissueSource                 object
+DiagnosticHistory            object
+PADiagnose                   object
+dtype: object
+     PatientID  AdmissionID  FormNumber RegistrationNo  ... PayplanID TissueSource DiagnosticHistory PADiagnose
+0       578523           16       44631      C24-04434  ...        71    lain_lain                 -       None
+1       606372           25       44384      C24-04395  ...        71     aspirasi     SINOSIS HEPAR       None
+2       797160           84       44188      C24-04362  ...        71    lain_lain                 -       None
+3       814620           55       44185      C24-04361  ...         8     aspirasi                 -       None
+4       836861          134       44515      C24-04416  ...        71    lain_lain      EFUSI PLEURA       None
+..         ...          ...         ...            ...  ...       ...          ...               ...        ...
+98     2176801            1       44371      C24-04393  ...        71     aspirasi      STENOSIS CBD       None
+99     2177808            1       44489      C24-04408  ...        71     aspirasi      EFUSI PLEURA       None
+100    2177978            3       44618      C24-04432  ...        71     aspirasi              SNNT       None
+101    2178038            2       44425      C24-04402  ...         8     aspirasi                 -       None
+102    2180182            1       44591      C24-04427  ...        71       apusan        SERVISITIS       None
+
+[88 rows x 22 columns]
+PatientID            object
+AdmissionID          object
+FormNumber           object
+RegistrationNo       object
+FormStatus           object
+Type                 object
+ObjID                object
+ObjName              object
+DoctorID             object
+DoctorName           object
+Hospital             object
+FormCreatedDate      object
+OrgID                object
+ParentOrgID          object
+BillingTransactID    object
+BillingID            object
+AdmissionDate        object
+TransactionDate      object
+PayplanID            object
+TissueSource         object
+DiagnosticHistory    object
+PADiagnose           object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, RegistrationNo, FormStatus, Type, ObjID, ObjName, DoctorID, DoctorName, Hospital, FormCreatedDate, OrgID, ParentOrgID, BillingTransactID, BillingID, AdmissionDate, TransactionDate, PayplanID, TissueSource, DiagnosticHistory, PADiagnose]
+Index: []
+total row inserted : 88
+     PatientID  AdmissionID  FormNumber RegistrationNo  ... PayplanID TissueSource DiagnosticHistory PADiagnose
+0       578523           16       44631      C24-04434  ...        71    lain_lain                 -       None
+1       606372           25       44384      C24-04395  ...        71     aspirasi     SINOSIS HEPAR       None
+2       797160           84       44188      C24-04362  ...        71    lain_lain                 -       None
+3       814620           55       44185      C24-04361  ...         8     aspirasi                 -       None
+4       836861          134       44515      C24-04416  ...        71    lain_lain      EFUSI PLEURA       None
+..         ...          ...         ...            ...  ...       ...          ...               ...        ...
+98     2176801            1       44371      C24-04393  ...        71     aspirasi      STENOSIS CBD       None
+99     2177808            1       44489      C24-04408  ...        71     aspirasi      EFUSI PLEURA       None
+100    2177978            3       44618      C24-04432  ...        71     aspirasi              SNNT       None
+101    2178038            2       44425      C24-04402  ...         8     aspirasi                 -       None
+102    2180182            1       44591      C24-04427  ...        71       apusan        SERVISITIS       None
+
+[88 rows x 22 columns]
+success insert without update
+30.97403907775879
+
+
+scheduler tanggal : 2024-11-28 13:47:09.518938

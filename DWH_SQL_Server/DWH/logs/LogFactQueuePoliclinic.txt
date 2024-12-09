@@ -1,0 +1,40 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              4743539              0  ...           0            NaT
+1              4743904              0  ...           0            NaT
+2              4743795              0  ...           0            NaT
+3              4743932              0  ...           0            NaT
+4              4743982              0  ...           0            NaT
+..                 ...            ...  ...         ...            ...
+483            4743613              0  ...           0            NaT
+484            4743700              0  ...           0            NaT
+485            4743695              0  ...           0            NaT
+486            4743883              0  ...           0            NaT
+487            4743865              0  ...           0            NaT
+
+[488 rows x 35 columns]
+total row update : 1
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+391            4743643              0  ...           0            NaT
+
+[1 rows x 35 columns]
+total row inserted : 155
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+1              4743904              0  ...           0            NaT
+3              4743932              0  ...           0            NaT
+4              4743982              0  ...           0            NaT
+5              4743909              0  ...           0            NaT
+6              4743987              0  ...           0            NaT
+..                 ...            ...  ...         ...            ...
+449            4743871              0  ...           0            NaT
+479            4743880              0  ...           0            NaT
+482            4743867              0  ...           0            NaT
+486            4743883              0  ...           0            NaT
+487            4743865              0  ...           0            NaT
+
+[155 rows x 35 columns]
+UPDATE r SET r.PatientSurrogateKeyID = t.PatientSurrogateKeyID, r.Method = t.Method, r.QueueNum = t.QueueNum, r.QueueDate = t.QueueDate, r.DestOrgSurrogateKeyID = t.DestOrgSurrogateKeyID, r.ParentOrgID = t.ParentOrgID, r.StatusCode = t.StatusCode, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.CallDate = t.CallDate, r.CallBy = t.CallBy, r.CallTotal = t.CallTotal, r.NurseStartDate = t.NurseStartDate, r.NurseStopDate = t.NurseStopDate, r.NurseIDStart = t.NurseIDStart, r.NurseIDStop = t.NurseIDStop, r.DocIDStart = t.DocIDStart, r.DocIDStop = t.DocIDStop, r.StatusCodeAnalis = t.StatusCodeAnalis, r.CallTotalAnalis = t.CallTotalAnalis, r.CallDateAnalis = t.CallDateAnalis, r.AnalisID = t.AnalisID, r.AnalisIDStart = t.AnalisIDStart, r.AnalisIDStop = t.AnalisIDStop, r.AnalisStartDate = t.AnalisStartDate, r.AnalisStopDate = t.AnalisStopDate, r.UpdateDate = t.UpdateDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactQueuePoliclinic r INNER JOIN (SELECT * FROM dwhrscm_talend.FactQueuePoliclinic_temporary_table) as t ON r.QueuePoliclinicID = t.QueuePoliclinicID AND r.AppointmentID = t.AppointmentID AND r.ActID = t.ActID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.DestOrgID = t.DestOrgID WHERE r.QueuePoliclinicID = t.QueuePoliclinicID AND r.AppointmentID = t.AppointmentID AND r.ActID = t.ActID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.DestOrgID = t.DestOrgID ;
+DROP TABLE dwhrscm_talend.FactQueuePoliclinic_temporary_table
+success update and insert all data
+11.156250953674316

@@ -1,0 +1,100 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
+              OrderID       AdmissionDate  ... PayplanKemkes Type
+0      00210000522193 2024-01-20 11:31:17  ...          BPJS    P
+1      00210000555046 2024-01-20 09:49:12  ...          BPJS    P
+2      00210000555046 2024-01-20 09:49:12  ...          BPJS    P
+3      00210000490092 2024-01-20 23:17:34  ...          BPJS    P
+4      00210000490093 2024-01-20 23:17:34  ...          BPJS    P
+...               ...                 ...  ...           ...  ...
+89328  00210000565876 2023-12-22 14:07:04  ...          BPJS    P
+89329  00210000565877 2023-12-22 14:07:04  ...          BPJS    P
+89330  00210000565880 2024-01-10 14:35:15  ...          BPJS    P
+89331  00210000565880 2024-01-10 14:35:15  ...          BPJS    P
+89332  00210000565881 2024-01-10 14:35:15  ...          BPJS    P
+
+[89333 rows x 17 columns]
+              OrderID       AdmissionDate  ...    Tarif      JM
+0      00210000522193 2024-01-20 11:31:17  ...   142000   56000
+1      00210000555046 2024-01-20 09:49:12  ...  1339000   75000
+2      00210000555046 2024-01-20 09:49:12  ...  1339000  500000
+3      00210000490092 2024-01-20 23:17:34  ...    75000   14876
+4      00210000490093 2024-01-20 23:17:34  ...   100000    4000
+...               ...                 ...  ...      ...     ...
+89328  00210000565876 2023-12-22 14:07:04  ...    56000    7000
+89329  00210000565877 2023-12-22 14:07:04  ...     5000       -
+89330  00210000565880 2024-01-10 14:35:15  ...   218000   25000
+89331  00210000565880 2024-01-10 14:35:15  ...   218000    4000
+89332  00210000565881 2024-01-10 14:35:15  ...    22000       -
+
+[89333 rows x 10 columns]
+OrderID                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+MedicalNo                object
+OrgName                  object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+Tarif                    object
+JM                       object
+PayplanName              object
+EmployeeID              float64
+PersonName               object
+NIK                      object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+OrderID                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+MedicalNo                object
+OrgName                  object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+Tarif                    object
+JM                       object
+PayplanName              object
+EmployeeID                int64
+PersonName               object
+NIK                      object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+total row update : 1771
+              OrderID  ...           ObjID
+31     00210000490109  ...  MSRVx000000258
+1244   00210000492432  ...  PROCx000043627
+1245   00210000492432  ...  PROCx000043627
+1246   00210000492432  ...  PROCx000043627
+1247   00210000492432  ...  PROCx000043627
+...               ...  ...             ...
+83827  00210000527762  ...  PROCx000044691
+84872  00210000529902  ...  PROCx000044691
+84873  00210000529902  ...  PROCx000044691
+85336  00210000530551  ...  PROCx000044691
+85337  00210000530551  ...  PROCx000044691
+
+[1771 rows x 6 columns]
+total row inserted : 37711
+              OrderID  ...           ObjID
+1      00210000555046  ...  PROCx000042164
+2      00210000555046  ...  PROCx000042164
+59     00210000546467  ...  PROCx000044237
+771    00210000563206  ...  PROCx000044231
+1251   00210000560316  ...  PROCx000042487
+...               ...  ...             ...
+89328  00210000565876  ...  LAB_x000003354
+89329  00210000565877  ...  MDEVx000002417
+89330  00210000565880  ...  LAB_x000003098
+89331  00210000565880  ...  LAB_x000003098
+89332  00210000565881  ...  MDEVx000002410
+
+[37711 rows x 6 columns]
+UPDATE FactMedicalServiceOrder r INNER JOIN (SELECT * FROM FactMedicalServiceOrder_temporary_table) as t ON r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo SET r.AdmissionDate = t.AdmissionDate, r.OrderDate = t.OrderDate, r.MedicalNo = t.MedicalNo, r.OrgName = t.OrgName, r.ObjID = t.ObjID, r.ObjName = t.ObjName, r.Tarif = t.Tarif, r.JM = t.JM, r.PayplanName = t.PayplanName, r.EmployeeID = t.EmployeeID, r.PersonName = t.PersonName, r.NIK = t.NIK, r.CategoryName = t.CategoryName, r.PayplanKemkes = t.PayplanKemkes, r.Type = t.Type WHERE r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo ;
+success update and insert all data
+146.84788131713867
+scheduler tanggal : 2024-01-24 05:00:01.808547

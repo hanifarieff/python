@@ -1,0 +1,8 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+Empty DataFrame
+Columns: [ID, ObjID, KfaID, KfaCode, KfaName, StatusCode, CreatedUserID, CreatedDate, UpdateUserID, UpdateDate]
+Index: []
+tidak ada data dari source
+0.7656264305114746
+scheduler tanggal : 2024-12-09 01:00:02.043520

@@ -1,0 +1,38 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+0      162120461     560708  ...            Normal          normal
+1      162121684      67515  ...            Normal          normal
+2      162141829     616132  ...  Obesitas grade 2          normal
+3      162184001     144573  ...            Normal          normal
+4      162123731      87876  ...             Kurus          normal
+...          ...        ...  ...               ...             ...
+4152   162138226    2210429  ...        Overweight          normal
+4153   162164604    2210648  ...             Kurus          normal
+4154   162158675    2210705  ...        Overweight          normal
+4155   162120109     690908  ...  Obesitas grade 1          normal
+4156   162127896      66026  ...  Obesitas grade 1          normal
+
+[4157 rows x 9 columns]
+total row update : 0
+Empty DataFrame
+Columns: [OrderObsID, PatientID, AdmissionID, ObservationDate, PanelName, BMI, BMIStatus, BMIDetail, BMIDetailStatus]
+Index: []
+total row inserted : 196
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+3      162184001     144573  ...            Normal          normal
+25     162181392     775931  ...            Normal          normal
+173    162186320     696757  ...            Normal          normal
+183    162186177     109597  ...            Normal          normal
+243    162185078    1006580  ...  Obesitas grade 1          normal
+...          ...        ...  ...               ...             ...
+4078   162179943    2170425  ...             Kurus          normal
+4083   162177166    2173566  ...        Overweight          normal
+4096   162182051    2184767  ...  Obesitas grade 2          normal
+4125   162180115    2196123  ...  Obesitas grade 1          normal
+4133   162180670    2204248  ...  Obesitas grade 1          normal
+
+[196 rows x 9 columns]
+success insert without update
+4.249992370605469
+scheduler tanggal : 2024-12-09 03:40:01.834892

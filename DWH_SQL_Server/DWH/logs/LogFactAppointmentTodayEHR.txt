@@ -1,0 +1,167 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+      AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
+0          15073407           -          None  ...            0      -    1
+1          15073750           -          None  ...            0      -    1
+2          15074129           -          None  ...            0      -    1
+3          15074173           -          None  ...            0      -    1
+4          15074222           -          None  ...            0      -    1
+...             ...         ...           ...  ...          ...    ...  ...
+3643       15165779           -          None  ...            0      -    1
+3644       15165783           -          None  ...            0      -    1
+3645       15165786           -          None  ...            0      -    1
+3646       15165788           -          None  ...            0      -    1
+3647       15165790           -          None  ...            0      -    1
+
+[3648 rows x 33 columns]
+             CardNo
+0     0002361135666
+1     0001822976976
+2     0002886889263
+3     0001636273247
+4     0002072333114
+...             ...
+3643  0001718880311
+3644  0002490496863
+3645  0001255829016
+3646  0000816652359
+3647  0001100783867
+
+[3648 rows x 1 columns]
+ini filter kartu kosong
+      AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
+8          15074543           -          None  ...            0      -    1
+26         15077974           -          None  ...            0      -    1
+39         15080355           -          None  ...            0      -    1
+45         15083245           -          None  ...            0      -    1
+47         15083970           -          None  ...            0      -    1
+...             ...         ...           ...  ...          ...    ...  ...
+3643       15162267           -          None  ...            0      -    1
+3644       15162540           -          None  ...            0      -    1
+3645       15163129           -          None  ...            0      -    1
+3646       15163421           -          None  ...            0      -    1
+3647       15163506           -          None  ...            0      -    1
+
+[449 rows x 33 columns]
+ini source gabungan
+             CardNo
+0     0002361135666
+1     0001822976976
+2     0002886889263
+3     0001636273247
+4     0002072333114
+...             ...
+3643            NaN
+3644            NaN
+3645            NaN
+3646            NaN
+3647            NaN
+
+[3648 rows x 1 columns]
+AppointmentID                int64
+KodeBooking                 object
+AdmissionDate               object
+PatientID                    int64
+AdmissionID                  int64
+MedicalNo                   object
+PatientType                 object
+CardNo                      object
+SEPNo                       object
+ReferenceNo                 object
+NIK                         object
+PhoneNo                     object
+PoliCode                    object
+PoliName                    object
+NewPatient                  object
+DoctorCode                  object
+DoctorName                  object
+AppointmentDate             object
+AppointmentTime             object
+StatusAppointment           object
+DoctorPracticeStartTime     object
+DoctorPracticeFinishTime    object
+VisitType                   object
+AppointmentMethod           object
+QueueNumber                  int64
+QueueNo                      int64
+ServedEstimated             object
+RestQuotaJKN                 int64
+QuotaJKN                     int64
+RestQuotaNonJKN              int64
+QuotaNonJKN                  int64
+Notes                       object
+Flag                        object
+dtype: object
+AppointmentID                int64
+KodeBooking                 object
+AdmissionDate               object
+PatientID                    int64
+AdmissionID                  int64
+MedicalNo                   object
+PatientType                 object
+CardNo                      object
+SEPNo                       object
+ReferenceNo                 object
+NIK                         object
+PhoneNo                     object
+PoliCode                    object
+PoliName                    object
+NewPatient                  object
+DoctorCode                  object
+DoctorName                  object
+AppointmentDate             object
+AppointmentTime             object
+StatusAppointment           object
+DoctorPracticeStartTime     object
+DoctorPracticeFinishTime    object
+VisitType                   object
+AppointmentMethod           object
+QueueNumber                  int64
+QueueNo                      int64
+ServedEstimated             object
+RestQuotaJKN                 int64
+QuotaJKN                     int64
+RestQuotaNonJKN              int64
+QuotaNonJKN                  int64
+Notes                       object
+Flag                        object
+dtype: object
+after join
+total row update : 656
+      AppointmentID KodeBooking  ... AdmissionID  MedicalNo
+11         15075117           -  ...           0  456-81-39
+15         15075950           -  ...           0  481-95-50
+18         15076180           -  ...           0  480-85-63
+46         15084667           -  ...           0  386-56-68
+64         15090149           -  ...           0  446-17-42
+...             ...         ...  ...         ...        ...
+3637       15159226           -  ...           0  483-19-68
+3640       15161880           -  ...           0  483-26-18
+3642       15162267           -  ...           0  483-26-30
+3643       15162267           -  ...           0  483-26-30
+3645       15163129           -  ...           0  483-27-10
+
+[656 rows x 6 columns]
+total row inserted : 116
+      AppointmentID KodeBooking  ... AdmissionID  MedicalNo
+3086       15165342           -  ...           0  414-49-59
+3087       15165347           -  ...           0  458-07-66
+3088       15165352           -  ...           0  472-43-54
+3089       15165353           -  ...           0  477-58-47
+3090       15165354           -  ...           0  479-65-85
+...             ...         ...  ...         ...        ...
+3197       15165788           -  ...           0  481-76-29
+3198       15165790           -  ...           0  482-35-10
+3619       15165511           -  ...           0  482-28-65
+3620       15165664           -  ...           0  480-66-99
+3621       15165669           -  ...           0  375-91-91
+
+[116 rows x 6 columns]
+UPDATE r SET r.KodeBooking = t.KodeBooking, r.AdmissionDate = t.AdmissionDate, r.MedicalNo = t.MedicalNo, r.PatientType = t.PatientType, r.CardNo = t.CardNo, r.SEPNo = t.SEPNo, r.ReferenceNo = t.ReferenceNo, r.NIK = t.NIK, r.PhoneNo = t.PhoneNo, r.PoliCode = t.PoliCode, r.PoliName = t.PoliName, r.NewPatient = t.NewPatient, r.DoctorCode = t.DoctorCode, r.DoctorName = t.DoctorName, r.AppointmentDate = t.AppointmentDate, r.AppointmentTime = t.AppointmentTime, r.StatusAppointment = t.StatusAppointment, r.DoctorPracticeStartTime = t.DoctorPracticeStartTime, r.DoctorPracticeFinishTime = t.DoctorPracticeFinishTime, r.VisitType = t.VisitType, r.AppointmentMethod = t.AppointmentMethod, r.QueueNumber = t.QueueNumber, r.QueueNo = t.QueueNo, r.ServedEstimated = t.ServedEstimated, r.RestQuotaJKN = t.RestQuotaJKN, r.QuotaJKN = t.QuotaJKN, r.RestQuotaNonJKN = t.RestQuotaNonJKN, r.QuotaNonJKN = t.QuotaNonJKN, r.Notes = t.Notes , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactAppointmentNextDay r INNER JOIN (SELECT * FROM dwhrscm_talend.FactAppointmentNextDay_temporary_table) as t ON r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag WHERE r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag ;
+(pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_FactAppointmentQueueNextDay'. Cannot insert duplicate key in object 'dwhrscm_talend.FactAppointmentNextDay'. The duplicate key value is (15165493, 2204900, 0, 1). (2627) (SQLParamData); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_FactAppointmentQueueNextDay'. Cannot insert duplicate key in object 'dwhrscm_talend.FactAppointmentNextDay'. The duplicate key value is (15165752, 1156076, 0, 1). (2627); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO dwhrscm_talend.[FactAppointmentNextDay] ([AppointmentID], [KodeBooking], [AdmissionDate], [PatientID], [AdmissionID], [MedicalNo], [PatientType], [CardNo], [SEPNo], [ReferenceNo], [NIK], [PhoneNo], [PoliCode], [PoliName], [NewPatient], [DoctorCode], [DoctorName], [AppointmentDate], [AppointmentTime], [StatusAppointment], [DoctorPracticeStartTime], [DoctorPracticeFinishTime], [VisitType], [AppointmentMethod], [QueueNumber], [QueueNo], [ServedEstimated], [RestQuotaJKN], [QuotaJKN], [RestQuotaNonJKN], [QuotaNonJKN], [Notes], [Flag], [InsertedDateDWH]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((15165342, '-', None, 1018988, 0, '414-49-59', 'JKN', '0001833161466', '-', '0114R0521024B000210', '1771074303860004', '081298388916', '004', 'ALERGI-IMMUNOLOGI KLINIK', '0', '211061', 'Suzy Maria, dr., Sp.PD, Subsp.A.I.(K)', datetime.datetime(2024, 12, 9, 0, 0), '13:01:00', 'normal', '13:01:00', '14:00:00', '2', 'rscmku', 87, 87, '2024-12-09 13:01:00', 2, 12, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165347, '-', None, 1494012, 0, '458-07-66', 'JKN', '0002880936461', '-', '0113R0710924B000440', '3175092807190002', '081293939635', 'IRM', 'REHABILITASI MEDIK', '0', '24565', 'Melinda Harini, dr., Sp.K.F.R, Subsp.Ger.(K)', datetime.datetime(2024, 12, 9, 0, 0), '13:00:00', 'normal', '13:00:00', '14:00:00', '2', 'rscmku', 31, 31, '2024-12-09 13:00:00', 0, 5, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165352, '-', None, 2063413, 0, '472-43-54', 'JKN', '0003047049628', '-', '0114R0671124B000028', '1208056508920002', '085359515605', '168', 'RADIOTERAPI', '0', '469173', 'Handoko, Dr., dr., B.Med. Sci, Sp.Onk.Rad(K)', datetime.datetime(2024, 12, 9, 0, 0), '07:00:00', 'normal', '07:00:00', '17:00:00', '2', 'rscmku', 98, 98, '2024-12-09 07:00:00', 25, 35, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165353, '-', None, 1935145, 0, '477-58-47', 'JKN', '0000377018987', '-', '0905R0011024B000338', '3172031411710005', '082111695908', '015', 'KARDIOVASKULAR', '0', '264269', 'Rubiana Sukardi, Dr., dr., SpA(K)', datetime.datetime(2024, 12, 9, 0, 0), '09:01:00', 'normal', '09:01:00', '10:00:00', '2', 'rscmku', 166, 166, '2024-12-09 09:01:00', 0, 5, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165354, '-', None, 2051748, 0, '479-65-85', 'JKN', '0000041065143', '-', '0132R0251224B000143', '3216066508750019', '085888250070', '021', 'ONKOLOGI GINEKOLOGI', '0', '20491', 'Fitriyadi Kusuma, Dr.dr., SpOG, Subsp.Onk(K)', datetime.datetime(2024, 12, 9, 0, 0), '09:00:00', 'normal', '09:00:00', '10:00:00', '2', 'rscmku', 53, 53, '2024-12-09 09:00:00', 1, 25, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165364, '-', None, 2080039, 0, '480-52-32', 'JKN', '0002137606571', '-', '0115S0051024B000018', '3173016304950004', '3173016304950004', '005', 'GASTROENTEROLOGI-HEPATOLOGI', '0', '20131', 'Murdani Abdullah, Prof, Dr., dr., SpPD-KGEH', datetime.datetime(2024, 12, 9, 0, 0), '10:01:00', 'normal', '10:01:00', '11:00:00', '2', 'rscmku', 70, 70, '2024-12-09 10:01:00', 2, 15, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165370, '-', None, 1420256, 0, '453-54-07', 'JKN', '0001889067756', '-', '0137R0650924B000200', '3275084704600008', '085233450055', '004', 'ALERGI-IMMUNOLOGI KLINIK', '0', '211061', 'Suzy Maria, dr., Sp.PD, Subsp.A.I.(K)', datetime.datetime(2024, 12, 9, 0, 0), '13:01:00', 'normal', '13:01:00', '14:00:00', '2', 'rscmku', 88, 88, '2024-12-09 13:01:00', 2, 12, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165371, '-', None, 1739648, 0, '473-66-58', 'JKN', '0001213664984', '-', '0113R0311224B000130', '3175032710050007', '08811811377', '007', 'GINJAL-HIPERTENSI', '0', '20245', 'Maruhum Bonar H.M., Dr. dr., SpPD, K-GH', datetime.datetime(2024, 12, 9, 0, 0), '10:01:00', 'normal', '10:01:00', '11:00:00', '2', 'rscmku', 101, 101, '2024-12-09 10:01:00', 0, 15, 0, 0, '-', '1', '2024-12-09 04:56:32')  ... displaying 10 of 116 total bound parameter sets ...  (15165664, '-', None, 2090203, 0, '480-66-99', 'JKN', '0002311558874', '-', '0470R0001024B000126', '3604280208970106', '085814811282', '135', 'VITREO - RETINA', '0', '273096', 'Gitalisa Andayani, Dr. dr., SpM(K)', datetime.datetime(2024, 12, 9, 0, 0), '23:06:48', 'normal', '11:01:00', '12:00:00', '2', 'langsung', 0, 0, '2024-12-09 23:06:48', 0, 8, 0, 0, '-', '1', '2024-12-09 04:56:32'), (15165669, '-', None, 778643, 0, '375-91-91', 'JKN', '0002032267386', '-', '0137S0051124B000039', '3175101711660002', '081282939804', '133', 'KORNEA, LENSA DAN BEDAH REFRAKTIF', '0', '252040', 'Jessica Zarwan, dr., Sp.M, Subsp.K.B.R', datetime.datetime(2024, 12, 9, 0, 0), '14:00:00', 'normal', '14:00:00', '15:00:00', '2', 'rscmku', 59, 59, '2024-12-09 14:00:00', 0, 8, 0, 0, '-', '1', '2024-12-09 04:56:32'))]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+90.48243641853333
+scheduler tanggal : 2024-12-09 04:55:01.771599

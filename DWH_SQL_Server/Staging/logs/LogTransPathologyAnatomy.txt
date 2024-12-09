@@ -1,0 +1,42 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+     RegistrationNo    OrderID  ...  FinalUserID           FinalDate
+0         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
+1         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
+2         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
+3         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
+4         H24-03866  161509875  ...      10069.0 2024-11-19 16:42:43
+...             ...        ...  ...          ...                 ...
+5185      H24-15386  162160598  ...   92700099.0 2024-12-07 10:47:01
+5186      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
+5187      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
+5188      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
+5189      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
+
+[5190 rows x 14 columns]
+0       Pulasan imunohistokimia untuk penegakan diagno...
+1       I-II. Histologik sesuai dengan Neoplasma sel s...
+2                                        Kidney NOS C64.9
+3                                                  8000/3
+4       - Korelasi klinis dan serologis.\n- Pemeriksaa...
+                              ...                        
+5185                                                     
+5186    Pemeriksaan imunohistokimia MMR (pada blok III...
+5187    I-III. Operasi, rektosigmoid: \nHistologik ses...
+5188                                        Histopatologi
+5189                                                     
+Name: ObsValue, Length: 5190, dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, PanelID, PanelName, ObjID, ObjName, ObsValue, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate]
+Index: []
+total row inserted : 0
+Empty DataFrame
+Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, PanelID, PanelName, ObjID, ObjName, ObsValue, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate]
+Index: []
+tidak ada data yang baru dan berubah
+12.296873569488525
+
+
+scheduler tanggal : 2024-12-09 04:00:01.664086

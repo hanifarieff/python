@@ -1,0 +1,152 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+      AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
+0          15073377           -          None  ...            0      -    1
+1          15073491           -          None  ...            0      -    1
+2          15073540           -          None  ...            0      -    1
+3          15073810           -          None  ...            0      -    1
+4          15073971           -          None  ...            0      -    1
+...             ...         ...           ...  ...          ...    ...  ...
+3228       15168574           -          None  ...            0      -    1
+3229       15168577           -          None  ...            0      -    1
+3230       15168587           -          None  ...            0      -    1
+3231       15168590           -          None  ...            0      -    1
+3232       15168606           -          None  ...            0      -    1
+
+[3233 rows x 33 columns]
+             CardNo
+0     0002219729297
+1     0001373403633
+2     0001873117833
+3     0001389092354
+4     0001409932135
+...             ...
+3228  0001815281201
+3229  0001845774819
+3230              -
+3231  0003631292864
+3232              -
+
+[3233 rows x 1 columns]
+ini filter kartu kosong
+      AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
+20         15075520           -          None  ...            0      -    1
+96         15096678           -          None  ...            0      -    1
+136        15100731           -          None  ...            0      -    1
+145        15103003           -          None  ...            0      -    1
+178        15105330           -          None  ...            0      -    1
+...             ...         ...           ...  ...          ...    ...  ...
+3228       15163833           -          None  ...            0      -    1
+3229       15164653           -          None  ...            0      -    1
+3230       15165456           -          None  ...            0      -    1
+3231       15166939           -          None  ...            0      -    1
+3232       15168606           -          None  ...            0      -    1
+
+[345 rows x 33 columns]
+ini source gabungan
+             CardNo
+0     0002219729297
+1     0001373403633
+2     0001873117833
+3     0001389092354
+4     0001409932135
+...             ...
+3228            NaN
+3229            NaN
+3230            NaN
+3231            NaN
+3232            NaN
+
+[3233 rows x 1 columns]
+AppointmentID                int64
+KodeBooking                 object
+AdmissionDate               object
+PatientID                    int64
+AdmissionID                  int64
+MedicalNo                   object
+PatientType                 object
+CardNo                      object
+SEPNo                       object
+ReferenceNo                 object
+NIK                         object
+PhoneNo                     object
+PoliCode                    object
+PoliName                    object
+NewPatient                  object
+DoctorCode                  object
+DoctorName                  object
+AppointmentDate             object
+AppointmentTime             object
+StatusAppointment           object
+DoctorPracticeStartTime     object
+DoctorPracticeFinishTime    object
+VisitType                   object
+AppointmentMethod           object
+QueueNumber                  int64
+QueueNo                      int64
+ServedEstimated             object
+RestQuotaJKN                 int64
+QuotaJKN                     int64
+RestQuotaNonJKN              int64
+QuotaNonJKN                  int64
+Notes                       object
+Flag                        object
+dtype: object
+AppointmentID               object
+KodeBooking                 object
+AdmissionDate               object
+PatientID                   object
+AdmissionID                 object
+MedicalNo                   object
+PatientType                 object
+CardNo                      object
+SEPNo                       object
+ReferenceNo                 object
+NIK                         object
+PhoneNo                     object
+PoliCode                    object
+PoliName                    object
+NewPatient                  object
+DoctorCode                  object
+DoctorName                  object
+AppointmentDate             object
+AppointmentTime             object
+StatusAppointment           object
+DoctorPracticeStartTime     object
+DoctorPracticeFinishTime    object
+VisitType                   object
+AppointmentMethod           object
+QueueNumber                 object
+QueueNo                     object
+ServedEstimated             object
+RestQuotaJKN                object
+QuotaJKN                    object
+RestQuotaNonJKN             object
+QuotaNonJKN                 object
+Notes                       object
+Flag                        object
+dtype: object
+after join
+total row update : 0
+Empty DataFrame
+Columns: [AppointmentID, KodeBooking, AdmissionDate, PatientID, AdmissionID, MedicalNo]
+Index: []
+total row inserted : 3233
+      AppointmentID KodeBooking  ... AdmissionID  MedicalNo
+0          15073377           -  ...           0  468-20-01
+1          15073491           -  ...           0  431-63-52
+2          15073540           -  ...           0  442-58-63
+3          15073810           -  ...           0  453-62-09
+4          15073971           -  ...           0  480-85-65
+...             ...         ...  ...         ...        ...
+3228       15163833           -  ...           0  483-24-58
+3229       15164653           -  ...           0  483-23-94
+3230       15165456           -  ...           0  482-07-39
+3231       15166939           -  ...           0  483-27-62
+3232       15168606           -  ...           0  483-06-34
+
+[3233 rows x 6 columns]
+success insert all data without update
+63.849003076553345
+scheduler tanggal : 2024-12-09 14:00:01.859200

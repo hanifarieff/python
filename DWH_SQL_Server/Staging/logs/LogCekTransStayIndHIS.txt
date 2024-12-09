@@ -1,0 +1,7 @@
+successfully connect to HIS & DWH SQL Server database
+Empty DataFrame
+Columns: [PatientID, AdmissionID, MedicalNo, AdmissionDate, StayInd, Flag]
+Index: []
+tidak ada row yang bisa di proses karena source kosong
+0.9229962825775146
+scheduler tanggal : 2023-01-24 09:37:10.756203

@@ -1,0 +1,41 @@
+successfully connect to HIS & DWH SQL Server database
+     PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0         4327          152  288-00-55 2022-12-05 14:23:27       n     2
+1         9480           26  302-08-24 2022-12-05 07:38:59       y     2
+2        18152          258  318-06-45 2022-12-05 10:34:50       n     2
+3        26533           37  318-10-35 2022-12-05 07:04:42       n     2
+4        35960          104  327-62-31 2022-12-05 06:40:00       n     2
+..         ...          ...        ...                 ...     ...   ...
+585    1619241            1  464-67-22 2022-12-05 18:12:53       n     2
+586    1619242            1  464-67-23 2022-12-05 18:16:59       n     2
+587    1619244            1  464-67-24 2022-12-05 18:49:33       n     2
+588    1619253            1  464-67-25 2022-12-05 20:45:18       y     2
+589    1619258            1  464-67-26 2022-12-05 22:20:27       y     2
+
+[590 rows x 6 columns]
+total row update : 3
+     PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+253    1425193           12  453-66-17 2022-12-05 22:03:03       n     2
+516    1616999            2  464-63-50 2022-12-02 15:00:00       y     2
+530    1618546            1  464-66-16 2022-12-02 16:36:17       y     2
+total row inserted : 587
+     PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0         4327          152  288-00-55 2022-12-05 14:23:27       n     2
+1         9480           26  302-08-24 2022-12-05 07:38:59       y     2
+2        18152          258  318-06-45 2022-12-05 10:34:50       n     2
+3        26533           37  318-10-35 2022-12-05 07:04:42       n     2
+4        35960          104  327-62-31 2022-12-05 06:40:00       n     2
+..         ...          ...        ...                 ...     ...   ...
+585    1619241            1  464-67-22 2022-12-05 18:12:53       n     2
+586    1619242            1  464-67-23 2022-12-05 18:16:59       n     2
+587    1619244            1  464-67-24 2022-12-05 18:49:33       n     2
+588    1619253            1  464-67-25 2022-12-05 20:45:18       y     2
+589    1619258            1  464-67-26 2022-12-05 22:20:27       y     2
+
+[587 rows x 6 columns]
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.AdmissionDate = s.AdmissionDate, t.StayInd = s.StayInd FROM staging_rscm.TransPatientStay t INNER JOIN (SELECT * from staging_rscm.TransPatientStay_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag;
+
+
+success update dan insert
+234.20676279067993
+scheduler tanggal : 2022-12-06 08:40:25.350654

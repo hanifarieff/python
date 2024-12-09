@@ -1,0 +1,103 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+     PatientID  ...                                         PADiagnose
+0       215638  ...                                                  -
+1       303965  ...            LIMFADENOPATI COLLI DEXTRA SUSP LIMFOMA
+2       347193  ...  HIPERPLASIA PROSTAT DENGAN FOKUS ATIPICAL SMAL...
+3       439433  ...                                                  -
+4       439433  ...                                                  -
+..         ...  ...                                                ...
+260    2180533  ...                                                  -
+261    2180549  ...                                                  -
+262    2180563  ...                                                  -
+263    2180664  ...                                                  -
+264    2180758  ...                                 SUSP ADENO CA PARU
+
+[265 rows x 22 columns]
+     PatientID  AdmissionID     TransactionDate       BillingID BillingTransactID
+0       215638           39 2024-11-19 23:05:41  00210001531979    00210001206542
+1       303965           12 2024-10-24 12:04:41  00210001542869    00210001095889
+2       347193          286 2024-10-28 16:31:55  00210001564248    00210001111570
+3       439433            6 2024-10-30 11:50:18  00210001577277    00210001120305
+4       439433            6                 NaT             NaN               NaN
+..         ...          ...                 ...             ...               ...
+271    2180533            1 2024-10-31 10:48:22  00210001584370    00210001125769
+272    2180549            1 2024-10-31 10:55:52  00210001584526    00210001125858
+273    2180563            1 2024-10-31 11:03:25  00210001584653    00210001125968
+274    2180664            1 2024-10-31 15:49:19  00210001588548    00210001129390
+275    2180758            1 2024-10-31 16:13:41  00210001588677    00210001129619
+
+[276 rows x 5 columns]
+data source setelah join ke billing yang dari EHR
+fix source data types
+PatientID                     int64
+AdmissionID                   int64
+FormNumber                    int64
+RegistrationNo               object
+FormStatus                   object
+Type                         object
+ObjID                        object
+ObjName                      object
+DoctorID                      int64
+DoctorName                   object
+Hospital                     object
+FormCreatedDate      datetime64[ns]
+OrgID                         int64
+ParentOrgID                 float64
+BillingTransactID            object
+BillingID                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+PayplanID                    object
+TissueSource                 object
+DiagnosticHistory            object
+PADiagnose                   object
+dtype: object
+PatientID            object
+AdmissionID          object
+FormNumber           object
+RegistrationNo       object
+FormStatus           object
+Type                 object
+ObjID                object
+ObjName              object
+DoctorID             object
+DoctorName           object
+Hospital             object
+FormCreatedDate      object
+OrgID                object
+ParentOrgID          object
+BillingTransactID    object
+BillingID            object
+AdmissionDate        object
+TransactionDate      object
+PayplanID            object
+TissueSource         object
+DiagnosticHistory    object
+PADiagnose           object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, RegistrationNo, FormStatus, Type, ObjID, ObjName, DoctorID, DoctorName, Hospital, FormCreatedDate, OrgID, ParentOrgID, BillingTransactID, BillingID, AdmissionDate, TransactionDate, PayplanID, TissueSource, DiagnosticHistory, PADiagnose]
+Index: []
+total row inserted : 268
+     PatientID  ...                                         PADiagnose
+0       215638  ...                                                  -
+1       303965  ...            LIMFADENOPATI COLLI DEXTRA SUSP LIMFOMA
+2       347193  ...  HIPERPLASIA PROSTAT DENGAN FOKUS ATIPICAL SMAL...
+3       439433  ...                                                  -
+4       439433  ...                                                  -
+..         ...  ...                                                ...
+271    2180533  ...                                                  -
+272    2180549  ...                                                  -
+273    2180563  ...                                                  -
+274    2180664  ...                                                  -
+275    2180758  ...                                 SUSP ADENO CA PARU
+
+[268 rows x 22 columns]
+success insert without update
+67.93629908561707
+
+
+scheduler tanggal : 2024-11-28 13:27:59.993558

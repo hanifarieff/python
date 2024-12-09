@@ -1,0 +1,8 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+Empty DataFrame
+Columns: [BillingTransactID, CompanyName, PatientName, MedicalNo, AdmissionDate, TransactionDate, Status]
+Index: []
+tidak ada data dari source
+2.140624523162842
+scheduler tanggal : 2024-12-09 04:40:01.980515

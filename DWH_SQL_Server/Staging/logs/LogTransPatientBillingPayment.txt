@@ -1,0 +1,6 @@
+success connected to  Engine(mysql://hanif-ppi:***@172.16.6.10/mpi)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+Empty DataFrame
+Columns: [BillingTransactID, CompanyName, PatientID, AdmissionDate, TransactionDate, Status]
+Index: []

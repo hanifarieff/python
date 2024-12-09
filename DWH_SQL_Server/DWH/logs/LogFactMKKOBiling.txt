@@ -1,0 +1,46 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), '%%Y-%%m-%%d 00:00:00')
+DATE_FORMAT(NOW(), '%%Y-%%m-%%d 23:59:59')
+ini source
+       TransactionID PayplanGroup PayplanType
+0     00210000058760         umum     reguler
+1     00210000058761         umum     reguler
+2     00210000058764         umum     reguler
+3     00210000058765         umum     reguler
+4     00210000058766         umum     reguler
+...              ...          ...         ...
+1509         1048212   perusahaan     reguler
+1510         1048213   perusahaan     reguler
+1511         1048214   perusahaan     reguler
+1512         1048215   perusahaan     reguler
+1513         1048216   perusahaan     reguler
+
+[1514 rows x 3 columns]
+total row update : 3
+      TransactionID       BillingID        Amount  ... PatientID  AdmissionID Status
+271  00210001279354  00210001754286  5.343952e+07  ...   2193796            3  final
+287  00210001279403  00210001767869  5.420980e+07  ...   2207358            2  final
+325  00210001279653  00210001771345  2.529392e+07  ...   1215922           78  final
+
+[3 rows x 13 columns]
+total row inserted : 479
+       TransactionID       BillingID      Amount  ... PatientID  AdmissionID Status
+14    00210000058796  00210001795754    56000.00  ...   2211680            1  final
+222   00210001279738  00210001794951   924002.52  ...   1874870           19  final
+223   00210001279739  00210001794983   850314.81  ...   2136236           15  final
+224   00210001279744  00210001794843  3027211.19  ...   1713529           51  final
+225   00210001279745  00210001794797  4208297.71  ...   2210849            1  final
+...              ...             ...         ...  ...       ...          ...    ...
+1509         1048212         1119943    65000.00  ...   2211649            1  final
+1510         1048213         1119945    65000.00  ...   2211651            1  final
+1511         1048214         1119944    65000.00  ...   2211650            1  final
+1512         1048215         1119946    65000.00  ...   2211652            1  final
+1513         1048216         1119948    65000.00  ...   2211653            1  final
+
+[479 rows x 13 columns]
+UPDATE r SET r.Amount = t.Amount, r.TransactionDate = t.TransactionDate, r.PayplanID = t.PayplanID, r.PatientType = t.PatientType, r.PayplanGroup = t.PayplanGroup, r.PayplanType = t.PayplanType, r.PayplanNo = t.PayplanNo, r.RevenueType = t.RevenueType, r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.Status = t.Status , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactMKKOBilling r INNER JOIN (SELECT * FROM dwhrscm_talend.FactMKKOBilling_temporary_table) as t ON r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID  WHERE r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID ;
+success update and insert all data
+3.609379291534424
+scheduler tanggal : 2024-12-08 23:55:02.599432

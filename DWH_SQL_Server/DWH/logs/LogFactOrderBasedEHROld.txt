@@ -1,0 +1,145 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+              OrderID  PatientID  AdmissionID  EmployeeID  ... CategoryName PayplanKemkes Type  Status
+0      00210004888501     446554           10       820.0  ...     tindakan          BPJS    P  normal
+1      00210005291374    1732667           19      4624.0  ...     visitasi          BPJS    P  normal
+2      00210005423917    1194803          105      1794.0  ...     visitasi          BPJS    P  normal
+3      00210005424644    1929411           18        13.0  ...     tindakan          BPJS    P  normal
+4      00210005430168    2125627            3      3048.0  ...     tindakan          BPJS    P  normal
+...               ...        ...          ...         ...  ...          ...           ...  ...     ...
+48536  00210005906104    2114529            1      1670.0  ...     visitasi          BPJS    P  normal
+48537  00210005907147    2128835            1      7255.0  ...     visitasi          BPJS    P  normal
+48538  00210005907162    2128835            1      1467.0  ...     visitasi          BPJS    P  normal
+48539  00210005908474    1721033           65      8067.0  ...        jalan          BPJS    P  normal
+48540  00210005924572    1068790           77     13586.0  ...     tindakan          BPJS    P  normal
+
+[48541 rows x 32 columns]
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+EmployeeID                int64
+DoctorName               object
+KSM                      object
+NIP                      object
+NIK                      object
+PatientName              object
+MedicalNo                object
+SEPNo                    object
+OrgName                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+NullifiedDate    datetime64[ns]
+VerifiedDate             object
+ObjID                    object
+ObjName                  object
+ObjRoleName              object
+RoleNo                   object
+IDItem                   object
+MonthValue               object
+YearValue                object
+Tarif                   float64
+JasaMedis               float64
+JasaSarana              float64
+JasaRemun                object
+PayplanName              object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+Status                   object
+dtype: object
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+EmployeeID                int64
+DoctorName               object
+KSM                      object
+NIP                      object
+NIK                      object
+PatientName              object
+MedicalNo                object
+SEPNo                    object
+OrgName                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+NullifiedDate    datetime64[ns]
+VerifiedDate             object
+ObjID                    object
+ObjName                  object
+ObjRoleName              object
+RoleNo                   object
+IDItem                   object
+MonthValue               object
+YearValue                object
+Tarif                   float64
+JasaMedis               float64
+JasaSarana              float64
+JasaRemun                object
+PayplanName              object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+Status                   object
+dtype: object
+total row update : 457
+              OrderID  ...                                                KSM
+1196   00210005433347  ...                          Kelompok Staf Medis Bedah
+1289   00210005433580  ...                          Kelompok Staf Medis Bedah
+1451   00210005433974  ...                          Kelompok Staf Medis Bedah
+1653   00210005434513  ...                          Kelompok Staf Medis Bedah
+1901   00210005435028  ...                          Kelompok Staf Medis Bedah
+...               ...  ...                                                ...
+47317  00210005582910  ...                          Kelompok Staf Medis Bedah
+47514  00210005593160  ...  Kelompok Staf Medis Telinga Hidung dan Tenggor...
+47518  00210005593253  ...  Kelompok Staf Medis Telinga Hidung dan Tenggor...
+47667  00210005613895  ...                 Kelompok Staf Medis Kesehatan Anak
+48286  00210005732036  ...  Kelompok Staf Medis Telinga Hidung dan Tenggor...
+
+[457 rows x 6 columns]
+total row inserted : 40
+              OrderID  ...                                                KSM
+7382   00210005447970  ...               Kelompok Staf Medis Patologi Anatomi
+8339   00210005449972  ...               Kelompok Staf Medis Patologi Anatomi
+8516   00210005450406  ...                      Kelompok Staf Medis Radiologi
+10835  00210005455156  ...               Kelompok Staf Medis Patologi Anatomi
+11980  00210005457884  ...               Kelompok Staf Medis Patologi Anatomi
+12239  00210005458311  ...               Kelompok Staf Medis Patologi Anatomi
+12450  00210005458674  ...               Kelompok Staf Medis Patologi Anatomi
+12883  00210005459459  ...               Kelompok Staf Medis Patologi Anatomi
+19969  00210005473597  ...               Kelompok Staf Medis Patologi Anatomi
+21576  00210005476715  ...               Kelompok Staf Medis Patologi Anatomi
+23950  00210005481091  ...               Kelompok Staf Medis Patologi Anatomi
+24418  00210005481754  ...               Kelompok Staf Medis Patologi Anatomi
+25233  00210005483237  ...               Kelompok Staf Medis Patologi Anatomi
+26068  00210005484902  ...                      Kelompok Staf Medis Radiologi
+26132  00210005485050  ...                 Kelompok Staf Medis Kesehatan Anak
+26435  00210005485784  ...                      Kelompok Staf Medis Radiologi
+26748  00210005486378  ...               Kelompok Staf Medis Patologi Anatomi
+26856  00210005486647  ...                      Kelompok Staf Medis Radiologi
+27033  00210005487024  ...               Kelompok Staf Medis Patologi Anatomi
+27119  00210005487167  ...               Kelompok Staf Medis Patologi Anatomi
+27239  00210005487391  ...               Kelompok Staf Medis Patologi Anatomi
+27282  00210005487471  ...               Kelompok Staf Medis Patologi Anatomi
+34559  00210005501166  ...               Kelompok Staf Medis Patologi Anatomi
+35565  00210005503072  ...               Kelompok Staf Medis Patologi Anatomi
+36685  00210005505192  ...                      Kelompok Staf Medis Radiologi
+37229  00210005506125  ...               Kelompok Staf Medis Patologi Anatomi
+37531  00210005506687  ...               Kelompok Staf Medis Patologi Anatomi
+38139  00210005507809  ...                      Kelompok Staf Medis Radiologi
+41929  00210005514000  ...                      Kelompok Staf Medis Radiologi
+41930  00210005514002  ...                      Kelompok Staf Medis Radiologi
+42162  00210005514368  ...                      Kelompok Staf Medis Radiologi
+42781  00210005515536  ...                      Kelompok Staf Medis Radiologi
+43129  00210005516323  ...               Kelompok Staf Medis Patologi Anatomi
+47435  00210005590038  ...                            Instalasi Gawat Darurat
+48535  00210005905877  ...                 Kelompok Staf Medis Kesehatan Anak
+48536  00210005906104  ...  Kelompok Staf Medis Telinga Hidung dan Tenggor...
+48537  00210005907147  ...                 Kelompok Staf Medis Kesehatan Anak
+48538  00210005907162  ...                          Kelompok Staf Medis Bedah
+48539  00210005908474  ...               Kelompok Staf Medis Onkologi Radiasi
+48540  00210005924572  ...  Kelompok Staf Medis Kedokteran Fisik dan Rehab...
+
+[40 rows x 6 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.EmployeeID = t.EmployeeID, r.DoctorName = t.DoctorName, r.KSM = t.KSM, r.NIP = t.NIP, r.NIK = t.NIK, r.PatientName = t.PatientName, r.MedicalNo = t.MedicalNo, r.SEPNo = t.SEPNo, r.OrgName = t.OrgName, r.AdmissionDate = t.AdmissionDate, r.OrderDate = t.OrderDate, r.NullifiedDate = t.NullifiedDate, r.VerifiedDate = t.VerifiedDate, r.ObjID = t.ObjID, r.ObjName = t.ObjName, r.ObjRoleName = t.ObjRoleName, r.IDItem = t.IDItem, r.MonthValue = t.MonthValue, r.YearValue = t.YearValue, r.Tarif = t.Tarif, r.JasaMedis = t.JasaMedis, r.JasaSarana = t.JasaSarana, r.JasaRemun = t.JasaRemun, r.PayplanName = t.PayplanName, r.CategoryName = t.CategoryName, r.PayplanKemkes = t.PayplanKemkes, r.Type = t.Type, r.Status = t.Status , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactOrderBasedNew r INNER JOIN (SELECT * FROM dwhrscm_talend.FactOrderBasedNew_temporary_table) as t ON r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo  WHERE r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo;
+success update and insert all data
+283.6499967575073
+scheduler tanggal : 2024-09-25 11:14:46.989839

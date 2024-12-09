@@ -1,0 +1,63 @@
+Memory before: 66.140625 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+Ini source fix setelah transform kolom
+       OrderID  PatientID  AdmissionID  ...  SnomedID  StatusForm  CreatedUserID
+0    161162672    1126277           49  ...  18639004      normal           2638
+1    161162672    1126277           49  ...  OV000352      normal           2638
+2    161162672    1126277           49  ...         -      normal           2638
+3    161162672    1126277           49  ...         -      normal           2638
+4    161162672    1126277           49  ...  68566005      normal           2638
+..         ...        ...          ...  ...       ...         ...            ...
+141  162121226      91441           10  ...  18639004      normal          20024
+142  162121226      91441           10  ...  OV000352      normal          20024
+143  162121226      91441           10  ...         -      normal          20024
+144  162121226      91441           10  ...         -      normal          20024
+145  162121226      91441           10  ...  55189008      normal          20024
+
+[146 rows x 11 columns]
+       OrderID PatientID AdmissionID  ...  SnomedID StatusForm CreatedUserID
+0    161162672   1126277          49  ...  18639004     normal          2638
+1    161162672   1126277          49  ...  OV000352     normal          2638
+2    161162672   1126277          49  ...         -     normal          2638
+3    161162672   1126277          49  ...         -     normal          2638
+4    161162672   1126277          49  ...  68566005     normal          2638
+..         ...       ...         ...  ...       ...        ...           ...
+141  162121226     91441          10  ...  18639004     normal         20024
+142  162121226     91441          10  ...  OV000352     normal         20024
+143  162121226     91441          10  ...         -     normal         20024
+144  162121226     91441          10  ...         -     normal         20024
+145  162121226     91441          10  ...  55189008     normal         20024
+
+[146 rows x 11 columns]
+OrderID                    object
+PatientID                  object
+AdmissionID                object
+ObservationDate    datetime64[ns]
+ObjID                      object
+SequenceID                 object
+ObjName                    object
+Result                     object
+SnomedID                   object
+StatusForm                 object
+CreatedUserID              object
+dtype: object
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+Inserted Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+
+Tidak ada data yang berubah
+Tidak ada data yang baru
+4.499997615814209
+
+
+Memory after: 74.515625 MB
+Memory used: 8.375 MB
+scheduler tanggal : 2024-12-09 05:00:06.394705

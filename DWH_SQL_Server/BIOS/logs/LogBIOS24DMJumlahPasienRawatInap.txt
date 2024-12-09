@@ -1,0 +1,50 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
+('2024-11-24', '2024-11-25', '2024-11-26', '2024-11-27', '2024-11-28', '2024-11-29', '2024-11-30', '2024-12-01', '2024-12-02', '2024-12-03', '2024-12-04', '2024-12-05', '2024-12-06', '2024-12-07', '2024-12-08')
+    TglTransaksi  KodeKelas  Jumlah
+0     2024-11-24        HCU       4
+1     2024-11-24        ICU       4
+2     2024-11-24    ISOLASI       4
+3     2024-11-24    KELAS I       4
+4     2024-11-24   KELAS II       4
+..           ...        ...     ...
+157   2024-12-07   KELAS II       5
+158   2024-12-07  KELAS III      68
+159   2024-12-07       NICU       1
+160   2024-12-07       PICU       5
+161   2024-12-07       VVIP       1
+
+[162 rows x 3 columns]
+total row update : 110
+    TglTransaksi  KodeKelas  Jumlah
+2     2024-11-24    ISOLASI       5
+3     2024-11-24    KELAS I      29
+4     2024-11-24   KELAS II       7
+5     2024-11-24  KELAS III      97
+6     2024-11-24       PICU       1
+..           ...        ...     ...
+144   2024-12-06   KELAS II       6
+145   2024-12-06  KELAS III      66
+146   2024-12-06       NICU       2
+147   2024-12-06       PICU       1
+150   2024-12-06       VVIP       1
+
+[110 rows x 3 columns]
+total row inserted : 12
+    TglTransaksi   KodeKelas  Jumlah
+162   2024-12-08         HCU       1
+163   2024-12-08  ICCU/ICVCU       1
+164   2024-12-08         ICU       1
+165   2024-12-08     ISOLASI       2
+166   2024-12-08     KELAS I      21
+167   2024-12-08    KELAS II       9
+168   2024-12-08   KELAS III     102
+169   2024-12-08        PICU       2
+170   2024-12-08   PRE SUITE       1
+171   2024-12-08       SUITE       1
+172   2024-12-08         VIP      10
+173   2024-12-08        VVIP       2
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS24DMJumlahPasienRawatInap r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS24DMJumlahPasienRawatInap_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+43.281250953674316
+scheduler tanggal : 2024-12-09 06:00:01.927660

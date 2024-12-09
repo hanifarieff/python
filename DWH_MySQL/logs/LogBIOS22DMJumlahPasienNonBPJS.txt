@@ -1,0 +1,21 @@
+successfully connect to all database
+('2024-01-08', '2024-01-09', '2024-01-10', '2024-01-11')
+  TglTransaksi  Jumlah
+0   2024-01-08     663
+1   2024-01-09     721
+2   2024-01-10     634
+3   2024-01-11     679
+  TglTransaksi  Jumlah
+0   2024-01-08     663
+1   2024-01-09     721
+2   2024-01-10     634
+total row update : 0
+Empty DataFrame
+Columns: [TglTransaksi, Jumlah]
+Index: []
+total row inserted : 1
+  TglTransaksi  Jumlah
+3   2024-01-11     679
+success insert all data without update
+38.218743324279785
+scheduler tanggal : 2024-01-12 05:55:02.398035

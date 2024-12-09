@@ -1,0 +1,18 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+                       OrderID  PatientID  AdmissionID  ...                    Ruangan TanggalReport SEP
+0    1248258                      1254136           47  ...    Ruang VIP Inpatient 5th    2024-09-30    
+1    1248416                      2149780            3  ...                        ICU    2024-09-30    
+2    1248363                      2149780            3  ...    Ruang VIP Inpatient 4th    2024-09-30    
+3    1248054                      2141185            1  ...    Ruang VIP Inpatient 7th    2024-09-30    
+4    1247651                      2106165            6  ...    Ruang VIP Inpatient 5th    2024-09-30    
+..                         ...        ...          ...  ...                        ...           ...  ..
+110  1248443                      1439455            9  ...   Ruang VVIP Inpatient 5th    2024-09-30    
+111  1244252                      1435826            5  ...   Ruang VVIP Inpatient 5th    2024-09-30    
+112  1248236                      1290119            2  ...   Ruang VVIP Inpatient 6th    2024-09-30    
+113  1248287                      1230988            9  ...    Ruang VIP Inpatient 5th    2024-09-30    
+114  1246770                      1064948            7  ...  Ruang Suite Inpatient 7th    2024-09-30    
+
+[115 rows x 10 columns]
+insert all data
+39.09799861907959

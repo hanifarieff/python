@@ -1,0 +1,65 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+      PatientID  AdmissionID  FormNumber  ...  CreatedBy StatusCode     OrderLab
+0         53027           58      286529  ...       8886   approved  82412041139
+1         53027           58      286529  ...       8886   approved  82412041139
+2        108382          135      287309  ...      19119   approved  82412051082
+3        108382          135      287309  ...      19119   approved  82412051082
+4        108382          135      287309  ...      19119   approved  82412051082
+...         ...          ...         ...  ...        ...        ...          ...
+5611    2211668            1      288755  ...      17019   approved  82412081044
+5612    2211668            1      288755  ...      17019   approved  82412081044
+5613    2211668            1      288755  ...      17019   approved  82412081044
+5614    2211668            1      288755  ...      17019   approved  82412081044
+5615    2211668            1      288755  ...      17019   approved  82412081044
+
+[5616 rows x 11 columns]
+ini changes
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+138      778992          114      288485  ...     2          631607     None
+139      778992          114      288485  ...     2          631608     None
+140      778992          114      288485  ...     2          631609   1988-5
+141      778992          114      288485  ...     2          631610  55231-5
+142      778992          114      288485  ...     2          631611   2160-0
+...         ...          ...         ...  ...   ...             ...      ...
+5611    2211668            1      288755  ...     2          632001     None
+5612    2211668            1      288755  ...     2          632002     None
+5613    2211668            1      288755  ...     2          632003     None
+5614    2211668            1      288755  ...     2          632004     None
+5615    2211668            1      288755  ...     2          632005     None
+
+[633 rows x 39 columns]
+
+
+total row update except new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, ApprovalOrg, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row update new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, ApprovalOrg, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row inserted : 633
+      PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+138      778992          114      288485  ...     2          631607     None
+139      778992          114      288485  ...     2          631608     None
+140      778992          114      288485  ...     2          631609   1988-5
+141      778992          114      288485  ...     2          631610  55231-5
+142      778992          114      288485  ...     2          631611   2160-0
+...         ...          ...         ...  ...   ...             ...      ...
+5611    2211668            1      288755  ...     2          632001     None
+5612    2211668            1      288755  ...     2          632002     None
+5613    2211668            1      288755  ...     2          632003     None
+5614    2211668            1      288755  ...     2          632004     None
+5615    2211668            1      288755  ...     2          632005     None
+
+[633 rows x 39 columns]
+
+
+success insert all data without update
+40.99999666213989
+scheduler tanggal : 2024-12-09 01:03:02.503885

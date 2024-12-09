@@ -1,0 +1,63 @@
+Memory before: 66.19921875 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+Source Data:
+      PrescriptionID  OrderID  PatientID  AdmissionID  ... CreatedUserID       BillingID  BillingPaid BillingAmount
+0         0011164747        8    1063302           15  ...         15616         1097394            0     394189.36
+1         0011164762       12    1063302           15  ...         15616         1097394            0     272064.40
+2         0011281401        6    1063302           15  ...         15616         1097394            0    1206061.46
+3         0011294108       10    1063302           15  ...         15616         1097394            0     113236.10
+4         0011299724        4    1205111            6  ...          9442                            0     103908.71
+...              ...      ...        ...          ...  ...           ...             ...          ...           ...
+5506  00150002375165        5    2087205           23  ...         15609                            0       8853.76
+5507  00150002375167        3    2165661            7  ...         15609  00210001677784            0      27196.16
+5508  00150002375171       19    1479949          157  ...         15609  00210001660393            0      29429.76
+5509  00150002375177       22    1711830           37  ...         17491                            0      89160.75
+5510  00150002375180       23    1711830           37  ...         17491                            0     130769.10
+
+[5511 rows x 13 columns]
+Target Data:
+      PrescriptionID  OrderID  PatientID  AdmissionID  ... CreatedUserID       BillingID  BillingPaid BillingAmount
+0         0011307177      105    2174297            2  ...         12101                            0     193610.25
+1         0011315327       10    2011327           18  ...         19145                            0     371037.35
+2         0011315328       65    2182798            1  ...          6736                            0    2783264.74
+3     00130001926602       67    1339809            3  ...         15612                            0     273074.02
+4     00130001926602       68    1339809            3  ...         15612                            0     273074.02
+...              ...      ...        ...          ...  ...           ...             ...          ...           ...
+6644  00150002370940       18    2172261            6  ...         17610                            0      13760.00
+6645  00150002370943       27    2173422            3  ...         11194                            0     160769.63
+6646  00150002370945       58    1566324           94  ...         19148                            0      16128.00
+6647  00150002370954       57    1566324           94  ...         19148                            0      26496.00
+6648  00150002370958       56    1566324           94  ...         19148  00210001645819            0      43507.20
+
+[6649 rows x 13 columns]
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [PrescriptionID, OrderID, PatientID, AdmissionID, MedicalNo, PayplanID, DepoOrgID, OrderDate, Status, CreatedUserID, BillingID, BillingPaid, BillingAmount]
+Index: []
+Inserted Data:
+      PrescriptionID  OrderID  PatientID  AdmissionID  ... CreatedUserID       BillingID  BillingPaid BillingAmount
+0         0011164747        8    1063302           15  ...         15616         1097394            0     394189.36
+1         0011164762       12    1063302           15  ...         15616         1097394            0     272064.40
+2         0011281401        6    1063302           15  ...         15616         1097394            0    1206061.46
+3         0011294108       10    1063302           15  ...         15616         1097394            0     113236.10
+4         0011299724        4    1205111            6  ...          9442                            0     103908.71
+...              ...      ...        ...          ...  ...           ...             ...          ...           ...
+5506  00150002375165        5    2087205           23  ...         15609                            0       8853.76
+5507  00150002375167        3    2165661            7  ...         15609  00210001677784            0      27196.16
+5508  00150002375171       19    1479949          157  ...         15609  00210001660393            0      29429.76
+5509  00150002375177       22    1711830           37  ...         17491                            0      89160.75
+5510  00150002375180       23    1711830           37  ...         17491                            0     130769.10
+
+[5511 rows x 13 columns]
+
+Tidak ada data yang berubah
+Data Success Inserted
+8.310677289962769
+
+
+Memory after: 78.34375 MB
+Memory used: 12.14453125 MB
+scheduler tanggal : 2024-11-18 10:50:11.646012

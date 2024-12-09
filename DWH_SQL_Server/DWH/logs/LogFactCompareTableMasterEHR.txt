@@ -1,0 +1,48 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  10984180
+   ID              TableName  RowTotal
+0   2  xocp_ehr_patient_stay   2052899
+   ID  TableName  RowTotal
+0   3  xocp_orgs      2772
+   ID             TableName  RowTotal
+0   4  xocp_ehr_patient_act   5275318
+   ID         TableName  RowTotal
+0   5  xocp_ehr_patient   1651695
+   ID         TableName  RowTotal
+0   6  xocp_ehr_payplan        81
+   ID         TableName  RowTotal
+0   7  xocp_ehr_company       321
+   ID               TableName  RowTotal
+0   8  xocp_ehr_patient_order  66713728
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  10984180
+1   2       xocp_ehr_patient_stay   2052899
+2   3                   xocp_orgs      2772
+3   4        xocp_ehr_patient_act   5275318
+4   5            xocp_ehr_patient   1651695
+5   6            xocp_ehr_payplan        81
+6   7            xocp_ehr_company       321
+7   8      xocp_ehr_patient_order  66713728
+total row update master : 5
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  10984180
+1   2       xocp_ehr_patient_stay   2052899
+3   4        xocp_ehr_patient_act   5275318
+4   5            xocp_ehr_patient   1651695
+7   8      xocp_ehr_patient_order  66713728
+
+
+total row insert master : 0
+Empty DataFrame
+Columns: [ID, TableName, RowTotal]
+Index: []
+UPDATE r SET r.TableName = t.TableName, r.RowTotal = t.RowTotal , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactRowNumberMaster r INNER JOIN (SELECT * FROM dwhrscm_talend.FactRowNumberMaster_temporary_table) as t ON r.ID = t.ID  WHERE r.ID = t.ID ;
+success update and insert all data master
+
+CPU usage: -35.2 %
+63.7734375
+132.31251907348633
+scheduler tanggal : 2024-12-08 23:00:02.131045

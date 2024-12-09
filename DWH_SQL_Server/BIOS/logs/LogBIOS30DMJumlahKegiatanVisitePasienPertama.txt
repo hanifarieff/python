@@ -1,0 +1,5 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
+tidak ada data dari source
+3.4375052452087402
+scheduler tanggal : 2024-12-09 01:00:01.824766
