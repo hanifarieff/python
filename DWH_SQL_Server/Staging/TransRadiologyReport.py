@@ -63,10 +63,10 @@ source = pd.read_sql_query("""
                                 -- -- where mrn = 4620761 and accession_number = 'CT00190003779023'
                                 -- OR mrn = 4585800 and accession_number = 'GD00190005084958'
                                 -- OR mrn = 4463811 and accession_number = 'MR00190002686162'
-                                -- WHERE DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= '2024-03-01 00:00:00' 
-                                -- AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= '2024-04-23 23:59:59' 
-                                WHERE (DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
-                                AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= DATE_FORMAT(NOW(), "%%Y-%%m-%%d 23:59:59"))
+                                WHERE DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= '2024-03-01 00:00:00' 
+                                AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= '2024-04-23 23:59:59' 
+                                -- WHERE (DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
+                                -- AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= DATE_FORMAT(NOW(), "%%Y-%%m-%%d 23:59:59"))
                                 OR 
                                 (DATE_FORMAT(observation_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
                                 AND DATE_FORMAT(observation_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= DATE_FORMAT(NOW(), "%%Y-%%m-%%d 23:59:59"))
