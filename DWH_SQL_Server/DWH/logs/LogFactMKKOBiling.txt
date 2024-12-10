@@ -5,42 +5,60 @@ DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), '%%Y-%%m-%%d 00:00:00')
 DATE_FORMAT(NOW(), '%%Y-%%m-%%d 23:59:59')
 ini source
        TransactionID PayplanGroup PayplanType
-0     00210000058760         umum     reguler
-1     00210000058761         umum     reguler
-2     00210000058764         umum     reguler
-3     00210000058765         umum     reguler
-4     00210000058766         umum     reguler
+0     00210000058796         umum     reguler
+1     00210000058799         umum     reguler
+2     00210000058801         umum     reguler
+3     00210000058802         umum     reguler
+4     00210000058803         umum     reguler
 ...              ...          ...         ...
-1509         1048212   perusahaan     reguler
-1510         1048213   perusahaan     reguler
-1511         1048214   perusahaan     reguler
-1512         1048215   perusahaan     reguler
-1513         1048216   perusahaan     reguler
+7527         1049355   perusahaan     reguler
+7528         1049357   perusahaan     reguler
+7529         1049360   perusahaan     reguler
+7530         1049363   perusahaan     reguler
+7531         1049367   perusahaan     reguler
 
-[1514 rows x 3 columns]
-total row update : 3
-      TransactionID       BillingID        Amount  ... PatientID  AdmissionID Status
-271  00210001279354  00210001754286  5.343952e+07  ...   2193796            3  final
-287  00210001279403  00210001767869  5.420980e+07  ...   2207358            2  final
-325  00210001279653  00210001771345  2.529392e+07  ...   1215922           78  final
+[7532 rows x 3 columns]
+total row update : 21
+       TransactionID       BillingID        Amount  ... PatientID  AdmissionID Status
+193   00210001279667  00210001795292  3.303306e+05  ...   2211031            1  final
+194   00210001279676  00210001795205  2.694621e+06  ...   2211150            1  final
+195   00210001279678  00210001795510  4.540000e+05  ...   2211237            1  final
+196   00210001279680  00210001795283  1.833693e+06  ...    548132          140  final
+197   00210001279684  00210001795134  1.918361e+06  ...   2210876            1  final
+198   00210001279702  00210001795296  9.931341e+05  ...   2150942            5  final
+199   00210001279705  00210001795319  4.347613e+05  ...   2050794           14  final
+200   00210001279707  00210001795422  6.628932e+05  ...    489737            9  final
+201   00210001279709  00210001795210  1.061723e+06  ...   2202512            2  final
+202   00210001279710  00210001795445  8.664901e+05  ...   2060612           25  final
+203   00210001279724  00210001795446  2.847225e+06  ...   2177262            9  final
+204   00210001279733  00210001795473  9.487606e+05  ...   2211317            1  final
+205   00210001279734  00210001795474  1.065890e+06  ...   1231679          159  final
+208   00210001279741  00210001795639  5.650000e+05  ...   2211313            1  final
+209   00210001279742  00210001795462  7.128765e+05  ...   2211307            1  final
+5561  00210001279669  00210001762652  2.358248e+07  ...   2157344           10  final
+5591  00210001279708  00210001770791  2.301586e+07  ...   2082200            8  final
+5924         1048223         1119947  1.634360e+05  ...   1478685           37  final
+6030         1048234         1119960  1.022802e+06  ...   1303082           13  final
+6031         1048235         1119958  2.344008e+06  ...   2211667            1  final
+6032         1048236         1119959  1.797334e+06  ...   2211668            1  final
 
-[3 rows x 13 columns]
-total row inserted : 479
-       TransactionID       BillingID      Amount  ... PatientID  AdmissionID Status
-14    00210000058796  00210001795754    56000.00  ...   2211680            1  final
-222   00210001279738  00210001794951   924002.52  ...   1874870           19  final
-223   00210001279739  00210001794983   850314.81  ...   2136236           15  final
-224   00210001279744  00210001794843  3027211.19  ...   1713529           51  final
-225   00210001279745  00210001794797  4208297.71  ...   2210849            1  final
-...              ...             ...         ...  ...       ...          ...    ...
-1509         1048212         1119943    65000.00  ...   2211649            1  final
-1510         1048213         1119945    65000.00  ...   2211651            1  final
-1511         1048214         1119944    65000.00  ...   2211650            1  final
-1512         1048215         1119946    65000.00  ...   2211652            1  final
-1513         1048216         1119948    65000.00  ...   2211653            1  final
+[21 rows x 13 columns]
+total row inserted : 7054
+       TransactionID       BillingID    Amount  ... PatientID  AdmissionID Status
+1     00210000058799  00210001795934  142000.0  ...   1029391           43  final
+2     00210000058801  00210001796039  142000.0  ...   2198686            3  final
+3     00210000058802  00210001795986  142000.0  ...   1753959           20  final
+4     00210000058803  00210001796055  142000.0  ...    874994          112  final
+5     00210000058804  00210001796070  142000.0  ...    727483          101  final
+...              ...             ...       ...  ...       ...          ...    ...
+7527         1049355         1121213   65000.0  ...   2212666            1  final
+7528         1049357         1121215   65000.0  ...   2212667            1  final
+7529         1049360         1121217   65000.0  ...   2212668            1  final
+7530         1049363         1121218   65000.0  ...   2212669            1  final
+7531         1049367         1121221   65000.0  ...   2212671            1  final
 
-[479 rows x 13 columns]
+[7054 rows x 13 columns]
 UPDATE r SET r.Amount = t.Amount, r.TransactionDate = t.TransactionDate, r.PayplanID = t.PayplanID, r.PatientType = t.PatientType, r.PayplanGroup = t.PayplanGroup, r.PayplanType = t.PayplanType, r.PayplanNo = t.PayplanNo, r.RevenueType = t.RevenueType, r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.Status = t.Status , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactMKKOBilling r INNER JOIN (SELECT * FROM dwhrscm_talend.FactMKKOBilling_temporary_table) as t ON r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID  WHERE r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID ;
 success update and insert all data
-3.609379291534424
-scheduler tanggal : 2024-12-08 23:55:02.599432
+13.389001607894897
+scheduler tanggal : 2024-12-09 23:55:02.609205

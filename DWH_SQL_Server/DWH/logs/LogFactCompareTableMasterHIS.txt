@@ -2,22 +2,23 @@ success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
    ID                   TableName  RowTotal
-0   9  xocp_his_patient_admission   7756478
-1  10   xocp_his_patient_location     49722
+0   9  xocp_his_patient_admission   7765019
+1  10   xocp_his_patient_location     49765
 2  11                   xocp_orgs      2194
-3  12        xocp_his_patient_act   1024094
-4  13            xocp_his_patient    861111
-5  14        xocp_his_obj_payplan    180395
-6  15     xocp_his_formulir_darah    302719
-7  16      xocp_his_patient_order  30899741
-total row update master : 6
+3  12        xocp_his_patient_act   1025156
+4  13            xocp_his_patient    862327
+5  14        xocp_his_obj_payplan    180411
+6  15     xocp_his_formulir_darah    303034
+7  16      xocp_his_patient_order  30942900
+total row update master : 7
    ID                   TableName  RowTotal
-0   9  xocp_his_patient_admission   7756478
-1  10   xocp_his_patient_location     49722
-3  12        xocp_his_patient_act   1024094
-4  13            xocp_his_patient    861111
-6  15     xocp_his_formulir_darah    302719
-7  16      xocp_his_patient_order  30899741
+0   9  xocp_his_patient_admission   7765019
+1  10   xocp_his_patient_location     49765
+3  12        xocp_his_patient_act   1025156
+4  13            xocp_his_patient    862327
+5  14        xocp_his_obj_payplan    180411
+6  15     xocp_his_formulir_darah    303034
+7  16      xocp_his_patient_order  30942900
 
 
 total row insert master : 0
@@ -27,7 +28,7 @@ Index: []
 UPDATE r SET r.TableName = t.TableName, r.RowTotal = t.RowTotal , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactRowNumberMaster r INNER JOIN (SELECT * FROM dwhrscm_talend.FactRowNumberMaster_temporary_table) as t ON r.ID = t.ID  WHERE r.ID = t.ID ;
 success update and insert all data master
 
-CPU usage: 6.2 %
-72.26171875
-45.45312309265137
-scheduler tanggal : 2024-12-08 23:00:02.162283
+CPU usage: 6.8 %
+72.16015625
+47.254000186920166
+scheduler tanggal : 2024-12-09 23:00:02.178203

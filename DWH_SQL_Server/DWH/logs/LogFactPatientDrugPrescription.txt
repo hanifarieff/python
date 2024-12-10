@@ -1,69 +1,69 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
        PrescriptionID  ...  DrugQuantity
-0      00150002528849  ...            18
-1      00150002528849  ...            20
-2      00150002528849  ...             1
-3      00150002528849  ...             1
-4      00150002529181  ...             2
+0      00150002543891  ...            60
+1      00150002543891  ...            30
+2      00150002543891  ...            15
+3      00150002543891  ...            60
+4      00150002543481  ...             1
 ...               ...  ...           ...
-22477  00150002532207  ...             1
-22478  00150002533046  ...             4
-22479  00150002533046  ...             4
-22480  00150002533046  ...             4
-22481  00150002533596  ...             5
+33148  00150002536330  ...             1
+33149  00150002534952  ...             2
+33150  00150002534952  ...             2
+33151  00150002534952  ...             1
+33152  00150002534952  ...             1
 
-[22482 rows x 8 columns]
+[33153 rows x 8 columns]
 
 Ini Target
 
        PrescriptionID  ...  DrugQuantity
-0      00150002510463  ...             3
-1      00150002510932  ...            30
-2      00150002510932  ...            30
-3      00150002510932  ...            90
-4      00150002510997  ...            30
+0      00150002519303  ...             5
+1      00150002519683  ...             1
+2      00150002519683  ...             1
+3      00150002519683  ...             1
+4      00150002520059  ...             1
 ...               ...  ...           ...
-12186  00150002532383  ...             4
-12187  00150002532383  ...             4
-12188  00150002532384  ...             3
-12189  00150002532384  ...             2
-12190  00150002532385  ...             3
+10934  00150002536551  ...             1
+10935  00150002536551  ...             2
+10936  00150002536551  ...             1
+10937  00150002536552  ...             2
+10938  00150002536553  ...             7
 
-[12191 rows x 8 columns]
+[10939 rows x 8 columns]
 
 
-total row update : 563
+total row update : 799
        PrescriptionID  ...  PrescriptionStatus
-237    00150002532042  ...            dispense
-243    00150002532042  ...            dispense
-244    00150002532042  ...            dispense
-245    00150002532042  ...            dispense
-246    00150002532042  ...            dispense
+81     00150002533236  ...            dispense
+138    00150002533381  ...            dispense
+144    00150002531348  ...            dispense
+163    00150002532138  ...            dispense
+164    00150002532138  ...            dispense
 ...               ...  ...                 ...
-22465  00150002532111  ...            dispense
-22466  00150002532111  ...            dispense
-22467  00150002532111  ...            dispense
-22468  00150002532111  ...            dispense
-22471  00150002532111  ...            dispense
+32227  00150002533331  ...            dispense
+32260  00150002536160  ...            dispense
+32905  00150002533412  ...            dispense
+33001  00150002530333  ...            dispense
+33132  00150002536043  ...            dispense
 
-[563 rows x 18 columns]
-total row inserted : 10301
+[799 rows x 18 columns]
+total row inserted : 22221
        PrescriptionID  ...  PrescriptionStatus
-9      00150002533144  ...            dispense
-10     00150002533144  ...            dispense
-11     00150002533144  ...            dispense
-12     00150002533144  ...            dispense
-13     00150002533832  ...            dispense
+0      00150002543891  ...            dispense
+1      00150002543891  ...            dispense
+2      00150002543891  ...            dispense
+3      00150002543891  ...            dispense
+4      00150002543481  ...            dispense
 ...               ...  ...                 ...
-22462  00150002536171  ...              normal
-22478  00150002533046  ...            dispense
-22479  00150002533046  ...            dispense
-22480  00150002533046  ...            dispense
-22481  00150002533596  ...            dispense
+33118  00150002536801  ...             ordered
+33119  00150002543193  ...             ordered
+33145  00150002544366  ...            dispense
+33146  00150002544366  ...            dispense
+33147  00150002544366  ...            dispense
 
-[10301 rows x 18 columns]
+[22221 rows x 18 columns]
 UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.PrescriptionOrgID = t.PrescriptionOrgID, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.FrequencyCode = t.FrequencyCode, r.UnitCode = t.UnitCode, r.DispenseQuantity = t.DispenseQuantity, r.DispenseUnitCode = t.DispenseUnitCode, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.PrescriptionNotes = t.PrescriptionNotes, r.PrescriptionStatus = t.PrescriptionStatus , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientDrugPrescription r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientDrugPrescription_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID  WHERE r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID ;
 success update and insert all data
-68.953125
-scheduler tanggal : 2024-12-09 02:32:01.779885
+124.1639974117279
+scheduler tanggal : 2024-12-10 02:32:01.884200

@@ -1,11 +1,11 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
   TanggalKirim             JenisPegawai  Jumlah
-0   2024-12-09          JumlahPenunjang    1064
-1   2024-12-09  JumlahStaffAdministrasi    1413
-2   2024-12-09            JumlahPerawat    1955
-3   2024-12-09             JumlahDokter     609
-4   2024-12-09          Tidak Diketahui       1
+0   2024-12-10          JumlahPenunjang    1063
+1   2024-12-10  JumlahStaffAdministrasi    1414
+2   2024-12-10            JumlahPerawat    1955
+3   2024-12-10             JumlahDokter     609
+4   2024-12-10          Tidak Diketahui       1
 Empty DataFrame
 Columns: [TanggalKirim, JenisPegawai, Jumlah]
 Index: []
@@ -15,11 +15,11 @@ Columns: [TanggalKirim, JenisPegawai, Jumlah]
 Index: []
 total row inserted : 5
   TanggalKirim             JenisPegawai  Jumlah
-0   2024-12-09          JumlahPenunjang    1064
-1   2024-12-09  JumlahStaffAdministrasi    1413
-2   2024-12-09            JumlahPerawat    1955
-3   2024-12-09             JumlahDokter     609
-4   2024-12-09          Tidak Diketahui       1
+0   2024-12-10          JumlahPenunjang    1063
+1   2024-12-10  JumlahStaffAdministrasi    1414
+2   2024-12-10            JumlahPerawat    1955
+3   2024-12-10             JumlahDokter     609
+4   2024-12-10          Tidak Diketahui       1
 success insert all data without update
-20.40625
-scheduler tanggal : 2024-12-09 02:00:02.109272
+20.07000160217285
+scheduler tanggal : 2024-12-10 02:00:02.136199

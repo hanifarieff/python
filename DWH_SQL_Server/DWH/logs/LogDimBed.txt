@@ -2,14 +2,13 @@ success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
             BedID BedCode  ... StatusCode       UpdateDateApp
-0  BED_x000001871    713C  ...   inactive 2024-12-06 19:32:07
-1  BED_x000007102     716  ...   inactive 2024-12-06 17:26:15
-2  BED_x000007767    802B  ...   inactive 2024-12-07 11:07:51
-3  BED_x000007826   801 B  ...   inactive 2024-12-07 11:07:38
-4  BED_x000007969  RREB04  ...   inactive 2024-12-08 10:36:33
-5  BED_x000007970  RREB04  ...   inactive 2024-12-08 10:36:15
+0  BED_x000007461    617A  ...   inactive 2024-12-09 18:31:28
+1  BED_x000007767    802B  ...   inactive 2024-12-07 11:07:51
+2  BED_x000007826   801 B  ...   inactive 2024-12-07 11:07:38
+3  BED_x000007969  RREB04  ...   inactive 2024-12-08 10:36:33
+4  BED_x000007970  RREB04  ...   inactive 2024-12-08 10:36:15
 
-[6 rows x 7 columns]
+[5 rows x 7 columns]
       BedID BedCode  ... StatusCode       UpdateDateApp
 0         1          ...     active 2023-01-13 08:52:10
 1         2          ...   inactive                 NaT
@@ -26,14 +25,14 @@ success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?
 [1771 rows x 7 columns]
 ini modified
             BedID BedCode  ... ScdActive Flag
-0  BED_x000007969  RREB04  ...         1    1
-1  BED_x000007970  RREB04  ...         1    1
+0  BED_x000007461    617A  ...         1    1
 
-[2 rows x 10 columns]
+[1 rows x 10 columns]
 ini inserted
 Empty DataFrame
 Columns: [BedID, BedCode, BedName, LocationID, ConditionCode, StatusCode, UpdateDateApp, ScdStart, ScdActive, Flag]
 Index: []
+success update data existing
 success insert new data and updated data
-4.5156190395355225
-scheduler tanggal : 2024-12-09 05:00:02.238464
+6.291996955871582
+scheduler tanggal : 2024-12-10 05:00:02.276204

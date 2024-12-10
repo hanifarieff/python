@@ -4,33 +4,33 @@ success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 Ini source fix setelah transform kolom
        OrderID  PatientID  AdmissionID  ...  SnomedID  StatusForm  CreatedUserID
-0    161162672    1126277           49  ...  18639004      normal           2638
-1    161162672    1126277           49  ...  OV000352      normal           2638
-2    161162672    1126277           49  ...         -      normal           2638
-3    161162672    1126277           49  ...         -      normal           2638
-4    161162672    1126277           49  ...  68566005      normal           2638
+0    161196035     985158           93  ...   9846003      normal          20457
+1    161196035     985158           93  ...  18639004      normal          20457
+2    161196035     985158           93  ...  OV000352      normal          20457
+3    161196035     985158           93  ...         -      normal          20457
+4    161196035     985158           93  ...         -      normal          20457
 ..         ...        ...          ...  ...       ...         ...            ...
-141  162121226      91441           10  ...  18639004      normal          20024
-142  162121226      91441           10  ...  OV000352      normal          20024
-143  162121226      91441           10  ...         -      normal          20024
-144  162121226      91441           10  ...         -      normal          20024
-145  162121226      91441           10  ...  55189008      normal          20024
+131  162121226      91441           10  ...  18639004      normal          20024
+132  162121226      91441           10  ...  OV000352      normal          20024
+133  162121226      91441           10  ...         -      normal          20024
+134  162121226      91441           10  ...         -      normal          20024
+135  162121226      91441           10  ...  55189008      normal          20024
 
-[146 rows x 11 columns]
+[136 rows x 11 columns]
        OrderID PatientID AdmissionID  ...  SnomedID StatusForm CreatedUserID
-0    161162672   1126277          49  ...  18639004     normal          2638
-1    161162672   1126277          49  ...  OV000352     normal          2638
-2    161162672   1126277          49  ...         -     normal          2638
-3    161162672   1126277          49  ...         -     normal          2638
-4    161162672   1126277          49  ...  68566005     normal          2638
+0    161196035    985158          93  ...   9846003     normal         20457
+1    161196035    985158          93  ...  18639004     normal         20457
+2    161196035    985158          93  ...  OV000352     normal         20457
+3    161196035    985158          93  ...         -     normal         20457
+4    161196035    985158          93  ...         -     normal         20457
 ..         ...       ...         ...  ...       ...        ...           ...
-141  162121226     91441          10  ...  18639004     normal         20024
-142  162121226     91441          10  ...  OV000352     normal         20024
-143  162121226     91441          10  ...         -     normal         20024
-144  162121226     91441          10  ...         -     normal         20024
-145  162121226     91441          10  ...  55189008     normal         20024
+131  162121226     91441          10  ...  18639004     normal         20024
+132  162121226     91441          10  ...  OV000352     normal         20024
+133  162121226     91441          10  ...         -     normal         20024
+134  162121226     91441          10  ...         -     normal         20024
+135  162121226     91441          10  ...  55189008     normal         20024
 
-[146 rows x 11 columns]
+[136 rows x 11 columns]
 OrderID                    object
 PatientID                  object
 AdmissionID                object
@@ -55,9 +55,9 @@ Index: []
 
 Tidak ada data yang berubah
 Tidak ada data yang baru
-4.499997615814209
+4.385000944137573
 
 
-Memory after: 74.515625 MB
-Memory used: 8.375 MB
-scheduler tanggal : 2024-12-09 05:00:06.394705
+Memory after: 74.33203125 MB
+Memory used: 8.19140625 MB
+scheduler tanggal : 2024-12-10 05:00:06.311203

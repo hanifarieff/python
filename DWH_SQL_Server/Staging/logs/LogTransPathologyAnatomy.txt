@@ -2,41 +2,54 @@ success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
      RegistrationNo    OrderID  ...  FinalUserID           FinalDate
-0         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
-1         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
-2         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
-3         H23-13570  161509790  ...      10069.0 2024-11-19 16:45:50
-4         H24-03866  161509875  ...      10069.0 2024-11-19 16:42:43
+0         H24-13301  161551754  ...       6603.0 2024-11-25 16:10:28
+1         H24-13301  161551754  ...       6603.0 2024-11-25 16:10:28
+2         H24-13301  161551754  ...       6603.0 2024-11-25 16:10:28
+3         H24-13301  161551754  ...       6603.0 2024-11-25 16:10:28
+4         H24-13301  161551754  ...       6603.0 2024-11-25 16:10:28
 ...             ...        ...  ...          ...                 ...
-5185      H24-15386  162160598  ...   92700099.0 2024-12-07 10:47:01
-5186      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
-5187      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
-5188      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
-5189      H24-15405  162165535  ...   92700099.0 2024-12-07 14:27:39
+5003      K24-04607  162230613  ...       1942.0 2024-12-09 20:51:48
+5004      K24-04607  162230613  ...       1942.0 2024-12-09 20:51:48
+5005      K24-04644  162230638  ...       1942.0 2024-12-09 20:55:45
+5006      K24-04644  162230638  ...       1942.0 2024-12-09 20:55:45
+5007      K24-04644  162230638  ...       1942.0 2024-12-09 20:55:45
 
-[5190 rows x 14 columns]
-0       Pulasan imunohistokimia untuk penegakan diagno...
-1       I-II. Histologik sesuai dengan Neoplasma sel s...
-2                                        Kidney NOS C64.9
-3                                                  8000/3
-4       - Korelasi klinis dan serologis.\n- Pemeriksaa...
+[5008 rows x 14 columns]
+0                                                       -
+1       Distal femur kanan, reseksi:\nGambaran histolo...
+2                                           Histopatologi
+3       Long bones of lower limb and associated joints...
+4                                                  9180/3
                               ...                        
-5185                                                     
-5186    Pemeriksaan imunohistokimia MMR (pada blok III...
-5187    I-III. Operasi, rektosigmoid: \nHistologik ses...
-5188                                        Histopatologi
-5189                                                     
-Name: ObsValue, Length: 5190, dtype: object
-total row update : 0
-Empty DataFrame
-Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, PanelID, PanelName, ObjID, ObjName, ObsValue, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate]
-Index: []
-total row inserted : 0
-Empty DataFrame
-Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, PanelID, PanelName, ObjID, ObjName, ObsValue, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate]
-Index: []
-tidak ada data yang baru dan berubah
-12.296873569488525
+5003                                         Panel Breast
+5004    Reseptor estrogen : Positif, 90%, intensitas s...
+5005    Pola pulasan imunohistokimia sesuai HER2-posit...
+5006                              Pemeriksaan CISH-breast
+5007    Reseptor estrogen : Negatif (terpulas positif ...
+Name: ObsValue, Length: 5008, dtype: object
+total row update : 1
+     RegistrationNo    OrderID  ...  FinalUserID           FinalDate
+4184      H24-15085  162031529  ...            0 2024-12-04 08:03:39
+
+[1 rows x 14 columns]
+total row inserted : 136
+     RegistrationNo    OrderID  ...  FinalUserID           FinalDate
+4872      H24-15031  162193405  ...            0 2024-12-09 07:29:56
+4873      H24-15031  162193405  ...            0 2024-12-09 07:29:56
+4874      LH24-0793  162193436  ...            0 2024-12-09 07:31:19
+4875      LH24-0793  162193436  ...            0 2024-12-09 07:31:19
+4876      H24-15091  162193499  ...            0 2024-12-09 07:33:13
+...             ...        ...  ...          ...                 ...
+5003      K24-04607  162230613  ...         1942 2024-12-09 20:51:48
+5004      K24-04607  162230613  ...         1942 2024-12-09 20:51:48
+5005      K24-04644  162230638  ...         1942 2024-12-09 20:55:45
+5006      K24-04644  162230638  ...         1942 2024-12-09 20:55:45
+5007      K24-04644  162230638  ...         1942 2024-12-09 20:55:45
+
+[136 rows x 14 columns]
+UPDATE t SET t.PanelID = s.PanelID, t.PanelName = s.PanelName, t.ObjName = s.ObjName, t.ObsValue = s.ObsValue, t.Status = s.Status, t.CreatedUserID = s.CreatedUserID, t.CreatedDate = s.CreatedDate, t.FinalUserID = s.FinalUserID, t.FinalDate = s.FinalDate , t.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPathologyAnatomy t INNER JOIN (SELECT * FROM staging_rscm.TransPathologyAnatomy_temporary_table) AS s ON t.RegistrationNo = s.RegistrationNo AND t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID  WHERE t.RegistrationNo = s.RegistrationNo  AND t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID ;
+all success updated and inserted
+13.441001653671265
 
 
-scheduler tanggal : 2024-12-09 04:00:01.664086
+scheduler tanggal : 2024-12-10 04:00:01.761201

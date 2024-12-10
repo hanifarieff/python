@@ -1,38 +1,38 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
-     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
-0              4743835              0  ...           0           None
-1              4743836              0  ...           0           None
-2              4743837              0  ...           0           None
-3              4743838              0  ...           0           None
-4              4743839              0  ...           0           None
-..                 ...            ...  ...         ...            ...
-150            4743985              0  ...           0           None
-151            4743986              0  ...           0           None
-152            4743987              0  ...           0           None
-153            4743988              0  ...           0           None
-154            4743989              0  ...           0           None
+      QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0               4694633      411895076  ...           0            NaT
+1               4694647      411895085  ...           0            NaT
+2               4694648      411895086  ...           0            NaT
+3               4695873      411895538  ...           0            NaT
+4               4696704      411896271  ...           0            NaT
+...                 ...            ...  ...         ...            ...
+4985            4749017       15148583  ...           0            NaT
+4986            4749018              0  ...           0            NaT
+4987            4749019              0  ...           0            NaT
+4988            4749020              0  ...           0            NaT
+4989            4749021              0  ...           0            NaT
 
-[155 rows x 33 columns]
+[4990 rows x 33 columns]
 total row update : 0
 Empty DataFrame
 Columns: [QueuePoliclinicID, AppointmentID, ActID, PatientID, AdmissionID, Method, QueueNum, QueueDate, DestOrgID, ParentOrgID, StatusCode, CreatedDate, CreatedBy, CallDate, CallBy, CallTotal, NurseStartDate, NurseStopDate, NurseIDStart, NurseIDStop, DocIDStart, DocIDStop, StatusCodeAnalis, CallTotalAnalis, CallDateAnalis, AnalisID, AnalisIDStart, AnalisIDStop, AnalisStartDate, AnalisStopDate, UpdateDate, CancelledBy, CancelledDate]
 Index: []
-total row inserted : 155
-     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
-0              4743835              0  ...           0           None
-1              4743836              0  ...           0           None
-2              4743837              0  ...           0           None
-3              4743838              0  ...           0           None
-4              4743839              0  ...           0           None
-..                 ...            ...  ...         ...            ...
-150            4743985              0  ...           0           None
-151            4743986              0  ...           0           None
-152            4743987              0  ...           0           None
-153            4743988              0  ...           0           None
-154            4743989              0  ...           0           None
+total row inserted : 4990
+      QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0               4694633      411895076  ...           0            NaT
+1               4694647      411895085  ...           0            NaT
+2               4694648      411895086  ...           0            NaT
+3               4695873      411895538  ...           0            NaT
+4               4696704      411896271  ...           0            NaT
+...                 ...            ...  ...         ...            ...
+4985            4749017       15148583  ...           0            NaT
+4986            4749018              0  ...           0            NaT
+4987            4749019              0  ...           0            NaT
+4988            4749020              0  ...           0            NaT
+4989            4749021              0  ...           0            NaT
 
-[155 rows x 33 columns]
+[4990 rows x 33 columns]
 success insert all data without update
-36.89062738418579
-scheduler tanggal : 2024-12-09 06:00:38.818288
+43.33101153373718
+scheduler tanggal : 2024-12-10 06:00:45.342211

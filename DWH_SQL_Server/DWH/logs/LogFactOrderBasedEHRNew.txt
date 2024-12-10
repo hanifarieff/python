@@ -1,36 +1,36 @@
-Memory before: 66.20703125 MB
+Memory before: 66.17578125 MB
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-             OrderID  PatientID  AdmissionID  ...  Type  Status BillingPaid
-0     00210006570649    1582057           32  ...     P  normal           1
-1     00210006730227    2167799            1  ...     P  normal           1
-2     00210006792389    2177858            1  ...     P  normal           1
-3     00210006857451    2171872            2  ...     P  normal           1
-4     00210006898705    2143312            3  ...     P  normal           1
-...              ...        ...          ...  ...   ...     ...         ...
-7302  00210007654860      24749          297  ...     P  normal           0
-7303  00210007654861      24749          297  ...     P  normal           0
-7304  00210007654867    2206134            1  ...     P  normal           0
-7305  00210007654869    2058052            7  ...     P  normal           0
-7306  00210007654872    2209928            1  ...     P  normal           0
+              OrderID  PatientID  AdmissionID  ...  Type  Status BillingPaid
+0      00110000334050     625631            1  ...     P  normal           1
+1      00110000336227     625631            1  ...     P  normal           1
+2      00210003911677     589695           38  ...     P  normal           1
+3      00210004206984    1323585          138  ...     P  normal           1
+4      00210004341062    2072023            4  ...     P  normal           1
+...               ...        ...          ...  ...   ...     ...         ...
+21851  00210007687267    2212670            1  ...     P  normal           0
+21852  00210007687268    2212661            1  ...     P  normal           0
+21853  00210007687268    2212661            1  ...     P  normal           0
+21854  00210007687275    2171551            5  ...     P  normal           0
+21855  00210007687278    2203825            1  ...     P  normal           0
 
-[7307 rows x 33 columns]
+[21856 rows x 33 columns]
 Source Data:
-             OrderID  PatientID  ...  BillingPaid  ObjectGroupingName
-0     00210006570649    1582057  ...            1           radiologi
-1     00210006730227    2167799  ...            1           radiologi
-2     00210006792389    2177858  ...            1           radiologi
-3     00210006857451    2171872  ...            1           radiologi
-4     00210006898705    2143312  ...            1           radiologi
-...              ...        ...  ...          ...                 ...
-7302  00210007654860      24749  ...            0        laboratorium
-7303  00210007654861      24749  ...            0        laboratorium
-7304  00210007654867    2206134  ...            0                None
-7305  00210007654869    2058052  ...            0        laboratorium
-7306  00210007654872    2209928  ...            0        laboratorium
+              OrderID  PatientID  ...  BillingPaid  ObjectGroupingName
+0      00110000334050     625631  ...            1          konsultasi
+1      00110000336227     625631  ...            1          konsultasi
+2      00210003911677     589695  ...            1           radiologi
+3      00210004206984    1323585  ...            1           radiologi
+4      00210004341062    2072023  ...            1           radiologi
+...               ...        ...  ...          ...                 ...
+21851  00210007687267    2212670  ...            0                None
+21852  00210007687268    2212661  ...            0                None
+21853  00210007687268    2212661  ...            0                None
+21854  00210007687275    2171551  ...            0        laboratorium
+21855  00210007687278    2203825  ...            0        laboratorium
 
-[7307 rows x 34 columns]
+[21856 rows x 34 columns]
 OrderID                       object
 PatientID                      int64
 AdmissionID                    int64
@@ -68,19 +68,19 @@ ObjectGroupingName            object
 dtype: object
 Target Data:
              OrderID  PatientID  ...  BillingPaid  ObjectGroupingName
-0     00210006570649    1582057  ...            1           radiologi
-1     00210006730227    2167799  ...            1           radiologi
-2     00210006792389    2177858  ...            1           radiologi
-3     00210006857451    2171872  ...            1           radiologi
-4     00210006898705    2143312  ...            1           radiologi
+0     00210005483677    2131230  ...            0           radiologi
+1     00210005636422    2131230  ...            0           radiologi
+2     00210006242128    1972685  ...            0          konsultasi
+3     00210006633607    1972685  ...            0          konsultasi
+4     00210006912069    1972685  ...            0                None
 ...              ...        ...  ...          ...                 ...
-4327  00210007648298    1800008  ...            0        laboratorium
-4328  00210007648299    1800008  ...            0        laboratorium
-4329  00210007648303    1742127  ...            0                None
-4330  00210007648303    1742127  ...            0                None
-4331  00210007648312    2194535  ...            0        laboratorium
+3415  00210007654860      24749  ...            0        laboratorium
+3416  00210007654861      24749  ...            0        laboratorium
+3417  00210007654867    2206134  ...            0                None
+3418  00210007654869    2058052  ...            0        laboratorium
+3419  00210007654872    2209928  ...            0        laboratorium
 
-[4332 rows x 34 columns]
+[3420 rows x 34 columns]
 OrderID                       object
 PatientID                      int64
 AdmissionID                    int64
@@ -119,38 +119,38 @@ dtype: object
 Changes Detected:
 Modified Data:
              OrderID  PatientID  ...  BillingPaid  ObjectGroupingName
-73    00210007491798    2168429  ...            1          konsultasi
-157   00210007556219    2177496  ...            1          konsultasi
-158   00210007556229    2177496  ...            1          konsultasi
-264   00210007626391    2209517  ...            1          konsultasi
-320   00210007639734    2209252  ...            1                None
+11    00210005636422    2131230  ...            1           radiologi
+17    00210006242128    1972685  ...            0          konsultasi
+107   00210006633607    1972685  ...            0          konsultasi
+178   00210006912069    1972685  ...            0                None
+179   00210006912244    1972685  ...            0          konsultasi
 ...              ...        ...  ...          ...                 ...
-4306  00210007648119    1440461  ...            1                None
-4316  00210007648139    2007798  ...            1        laboratorium
-4381  00210007648297    1800008  ...            1        laboratorium
-4382  00210007648298    1800008  ...            1        laboratorium
-4383  00210007648299    1800008  ...            1        laboratorium
+4258  00210007654790    2211679  ...            0           radiologi
+4274  00210007654858      24749  ...            0        laboratorium
+4275  00210007654859      24749  ...            0        laboratorium
+4276  00210007654860      24749  ...            0        laboratorium
+4277  00210007654861      24749  ...            0        laboratorium
 
-[145 rows x 34 columns]
+[724 rows x 34 columns]
 Inserted Data:
-             OrderID  EmployeeID  ... CategoryName ObjectGroupingName
-5     00210006926788        5961  ...     tindakan          radiologi
-6     00210006988263       10566  ...    penunjang          radiologi
-41    00210007390965        1090  ...    penunjang          radiologi
-43    00210007418284        1979  ...    penunjang          radiologi
-95    00210007533283        5961  ...     tindakan          radiologi
-...              ...         ...  ...          ...                ...
-7302  00210007654860        2019  ...    penunjang       laboratorium
-7303  00210007654861        2019  ...    penunjang       laboratorium
-7304  00210007654867        2019  ...    penunjang               None
-7305  00210007654869       13114  ...    penunjang       laboratorium
-7306  00210007654872       10905  ...    penunjang       laboratorium
+              OrderID  EmployeeID  ... CategoryName ObjectGroupingName
+0      00110000334050        1249  ...        jalan         konsultasi
+1      00110000336227         217  ...        jalan         konsultasi
+2      00210003911677       19977  ...    penunjang          radiologi
+3      00210004206984        1971  ...    penunjang          radiologi
+4      00210004341062        1971  ...    penunjang          radiologi
+...               ...         ...  ...          ...                ...
+21851  00210007687267       10905  ...    penunjang               None
+21852  00210007687268       10905  ...    penunjang               None
+21853  00210007687268       10905  ...    penunjang               None
+21854  00210007687275       10905  ...    penunjang       laboratorium
+21855  00210007687278       13114  ...    penunjang       laboratorium
 
-[2976 rows x 5 columns]
+[18472 rows x 5 columns]
 
 Data Success Updated
 Data Success Inserted
-1208.2289533615112
-Memory after: 123.9609375 MB
-Memory used: 57.75390625 MB
-scheduler tanggal : 2024-12-09 01:25:10.045336
+1439.0410029888153
+Memory after: 282.8359375 MB
+Memory used: 216.66015625 MB
+scheduler tanggal : 2024-12-10 01:29:00.916204
