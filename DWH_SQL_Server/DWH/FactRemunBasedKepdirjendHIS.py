@@ -21,7 +21,7 @@ first_day_of_current_month = date.replace(day=1)
 last_day_of_previous_month = first_day_of_current_month - timedelta(days=1)
 # previous_month = last_day_of_previous_month.strftime('%m')
 # previous_year = last_day_of_previous_month.strftime('%Y')
-previous_month = '10'
+previous_month = '11'
 previous_year = 2024
 
 query_source = f""" SELECT 

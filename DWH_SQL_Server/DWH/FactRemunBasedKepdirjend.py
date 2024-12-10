@@ -101,7 +101,7 @@ query_source = f""" SELECT
                             -- LEFT JOIN xocp_ehr_patient_admission adm on adm.patient_id = d.patient_id and 
                             -- adm.admission_id = d.admission_id and adm.status_cd = 'normal'
                             LEFT JOIN xocp_orgs org on org.org_id = d.client_id
-                            WHERE a.bulan = '10' and a.tahun = '2024' and a.status_cd != 'nullified' -- ganti bulan menyesuaikan kebutuhan yg diminta, 08 berarti agustus.
+                            WHERE a.bulan = '11' and a.tahun = '2024' and a.status_cd != 'nullified' -- ganti bulan menyesuaikan kebutuhan yg diminta, 08 berarti agustus.
                             and c.status_cd = 'active'
                             -- AND b.order_id IN ('00200007106335')
                             and b.order_id LIKE '00%%'

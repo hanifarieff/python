@@ -1,64 +1,64 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mysql://hanif-ppi:***@172.16.6.10/mpi)
-      PatientID  PersonID  ...       PhoneNo                        Email
-0       2211683  27092030  ...  085781399573            KRISMAN@gmail.com
-1       2211684  27092031  ...  087737968021               MAYA@GMAIL.COM
-2       2211685  27092032  ...             -                             
-3       2211686  27092033  ...  087705543211                IGD@GMAIL.COM
-4       2211687  27092034  ...  081345261222                        1@G.C
-...         ...       ...  ...           ...                          ...
-4157    1685414  26564198  ...  082246621968           driswadi@gmail.com
-4159    1085774   1097348  ...  087850314488      ayuaisyahh125@gmail.com
-4161    2197004  27077349  ...  085886805078          bewok8815@gmail.com
-4164    2204464  27084811  ...  087872486693  ardiraniazzammala@gmail.com
-4168    2205801  27086148  ...  085888668545         englesmana@gmail.com
+ SELECT 
+                                pt.patient_id as PatientID,
+                                pt.person_id as PersonID,
+                                TRIM(pt.confidentiality_cd) as Confidentiality,
+                                pt.status_cd as PatientStatus,
+                                pt.migration_id as MigrationID,
+                                pt.mrn as MedicalNo, 
+                                pr.person_nm as PatientName , 
+                                pr.date_of_birth as BirthDate,
+                                ifnull(pr.gender_cd,'') as Gender, 
+                                ifnull(pr.marital_cd,'') as MaritalStatus ,  
+                                pr.religion_id as  ReligionID,  
+                                pr.external_id as NIK, 
+                                pr.address_txt  as Address, 
+                                pt.created_dttm as PatientCreatedDate, 
+                                pt.updated_dttm as PatientUpdatedDate, 
+                                pt.nullified_dttm as PatientNullifiedDate, 
+                                case when pr.regional_cd ='' then '-'  else pr.regional_cd end as RegionalCode,
+                                pr.status_cd as PersonStatusCode,
+                                pt.status_cd as PatientStatusCode,
+                                -- pr.updated_dttm as UpdatedDate
+                                -- ConvertMyDate(pr.updated_dttm) as PersonUpdatedDate,
+                                person_title as PersonTitle,
+                                family_nm as FamilyName,
+                                external_id as ExternalID,
+                                passport_no as PassportNo,
+                                father_nm as FatherName,
+                                mother_nm as MotherName,
+                                spouse_nm as SpouseName,
+                                place_of_birth as PlaceOfBirth,
+                                TRIM(postal_cd) as PostalCode,
+                                pr.race as Race,
+                                edu.educlvl_nm as Education,
+                                pr.jobclass_id,
+                                pr.blood_type as BloodType,
+                                pr.nationality as Nationality,
+                                pr.phone1 as TelephoneNo,
+                                pr.phone3 as PhoneNo,
+                                pr.email as Email
+                            FROM  patients pt left join persons pr on pt.person_id = pr.person_id 
+                            LEFT JOIN hris_sys_cd_educlvl edu ON edu.educlvl_cd = pr.education_id
+                            WHERE 
+                            -- pt.patient_id IN (2061500,2061501)
+                            -- pr.updated_dttm >= '2024-10-23 00:00:00' and pr.updated_dttm <= '2024-10-23 23:59:59'
+                            (pr.updated_dttm >= '2024-12-09 00:00:00' and pr.updated_dttm <= '2024-12-09 23:59:59')
+                            -- AND pr.person_nm IS NOT NULL
+ 
+      PatientID  PersonID Confidentiality  ...   TelephoneNo        PhoneNo                           Email
+0       2207387  27087734                  ...  082225406060   082225406060    lumbantoruanvera80@gmail.com
+1       2211685  27092032                  ...                            -                                
+2       2211679  27092026                  ...   08818829010    08818829010                asiyah@gmail.com
+3       2211686  27092033                  ...  087705543211   087705543211                   IGD@GMAIL.COM
+4         24749     25912                  ...       4606063    08881761269                   igd@gmail.com
+...         ...       ...             ...  ...           ...            ...                             ...
+3100    2212416  27092763                  ...  085695359064   085695359064  tami.islamiati@windowslive.com
+3101    2212724  27093071                  ...    0215672894    08112229651                   IGD@GMAIL.COM
+3102    2212725  27093072                  ...  081284481725  0895360784733                Hendra@gmail.com
+3103    2212726  27093073                  ...         00000          00000                   IGD@GMAIL.COM
+3104    2212727  27093074                  ...  085591140720   085591140720        rofendifendi77@gmail.com
 
-[3141 rows x 36 columns]
-      PatientID  PersonID  ... EmployeeID IsEmployee
-0       2211683  27092030  ...          0          0
-1       2211684  27092031  ...          0          0
-2       2211685  27092032  ...          0          0
-3       2211686  27092033  ...          0          0
-4       2211687  27092034  ...          0          0
-...         ...       ...  ...        ...        ...
-3136    1685414  26564198  ...          0          0
-3137    1085774   1097348  ...          0          0
-3138    2197004  27077349  ...          0          0
-3139    2204464  27084811  ...          0          0
-3140    2205801  27086148  ...          0          0
-
-[3141 rows x 38 columns]
-ini modified
-      PatientID  PersonID  ...                   ScdStart ScdActive
-7       2211690  27092037  ... 2024-12-10 00:05:01.726204         1
-40      2211723  27092070  ... 2024-12-10 00:05:01.726204         1
-51      2211734  27092081  ... 2024-12-10 00:05:01.726204         1
-58      2211741  27092088  ... 2024-12-10 00:05:01.726204         1
-75      2211758  27092105  ... 2024-12-10 00:05:01.726204         1
-...         ...       ...  ...                        ...       ...
-3134    2185557  27065901  ... 2024-12-10 00:05:01.726204         1
-3135    2174937  27055279  ... 2024-12-10 00:05:01.726204         1
-3138    2197004  27077349  ... 2024-12-10 00:05:01.726204         1
-3139    2204464  27084811  ... 2024-12-10 00:05:01.726204         1
-3140    2205801  27086148  ... 2024-12-10 00:05:01.726204         1
-
-[159 rows x 40 columns]
-ini insert
-      PatientID  PersonID  ...                   ScdStart ScdActive
-590     2212273  27092620  ... 2024-12-10 00:05:01.726204         1
-591     2212274  27092621  ... 2024-12-10 00:05:01.726204         1
-592     2212275  27092622  ... 2024-12-10 00:05:01.726204         1
-593     2212276  27092623  ... 2024-12-10 00:05:01.726204         1
-594     2212277  27092624  ... 2024-12-10 00:05:01.726204         1
-...         ...       ...  ...                        ...       ...
-2343    2208636  27088983  ... 2024-12-10 00:05:01.726204         1
-2352    2208334  27088681  ... 2024-12-10 00:05:01.726204         1
-2677    2208299  27088646  ... 2024-12-10 00:05:01.726204         1
-2847    2203068  27083415  ... 2024-12-10 00:05:01.726204         1
-2911    2208279  27088626  ... 2024-12-10 00:05:01.726204         1
-
-[464 rows x 40 columns]
-success insert new data and updated data
-76.89599657058716
-scheduler tanggal : 2024-12-10 00:05:01.726204
+[3105 rows x 36 columns]

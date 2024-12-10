@@ -1,19 +1,19 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
-0                 3544650     144573  ...           0 2024-02-28 14:29:35
-1                 3979007    1940839  ...           0 2024-03-28 10:36:46
-2                 4368792    1571638  ...           0 2024-04-01 09:59:28
-3                 4453073    1489238  ...           0 2024-04-01 10:40:17
-4                 4574132    1363593  ...           0 2024-04-01 11:51:07
-...                   ...        ...  ...         ...                 ...
-1719              5059745     884569  ...           0 2024-04-02 11:49:26
-1720              5090149     856805  ...           0 2024-04-02 13:26:50
-1721              5111421     834967  ...           0 2024-04-02 13:42:34
-1722              5135599     800701  ...           0 2024-04-02 14:07:34
-1723              5173229     768993  ...           0 2024-04-02 15:07:11
+      PatientSurrogateKey  PatientID  PersonID  ... EmployeeID IsEmployee     InsertedDateDWH
+0                 3892894     501594    505593  ...       7753          1 2024-02-28 15:15:36
+1                 4152212    1768337  26647642  ...          0          0 2024-03-28 11:10:04
+2                 4338607    1602649  26480694  ...          0          0 2024-04-01 08:47:55
+3                 4604127    1334149   1347752  ...          0          0 2024-04-01 13:25:59
+4                 4643638    1291760   1305085  ...          0          0 2024-04-01 13:42:18
+...                   ...        ...       ...  ...        ...        ...                 ...
+5268              6006948    2209686  27090033  ...          0          0 2024-12-10 14:01:43
+5269              6006949    2209911  27090258  ...          0          0 2024-12-10 14:01:43
+5270              6006950    2209947  27090294  ...          0          0 2024-12-10 14:01:43
+5271              6006951    2209953  27090300  ...          0          0 2024-12-10 14:01:43
+5272              6006952    2211310  27091657  ...          0          0 2024-12-10 14:08:44
 
-[1724 rows x 43 columns]
+[5273 rows x 43 columns]
 PatientSurrogateKey              int64
 PatientID                        int64
 PersonID                         int64
@@ -103,36 +103,36 @@ IsEmployee                       int64
 InsertedDateDWH         datetime64[ns]
 dtype: object
 ini modified
-      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
-0                 3544650     144573  ...           0 2024-02-28 14:29:35
-1                 3979007    1940839  ...           0 2024-03-28 10:36:46
-2                 4368792    1571638  ...           0 2024-04-01 09:59:28
-3                 4453073    1489238  ...           0 2024-04-01 10:40:17
-4                 4574132    1363593  ...           0 2024-04-01 11:51:07
-...                   ...        ...  ...         ...                 ...
-1719              5059745     884569  ...           0 2024-04-02 11:49:26
-1720              5090149     856805  ...           0 2024-04-02 13:26:50
-1721              5111421     834967  ...           0 2024-04-02 13:42:34
-1722              5135599     800701  ...           0 2024-04-02 14:07:34
-1723              5173229     768993  ...           0 2024-04-02 15:07:11
+      PatientSurrogateKey  PatientID  PersonID  ... EmployeeID IsEmployee     InsertedDateDWH
+0                 3892894     501594    505593  ...       7753          1 2024-02-28 15:15:36
+1                 4152212    1768337  26647642  ...          0          0 2024-03-28 11:10:04
+2                 4338607    1602649  26480694  ...          0          0 2024-04-01 08:47:55
+3                 4604127    1334149   1347752  ...          0          0 2024-04-01 13:25:59
+4                 4643638    1291760   1305085  ...          0          0 2024-04-01 13:42:18
+...                   ...        ...       ...  ...        ...        ...                 ...
+4941              5998857    2208089  27088436  ...          0          0 2024-12-04 00:06:24
+4942              5998890    2208122  27088469  ...          0          0 2024-12-04 00:06:24
+4943              5998944    2208176  27088523  ...          0          0 2024-12-04 00:06:24
+4944              5998979    2208211  27088558  ...          0          0 2024-12-04 00:06:24
+4945              5999010    2203157  27083504  ...          0          0 2024-12-04 00:06:24
 
-[1101 rows x 43 columns]
+[3096 rows x 43 columns]
 ini insert
-      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
-1071              6003098    2211690  ...           0 2024-12-10 00:06:08
-1072              6003099    2211723  ...           0 2024-12-10 00:06:08
-1073              6003100    2211734  ...           0 2024-12-10 00:06:08
-1074              6003101    2211741  ...           0 2024-12-10 00:06:08
-1075              6003102    2211758  ...           0 2024-12-10 00:06:08
-...                   ...        ...  ...         ...                 ...
-1689              6003716    2208636  ...           0 2024-12-10 00:06:23
-1690              6003717    2208334  ...           0 2024-12-10 00:06:23
-1691              6003718    2208299  ...           0 2024-12-10 00:06:23
-1692              6003719    2203068  ...           0 2024-12-10 00:06:23
-1693              6003720    2208279  ...           0 2024-12-10 00:06:23
+      PatientSurrogateKey  PatientID  PersonID Confidentiality  ... ScdEnd EmployeeID IsEmployee     InsertedDateDWH
+3057              6004776    2197839  27078184                  ...    NaT          0          0 2024-12-10 13:35:35
+3058              6004777    2197847  27078192                  ...    NaT          0          0 2024-12-10 13:35:35
+3059              6004778    2197849  27078194                  ...    NaT          0          0 2024-12-10 13:35:35
+3060              6004779    2197851  27078196                  ...    NaT          0          0 2024-12-10 13:35:35
+3061              6004780    2197857  27078202                  ...    NaT          0          0 2024-12-10 13:35:35
+...                   ...        ...       ...             ...  ...    ...        ...        ...                 ...
+5268              6006948    2209686  27090033                  ...    NaT          0          0 2024-12-10 14:01:43
+5269              6006949    2209911  27090258                  ...    NaT          0          0 2024-12-10 14:01:43
+5270              6006950    2209947  27090294                  ...    NaT          0          0 2024-12-10 14:01:43
+5271              6006951    2209953  27090300                  ...    NaT          0          0 2024-12-10 14:01:43
+5272              6006952    2211310  27091657                  ...    NaT          0          0 2024-12-10 14:08:44
 
-[623 rows x 43 columns]
+[2177 rows x 43 columns]
 UPDATE r SET r.PatientID = t.PatientID, r.PersonID = t.PersonID, r.Confidentiality = t.Confidentiality, r.PatientStatus = t.PatientStatus, r.MigrationID = t.MigrationID, r.MedicalNo = t.MedicalNo, r.PatientName = t.PatientName, r.BirthDate = t.BirthDate, r.Gender = t.Gender, r.MaritalStatus = t.MaritalStatus, r.ReligionID = t.ReligionID, r.NIK = t.NIK, r.Address = t.Address, r.PatientCreatedDate = t.PatientCreatedDate, r.PatientUpdatedDate = t.PatientUpdatedDate, r.PatientNullifiedDate = t.PatientNullifiedDate, r.RegionalCode = t.RegionalCode, r.PersonStatusCode = t.PersonStatusCode, r.PatientStatusCode = t.PatientStatusCode, r.PersonTitle = t.PersonTitle, r.FamilyName = t.FamilyName, r.ExternalID = t.ExternalID, r.PassportNo = t.PassportNo, r.FatherName = t.FatherName, r.MotherName = t.MotherName, r.SpouseName = t.SpouseName, r.PlaceOfBirth = t.PlaceOfBirth, r.PostalCode = t.PostalCode, r.Race = t.Race, r.Education = t.Education, r.Occupation = t.Occupation, r.BloodType = t.BloodType, r.Nationality = t.Nationality, r.TelephoneNo = t.TelephoneNo, r.PhoneNo = t.PhoneNo, r.Email = t.Email, r.ScdActive = t.ScdActive, r.ScdStart = t.ScdStart, r.ScdEnd = t.ScdEnd, r.EmployeeID = t.EmployeeID, r.IsEmployee = t.IsEmployee, r.InsertedDateDWH = t.InsertedDateDWH FROM dwhrscm_talend.DimPatientMPI r INNER JOIN (SELECT * FROM dwhrscm_talend.DimPatientMPI_temporary_table) as t ON r.PatientSurrogateKey = t.PatientSurrogateKey WHERE r.PatientSurrogateKey = t.PatientSurrogateKey ;
 success update and insert all data
-7.085998773574829
-scheduler tanggal : 2024-12-10 00:10:01.392202
+6.117644786834717
+scheduler tanggal : 2024-12-10 14:10:34.637637
