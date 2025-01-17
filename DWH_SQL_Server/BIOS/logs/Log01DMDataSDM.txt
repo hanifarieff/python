@@ -1,96 +1,97 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-  TglTransaksi  StandardRefID  Total EmployeeGroup  IsSent
-0   2024-11-30              1     41          PPPK       0
+Empty DataFrame
+Columns: [TglTransaksi, StandardRefID, Total, EmployeeGroup, IsSent]
+Index: []
 success insert 01DMAhliTeknologiLaboratoriumMedik
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30              2    136             PPPK       0
-1   2024-11-30              2     58    Non PNS Tetap       0
-2   2024-11-30              2     27  Tidak Diketahui       0
-3   2024-11-30              2     40          Kontrak       0
-4   2024-11-30              2    109              PNS       0
+0   2024-12-31              2     27  Tidak Diketahui       0
+1   2024-12-31              2     40          Kontrak       0
+2   2024-12-31              2     58    Non PNS Tetap       0
+3   2024-12-31              2    109              PNS       0
+4   2024-12-31              2    136             PPPK       0
 success insert 02DMPharmacist
 
   TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
-0   2024-11-30              3      4  Non PNS Tetap       0
-1   2024-11-30              3     42            PNS       0
-2   2024-11-30              3     12           PPPK       0
+0   2024-12-31              3      4  Non PNS Tetap       0
+1   2024-12-31              3     42            PNS       0
+2   2024-12-31              3     12           PPPK       0
 success insert 03DMBidan
 
   TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
-0   2024-11-30              4      5        Kontrak       0
-1   2024-11-30              4     11  Non PNS Tetap       0
-2   2024-11-30              4     39            PNS       0
-3   2024-11-30              4     11           PPPK       0
+0   2024-12-31              4      5        Kontrak       0
+1   2024-12-31              4     11  Non PNS Tetap       0
+2   2024-12-31              4     39            PNS       0
+3   2024-12-31              4     11           PPPK       0
 success insert 04DMNutrisionis
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30              5     32              PNS       0
-1   2024-11-30              5    100  Tidak Diketahui       0
-2   2024-11-30              5      9             PPPK       0
-3   2024-11-30              5      2    Non PNS Tetap       0
-4   2024-11-30              5     19          Kontrak       0
+0   2024-12-31              5    100  Tidak Diketahui       0
+1   2024-12-31              5     19          Kontrak       0
+2   2024-12-31              5      2    Non PNS Tetap       0
+3   2024-12-31              5     32              PNS       0
+4   2024-12-31              5      8             PPPK       0
 success insert 05DMDokterUmum
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30              6     11  Tidak Diketahui       0
-1   2024-11-30              6      4          Kontrak       0
-2   2024-11-30              6      6              PNS       0
-3   2024-11-30              6      2             PPPK       0
+0   2024-12-31              6     27  Tidak Diketahui       0
+1   2024-12-31              6      6          Kontrak       0
+2   2024-12-31              6      8              PNS       0
+3   2024-12-31              6      2             PPPK       0
 success insert 06DMDokterGigi
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30              7    413              PNS       0
-1   2024-11-30              7    122  Tidak Diketahui       0
-2   2024-11-30              7     48             PPPK       0
-3   2024-11-30              7     60    Non PNS Tetap       0
-4   2024-11-30              7     43          Kontrak       0
+0   2024-12-31              7    122  Tidak Diketahui       0
+1   2024-12-31              7     43          Kontrak       0
+2   2024-12-31              7     60    Non PNS Tetap       0
+3   2024-12-31              7    413              PNS       0
+4   2024-12-31              7     43             PPPK       0
 success insert 07DMDokterSpesialis
 
   TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
-0   2024-11-30              8      2        Kontrak       0
-1   2024-11-30              8      2  Non PNS Tetap       0
-2   2024-11-30              8     20            PNS       0
-3   2024-11-30              8     11           PPPK       0
+0   2024-12-31              8      2        Kontrak       0
+1   2024-12-31              8      2  Non PNS Tetap       0
+2   2024-12-31              8     20            PNS       0
+3   2024-12-31              8     11           PPPK       0
 success insert 08DMFisioterapis
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30              9   1052              PNS       0
-1   2024-11-30              9      1  Tidak Diketahui       0
-2   2024-11-30              9    546             PPPK       0
-3   2024-11-30              9    183    Non PNS Tetap       0
-4   2024-11-30              9    125          Kontrak       0
+0   2024-12-31              9      1  Tidak Diketahui       0
+1   2024-12-31              9    125          Kontrak       0
+2   2024-12-31              9    183    Non PNS Tetap       0
+3   2024-12-31              9   1049              PNS       0
+4   2024-12-31              9    546             PPPK       0
 success insert 09DMPerawat
 
   TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
-0   2024-11-30             10      7        Kontrak       0
-1   2024-11-30             10      4  Non PNS Tetap       0
-2   2024-11-30             10     33            PNS       0
-3   2024-11-30             10     39           PPPK       0
+0   2024-12-31             10      7        Kontrak       0
+1   2024-12-31             10      4  Non PNS Tetap       0
+2   2024-12-31             10     33            PNS       0
+3   2024-12-31             10     39           PPPK       0
 success insert 10DMRadiografer
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30             11      1  Tidak Diketahui       0
-1   2024-11-30             11     28          Kontrak       0
-2   2024-11-30             11     53    Non PNS Tetap       0
-3   2024-11-30             11    167              PNS       0
-4   2024-11-30             11     86             PPPK       0
+0   2024-12-31             11      1  Tidak Diketahui       0
+1   2024-12-31             11     28          Kontrak       0
+2   2024-12-31             11     52    Non PNS Tetap       0
+3   2024-12-31             11    160              PNS       0
+4   2024-12-31             11     66             PPPK       0
 success insert 11DMTenagaProfesionalSelainyangdisebutkandiatas
 
   TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
-0   2024-11-30             12    651              PNS       0
-1   2024-11-30             12   1333  Tidak Diketahui       0
-2   2024-11-30             12     48             PPPK       0
-3   2024-11-30             12    659    Non PNS Tetap       0
-4   2024-11-30             12     33          Kontrak       0
+0   2024-12-31             12   1333  Tidak Diketahui       0
+1   2024-12-31             12     32          Kontrak       0
+2   2024-12-31             12    658    Non PNS Tetap       0
+3   2024-12-31             12    655              PNS       0
+4   2024-12-31             12     49             PPPK       0
 success insert 26DMTenagaNonMedis
 
   TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
-0   2024-11-30             13      3  Non PNS Tetap       0
-1   2024-11-30             13      9            PNS       0
-2   2024-11-30             13      2           PPPK       0
+0   2024-12-31             13      3  Non PNS Tetap       0
+1   2024-12-31             13      9            PNS       0
+2   2024-12-31             13      2           PPPK       0
 success insert 37DMSanitarian
 
-6.81249737739563
-scheduler tanggal : 2024-11-30 08:00:00.806873
+4.907999515533447
+scheduler tanggal : 2024-12-31 08:00:00.904622

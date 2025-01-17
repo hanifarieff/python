@@ -108,7 +108,7 @@ def get_source_data(conn_his_live,conn_ehr,conn_dwh_sqlserver):
                         LEFT JOIN xocp_his_clin_priv priv on b.clin_priv_id = priv.clin_priv_id
                         LEFT JOIN xocp_obj AS obj ON priv.role_obj_id = obj.obj_id
                         WHERE
-                        a.ordered_dttm >= '2024-12-01 00:00:00' AND a.ordered_dttm <= '2024-12-05 23:59:59'
+                        a.ordered_dttm >= '2024-12-29 00:00:00' AND a.ordered_dttm <= '2024-12-31 23:59:59'
                         -- a.ordered_dttm >=  AND a.ordered_dttm <=
                         -- OR 
                         -- (a.updated_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 2 DAY), "%%Y-%%m-%%d 00:00:00") AND a.updated_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")))

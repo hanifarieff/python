@@ -185,7 +185,7 @@ query_source3 = f""" SELECT
                             -- (st.updated_dttm >= '2024-02-01 00:00:00' AND st.updated_dttm <= '2024-02-01 23:59:59')
                             st.updated_dttm >= {start_date} AND st.updated_dttm <={end_date}
                             AND adm.org_id IN (select org_id from xocp_orgs where parent_id not in ('687','1872','2418') and org_id not in ('687','1872','2418'))
-                            AND adm.status_cd NOT IN ('cancelled','nullified') 
+                            -- AND adm.status_cd NOT IN ('cancelled','nullified') 
                             ORDER BY adm.patient_id, adm.admission_id
                         ) x
                         GROUP BY x.PatientID, x.AdmissionID"""

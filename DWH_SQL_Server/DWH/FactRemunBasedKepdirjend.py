@@ -14,14 +14,14 @@ t0 = time.time()
 
 # conn_ehr_live = db_connection.create_connection(db_connection.ehr_live)
 conn_ehr = db_connection.create_connection(db_connection.replika_ehr)
-conn_his = db_connection.create_connection(db_connection.replika_his)
+conn_his = db_connection.create_connection(db_connection.his_live)
 conn_dwh_sqlserver = db_connection.create_connection(db_connection.dwh_sqlserver)
 
 first_day_of_current_month = date.replace(day=1)
 last_day_of_previous_month = first_day_of_current_month - timedelta(days=1)
 # previous_month = last_day_of_previous_month.strftime('%m')
 # previous_year = last_day_of_previous_month.strftime('%Y')
-previous_month = '09'
+previous_month = '12'
 previous_year = 2024
 
 query_source = f""" SELECT 
@@ -101,7 +101,7 @@ query_source = f""" SELECT
                             -- LEFT JOIN xocp_ehr_patient_admission adm on adm.patient_id = d.patient_id and 
                             -- adm.admission_id = d.admission_id and adm.status_cd = 'normal'
                             LEFT JOIN xocp_orgs org on org.org_id = d.client_id
-                            WHERE a.bulan = '11' and a.tahun = '2024' and a.status_cd != 'nullified' -- ganti bulan menyesuaikan kebutuhan yg diminta, 08 berarti agustus.
+                            WHERE a.bulan = '12' and a.tahun = '2024' and a.status_cd != 'nullified' -- ganti bulan menyesuaikan kebutuhan yg diminta, 08 berarti agustus.
                             and c.status_cd = 'active'
                             -- AND b.order_id IN ('00200007106335')
                             and b.order_id LIKE '00%%'

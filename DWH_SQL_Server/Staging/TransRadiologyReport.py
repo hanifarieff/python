@@ -13,7 +13,7 @@ sys.stdout = open("C:/TestPython/DWH_SQL_Server/Staging/logs/LogTransRadiologyRe
 t0 = time.time()
 
 # koneksi ke db
-conn_ehr= db_connection.create_connection(db_connection.replika_ehr)
+conn_ehr_live= db_connection.create_connection(db_connection.ehr_live)
 conn_staging_sqlserver=db_connection.create_connection(db_connection.staging_sqlserver)
 
 source = pd.read_sql_query(""" 
@@ -65,12 +65,14 @@ source = pd.read_sql_query("""
                                 -- OR mrn = 4463811 and accession_number = 'MR00190002686162'
                                 -- WHERE DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= '2024-03-01 00:00:00' 
                                 -- AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= '2024-04-23 23:59:59' 
-                                WHERE (DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
+                                WHERE 
+                                -- order_dttm >= '20241201000000' and order_dttm <= '20241231235959'
+                                (DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
                                 AND DATE_FORMAT(order_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= DATE_FORMAT(NOW(), "%%Y-%%m-%%d 23:59:59"))
                                 OR 
                                 (DATE_FORMAT(observation_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00")
                                 AND DATE_FORMAT(observation_dttm,'%%Y-%%m-%%d %%h:%%i:%%s') <= DATE_FORMAT(NOW(), "%%Y-%%m-%%d 23:59:59"))
-                                ORDER BY REGEXP_SUBSTR(accession_number,'[0-9]+'), CAST(observation_dttm as datetime)
+                                -- ORDER BY REGEXP_SUBSTR(accession_number,'[0-9]+'), CAST(observation_dttm as datetime)
                                 ) a
                                 GROUP BY 
                                     a.MedicalNo,
@@ -86,7 +88,7 @@ source = pd.read_sql_query("""
                                     a.responsible_observer_id_addendum,
                                     a.responsible_observer_nm_addendum
                                 ORDER BY a.ObservationDate 
-                            """, conn_ehr)
+                            """, conn_ehr_live)
 print(source)
 
 if source.empty:
@@ -182,7 +184,7 @@ print(total)
 text=f'scheduler tanggal : {date}'
 print(text)
 
-db_connection.close_connection(conn_ehr)
+db_connection.close_connection(conn_ehr_live)
 db_connection.close_connection(conn_staging_sqlserver)
 sys.stdout.close()
 

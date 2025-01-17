@@ -54,7 +54,7 @@ query_source1 = f""" SELECT DISTINCT
                                     ORDER BY patient_id,admission_id
                                 ) x ON x.patient_id = adm.patient_id and x.admission_id = adm.admission_id
                                 WHERE adm.org_id in (select org_id from xocp_orgs where parent_id in ('687','1872','2418') OR org_id in ('687','1872','2418'))
-                                AND adm.status_cd NOT IN ('nullified','cancelled')
+                                -- AND adm.status_cd NOT IN ('nullified','cancelled')
                                 -- AND adm.admission_dttm >= '2023-12-25 00:00:00' AND adm.admission_dttm <= '2023-12-27 23:59:59'
                                 AND adm.admission_dttm >= {start_date} AND adm.admission_dttm <= {end_date}
                         

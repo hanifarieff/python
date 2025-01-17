@@ -1,64 +1,64 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mysql://hanif-ppi:***@172.16.6.10/mpi)
- SELECT 
-                                pt.patient_id as PatientID,
-                                pt.person_id as PersonID,
-                                TRIM(pt.confidentiality_cd) as Confidentiality,
-                                pt.status_cd as PatientStatus,
-                                pt.migration_id as MigrationID,
-                                pt.mrn as MedicalNo, 
-                                pr.person_nm as PatientName , 
-                                pr.date_of_birth as BirthDate,
-                                ifnull(pr.gender_cd,'') as Gender, 
-                                ifnull(pr.marital_cd,'') as MaritalStatus ,  
-                                pr.religion_id as  ReligionID,  
-                                pr.external_id as NIK, 
-                                pr.address_txt  as Address, 
-                                pt.created_dttm as PatientCreatedDate, 
-                                pt.updated_dttm as PatientUpdatedDate, 
-                                pt.nullified_dttm as PatientNullifiedDate, 
-                                case when pr.regional_cd ='' then '-'  else pr.regional_cd end as RegionalCode,
-                                pr.status_cd as PersonStatusCode,
-                                pt.status_cd as PatientStatusCode,
-                                -- pr.updated_dttm as UpdatedDate
-                                -- ConvertMyDate(pr.updated_dttm) as PersonUpdatedDate,
-                                person_title as PersonTitle,
-                                family_nm as FamilyName,
-                                external_id as ExternalID,
-                                passport_no as PassportNo,
-                                father_nm as FatherName,
-                                mother_nm as MotherName,
-                                spouse_nm as SpouseName,
-                                place_of_birth as PlaceOfBirth,
-                                TRIM(postal_cd) as PostalCode,
-                                pr.race as Race,
-                                edu.educlvl_nm as Education,
-                                pr.jobclass_id,
-                                pr.blood_type as BloodType,
-                                pr.nationality as Nationality,
-                                pr.phone1 as TelephoneNo,
-                                pr.phone3 as PhoneNo,
-                                pr.email as Email
-                            FROM  patients pt left join persons pr on pt.person_id = pr.person_id 
-                            LEFT JOIN hris_sys_cd_educlvl edu ON edu.educlvl_cd = pr.education_id
-                            WHERE 
-                            -- pt.patient_id IN (2061500,2061501)
-                            -- pr.updated_dttm >= '2024-10-23 00:00:00' and pr.updated_dttm <= '2024-10-23 23:59:59'
-                            (pr.updated_dttm >= '2024-12-09 00:00:00' and pr.updated_dttm <= '2024-12-09 23:59:59')
-                            -- AND pr.person_nm IS NOT NULL
- 
-      PatientID  PersonID Confidentiality  ...   TelephoneNo        PhoneNo                           Email
-0       2207387  27087734                  ...  082225406060   082225406060    lumbantoruanvera80@gmail.com
-1       2211685  27092032                  ...                            -                                
-2       2211679  27092026                  ...   08818829010    08818829010                asiyah@gmail.com
-3       2211686  27092033                  ...  087705543211   087705543211                   IGD@GMAIL.COM
-4         24749     25912                  ...       4606063    08881761269                   igd@gmail.com
-...         ...       ...             ...  ...           ...            ...                             ...
-3100    2212416  27092763                  ...  085695359064   085695359064  tami.islamiati@windowslive.com
-3101    2212724  27093071                  ...    0215672894    08112229651                   IGD@GMAIL.COM
-3102    2212725  27093072                  ...  081284481725  0895360784733                Hendra@gmail.com
-3103    2212726  27093073                  ...         00000          00000                   IGD@GMAIL.COM
-3104    2212727  27093074                  ...  085591140720   085591140720        rofendifendi77@gmail.com
+      PatientID  PersonID  ...       PhoneNo                              Email
+0       2242862  27123713  ...  081319111168                   muthia@gmail.com
+1       2242863  27123714  ...  087821837494                     yuli@gmail.com
+2       2242864  27123715  ...  089670512808                     nova@gmail.com
+3       2242865  27123716  ...  083836484725                  sukamto@gmail.com
+4       2242866  27123717  ...  081291424982                    manda@gmail.com
+...         ...       ...  ...           ...                                ...
+3781    2240807  27121658  ...  081310171683                ardany214@gmail.com
+3787    2242859  27123710  ...   08118715514  muhammadfadlansoegianto@gmail.com
+3788    2242094  27122945  ...  081284291247               Prabasariv@gmail.com
+3789    2221589  27101940  ...  081280541180                   iqox91@gmail.com
+3791    2241772  27122623  ...  081388842262                apetdoank@gmail.com
 
-[3105 rows x 36 columns]
+[2857 rows x 36 columns]
+      PatientID  PersonID  ... EmployeeID IsEmployee
+0       2242862  27123713  ...          0          0
+1       2242863  27123714  ...          0          0
+2       2242864  27123715  ...          0          0
+3       2242865  27123716  ...          0          0
+4       2242866  27123717  ...          0          0
+...         ...       ...  ...        ...        ...
+2852    2240807  27121658  ...          0          0
+2853    2242859  27123710  ...          0          0
+2854    2242094  27122945  ...          0          0
+2855    2221589  27101940  ...          0          0
+2856    2241772  27122623  ...          0          0
+
+[2857 rows x 38 columns]
+ini modified
+      PatientID  PersonID  ...                   ScdStart ScdActive
+937     2161088  27041428  ... 2025-01-17 00:05:01.796721         1
+938     2238716  27119567  ... 2025-01-17 00:05:01.796721         1
+939     2233423  27114244  ... 2025-01-17 00:05:01.796721         1
+940     2241678  27122529  ... 2025-01-17 00:05:01.796721         1
+941     2218588  27098936  ... 2025-01-17 00:05:01.796721         1
+...         ...       ...  ...                        ...       ...
+2852    2240807  27121658  ... 2025-01-17 00:05:01.796721         1
+2853    2242859  27123710  ... 2025-01-17 00:05:01.796721         1
+2854    2242094  27122945  ... 2025-01-17 00:05:01.796721         1
+2855    2221589  27101940  ... 2025-01-17 00:05:01.796721         1
+2856    2241772  27122623  ... 2025-01-17 00:05:01.796721         1
+
+[219 rows x 40 columns]
+ini insert
+     PatientID  PersonID  ...                   ScdStart ScdActive
+0      2242862  27123713  ... 2025-01-17 00:05:01.796721         1
+1      2242863  27123714  ... 2025-01-17 00:05:01.796721         1
+2      2242864  27123715  ... 2025-01-17 00:05:01.796721         1
+3      2242865  27123716  ... 2025-01-17 00:05:01.796721         1
+4      2242866  27123717  ... 2025-01-17 00:05:01.796721         1
+..         ...       ...  ...                        ...       ...
+932    2243794  27124646  ... 2025-01-17 00:05:01.796721         1
+933    2243795  27124647  ... 2025-01-17 00:05:01.796721         1
+934    2243796  27124648  ... 2025-01-17 00:05:01.796721         1
+935    2243797  27124649  ... 2025-01-17 00:05:01.796721         1
+936    2243798  27124650  ... 2025-01-17 00:05:01.796721         1
+
+[937 rows x 40 columns]
+success insert new data and updated data
+73.7490017414093
+scheduler tanggal : 2025-01-17 00:05:01.796721

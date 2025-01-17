@@ -1,3 +1,0 @@
-success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
-success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
-success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)

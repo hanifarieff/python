@@ -1,7 +1,1 @@
 success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
-success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
-success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
-success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
-Empty DataFrame
-Columns: [AppointmentID, KodeBooking, PatientType, AdmissionDate, AdmissionDateOnly, PatientID, AdmissionID, MedicalNo, CardNo, NIK, PhoneNo, OrgID, NewPatient, AppointmentDate, DoctorEmployeeID, AppointmentTime, DoctorPracticeStartTime, DoctorPracticeFinishTime, VisitType, AppointmentMethod, QueueNumber, QueueNo, ServedEstimated, RestQuotaJKN, QuotaJKN, RestQuotaNonJKN, QuotaNonJKN, Notes, Flag]
-Index: []

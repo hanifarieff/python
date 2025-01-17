@@ -43,10 +43,10 @@ source = pd.read_sql_query("""
                                 ON a.order_id = SUBSTRING_INDEX(b.order_id, '^',2) and a.patient_id = b.patient_id and a.admission_id = b.admission_id
                                 -- WHERE (a.order_req_dttm >= '2023-02-18 00:00:00' AND a.order_req_dttm <= '2023-02-19 23:59:59')
                                 where 
-                                -- (a.order_req_dttm >= '2024-04-21 00:00:00' AND a.order_req_dttm <= '2024-04-22 23:59:59')
-                                (a.order_req_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") AND a.order_req_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")) 
-                                OR
-                                (b.updated_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") AND b.updated_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59"))
+                                (a.order_req_dttm >= '2024-10-29 00:00:00' AND a.order_req_dttm <= '2024-10-30 23:59:59')
+                                -- (a.order_req_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 2 DAY), "%%Y-%%m-%%d 00:00:00") AND a.order_req_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")) 
+                                -- OR
+                                -- (b.updated_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") AND b.updated_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59"))
                                 -- b.created_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") AND b.created_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")
                                 ORDER BY a.patient_id, a.admission_id """, conn_ehr)
 print(source.iloc[:,[0,1,2,3,7]])

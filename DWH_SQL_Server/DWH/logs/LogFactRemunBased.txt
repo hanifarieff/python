@@ -1,5 +1,5 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
-success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 OrderID                     object
 EmployeeID                   int64
@@ -35,19 +35,19 @@ PayplanKemkesNew            object
 dtype: object
 after
                OrderID  EmployeeID  ... CategoryNameNew PayplanKemkesNew
-0       00200004627999       12427  ...       penunjang              JKN
-1       00200004630298       12427  ...       penunjang              JKN
-2       00200006273761        1972  ...       penunjang              JKN
-3       00200007032810       13114  ...       penunjang              JKN
-4       00200007038193        7257  ...        tindakan              JKN
+0       00200007259587        5666  ...       penunjang          Non JKN
+1       00200007286143         651  ...        tindakan          Non JKN
+2       00200007501686        3339  ...        tindakan              JKN
+3       00200008132124        1981  ...        tindakan              JKN
+4       00200008270839        1981  ...        tindakan              JKN
 ...                ...         ...  ...             ...              ...
-271451  00210007368716       10914  ...        tindakan              JKN
-271452  00210007368804         783  ...           jalan              JKN
-271453  00210007369003       17432  ...        tindakan              JKN
-271454  00210007369031        8069  ...        tindakan              JKN
-271455  00210007369082       21069  ...        tindakan              JKN
+294477  00210008056782         651  ...        tindakan          Non JKN
+294478  00210008057110        7105  ...           jalan              JKN
+294479  00210008057391        8068  ...        tindakan          Non JKN
+294480  00210008057522        8069  ...        tindakan              JKN
+294481  00210008057617        8067  ...        tindakan              JKN
 
-[271456 rows x 31 columns]
+[294482 rows x 31 columns]
 OrderID                     object
 EmployeeID                   int64
 DoctorName                  object
@@ -81,5 +81,5 @@ CategoryNameNew             object
 PayplanKemkesNew            object
 dtype: object
 success insert all data
-306.5941514968872
-scheduler tanggal : 2024-12-10 10:49:08.413860
+896.4500000476837
+scheduler tanggal : 2025-01-10 07:25:35.731257

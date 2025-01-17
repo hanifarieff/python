@@ -1,33 +1,33 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+      ReportID  ... IsAddendum
+0      1776610  ...          n
+1      1776621  ...          n
+2      1776666  ...          n
+3      1776689  ...          n
+4      1776851  ...          n
+...        ...  ...        ...
+1099   1776059  ...          n
+1100   1776065  ...          n
+1101   1776115  ...          n
+1102   1776164  ...          n
+1103   1776168  ...          n
+
+[1104 rows x 12 columns]
      ReportID AccessionNumber  ...                ResponsibleObserverName IsAddendum
-0     1761771              GD  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1     1761772              GD  ...      Dr. dr. Rahmad Mulyadi, SpRad (K)          n
-2     1761773              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
-3     1761774              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
-4     1761775              GD  ...        dr. Thariqah Salamah, SpRad (K)          n
+0     1777504              CT  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+1     1777361              CT  ...    dr. Trifonia Pingkan Siregar, SpRad          n
+2     1777389              US  ...    dr. Trifonia Pingkan Siregar, SpRad          n
+3     1777681              MR  ...        dr. Thariqah Salamah, SpRad (K)          n
+4     1777584              CT  ...               dr. Radius Kusuma, SpRad          n
 ..        ...             ...  ...                                    ...        ...
-642   1762139              NM  ...         dr. Rian Hidayatullah, SpKN-TM          n
-643   1762140              CT  ...        dr. Thariqah Salamah, SpRad (K)          n
-644   1762141              CT  ...               dr. Radius Kusuma, SpRad          n
-645   1762142              DX  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
-646   1762143              GD  ...         dr. I Wayan Murna Y, SpRad (K)          n
+522   1777816              CT  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+523   1777805              GD  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+524   1777812               R  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+525   1777809              GD  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+526   1777811              GD  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
 
-[647 rows x 12 columns]
-     ReportID AccessionNumber  ...               ResponsibleObserverName IsAddendum
-0     1761792              CR  ...  Dr. dr. Prijo Sidipratomo, SpRad (K)          n
-1     1761797              MR  ...   dr. Trifonia Pingkan Siregar, SpRad          n
-2     1761888               R  ...      dr Mohammad Reynalzi Yugo, SpRad          n
-3     1761890               R  ...      dr Mohammad Reynalzi Yugo, SpRad          n
-4     1761891               R  ...      dr Mohammad Reynalzi Yugo, SpRad          n
-..        ...             ...  ...                                   ...        ...
-157   1761928              KA  ...   Dr. dr. Sawitri Darmiati, SpRad (K)          n
-158   1761929              GD  ...   Dr. dr. Sawitri Darmiati, SpRad (K)          n
-159   1761930              GD  ...   Dr. dr. Sawitri Darmiati, SpRad (K)          n
-160   1761931              CT  ...   Dr. dr. Sawitri Darmiati, SpRad (K)          n
-161   1761932              GD  ...   Dr. dr. Sawitri Darmiati, SpRad (K)          n
-
-[162 rows x 12 columns]
+[527 rows x 12 columns]
 total row update : 0
 Empty DataFrame
 Columns: [ReportID, AccessionNumber, OrderID, MedicalNo, OrderDate, ObservationDate, ServiceID, ServiceName]
@@ -35,21 +35,21 @@ Index: []
 Empty DataFrame
 Columns: [ServiceName, Report, ResponsibleObserverID, ResponsibleObserverName, IsAddendum]
 Index: []
-total row inserted : 485
-     ReportID AccessionNumber  ...              ResponsibleObserverName IsAddendum
-118   1762144              GD  ...       dr. I Wayan Murna Y, SpRad (K)          n
-119   1762145              MR  ...             dr. Radius Kusuma, SpRad          n
-120   1762146              GD  ...       dr. I Wayan Murna Y, SpRad (K)          n
-121   1762147              MR  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-122   1762148              NM  ...       dr. Rian Hidayatullah, SpKN-TM          n
-..        ...             ...  ...                                  ...        ...
-642   1762139              NM  ...       dr. Rian Hidayatullah, SpKN-TM          n
-643   1762140              CT  ...      dr. Thariqah Salamah, SpRad (K)          n
-644   1762141              CT  ...             dr. Radius Kusuma, SpRad          n
-645   1762142              DX  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-646   1762143              GD  ...       dr. I Wayan Murna Y, SpRad (K)          n
+total row inserted : 577
+      ReportID AccessionNumber  ...               ResponsibleObserverName IsAddendum
+292    1777894              MR  ...  Dr. dr. Prijo Sidipratomo, SpRad (K)          n
+293    1777895              CT  ...  Dr. dr. Prijo Sidipratomo, SpRad (K)          n
+294    1777896              KA  ...           dr. H.F. Wulandari, Sp.A(K)          n
+302    1777897              KA  ...           dr. H.F. Wulandari, Sp.A(K)          n
+303    1777898              KA  ...           dr. H.F. Wulandari, Sp.A(K)          n
+...        ...             ...  ...                                   ...        ...
+1089   1778389              GD  ...    dr. Taufik Agung Wibowo, SpRad (K)          n
+1090   1778390              GD  ...    dr. Taufik Agung Wibowo, SpRad (K)          n
+1091   1778391              GD  ...    dr. Taufik Agung Wibowo, SpRad (K)          n
+1092   1778392              GD  ...    dr. Taufik Agung Wibowo, SpRad (K)          n
+1093   1778393              GD  ...    dr. Taufik Agung Wibowo, SpRad (K)          n
 
-[485 rows x 12 columns]
+[577 rows x 12 columns]
 success insert all data without update
-10.282000064849854
-scheduler tanggal : 2024-12-09 23:35:02.017202
+29.94899821281433
+scheduler tanggal : 2025-01-16 23:35:02.099714

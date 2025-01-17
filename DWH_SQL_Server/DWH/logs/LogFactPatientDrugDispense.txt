@@ -1,38 +1,50 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
         PrescriptionID  OrderID  ...  DrugPrescriptionDate    DrugDispenseDate
-0      00140001628992      6110  ...   2023-08-25 09:28:32 2024-12-08 08:37:00
-1      00140001628992      6110  ...   2023-08-25 09:28:32 2024-12-08 08:37:00
-2      00140001628992      6110  ...   2023-08-25 09:28:32 2024-12-08 08:37:00
-3      00140001628992      6113  ...   2023-08-25 09:28:32 2024-12-09 08:13:59
-4      00140001628992      6113  ...   2023-08-25 09:28:32 2024-12-09 08:13:59
+0      00150000797162       128  ...   2024-04-21 01:20:45 2025-01-15 10:18:04
+1      00150000797162       128  ...   2024-04-21 01:20:45 2025-01-15 10:18:04
+2      00150000797162       128  ...   2024-04-21 01:20:45 2025-01-15 10:18:04
+3      00150000797162       128  ...   2024-04-21 01:20:45 2025-01-15 10:18:04
+4      00150000797162       128  ...   2024-04-21 01:20:45 2025-01-15 10:18:04
 ...                ...      ...  ...                   ...                 ...
-34503  00150002365485       408  ...   2024-11-15 19:28:30 2024-12-08 14:07:27
-34504  00150002365485       419  ...   2024-11-15 19:28:30 2024-12-09 07:47:26
-34505  00150002365491        46  ...   2024-11-15 19:29:33 2024-12-09 20:32:42
-34506  00150002368261        45  ...   2024-11-16 11:37:48 2024-12-09 20:32:42
-34507  00150002372466        27  ...   2024-11-17 11:11:37 2024-12-09 14:53:26
+42875  00160000120343         3  ...   2025-01-16 11:27:15 2025-01-16 12:50:04
+42876  00160000120343         3  ...   2025-01-16 11:27:15 2025-01-16 12:50:04
+42877  00160000120343         4  ...   2025-01-16 11:27:15 2025-01-16 13:12:36
+42878  00160000120343         4  ...   2025-01-16 11:27:15 2025-01-16 13:12:36
+42879  00160000120344         1  ...   2025-01-16 11:27:20 2025-01-16 12:15:19
 
-[34508 rows x 19 columns]
-total row update : 0
-Empty DataFrame
-Columns: [PrescriptionID, OrderID, SequenceID, PatientID, AdmissionID, MedicalNo, DrugID, DrugName, DrugQuantity, DrugUnitPrice, DrugTotalPrice, UnitCode, DispenseStatus, DispenseMethod, IsFornas, CreatedID, DoctorID, DrugPrescriptionDate, DrugDispenseDate]
-Index: []
-total row inserted : 21705
+[42880 rows x 19 columns]
+total row update : 65
         PrescriptionID  OrderID  ...  DrugPrescriptionDate    DrugDispenseDate
-3      00140001628992      6113  ...   2023-08-25 09:28:32 2024-12-09 08:13:59
-4      00140001628992      6113  ...   2023-08-25 09:28:32 2024-12-09 08:13:59
-5      00140001628992      6113  ...   2023-08-25 09:28:32 2024-12-09 08:13:59
-6      00140002159816       182  ...   2023-11-07 03:11:08 2024-12-09 10:15:37
-7      00140002159816       182  ...   2023-11-07 03:11:08 2024-12-09 10:15:37
+9048   00160000046543       125  ...   2025-01-07 13:38:48 2025-01-15 21:10:50
+9049   00160000046543       125  ...   2025-01-07 13:38:48 2025-01-15 21:10:50
+9050   00160000046543       125  ...   2025-01-07 13:38:48 2025-01-15 21:10:50
+9332   00160000006726       124  ...   2025-01-02 10:39:10 2025-01-15 21:10:38
+9947   00160000063203       120  ...   2025-01-09 11:04:59 2025-01-15 21:10:37
 ...                ...      ...  ...                   ...                 ...
-34502  00150002365171        47  ...   2024-11-15 18:18:06 2024-12-09 20:32:42
-34504  00150002365485       419  ...   2024-11-15 19:28:30 2024-12-09 07:47:26
-34505  00150002365491        46  ...   2024-11-15 19:29:33 2024-12-09 20:32:42
-34506  00150002368261        45  ...   2024-11-16 11:37:48 2024-12-09 20:32:42
-34507  00150002372466        27  ...   2024-11-17 11:11:37 2024-12-09 14:53:26
+22786  00160000108942        34  ...   2025-01-15 09:11:03 2025-01-15 11:27:51
+22787  00160000108942        34  ...   2025-01-15 09:11:03 2025-01-15 11:27:51
+22788  00160000108942        34  ...   2025-01-15 09:11:03 2025-01-15 11:27:51
+22789  00160000108942        34  ...   2025-01-15 09:11:03 2025-01-15 11:27:51
+29464  00160000112578       117  ...   2025-01-15 13:47:56 2025-01-15 21:10:36
 
-[21705 rows x 19 columns]
-success insert all data without update
-190.48199653625488
-scheduler tanggal : 2024-12-10 04:10:01.776204
+[65 rows x 19 columns]
+total row inserted : 20795
+        PrescriptionID  OrderID  ...  DrugPrescriptionDate    DrugDispenseDate
+15     00150000797162       129  ...   2024-04-21 01:20:45 2025-01-16 10:49:46
+16     00150000797162       129  ...   2024-04-21 01:20:45 2025-01-16 10:49:46
+17     00150000797162       129  ...   2024-04-21 01:20:45 2025-01-16 10:49:46
+18     00150000797162       129  ...   2024-04-21 01:20:45 2025-01-16 10:49:46
+19     00150000797162       129  ...   2024-04-21 01:20:45 2025-01-16 10:49:46
+...                ...      ...  ...                   ...                 ...
+42875  00160000120343         3  ...   2025-01-16 11:27:15 2025-01-16 12:50:04
+42876  00160000120343         3  ...   2025-01-16 11:27:15 2025-01-16 12:50:04
+42877  00160000120343         4  ...   2025-01-16 11:27:15 2025-01-16 13:12:36
+42878  00160000120343         4  ...   2025-01-16 11:27:15 2025-01-16 13:12:36
+42879  00160000120344         1  ...   2025-01-16 11:27:20 2025-01-16 12:15:19
+
+[20795 rows x 19 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.DrugUnitPrice = t.DrugUnitPrice, r.DrugTotalPrice = t.DrugTotalPrice, r.UnitCode = t.UnitCode, r.DispenseStatus = t.DispenseStatus, r.DispenseMethod = t.DispenseMethod, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.DrugDispenseDate = t.DrugDispenseDate , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientDrugDispense r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientDrugDispense_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID WHERE r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+193.5690004825592
+scheduler tanggal : 2025-01-17 04:10:01.867714

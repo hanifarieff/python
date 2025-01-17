@@ -2,37 +2,37 @@ success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
    ID                   TableName  RowTotal
-0   1  xocp_ehr_patient_admission  10989648
+0   1  xocp_ehr_patient_admission  11137472
    ID              TableName  RowTotal
-0   2  xocp_ehr_patient_stay   2053610
+0   2  xocp_ehr_patient_stay   2077255
    ID  TableName  RowTotal
-0   3  xocp_orgs      2772
+0   3  xocp_orgs      2779
    ID             TableName  RowTotal
-0   4  xocp_ehr_patient_act   5279617
+0   4  xocp_ehr_patient_act   5389466
    ID         TableName  RowTotal
-0   5  xocp_ehr_patient   1652686
+0   5  xocp_ehr_patient   1683148
    ID         TableName  RowTotal
 0   6  xocp_ehr_payplan        81
    ID         TableName  RowTotal
 0   7  xocp_ehr_company       321
    ID               TableName  RowTotal
-0   8  xocp_ehr_patient_order  66745812
+0   8  xocp_ehr_patient_order  67607313
    ID                   TableName  RowTotal
-0   1  xocp_ehr_patient_admission  10989648
-1   2       xocp_ehr_patient_stay   2053610
-2   3                   xocp_orgs      2772
-3   4        xocp_ehr_patient_act   5279617
-4   5            xocp_ehr_patient   1652686
+0   1  xocp_ehr_patient_admission  11137472
+1   2       xocp_ehr_patient_stay   2077255
+2   3                   xocp_orgs      2779
+3   4        xocp_ehr_patient_act   5389466
+4   5            xocp_ehr_patient   1683148
 5   6            xocp_ehr_payplan        81
 6   7            xocp_ehr_company       321
-7   8      xocp_ehr_patient_order  66745812
+7   8      xocp_ehr_patient_order  67607313
 total row update master : 5
    ID                   TableName  RowTotal
-0   1  xocp_ehr_patient_admission  10989648
-1   2       xocp_ehr_patient_stay   2053610
-3   4        xocp_ehr_patient_act   5279617
-4   5            xocp_ehr_patient   1652686
-7   8      xocp_ehr_patient_order  66745812
+0   1  xocp_ehr_patient_admission  11137472
+1   2       xocp_ehr_patient_stay   2077255
+3   4        xocp_ehr_patient_act   5389466
+4   5            xocp_ehr_patient   1683148
+7   8      xocp_ehr_patient_order  67607313
 
 
 total row insert master : 0
@@ -42,7 +42,7 @@ Index: []
 UPDATE r SET r.TableName = t.TableName, r.RowTotal = t.RowTotal , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactRowNumberMaster r INNER JOIN (SELECT * FROM dwhrscm_talend.FactRowNumberMaster_temporary_table) as t ON r.ID = t.ID  WHERE r.ID = t.ID ;
 success update and insert all data master
 
-CPU usage: 5.1 %
-57.92578125
-148.4550004005432
-scheduler tanggal : 2024-12-09 23:00:02.144204
+CPU usage: 2.2 %
+60.546875
+142.75800037384033
+scheduler tanggal : 2025-01-16 23:00:02.279713

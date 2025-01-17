@@ -39,7 +39,7 @@ source = pd.read_sql_query(""" SELECT
                                 WHERE 
                                 -- PrescriptionID = '00150000491630'
                                 -- UpdateDateStaging >= '2024-03-07 04:00:00' and UpdateDateStaging <= '2024-03-07 04:10:59'
-                                -- DrugDispenseDate >= '2024-11-05 00:00:00' and DrugDispenseDate <= '2024-11-06 23:59:59'
+                                -- DrugDispenseDate >= '2024-10-01 00:00:00' and DrugDispenseDate <= '2024-10-01 23:59:59'
                                 CAST(InsertDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)
                                 OR (CAST(UpdateDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(UpdateDateStaging as date) <= CAST(GETDATE() as date))
                                 AND (MedicalNo NOT IN (SELECT MedicalNo FROM staging_rscm.DimensionDummyPatient) OR MedicalNo IS NULL)

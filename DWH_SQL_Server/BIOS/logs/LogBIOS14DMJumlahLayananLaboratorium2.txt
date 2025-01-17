@@ -1,56 +1,56 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
      TglTransaksi            NamaLayanan  Jumlah
-0      2024-11-30                    ANA       1
-1      2024-11-30  25-OH VITAMIN D TOTAL       6
-2      2024-11-30   ANALISA FESES KHUSUS       1
-3      2024-11-30          ALBUMIN (ALB)       7
-4      2024-11-30  ANALISA CAIRAN PLEURA       1
+0      2025-01-07  25-OH VITAMIN D TOTAL       8
+1      2025-01-07               AMMONIAK       1
+2      2025-01-07    AGGREGASI TROMBOSIT       1
+3      2025-01-07  ANALISA CAIRAN ASITES       1
+4      2025-01-07                    AFP      13
 ...           ...                    ...     ...
-1088   2024-12-09           TYROGLOBULIN      10
-1089   2024-12-09            WING NEEDLE      82
-1090   2024-12-09           URIN LENGKAP      85
-1091   2024-12-09            UREUM DARAH     256
-1092   2024-12-09                   VDRL       7
+1669   2025-01-16            UREUM DARAH     129
+1670   2025-01-16           TRIGLISERIDA      38
+1671   2025-01-16           TYROGLOBULIN       2
+1672   2025-01-16            WING NEEDLE      92
+1673   2025-01-16           URIN LENGKAP      55
 
-[1093 rows x 3 columns]
+[1674 rows x 3 columns]
 TglTransaksi    object
 NamaLayanan     object
 Jumlah           int64
 dtype: object
-    TglTransaksi             NamaLayanan  Jumlah
-0     2024-11-30   25-OH VITAMIN D TOTAL       6
-1     2024-11-30     AGGREGASI TROMBOSIT       1
-2     2024-11-30           ALBUMIN (ALB)       7
-3     2024-11-30  ALKALI PHOSOPAT PRODIA       1
-4     2024-11-30                     ANA       1
-..           ...                     ...     ...
-939   2024-12-08            TRIGLISERIDA       1
-940   2024-12-08                     TSH       2
-941   2024-12-08             UREUM DARAH       7
-942   2024-12-08            URIN LENGKAP       3
-943   2024-12-08             WING NEEDLE      12
+     TglTransaksi            NamaLayanan  Jumlah
+0      2025-01-07  25-OH VITAMIN D TOTAL       8
+1      2025-01-07                    AFP      13
+2      2025-01-07    AGGREGASI TROMBOSIT       1
+3      2025-01-07          ALBUMIN (ALB)      54
+4      2025-01-07               AMMONIAK       1
+...           ...                    ...     ...
+1533   2025-01-15                    TSH      32
+1534   2025-01-15            UREUM DARAH     122
+1535   2025-01-15           URIN LENGKAP      46
+1536   2025-01-15                   VDRL       4
+1537   2025-01-15            WING NEEDLE      68
 
-[944 rows x 3 columns]
+[1538 rows x 3 columns]
 total row update : 0
 Empty DataFrame
 Columns: [TglTransaksi, NamaLayanan, Jumlah]
 Index: []
-total row inserted : 149
-     TglTransaksi               NamaLayanan  Jumlah
-944    2024-12-09     25-OH VITAMIN D TOTAL      11
-945    2024-12-09             ALBUMIN (ALB)      63
-946    2024-12-09                       AFP      21
-947    2024-12-09                  AMMONIAK       3
-948    2024-12-09  ADENOSIN DIAMINASE (ADA)       1
-...           ...                       ...     ...
-1088   2024-12-09              TYROGLOBULIN      10
-1089   2024-12-09               WING NEEDLE      82
-1090   2024-12-09              URIN LENGKAP      85
-1091   2024-12-09               UREUM DARAH     256
-1092   2024-12-09                      VDRL       7
+total row inserted : 136
+     TglTransaksi            NamaLayanan  Jumlah
+1538   2025-01-16  25-OH VITAMIN D TOTAL      18
+1539   2025-01-16    AGGREGASI TROMBOSIT       4
+1540   2025-01-16   ANALISA FESES KHUSUS       1
+1541   2025-01-16                    ANA       2
+1542   2025-01-16                    AFP       2
+...           ...                    ...     ...
+1669   2025-01-16            UREUM DARAH     129
+1670   2025-01-16           TRIGLISERIDA      38
+1671   2025-01-16           TYROGLOBULIN       2
+1672   2025-01-16            WING NEEDLE      92
+1673   2025-01-16           URIN LENGKAP      55
 
-[149 rows x 3 columns]
+[136 rows x 3 columns]
 success insert all data without update
-162.44999885559082
-scheduler tanggal : 2024-12-10 07:07:01.775212
+173.41000080108643
+scheduler tanggal : 2025-01-17 07:07:01.829714

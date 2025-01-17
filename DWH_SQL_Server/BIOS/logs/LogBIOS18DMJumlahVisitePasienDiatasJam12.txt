@@ -1,23 +1,23 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-('2024-11-30', '2024-12-01', '2024-12-02', '2024-12-03', '2024-12-04', '2024-12-05', '2024-12-06', '2024-12-07', '2024-12-08', '2024-12-09')
+('2025-01-07', '2025-01-08', '2025-01-09', '2025-01-10', '2025-01-11', '2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16')
   TglTransaksi  Jumlah
-0   2024-11-30     264
-1   2024-12-01     341
-2   2024-12-02     393
-3   2024-12-03     368
-4   2024-12-04     389
-5   2024-12-05     357
-6   2024-12-06     499
-7   2024-12-07     297
-8   2024-12-08     205
+0   2025-01-07     589
+1   2025-01-08     591
+2   2025-01-09     481
+3   2025-01-10     581
+4   2025-01-11     179
+5   2025-01-12     289
+6   2025-01-13     443
+7   2025-01-14     381
+8   2025-01-15     405
 total row update : 0
 Empty DataFrame
 Columns: [TglTransaksi, Jumlah]
 Index: []
 total row inserted : 1
   TglTransaksi  Jumlah
-9   2024-12-09     478
+9   2025-01-16     397
 success insert all data without update
-1.618997573852539
-scheduler tanggal : 2024-12-10 06:17:01.951202
+0.9619989395141602
+scheduler tanggal : 2025-01-17 06:17:01.949714

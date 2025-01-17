@@ -1,52 +1,64 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
        PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
-0      00140001628992     6113  ... 2024-12-09 08:13:59            0
-1      00140001628992     6113  ... 2024-12-09 08:13:59            0
-2      00140001628992     6113  ... 2024-12-09 08:13:59            0
-3      00140002159816      182  ... 2024-12-09 10:15:37            0
-4      00140002159816      182  ... 2024-12-09 10:15:37            0
+0      00110000965655       45  ... 2025-01-15 09:49:02            0
+1      00110000965655       46  ... 2025-01-15 09:49:27            0
+2      00110000965655       47  ... 2025-01-15 09:54:37            0
+3      00110000965655       48  ... 2025-01-15 13:59:27            0
+4      00110000965655       49  ... 2025-01-15 13:59:33            0
 ...               ...      ...  ...                 ...          ...
-21700  00150002545926        3  ... 2024-12-09 23:55:07            0
-21701  00150002545927        9  ... 2024-12-09 23:55:02            0
-21702  00150002545933        3  ... 2024-12-09 23:55:49            1
-21703  00150002545933        3  ... 2024-12-09 23:55:49            1
-21704  00150002545943       31  ... 2024-12-09 23:58:21            0
+40551  00160000126370      151  ... 2025-01-16 23:53:02            0
+40552  00160000126372      390  ... 2025-01-16 23:55:41            0
+40553  00160000126377        1  ... 2025-01-16 23:54:52            0
+40554  00160000126377        1  ... 2025-01-16 23:54:52            0
+40555  00160000126377        1  ... 2025-01-16 23:54:52            0
 
-[21705 rows x 20 columns]
+[40556 rows x 20 columns]
        PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
-0      00140002159816       21  ... 2023-11-07 12:28:53         None
-1      00140002159816       21  ... 2023-11-07 12:28:53         None
-2      00140002159816       21  ... 2023-11-07 12:28:53         None
-3      00140002159816       21  ... 2023-11-07 12:28:53         None
-4      00140002159816       21  ... 2023-11-07 12:28:53         None
+0      00110000965655        2  ... 2023-05-29 19:29:58         None
+1      00110000965655        3  ... 2023-05-30 14:56:55         None
+2      00110000965655        4  ... 2023-05-31 19:35:18         None
+3      00110000965655        5  ... 2023-06-01 09:19:55         None
+4      00110000965655        6  ... 2024-04-02 19:05:24            0
 ...               ...      ...  ...                 ...          ...
-20470  00150002536413        2  ... 2024-12-08 23:07:14            0
-20471  00150002536413        2  ... 2024-12-08 23:07:14            0
-20472  00150002536416       30  ... 2024-12-08 23:32:41            0
-20473  00150002536463      116  ... 2024-12-08 23:26:40            0
-20474  00150002536497        7  ... 2024-12-08 23:35:31            0
+44423  00160000116668        8  ... 2025-01-15 23:59:49            0
+44424  00160000116673        5  ... 2025-01-15 23:55:02            0
+44425  00160000116681       89  ... 2025-01-15 23:59:17            0
+44426  00160000116681       89  ... 2025-01-15 23:59:17            0
+44427  00160000116681       89  ... 2025-01-15 23:59:17            0
 
-[20475 rows x 20 columns]
-total row update : 0
-Empty DataFrame
-Columns: [PrescriptionID, OrderID, SequenceID, PatientID, AdmissionID, MedicalNo, DrugID, DrugName, DrugQuantity, DrugUnitPrice, DrugTotalPrice, UnitCode, DispenseStatus, DispenseMethod, IsFornas, CreatedID, DoctorID, DrugPrescriptionDate, DrugDispenseDate, BillingPaid]
-Index: []
-total row inserted : 21705
+[44428 rows x 20 columns]
+total row update : 1967
        PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
-0      00140001628992     6113  ... 2024-12-09 08:13:59            0
-1      00140001628992     6113  ... 2024-12-09 08:13:59            0
-2      00140001628992     6113  ... 2024-12-09 08:13:59            0
-3      00140002159816      182  ... 2024-12-09 10:15:37            0
-4      00140002159816      182  ... 2024-12-09 10:15:37            0
+375    00150002566836      415  ... 2025-01-15 10:36:13            1
+519    00150002631758      414  ... 2025-01-15 10:36:11            1
+621    00150002690912      104  ... 2025-01-15 09:47:23            1
+622    00150002690912      104  ... 2025-01-15 09:47:23            1
+623    00150002690912      104  ... 2025-01-15 09:47:23            1
 ...               ...      ...  ...                 ...          ...
-21700  00150002545926        3  ... 2024-12-09 23:55:07            0
-21701  00150002545927        9  ... 2024-12-09 23:55:02            0
-21702  00150002545933        3  ... 2024-12-09 23:55:49            1
-21703  00150002545933        3  ... 2024-12-09 23:55:49            1
-21704  00150002545943       31  ... 2024-12-09 23:58:21            0
+24604  00160000116337       12  ... 2025-01-15 22:10:44            1
+24605  00160000116337       12  ... 2025-01-15 22:10:44            1
+24606  00160000116337       12  ... 2025-01-15 22:10:44            1
+24607  00160000116338       66  ... 2025-01-15 22:43:04            1
+25101  00160000116586        1  ... 2025-01-15 23:17:22            1
 
-[21705 rows x 20 columns]
-success insert all data without update
-205.3169982433319
-scheduler tanggal : 2024-12-10 04:00:02.150204
+[1967 rows x 20 columns]
+total row inserted : 20795
+       PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
+7      00110000965655       52  ... 2025-01-16 09:05:51            0
+8      00140001661180       13  ... 2025-01-16 18:31:54            0
+11     00140001911823       49  ... 2025-01-16 08:35:22            0
+12     00140001911823       49  ... 2025-01-16 08:35:22            0
+18     00150000226650      131  ... 2025-01-16 19:47:47            0
+...               ...      ...  ...                 ...          ...
+40551  00160000126370      151  ... 2025-01-16 23:53:02            0
+40552  00160000126372      390  ... 2025-01-16 23:55:41            0
+40553  00160000126377        1  ... 2025-01-16 23:54:52            0
+40554  00160000126377        1  ... 2025-01-16 23:54:52            0
+40555  00160000126377        1  ... 2025-01-16 23:54:52            0
+
+[20795 rows x 20 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.DrugUnitPrice = t.DrugUnitPrice, r.DrugTotalPrice = t.DrugTotalPrice, r.UnitCode = t.UnitCode, r.DispenseStatus = t.DispenseStatus, r.DispenseMethod = t.DispenseMethod, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.DrugDispenseDate = t.DrugDispenseDate, r.BillingPaid = t.BillingPaid , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientDrugDispense r INNER JOIN (SELECT * FROM staging_rscm.TransPatientDrugDispense_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID WHERE r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+279.6049988269806
+scheduler tanggal : 2025-01-17 04:00:02.202714

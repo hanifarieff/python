@@ -40,7 +40,7 @@ source = pd.read_sql_query("""
                                     a.StatusCode  
                                 FROM staging_rscm.TransPatientLabObs a
                                 LEFT JOIN staging_rscm.DimensionPatientMPI b ON a.PatientID = b.PatientID AND b.ScdActive = 1
-                                -- where (CAST(a.OrderRequestDate as date) >= '2023-04-12' AND CAST(a.OrderRequestDate as date) <= '2023-04-17') OR
+                                -- where a.OrderRequestDate >= '2024-03- 00:00:00' AND a.OrderRequestDate <= '2024-03-08 23:59:59'
                                 -- (CAST(a.CreatedDate as date) >= '2023-04-12' AND CAST(a.CreatedDate as date) <= '2023-04-17')
                                 WHERE 
                                 -- CAST(a.OrderRequestDate as date) >= '2024-01-17' AND CAST(a.OrderRequestDate as date) <= '2024-01-20'

@@ -1,51 +1,10 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-      OrderID  PatientID  ...  StatusForm CreatedUserID
-0   162205394    1451699  ...      normal         20083
-1   162205394    1451699  ...      normal         20083
-2   162205394    1451699  ...      normal         20083
-3   162205394    1451699  ...      normal         20083
-4   162205394    1451699  ...      normal         20083
-..        ...        ...  ...         ...           ...
-79  162208096    2211827  ...      normal         10087
-80  162208096    2211827  ...      normal         10087
-81  162208096    2211827  ...      normal         10087
-82  162208096    2211827  ...      normal         10087
-83  162208096    2211827  ...      normal         10087
-
-[84 rows x 14 columns]
-     OrderID  PatientID  ...  StatusForm CreatedUserID
-0  162142858    2207348  ...      normal         20645
-1  162142858    2207348  ...      normal         20645
-2  162142858    2207348  ...      normal         20645
-3  162142858    2207348  ...      normal         20645
-4  162142858    2207348  ...      normal         20645
-5  162142858    2207348  ...      normal         20645
-6  162142858    2207348  ...      normal         20645
-7  162142858    2207348  ...      normal         20645
-
-[8 rows x 14 columns]
-total row update : 0
 Empty DataFrame
 Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
 Index: []
-total row inserted : 81
-      OrderID  PatientID  ...  StatusForm CreatedUserID
-0   162205394    1451699  ...      normal         20083
-1   162205394    1451699  ...      normal         20083
-2   162205394    1451699  ...      normal         20083
-3   162205394    1451699  ...      normal         20083
-4   162205394    1451699  ...      normal         20083
-..        ...        ...  ...         ...           ...
-79  162208096    2211827  ...      normal         10087
-80  162208096    2211827  ...      normal         10087
-81  162208096    2211827  ...      normal         10087
-82  162208096    2211827  ...      normal         10087
-83  162208096    2211827  ...      normal         10087
-
-[81 rows x 14 columns]
-success insert without update
-2.402998685836792
+tidak ada data dari source
+1.6810026168823242
 
 
-scheduler tanggal : 2024-12-10 04:45:01.741202
+scheduler tanggal : 2025-01-17 04:45:01.796713

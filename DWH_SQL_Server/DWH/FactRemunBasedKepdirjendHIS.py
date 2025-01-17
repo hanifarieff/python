@@ -14,14 +14,14 @@ t0 = time.time()
 
 # conn_ehr_live = db_connection.create_connection(db_connection.ehr_live)
 conn_ehr = db_connection.create_connection(db_connection.replika_ehr)
-conn_his = db_connection.create_connection(db_connection.replika_his)
+conn_his = db_connection.create_connection(db_connection.his_live)
 conn_dwh_sqlserver = db_connection.create_connection(db_connection.dwh_sqlserver)
 
 first_day_of_current_month = date.replace(day=1)
 last_day_of_previous_month = first_day_of_current_month - timedelta(days=1)
 # previous_month = last_day_of_previous_month.strftime('%m')
 # previous_year = last_day_of_previous_month.strftime('%Y')
-previous_month = '11'
+previous_month = '12'
 previous_year = 2024
 
 query_source = f""" SELECT 
@@ -96,9 +96,10 @@ query_source = f""" SELECT
                     LEFT JOIN (SELECT employee_id, id_card_num FROM xocp_hrm_emp_idcard WHERE idcard_type = '1' GROUP BY employee_id) k on c.employee_id = k.employee_id
                     -- LEFT JOIN xocp_dm_tindakankencana dm on dm.role_no = b.role_no and b.bulan = dm.bulan and b.tahun = dm.tahun and b.employee_id = dm.kode_dokter
                     WHERE a.bulan = {previous_month} and a.tahun = '{previous_year}' and a.status_cd != 'nullified' -- ganti bulan menyesuaikan kebutuhan yg diminta, 08 berarti agustus.
-                    and c.status_cd = 'active'
-                    -- AND b.order_id IN ('143676002','143718626')
+                    -- and c.status_cd = 'active'
+                    -- AND b.order_id IN ('160972205','160972226')
                     and b.order_id NOT LIKE '00%%'
+                    and b.employee_id = 1971
                     ORDER BY b.order_id, a.employee_id """
 source = pd.read_sql_query(query_source, conn_ehr)
 

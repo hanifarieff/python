@@ -1,91 +1,13 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-    RegistrationNo    OrderID  ...  FinalUserID           FinalDate
-0        H24-14833  162213097  ...         6606 2024-12-09 12:24:01
-1        H24-15082  162207316  ...        19783 2024-12-09 11:02:50
-2        H24-15084  162208296  ...        19783 2024-12-09 11:16:11
-3        H24-15126  162228263  ...            0 2024-12-09 18:24:51
-4        H24-15219  162227686  ...        19783 2024-12-09 18:01:26
-..             ...        ...  ...          ...                 ...
-148      H24-15391  162160541  ...     92700099 2024-12-07 10:45:21
-149      H24-15416  162160406  ...     92700099 2024-12-07 10:42:46
-150      K24-04585  162230564  ...         1942 2024-12-09 20:45:59
-151      K24-04644  162230638  ...         1942 2024-12-09 20:55:45
-152      K24-04648  162227220  ...        19783 2024-12-09 17:39:53
-
-[153 rows x 16 columns]
-    RegistrationNo    OrderID  ...           FinalDate  TopoCode
-6        H24-15236  162202595  ... 2024-12-09 10:02:55     C77.2
-9        H24-15315  162228194  ... 2024-12-09 18:22:21     C64.9
-33       H24-15255  162227845  ... 2024-12-09 18:08:34     C57.0
-39       H24-15082  162207316  ... 2024-12-09 11:02:50     C55.9
-41       H24-15126  162228263  ... 2024-12-09 18:24:51     C64.9
-42       H24-15219  162227686  ... 2024-12-09 18:01:26     C52.9
-49       H24-15350  162212590  ... 2024-12-09 12:15:20     C54.1
-62       H24-15226  162228262  ... 2024-12-09 18:24:51     C34.9
-65       H24-15288  162203078  ... 2024-12-09 10:09:09     C69.9
-66       H24-15311  162206148  ... 2024-12-09 10:49:12     C55.9
-74       H24-14748  162216396  ... 2024-12-09 13:23:05     C11.9
-82       H24-15249  162205585  ... 2024-12-09 10:42:07     C53.9
-86       H24-15316  162228361  ... 2024-12-09 18:29:42     C63.0
-93       K24-04648  162227220  ... 2024-12-09 17:39:53       C50
-95       H24-15010  162228320  ... 2024-12-09 18:27:53     C09.9
-97       H24-15084  162208296  ... 2024-12-09 11:16:11     C56.9
-104      H24-15295  162207168  ... 2024-12-09 18:12:05     C53.9
-106      H24-15339  162216291  ... 2024-12-09 13:21:30     C44.7
-107      H24-15362  162227537  ... 2024-12-09 17:54:35     C44.5
-117      H24-15159  162216152  ... 2024-12-09 13:18:54     C64.9
-137      H24-15122  162208844  ... 2024-12-09 11:23:18     C54.1
-139      H24-15221  162216212  ... 2024-12-09 13:20:13     C11.9
-142      H24-15283  162202913  ... 2024-12-09 10:06:46     C32.9
-
-[23 rows x 17 columns]
-   RegistrationNo    OrderID  ...           FinalDate  TopoCode
-0       H24-15085  162031529  ... 2024-12-04 08:03:39         -
-1       H24-15085  162031529  ... 2024-12-04 08:03:39         -
-2       H24-15085  162031529  ... 2024-12-04 08:03:39     C49.2
-3       H24-15085  162031529  ... 2024-12-04 08:03:39         -
-4       H24-15386  162160598  ... 2024-12-07 10:47:01         -
-5       H24-15386  162160598  ... 2024-12-07 10:47:01         -
-6       H24-15386  162160598  ... 2024-12-07 10:47:01         -
-7       H24-15386  162160598  ... 2024-12-07 10:47:01         -
-8       H24-15391  162160541  ... 2024-12-07 10:45:21         -
-9       H24-15391  162160541  ... 2024-12-07 10:45:21         -
-10      H24-15391  162160541  ... 2024-12-07 10:45:21         -
-11      H24-15391  162160541  ... 2024-12-07 10:45:21         -
-12      H24-15405  162165535  ... 2024-12-07 14:27:39         -
-13      H24-15405  162165535  ... 2024-12-07 14:27:39         -
-14      H24-15405  162165535  ... 2024-12-07 14:27:39         -
-15      H24-15405  162165535  ... 2024-12-07 14:27:39         -
-16      H24-15416  162160406  ... 2024-12-07 10:42:46         -
-17      H24-15416  162160406  ... 2024-12-07 10:42:46         -
-18      H24-15416  162160406  ... 2024-12-07 10:42:46         -
-19      H24-15416  162160406  ... 2024-12-07 10:42:46         -
-
-[20 rows x 17 columns]
-total row update : 1
-   RegistrationNo    OrderID  ...           FinalDate  TopoCode
-34      H24-15085  162031529  ... 2024-12-04 08:03:39         -
-
-[1 rows x 17 columns]
-total row inserted : 136
-    RegistrationNo    OrderID  ...           FinalDate  TopoCode
-0        H24-14833  162213097  ... 2024-12-09 12:24:01         -
-1        H24-15082  162207316  ... 2024-12-09 11:02:50         -
-2        H24-15084  162208296  ... 2024-12-09 11:16:11         -
-3        H24-15126  162228263  ... 2024-12-09 18:24:51         -
-4        H24-15219  162227686  ... 2024-12-09 18:01:26         -
-..             ...        ...  ...                 ...       ...
-146      H24-15339  162216291  ... 2024-12-09 13:21:30         -
-147      H24-15362  162227537  ... 2024-12-09 17:54:35         -
-150      K24-04585  162230564  ... 2024-12-09 20:45:59         -
-151      K24-04644  162230638  ... 2024-12-09 20:55:45         -
-152      K24-04648  162227220  ... 2024-12-09 17:39:53         -
-
-[136 rows x 17 columns]
-UPDATE t SET t.MedicalNo = s.MedicalNo, t.PanelID = s.PanelID, t.PanelName = s.PanelName, t.ObjName = s.ObjName, t.ObsValue = s.ObsValue, t.Behaviour = s.Behaviour, t.Status = s.Status, t.CreatedUserID = s.CreatedUserID, t.CreatedDate = s.CreatedDate, t.FinalUserID = s.FinalUserID, t.FinalDate = s.FinalDate, t.TopoCode = s.TopoCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPathologyAnatomy t INNER JOIN (SELECT * FROM dwhrscm_talend.FactPathologyAnatomy_temporary_table) AS s ON t.RegistrationNo = s.RegistrationNo AND t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID  WHERE t.RegistrationNo = s.RegistrationNo  AND t.OrderID = s.OrderID AND t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.ObjID = s.ObjID ;
-all success updated and inserted
-2.0969979763031006
+Empty DataFrame
+Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, MedicalNo, PanelID, PanelName, ObjID, ObjName, ObsValue, Behaviour, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate]
+Index: []
+Empty DataFrame
+Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, MedicalNo, PanelID, PanelName, ObjID, ObjName, ObsValue, Behaviour, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate, TopoCode]
+Index: []
+tidak ada data dari source
+1.5639963150024414
 
 
-scheduler tanggal : 2024-12-10 04:05:01.863205
+scheduler tanggal : 2025-01-17 04:05:01.937713

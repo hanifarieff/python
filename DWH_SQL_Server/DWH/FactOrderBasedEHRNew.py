@@ -39,6 +39,8 @@ def get_source_data(conn_ehr, conn_dwh_sqlserver):
     # buat variabel start_date dan end_date dengan mengambil 1 hari ke belakang untuk dimasukkan di query
     start_date = (date - timedelta(days=2)).strftime('%Y-%m-%d')
     end_date = (date - timedelta(days=1)).strftime('%Y-%m-%d')
+    # start_date = f'2024-12-23'
+    # end_date = f'2024-12-23'
 
     # query untuk menarik data dari patient_order lalu masukkan variabel date_range di dalam WHERE
     query_source = f"""                            
@@ -157,6 +159,7 @@ def get_source_data(conn_ehr, conn_dwh_sqlserver):
                             LEFT JOIN xocp_ehr_patient_order_acctobj k on a.order_id = k.order_id AND k.obj_id LIKE 'SRN%%'
                             -- LEFT JOIN (SELECT order_id, SUM(tariff) as tariff FROM xocp_ehr_patient_order_acctobj WHERE obj_id LIKE 'SRN%%' GROUP BY order_id) k on a.order_id = k.order_id
                             WHERE
+                            
                             -- a.created_dttm >= '2024-11-10 00:00:00' AND a.created_dttm <= '2024-11-10 23:59:59'
                             -- a.ordered_dttm >=  00:00:00' AND a.ordered_dttm <=  23:59:59'
                             (a.created_dttm >= '{start_date} 00:00:00' AND a.created_dttm <= '{end_date} 23:59:59') 
@@ -192,6 +195,7 @@ def get_source_data(conn_ehr, conn_dwh_sqlserver):
                         WHERE emp.employee_id IS NOT NULL          
                     """
     source = pd.read_sql_query(query_source,conn_ehr)
+    print(query_source)
     print(source)
 
     # ubah tipe data pada kolom2 tertentu menyesuaikan dengan yang ada di tabel

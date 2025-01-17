@@ -1,50 +1,50 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-       PatientSurrogateKeyID  ...                           DoctorResponsible
-0                  5739141.0  ...  Merci Monica br Pasaribu, Dr. dr., SpPK(K)
-1                  5957555.0  ...                       dr. Nuri D. I. , SpPK
-2                  5957555.0  ...                       dr. Nuri D. I. , SpPK
-3                  5957555.0  ...                       dr. Nuri D. I. , SpPK
-4                  5957555.0  ...                                            
-...                      ...  ...                                         ...
-57379              6003706.0  ...                  dr. ECHO VIRGINIA KARUBABA
-57380              6003706.0  ...                                            
-57381              6003706.0  ...                  dr. ECHO VIRGINIA KARUBABA
-57382              6003706.0  ...                  dr. ECHO VIRGINIA KARUBABA
-57383              6003706.0  ...                  dr. ECHO VIRGINIA KARUBABA
+       PatientSurrogateKeyID  ...          DoctorResponsible
+0                    5981714  ...  dr. Dean Handimulya, SpPK
+1                    5736329  ...  dr. Merci Monica P, SpPK~
+2                    5736329  ...  dr. Merci Monica P, SpPK~
+3                    5736329  ...                           
+4                    5736329  ...  dr. Merci Monica P, SpPK~
+...                      ...  ...                        ...
+68100                6042371  ...            dr. MARCO LIUS~
+68101                6042371  ...            dr. MARCO LIUS~
+68102                6042371  ...            dr. MARCO LIUS~
+68103                6042371  ...            dr. MARCO LIUS~
+68104                6042371  ...            dr. MARCO LIUS~
 
-[57384 rows x 6 columns]
-total row update : 232
-       PatientSurrogateKeyID  ...  DoctorResponsible
-81                 6002399.0  ...     dr. MARCO LIUS
-82                 6002399.0  ...     dr. MARCO LIUS
-83                 6002399.0  ...     dr. MARCO LIUS
-84                 6002399.0  ...                   
-85                 6002399.0  ...     dr. MARCO LIUS
-...                      ...  ...                ...
-55294              6002395.0  ...     dr. MARCO LIUS
-55295              6002395.0  ...     dr. MARCO LIUS
-55296              6002395.0  ...     dr. MARCO LIUS
-55297              6002395.0  ...     dr. MARCO LIUS
-55298              6002395.0  ...     dr. MARCO LIUS
+[68105 rows x 6 columns]
+total row update : 301
+       PatientSurrogateKeyID  ...               DoctorResponsible
+1341                 6041321  ...      dr. Dean Handimulya, SpPK~
+1395                 5407530  ...        dr. Yusuf Bahasoan, SpPK
+1397                 5407530  ...  Selvi Nafisa Shahab, dr., SpMK
+6792                 6041427  ...       Dr. Dewi Wulandari, SpPK~
+17917                4277954  ...                dr. Yusra, SpPK~
+...                      ...  ...                             ...
+62713                6041237  ...          dr. Ninik S, DMM,SpPK~
+62714                6041237  ...                                
+62715                6041237  ...          dr. Ninik S, DMM,SpPK~
+62716                6041237  ...          dr. Ninik S, DMM,SpPK~
+62717                6041237  ...          dr. Ninik S, DMM,SpPK~
 
-[232 rows x 6 columns]
-total row inserted : 47351
-       PatientSurrogateKeyID  ...           DoctorResponsible
-1                  5957555.0  ...       dr. Nuri D. I. , SpPK
-2                  5957555.0  ...       dr. Nuri D. I. , SpPK
-3                  5957555.0  ...       dr. Nuri D. I. , SpPK
-4                  5957555.0  ...                            
-5                  5957555.0  ...       dr. Nuri D. I. , SpPK
-...                      ...  ...                         ...
-57379              6003706.0  ...  dr. ECHO VIRGINIA KARUBABA
-57380              6003706.0  ...                            
-57381              6003706.0  ...  dr. ECHO VIRGINIA KARUBABA
-57382              6003706.0  ...  dr. ECHO VIRGINIA KARUBABA
-57383              6003706.0  ...  dr. ECHO VIRGINIA KARUBABA
+[301 rows x 6 columns]
+total row inserted : 36264
+       PatientSurrogateKeyID  ...          DoctorResponsible
+0                    5981714  ...  dr. Dean Handimulya, SpPK
+1                    5736329  ...  dr. Merci Monica P, SpPK~
+2                    5736329  ...  dr. Merci Monica P, SpPK~
+3                    5736329  ...                           
+4                    5736329  ...  dr. Merci Monica P, SpPK~
+...                      ...  ...                        ...
+68100                6042371  ...            dr. MARCO LIUS~
+68101                6042371  ...            dr. MARCO LIUS~
+68102                6042371  ...            dr. MARCO LIUS~
+68103                6042371  ...            dr. MARCO LIUS~
+68104                6042371  ...            dr. MARCO LIUS~
 
-[47351 rows x 6 columns]
+[36264 rows x 6 columns]
 UPDATE t SET t.PatientSurrogateKeyID = s.PatientSurrogateKeyID, t.MedicalNo = s.MedicalNo, t.OrderName = s.OrderName, t.OrderRequestDate = s.OrderRequestDate, t.ObservationName = s.ObservationName, t.ObservationValue = s.ObservationValue, t.ObservationUnit = s.ObservationUnit, t.AbnormalFlag = s.AbnormalFlag, t.RefRange = s.RefRange, t.ObservationNotes = s.ObservationNotes, t.ResultDate = s.ResultDate, t.DoctorResponsible = s.DoctorResponsible, t.CreatedDate = s.CreatedDate, t.StatusCode = s.StatusCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientLabObs t INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientLabObs_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID  WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID;
 all success updated and inserted
-5594.245001554489
-scheduler tanggal : 2024-12-10 05:40:02.044201
+408.28099846839905
+scheduler tanggal : 2025-01-17 05:40:02.228713

@@ -43,7 +43,7 @@ def get_source_data(conn_his_live,conn_ehr,conn_dwh_sqlserver):
     """ Menarik data dari database sumber HIS"""
 
     # buat variabel start_date dan end_date dengan mengambil 1 hari ke belakang untuk dimasukkan di query
-    start_date = (date - timedelta(days=3)).strftime('%Y-%m-%d')
+    start_date = (date - timedelta(days=5)).strftime('%Y-%m-%d')
     end_date = (date - timedelta(days=1)).strftime('%Y-%m-%d')
 
     # query untuk menarik data dari his_patient_order lalu masukkan variabel date_range di dalam WHERE

@@ -1,0 +1,26 @@
+scheduler tanggal : 2024-12-27 10:21:25.697407
+success connected to  Engine(mysql://hanif-ppi:***@172.16.6.10/mpi)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+ini source dari live
+  ExtractDate  TotalPatientMPI
+0  2024-12-27              703
+  ExtractDate  TotalPatientDWH
+0  2024-12-27              703
+  ExtractDate  TotalPatientMPI  TotalPatientDWH
+0  2024-12-27              703              703
+No mismatch detected.
+ini target
+  ExtractDate  TotalPatientMPI  TotalPatientDWH
+0  2024-12-27              703              706
+total row update : 1
+  ExtractDate  TotalPatientMPI  TotalPatientDWH
+0  2024-12-27              703              703
+total row inserted : 0
+Empty DataFrame
+Columns: [ExtractDate, TotalPatientMPI, TotalPatientDWH]
+Index: []
+UPDATE r SET r.TotalPatientMPI = t.TotalPatientMPI, r.TotalPatientDWH = t.TotalPatientDWH FROM dwhrscm_talend.LogPatientMPI r INNER JOIN (SELECT * FROM dwhrscm_talend.LogPatientMPI_temporary_table) as t ON r.ExtractDate = t.ExtractDate WHERE r.ExtractDate = t.ExtractDate ;
+success update and insert all data
+10.295995473861694
+scheduler tanggal : 2024-12-27 10:21:25.697407

@@ -4,61 +4,71 @@ success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), '%%Y-%%m-%%d 00:00:00')
 DATE_FORMAT(NOW(), '%%Y-%%m-%%d 23:59:59')
 ini source
-       TransactionID PayplanGroup PayplanType
-0     00210000058796         umum     reguler
-1     00210000058799         umum     reguler
-2     00210000058801         umum     reguler
-3     00210000058802         umum     reguler
-4     00210000058803         umum     reguler
-...              ...          ...         ...
-7527         1049355   perusahaan     reguler
-7528         1049357   perusahaan     reguler
-7529         1049360   perusahaan     reguler
-7530         1049363   perusahaan     reguler
-7531         1049367   perusahaan     reguler
+        TransactionID PayplanGroup PayplanType
+0      00220000002299         umum     reguler
+1      00220000002301         umum     reguler
+2      00220000002303         umum     reguler
+3      00220000002304         umum     reguler
+4      00220000002542         umum     reguler
+...               ...          ...         ...
+13284         1091170   perusahaan     reguler
+13285         1091171   perusahaan     reguler
+13286         1091173   perusahaan     reguler
+13287         1091175   perusahaan     reguler
+13288         1091184   perusahaan     reguler
 
-[7532 rows x 3 columns]
-total row update : 21
-       TransactionID       BillingID        Amount  ... PatientID  AdmissionID Status
-193   00210001279667  00210001795292  3.303306e+05  ...   2211031            1  final
-194   00210001279676  00210001795205  2.694621e+06  ...   2211150            1  final
-195   00210001279678  00210001795510  4.540000e+05  ...   2211237            1  final
-196   00210001279680  00210001795283  1.833693e+06  ...    548132          140  final
-197   00210001279684  00210001795134  1.918361e+06  ...   2210876            1  final
-198   00210001279702  00210001795296  9.931341e+05  ...   2150942            5  final
-199   00210001279705  00210001795319  4.347613e+05  ...   2050794           14  final
-200   00210001279707  00210001795422  6.628932e+05  ...    489737            9  final
-201   00210001279709  00210001795210  1.061723e+06  ...   2202512            2  final
-202   00210001279710  00210001795445  8.664901e+05  ...   2060612           25  final
-203   00210001279724  00210001795446  2.847225e+06  ...   2177262            9  final
-204   00210001279733  00210001795473  9.487606e+05  ...   2211317            1  final
-205   00210001279734  00210001795474  1.065890e+06  ...   1231679          159  final
-208   00210001279741  00210001795639  5.650000e+05  ...   2211313            1  final
-209   00210001279742  00210001795462  7.128765e+05  ...   2211307            1  final
-5561  00210001279669  00210001762652  2.358248e+07  ...   2157344           10  final
-5591  00210001279708  00210001770791  2.301586e+07  ...   2082200            8  final
-5924         1048223         1119947  1.634360e+05  ...   1478685           37  final
-6030         1048234         1119960  1.022802e+06  ...   1303082           13  final
-6031         1048235         1119958  2.344008e+06  ...   2211667            1  final
-6032         1048236         1119959  1.797334e+06  ...   2211668            1  final
+[13289 rows x 3 columns]
+total row update : 31
+        TransactionID       BillingID  ...  AdmissionID Status
+297    00220000055249  00220000077605  ...            1  final
+582    00220000050870  00220000067997  ...            9  final
+1015   00220000051380  00220000069573  ...           39  final
+2239   00220000052830  00220000067976  ...            4  final
+2249   00220000052844  00220000068815  ...          416  final
+2349   00220000052957  00220000066462  ...           24  final
+2354   00220000052963  00220000064285  ...            4  final
+3910   00220000054639  00220000077064  ...           37  final
+3922   00220000054652  00220000077076  ...            6  final
+3998   00220000054733  00220000076294  ...           63  final
+4010   00220000054746  00220000076586  ...            3  final
+4028   00220000054765  00220000075741  ...           93  final
+4673   00220000055443  00220000071221  ...           11  final
+4677   00220000055448  00220000071248  ...           88  final
+10080  00220000002483  00220000054008  ...          117  final
+10124  00220000050606  00220000031910  ...            2  final
+10130  00220000051035  00220000054369  ...           13  final
+10133  00220000051065  00220000054882  ...            1  final
+10139  00220000051141  00220000054270  ...            6  final
+10149  00220000051225  00220000026379  ...           20  final
+10160  00220000051351  00220000055009  ...           43  final
+10209  00220000052358  00210001910386  ...           10  final
+10211  00220000052365  00220000015663  ...            1  final
+10214  00220000052432  00220000014985  ...            6  final
+10221  00220000052609  00220000055077  ...           13  final
+10229  00220000052796  00220000022586  ...            3  final
+10279  00220000054612  00210001771422  ...            1  final
+10281  00220000054660  00220000031763  ...           13  final
+10282  00220000054673  00220000053363  ...            7  final
+10293  00220000055119  00220000046039  ...           95  final
+11328         1089938         1161951  ...            2  final
 
-[21 rows x 13 columns]
-total row inserted : 7054
-       TransactionID       BillingID    Amount  ... PatientID  AdmissionID Status
-1     00210000058799  00210001795934  142000.0  ...   1029391           43  final
-2     00210000058801  00210001796039  142000.0  ...   2198686            3  final
-3     00210000058802  00210001795986  142000.0  ...   1753959           20  final
-4     00210000058803  00210001796055  142000.0  ...    874994          112  final
-5     00210000058804  00210001796070  142000.0  ...    727483          101  final
-...              ...             ...       ...  ...       ...          ...    ...
-7527         1049355         1121213   65000.0  ...   2212666            1  final
-7528         1049357         1121215   65000.0  ...   2212667            1  final
-7529         1049360         1121217   65000.0  ...   2212668            1  final
-7530         1049363         1121218   65000.0  ...   2212669            1  final
-7531         1049367         1121221   65000.0  ...   2212671            1  final
+[31 rows x 13 columns]
+total row inserted : 6647
+        TransactionID       BillingID    Amount  ... PatientID  AdmissionID Status
+4      00220000002542  00220000076279  220000.0  ...   1535122           11  final
+136    00220000002518  00220000078783  614000.0  ...   2241195            1  final
+137    00220000002521  00220000075814   14181.2  ...   1483442          181  final
+138    00220000002522  00220000078897   14067.2  ...   1483442          181  final
+139    00220000002523  00220000078901   23040.0  ...   1483442          181  final
+...               ...             ...       ...  ...       ...          ...    ...
+13284         1091170         1163254   65000.0  ...   2243728            1  final
+13285         1091171         1163256   65000.0  ...   2243729            1  final
+13286         1091173         1163257   65000.0  ...   2243730            1  final
+13287         1091175         1163258   65000.0  ...   2243731            1  final
+13288         1091184         1163264   65000.0  ...   2243696            1  final
 
-[7054 rows x 13 columns]
+[6647 rows x 13 columns]
 UPDATE r SET r.Amount = t.Amount, r.TransactionDate = t.TransactionDate, r.PayplanID = t.PayplanID, r.PatientType = t.PatientType, r.PayplanGroup = t.PayplanGroup, r.PayplanType = t.PayplanType, r.PayplanNo = t.PayplanNo, r.RevenueType = t.RevenueType, r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.Status = t.Status , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactMKKOBilling r INNER JOIN (SELECT * FROM dwhrscm_talend.FactMKKOBilling_temporary_table) as t ON r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID  WHERE r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID ;
 success update and insert all data
-13.389001607894897
-scheduler tanggal : 2024-12-09 23:55:02.609205
+18.105994701385498
+scheduler tanggal : 2025-01-16 23:55:01.708714

@@ -71,7 +71,7 @@ query_source1 = f""" SELECT
                             AND b.sensus = '1'
                             WHERE 
                             -- adm.patient_id IN (2077816) and adm.admission_id IN (1) AND
-                            (adm.admission_dttm >= '2024-09-05 00:00:00' AND adm.admission_dttm <= '2024-09-05 23:59:59')
+                            (adm.admission_dttm >= '2024-12-05 00:00:00' AND adm.admission_dttm <= '2024-12-05 23:59:59')
                             -- AND adm.patient_id = 1649519 and adm.admission_id = 11 
                             -- adm.admission_dttm >= {start_date} AND adm.admission_dttm <= {end_date}
                             AND (adm.org_id IN (select org_id from xocp_orgs where parent_id not in ('687','1872','2418') and org_id not in ('687','1872','2418'))

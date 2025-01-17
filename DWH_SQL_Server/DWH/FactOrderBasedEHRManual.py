@@ -153,7 +153,7 @@ def get_source_data(conn_ehr, conn_dwh_sqlserver):
                             LEFT JOIN xocp_ehr_patient_order_acctobj k on a.order_id = k.order_id AND k.obj_id LIKE 'SRN%%'
                             -- LEFT JOIN (SELECT order_id, SUM(tariff) as tariff FROM xocp_ehr_patient_order_acctobj WHERE obj_id LIKE 'SRN%%' GROUP BY order_id) k on a.order_id = k.order_id
                             WHERE
-                            a.ordered_dttm >= '2024-11-26 00:00:00' AND a.ordered_dttm <= '2024-11-26 23:59:59'
+                            a.ordered_dttm >= '2024-12-30 00:00:00' AND a.ordered_dttm <= '2024-12-31 23:59:59'
                             -- a.ordered_dttm >=  00:00:00' AND a.ordered_dttm <=  23:59:59'
                             -- (a.ordered_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 7 DAY), "%%Y-%%m-%%d 00:00:00") 
                             -- AND a.ordered_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59"))

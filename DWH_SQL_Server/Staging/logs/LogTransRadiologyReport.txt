@@ -1,55 +1,128 @@
-success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+      ReportID  MedicalNo  ...             ResponsibleObserverName IsAddendum
+0      1776133  480-99-34  ...            dr. Radius Kusuma, SpRad          n
+1      1776134  483-88-48  ...            dr. Radius Kusuma, SpRad          n
+2      1776135  483-88-48  ...            dr. Radius Kusuma, SpRad          y
+3      1776136  429-70-27  ...            dr. Radius Kusuma, SpRad          n
+4      1776137  481-70-88  ...            dr. Radius Kusuma, SpRad          n
+...        ...        ...  ...                                 ...        ...
+2251   1778389  483-90-04  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+2252   1778390  483-90-12  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+2253   1778391  485-38-87  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+2254   1778392  473-13-64  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+2255   1778393  483-85-99  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+
+[2256 rows x 12 columns]
       ReportID  MedicalNo  ...                ResponsibleObserverName IsAddendum
-0      1760431  472-96-92  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1      1760432  482-97-14  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-2      1760433  435-41-01  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-3      1760434  472-98-03  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-4      1760435  472-91-44  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+0      1776548  463-38-29  ...            dr. H.F. Wulandari, Sp.A(K)          y
+1      1776859  464-36-46  ...         dr. Sahat Matondang, SpRad (K)          y
+2      1776842  464-36-34  ...         dr. Sahat Matondang, SpRad (K)          y
+3      1776983  467-65-96  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+4      1777044  477-92-69  ...        dr. Thariqah Salamah, SpRad (K)          n
 ...        ...        ...  ...                                    ...        ...
-1982   1762414  483-27-34  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1983   1762413  483-27-34  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1984   1762415  481-00-49  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1985   1762416  472-99-54  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1986   1762417  482-08-17  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1674   1777816  483-88-54  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1675   1777805  483-89-78  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1676   1777812  483-83-90  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1677   1777809  479-54-30  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1678   1777811  472-62-00  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
 
-[1987 rows x 12 columns]
-      ReportID  MedicalNo  ...              ResponsibleObserverName IsAddendum
-0      1760520  472-40-63  ...   Dr. dr. Marcel Prasetyo, SpRad (K)          n
-1      1760503  477-78-78  ...   Dr. dr. Marcel Prasetyo, SpRad (K)          n
-2      1760708  465-62-67  ...     dr Mohammad Reynalzi Yugo, SpRad          n
-3      1761207  479-45-87  ...   Dr. dr. Marcel Prasetyo, SpRad (K)          n
-4      1760519  475-48-22  ...   Dr. dr. Marcel Prasetyo, SpRad (K)          n
-...        ...        ...  ...                                  ...        ...
-1497   1761928  472-99-36  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1498   1761929  472-94-80  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1499   1761930  472-99-41  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1500   1761931  472-99-45  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1501   1761932  375-48-88  ...  Dr. dr. Sawitri Darmiati, SpRad (K)          n
+[1679 rows x 12 columns]
+total row update : 36
+      ReportID  ...                                        ServiceName
+31     1776164  ...                                   ABDOMEN 2 POSISI
+35     1776168  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+239    1776372  ...                                          LOPOGRAFI
+254    1776387  ...                                          SCANOGRAM
+257    1776388  ...                                          SCANOGRAM
+477    1776610  ...                                    PELVIS 1 POSISI
+488    1776621  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+533    1776666  ...                                  PROGRAM SKOLIOSIS
+556    1776689  ...                MRI BRAIN + MRA + VENOGRAFI KONTRAS
+717    1776851  ...                           PEDIS 2 POSISI BILATERAL
+723    1776857  ...                                        BONE SURVEY
+728    1776862  ...                                  SCOLIOSIS PROGRAM
+734    1776868  ...                           PEDIS 2 POSISI BILATERAL
+748    1776883  ...                                  SCOLIOSIS PROGRAM
+941    1777076  ...                                             THORAX
+1046   1777181  ...                                          SCANOGRAM
+1111   1777246  ...                                          SCANOGRAM
+1190   1777325  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1191   1777326  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1193   1777328  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1196   1777331  ...                                   ABDOMEN 1 POSISI
+1200   1777335  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1207   1777342  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1240   1777375  ...                               BONE MINERAL DENSITY
+1308   1777442  ...                                          SCANOGRAM
+1441   1777579  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1517   1777654  ...                                          SCANOGRAM
+1562   1777699  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1569   1777706  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1592   1777728  ...                     SENDI BAHU - IMPINGMENT SERIES
+1594   1777731  ...                                    PELVIS 1 POSISI
+1601   1777738  ...                                    PELVIS 1 POSISI
+1661   1777799  ...                                   ABDOMEN 1 POSISI
+1662   1777800  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1668   1777806  ...                                   ABDOMEN 1 POSISI
+1669   1777807  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
 
-[1502 rows x 12 columns]
-total row update : 0
-Empty DataFrame
-Columns: [ReportID, MedicalNo, AccessionNumber, OrderID, OrderDate, ObservationDate, ServiceID, ServiceName]
-Index: []
-Empty DataFrame
-Columns: [ServiceName, Report, ResponsibleObserverID, ResponsibleObserverName, IsAddendum]
-Index: []
-total row inserted : 485
+[36 rows x 8 columns]
+                                            ServiceName  ... IsAddendum
+31                                     ABDOMEN 2 POSISI  ...          n
+35    THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+239                                           LOPOGRAFI  ...          n
+254                                           SCANOGRAM  ...          n
+257                                           SCANOGRAM  ...          n
+477                                     PELVIS 1 POSISI  ...          n
+488   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+533                                   PROGRAM SKOLIOSIS  ...          n
+556                 MRI BRAIN + MRA + VENOGRAFI KONTRAS  ...          n
+717                            PEDIS 2 POSISI BILATERAL  ...          n
+723                                         BONE SURVEY  ...          n
+728                                   SCOLIOSIS PROGRAM  ...          n
+734                            PEDIS 2 POSISI BILATERAL  ...          n
+748                                   SCOLIOSIS PROGRAM  ...          n
+941                                              THORAX  ...          n
+1046                                          SCANOGRAM  ...          n
+1111                                          SCANOGRAM  ...          n
+1190  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1191  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          y
+1193  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1196                                   ABDOMEN 1 POSISI  ...          n
+1200  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1207  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1240                               BONE MINERAL DENSITY  ...          n
+1308                                          SCANOGRAM  ...          n
+1441  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1517                                          SCANOGRAM  ...          n
+1562  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1569  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          y
+1592                     SENDI BAHU - IMPINGMENT SERIES  ...          n
+1594                                    PELVIS 1 POSISI  ...          n
+1601                                    PELVIS 1 POSISI  ...          n
+1661                                   ABDOMEN 1 POSISI  ...          n
+1662  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1668                                   ABDOMEN 1 POSISI  ...          n
+1669  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+
+[36 rows x 5 columns]
+total row inserted : 577
       ReportID  MedicalNo  ...                ResponsibleObserverName IsAddendum
-1502   1761933  472-99-45  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1503   1761934  472-99-45  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1504   1761935  482-98-26  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1505   1761936  375-48-88  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
-1506   1761937  472-99-42  ...    Dr. dr. Sawitri Darmiati, SpRad (K)          n
+1679   1777817  483-83-90  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1680   1777818  483-89-77  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1681   1777819  482-17-75  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1682   1777820  473-10-81  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1683   1777821  483-89-82  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
 ...        ...        ...  ...                                    ...        ...
-1982   1762414  483-27-34  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1983   1762413  483-27-34  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1984   1762415  481-00-49  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1985   1762416  472-99-54  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1986   1762417  482-08-17  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+2251   1778389  483-90-04  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+2252   1778390  483-90-12  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+2253   1778391  485-38-87  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+2254   1778392  473-13-64  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+2255   1778393  483-85-99  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
 
-[485 rows x 12 columns]
-success insert all data without update
-32.904993772506714
-scheduler tanggal : 2024-12-09 23:30:01.758201
+[577 rows x 12 columns]
+UPDATE r SET r.MedicalNo = t.MedicalNo, r.AccessionNumber = t.AccessionNumber, r.OrderID = t.OrderID, r.OrderDate = t.OrderDate, r.ObservationDate = t.ObservationDate, r.ServiceID = t.ServiceID, r.ServiceName = t.ServiceName, r.Report = t.Report, r.ResponsibleObserverID = t.ResponsibleObserverID, r.ResponsibleObserverName = t.ResponsibleObserverName, r.IsAddendum = t.IsAddendum , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransRadiologyReport r INNER JOIN (SELECT * FROM staging_rscm.TransRadiologyReport_temporary_table) as t ON r.ReportID = t.ReportID  WHERE r.ReportID = t.ReportID ;
+success update and insert all data
+23.269999265670776
+scheduler tanggal : 2025-01-16 23:30:01.818711

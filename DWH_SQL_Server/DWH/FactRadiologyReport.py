@@ -31,6 +31,7 @@ source = pd.read_sql_query("""
                                     IsAddendum
                                 FROM staging_rscm.TransRadiologyReport a
                                 WHERE 
+                                -- OrderDate >= '2024-12-01 00:00:00' and OrderDate <= '2024-12-31 23:59:59'
                                 -- ((CAST(InsertDateStaging as date) >= '2024-04-25 00:00:00' AND CAST(InsertDateStaging as date) <= '2024-04-25 23:59:00') OR
                                 -- (CAST(UpdateDateStaging as date) >= '2024-04-25 00:00:00' AND CAST(UpdateDateStaging as date) <= '2024-04-25 23:59:00'))
                                 ((CAST(InsertDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)) OR
