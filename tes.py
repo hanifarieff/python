@@ -1,5 +1,5 @@
-string = "The cat sat on the mat"
-substring = "cat"
+string = "The cat sit on the mat"
+substring = "sit"
 
 result = string.find(substring)
 print(result)
