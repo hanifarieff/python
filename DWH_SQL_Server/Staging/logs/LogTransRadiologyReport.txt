@@ -1,128 +1,116 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
-      ReportID  MedicalNo  ...             ResponsibleObserverName IsAddendum
-0      1776133  480-99-34  ...            dr. Radius Kusuma, SpRad          n
-1      1776134  483-88-48  ...            dr. Radius Kusuma, SpRad          n
-2      1776135  483-88-48  ...            dr. Radius Kusuma, SpRad          y
-3      1776136  429-70-27  ...            dr. Radius Kusuma, SpRad          n
-4      1776137  481-70-88  ...            dr. Radius Kusuma, SpRad          n
-...        ...        ...  ...                                 ...        ...
-2251   1778389  483-90-04  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
-2252   1778390  483-90-12  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
-2253   1778391  485-38-87  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
-2254   1778392  473-13-64  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
-2255   1778393  483-85-99  ...  dr. Taufik Agung Wibowo, SpRad (K)          n
+      ReportID  ... IsAddendum
+0      1778399  ...          n
+1      1778400  ...          n
+2      1778401  ...          n
+3      1778402  ...          n
+4      1778403  ...          n
+...        ...  ...        ...
+1968   1780400  ...          n
+1969   1780401  ...          n
+1970   1780402  ...          n
+1971   1780403  ...          n
+1972   1780404  ...          n
 
-[2256 rows x 12 columns]
-      ReportID  MedicalNo  ...                ResponsibleObserverName IsAddendum
-0      1776548  463-38-29  ...            dr. H.F. Wulandari, Sp.A(K)          y
-1      1776859  464-36-46  ...         dr. Sahat Matondang, SpRad (K)          y
-2      1776842  464-36-34  ...         dr. Sahat Matondang, SpRad (K)          y
-3      1776983  467-65-96  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-4      1777044  477-92-69  ...        dr. Thariqah Salamah, SpRad (K)          n
-...        ...        ...  ...                                    ...        ...
-1674   1777816  483-88-54  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1675   1777805  483-89-78  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1676   1777812  483-83-90  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1677   1777809  479-54-30  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1678   1777811  472-62-00  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+[1973 rows x 12 columns]
+      ReportID  MedicalNo  ...          ResponsibleObserverName IsAddendum
+0      1779801  482-91-30  ...    dr Mohamad Yanuar Amal, SpRad          n
+1      1779026  370-32-29  ...       dr. Rahmi Afifi, SpRad (K)          n
+2      1779407  404-00-29  ...  dr. Thariqah Salamah, SpRad (K)          n
+3      1779719  479-08-54  ...      dr. Vally Wulani, SpRad (K)          n
+4      1779665  477-58-08  ...    dr Mohamad Yanuar Amal, SpRad          n
+...        ...        ...  ...                              ...        ...
+1428   1779855  439-78-74  ...   dr. Sahat Matondang, SpRad (K)          n
+1429   1779856  477-96-09  ...   dr. Sahat Matondang, SpRad (K)          n
+1430   1779864  483-91-40  ...   dr. Sahat Matondang, SpRad (K)          n
+1431   1779863  483-91-40  ...   dr. Sahat Matondang, SpRad (K)          n
+1432   1779862  478-13-72  ...   dr. Sahat Matondang, SpRad (K)          n
 
-[1679 rows x 12 columns]
-total row update : 36
+[1433 rows x 12 columns]
+total row update : 30
       ReportID  ...                                        ServiceName
-31     1776164  ...                                   ABDOMEN 2 POSISI
-35     1776168  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-239    1776372  ...                                          LOPOGRAFI
-254    1776387  ...                                          SCANOGRAM
-257    1776388  ...                                          SCANOGRAM
-477    1776610  ...                                    PELVIS 1 POSISI
-488    1776621  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-533    1776666  ...                                  PROGRAM SKOLIOSIS
-556    1776689  ...                MRI BRAIN + MRA + VENOGRAFI KONTRAS
-717    1776851  ...                           PEDIS 2 POSISI BILATERAL
-723    1776857  ...                                        BONE SURVEY
-728    1776862  ...                                  SCOLIOSIS PROGRAM
-734    1776868  ...                           PEDIS 2 POSISI BILATERAL
-748    1776883  ...                                  SCOLIOSIS PROGRAM
-941    1777076  ...                                             THORAX
-1046   1777181  ...                                          SCANOGRAM
-1111   1777246  ...                                          SCANOGRAM
-1190   1777325  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1191   1777326  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1193   1777328  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1196   1777331  ...                                   ABDOMEN 1 POSISI
-1200   1777335  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1207   1777342  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1240   1777375  ...                               BONE MINERAL DENSITY
-1308   1777442  ...                                          SCANOGRAM
-1441   1777579  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1517   1777654  ...                                          SCANOGRAM
-1562   1777699  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1569   1777706  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1592   1777728  ...                     SENDI BAHU - IMPINGMENT SERIES
-1594   1777731  ...                                    PELVIS 1 POSISI
-1601   1777738  ...                                    PELVIS 1 POSISI
-1661   1777799  ...                                   ABDOMEN 1 POSISI
-1662   1777800  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
-1668   1777806  ...                                   ABDOMEN 1 POSISI
-1669   1777807  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+126    1778726  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+145    1778490  ...                                  PROGRAM SKOLIOSIS
+253    1778540  ...                                  SCOLIOSIS PROGRAM
+286    1778805  ...                                  SCOLIOSIS PROGRAM
+289    1778687  ...                                          SCANOGRAM
+290    1778584  ...                                  SCOLIOSIS PROGRAM
+292    1778709  ...                         DXA TOTAL BODY COMPOSITION
+457    1778857  ...                         SHOULDER IMPINGMENT SERIES
+510    1778909  ...                 CT ANGIOGRAFI EKSTREMITAS INFERIOR
+538    1778937  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+539    1778938  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+602    1779022  ...                                   ABDOMEN 1 POSISI
+603    1779019  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+605    1779020  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+652    1779084  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+656    1779087  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+657    1779088  ...                                   ABDOMEN 1 POSISI
+661    1779092  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+663    1779093  ...                                   ABDOMEN 1 POSISI
+703    1779134  ...                                             PELVIS
+712    1779143  ...                                          SCANOGRAM
+792    1779223  ...                                        BONE SURVEY
+793    1779224  ...                                             PELVIS
+870    1779301  ...                           PEDIS 2 POSISI BILATERAL
+923    1779354  ...  PERGELANGAN TANGAN / WRIST JOINT (2 POSISI) BI...
+980    1779411  ...                                  SCOLIOSIS PROGRAM
+1091   1779522  ...                                          LOPOGRAFI
+1210   1779641  ...                                        BONE SURVEY
+1331   1779762  ...               SHOULDER IMPINGMENT SERIES BILATERAL
+1367   1779798  ...                                  MRI BRAIN KONTRAS
 
-[36 rows x 8 columns]
+[30 rows x 8 columns]
                                             ServiceName  ... IsAddendum
-31                                     ABDOMEN 2 POSISI  ...          n
-35    THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-239                                           LOPOGRAFI  ...          n
-254                                           SCANOGRAM  ...          n
-257                                           SCANOGRAM  ...          n
-477                                     PELVIS 1 POSISI  ...          n
-488   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-533                                   PROGRAM SKOLIOSIS  ...          n
-556                 MRI BRAIN + MRA + VENOGRAFI KONTRAS  ...          n
-717                            PEDIS 2 POSISI BILATERAL  ...          n
-723                                         BONE SURVEY  ...          n
-728                                   SCOLIOSIS PROGRAM  ...          n
-734                            PEDIS 2 POSISI BILATERAL  ...          n
-748                                   SCOLIOSIS PROGRAM  ...          n
-941                                              THORAX  ...          n
-1046                                          SCANOGRAM  ...          n
-1111                                          SCANOGRAM  ...          n
-1190  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1191  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          y
-1193  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1196                                   ABDOMEN 1 POSISI  ...          n
-1200  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1207  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1240                               BONE MINERAL DENSITY  ...          n
-1308                                          SCANOGRAM  ...          n
-1441  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1517                                          SCANOGRAM  ...          n
-1562  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1569  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          y
-1592                     SENDI BAHU - IMPINGMENT SERIES  ...          n
-1594                                    PELVIS 1 POSISI  ...          n
-1601                                    PELVIS 1 POSISI  ...          n
-1661                                   ABDOMEN 1 POSISI  ...          n
-1662  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
-1668                                   ABDOMEN 1 POSISI  ...          n
-1669  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+126   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+145                                   PROGRAM SKOLIOSIS  ...          n
+253                                   SCOLIOSIS PROGRAM  ...          n
+286                                   SCOLIOSIS PROGRAM  ...          n
+289                                           SCANOGRAM  ...          n
+290                                   SCOLIOSIS PROGRAM  ...          n
+292                          DXA TOTAL BODY COMPOSITION  ...          n
+457                          SHOULDER IMPINGMENT SERIES  ...          n
+510                  CT ANGIOGRAFI EKSTREMITAS INFERIOR  ...          n
+538   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+539   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+602                                    ABDOMEN 1 POSISI  ...          n
+603   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+605   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+652   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+656   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+657                                    ABDOMEN 1 POSISI  ...          n
+661   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+663                                    ABDOMEN 1 POSISI  ...          n
+703                                              PELVIS  ...          n
+712                                           SCANOGRAM  ...          n
+792                                         BONE SURVEY  ...          n
+793                                              PELVIS  ...          n
+870                            PEDIS 2 POSISI BILATERAL  ...          n
+923   PERGELANGAN TANGAN / WRIST JOINT (2 POSISI) BI...  ...          n
+980                                   SCOLIOSIS PROGRAM  ...          n
+1091                                          LOPOGRAFI  ...          n
+1210                                        BONE SURVEY  ...          n
+1331               SHOULDER IMPINGMENT SERIES BILATERAL  ...          n
+1367                                  MRI BRAIN KONTRAS  ...          n
 
-[36 rows x 5 columns]
-total row inserted : 577
-      ReportID  MedicalNo  ...                ResponsibleObserverName IsAddendum
-1679   1777817  483-83-90  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1680   1777818  483-89-77  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1681   1777819  482-17-75  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1682   1777820  473-10-81  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-1683   1777821  483-89-82  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
-...        ...        ...  ...                                    ...        ...
-2251   1778389  483-90-04  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
-2252   1778390  483-90-12  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
-2253   1778391  485-38-87  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
-2254   1778392  473-13-64  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
-2255   1778393  483-85-99  ...     dr. Taufik Agung Wibowo, SpRad (K)          n
+[30 rows x 5 columns]
+total row inserted : 540
+      ReportID  ... IsAddendum
+1429   1780329  ...          n
+1434   1779865  ...          n
+1435   1779866  ...          n
+1436   1779867  ...          n
+1437   1779868  ...          n
+...        ...  ...        ...
+1968   1780400  ...          n
+1969   1780401  ...          n
+1970   1780402  ...          n
+1971   1780403  ...          n
+1972   1780404  ...          n
 
-[577 rows x 12 columns]
+[540 rows x 12 columns]
 UPDATE r SET r.MedicalNo = t.MedicalNo, r.AccessionNumber = t.AccessionNumber, r.OrderID = t.OrderID, r.OrderDate = t.OrderDate, r.ObservationDate = t.ObservationDate, r.ServiceID = t.ServiceID, r.ServiceName = t.ServiceName, r.Report = t.Report, r.ResponsibleObserverID = t.ResponsibleObserverID, r.ResponsibleObserverName = t.ResponsibleObserverName, r.IsAddendum = t.IsAddendum , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransRadiologyReport r INNER JOIN (SELECT * FROM staging_rscm.TransRadiologyReport_temporary_table) as t ON r.ReportID = t.ReportID  WHERE r.ReportID = t.ReportID ;
 success update and insert all data
-23.269999265670776
-scheduler tanggal : 2025-01-16 23:30:01.818711
+18.167998552322388
+scheduler tanggal : 2025-01-21 23:30:01.805461

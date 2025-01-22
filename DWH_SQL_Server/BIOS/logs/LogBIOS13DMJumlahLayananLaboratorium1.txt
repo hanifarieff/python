@@ -1,23 +1,23 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-('2025-01-07', '2025-01-08', '2025-01-09', '2025-01-10', '2025-01-11', '2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16')
+('2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16', '2025-01-17', '2025-01-18', '2025-01-19', '2025-01-20', '2025-01-21')
   TglTransaksi  Jumlah
-0   2025-01-07    1776
-1   2025-01-08    1639
-2   2025-01-09    1390
-3   2025-01-10    1272
-4   2025-01-11     521
-5   2025-01-12     390
-6   2025-01-13    1208
-7   2025-01-14    1045
-8   2025-01-15    1053
-total row update : 0
-Empty DataFrame
-Columns: [TglTransaksi, Jumlah]
-Index: []
+0   2025-01-12     390
+1   2025-01-13    1208
+2   2025-01-14    1045
+3   2025-01-15    1053
+4   2025-01-16     980
+5   2025-01-17    1041
+6   2025-01-18     490
+7   2025-01-19     359
+8   2025-01-20    1113
+total row update : 1
+  TglTransaksi  Jumlah
+8   2025-01-20    1184
 total row inserted : 1
   TglTransaksi  Jumlah
-9   2025-01-16     980
-success insert all data without update
-63.46599817276001
-scheduler tanggal : 2025-01-17 07:05:01.752714
+9   2025-01-21    1006
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS13DMJumlahLayananLaboratorium1 r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS13DMJumlahLayananLaboratorium1_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+107.46799802780151
+scheduler tanggal : 2025-01-22 07:05:01.721461

@@ -1,14 +1,14 @@
-scheduler tanggal : 2025-01-17 01:30:01.676715
+scheduler tanggal : 2025-01-22 01:30:01.687474
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 ini source dari live
   ExtractDate  TotalRowOrgLive
-0  2025-01-17             2779
+0  2025-01-22             2781
   ExtractDate  TotalRowOrgDWH
-0  2025-01-17            2779
+0  2025-01-22            2781
   ExtractDate  TotalRowOrgLive  TotalRowOrgDWH
-0  2025-01-17             2779            2779
+0  2025-01-22             2781            2781
 No mismatch detected.
 ini target
 Empty DataFrame
@@ -20,7 +20,7 @@ Columns: [ExtractDate, TotalRowOrgLive, TotalRowOrgDWH]
 Index: []
 total row inserted : 1
   ExtractDate  TotalRowOrgLive  TotalRowOrgDWH
-0  2025-01-17             2779            2779
+0  2025-01-22             2781            2781
 success insert all data without update
-0.23000097274780273
-scheduler tanggal : 2025-01-17 01:30:01.676715
+0.24899792671203613
+scheduler tanggal : 2025-01-22 01:30:01.687474

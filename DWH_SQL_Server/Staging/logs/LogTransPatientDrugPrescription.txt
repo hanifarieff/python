@@ -1,50 +1,50 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
        PrescriptionID  ...  DrugQuantity
-0      00160000098075  ...             4
-1      00160000098075  ...             3
-2      00160000098076  ...             1
-3      00160000098077  ...             1
-4      00160000098078  ...             1
+0      00160000141535  ...             2
+1      00160000141536  ...             3
+2      00160000141536  ...             3
+3      00160000141536  ...             9
+4      00160000141536  ...            10
 ...               ...  ...           ...
-65171  00160000126383  ...            30
-65172  00160000126384  ...             1
-65173  00160000126385  ...             1
-65174  00160000126386  ...             3
-65175  00160000126386  ...             3
+55836  00160000165572  ...             2
+55837  00160000165572  ...             1
+55838  00160000165572  ...             1
+55839  00160000165572  ...             1
+55840  00160000165572  ...             1
 
-[65176 rows x 8 columns]
-total row update : 1084
+[55841 rows x 8 columns]
+total row update : 763
        PrescriptionID  ...  PrescriptionStatus
-248    00160000098201  ...            dispense
-503    00160000098326  ...            dispense
-1925   00160000098566  ...            dispense
-2977   00160000098938  ...            dispense
-2978   00160000098938  ...            dispense
+1426   00160000141979  ...            dispense
+1427   00160000141979  ...            dispense
+1428   00160000141979  ...            dispense
+3662   00160000142718  ...            dispense
+3663   00160000142718  ...            dispense
 ...               ...  ...                 ...
-43375  00160000116684  ...            dispense
-43376  00160000116684  ...            dispense
-43377  00160000116684  ...            dispense
-43378  00160000116684  ...            dispense
-43379  00160000116684  ...            dispense
+34154  00160000156096  ...            dispense
+34155  00160000156096  ...            dispense
+34156  00160000156096  ...            dispense
+34157  00160000156096  ...            dispense
+34181  00160000156105  ...            dispense
 
-[1084 rows x 18 columns]
-total row inserted : 21802
+[763 rows x 18 columns]
+total row inserted : 21668
        PrescriptionID  ...  PrescriptionStatus
-19571  00160000106572  ...            dispense
-33095  00160000111764  ...            dispense
-33096  00160000111764  ...            dispense
-36086  00160000113186  ...            dispense
-37796  00160000114197  ...            dispense
+21995  00160000150442  ...            dispense
+21996  00160000150442  ...            dispense
+21997  00160000150442  ...            dispense
+26380  00160000152423  ...            approved
+26734  00160000152597  ...            dispense
 ...               ...  ...                 ...
-65171  00160000126383  ...            dispense
-65172  00160000126384  ...            dispense
-65173  00160000126385  ...            dispense
-65174  00160000126386  ...            dispense
-65175  00160000126386  ...            dispense
+55836  00160000165572  ...             ordered
+55837  00160000165572  ...             ordered
+55838  00160000165572  ...             ordered
+55839  00160000165572  ...             ordered
+55840  00160000165572  ...             ordered
 
-[21802 rows x 18 columns]
+[21668 rows x 18 columns]
 UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.PrescriptionOrgID = t.PrescriptionOrgID, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.FrequencyCode = t.FrequencyCode, r.UnitCode = t.UnitCode, r.DispenseQuantity = t.DispenseQuantity, r.DispenseUnitCode = t.DispenseUnitCode, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.PrescriptionNotes = t.PrescriptionNotes, r.PrescriptionStatus = t.PrescriptionStatus , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientDrugPrescription r INNER JOIN (SELECT * FROM staging_rscm.TransPatientDrugPrescription_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID  WHERE r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID ;
 success update and insert all data
-44.648996353149414
-scheduler tanggal : 2025-01-17 02:20:02.357715
+34.263999700546265
+scheduler tanggal : 2025-01-22 02:20:01.691459

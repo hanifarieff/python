@@ -1,15 +1,15 @@
-scheduler tanggal : 2025-01-17 03:00:01.881715
+scheduler tanggal : 2025-01-22 03:00:01.730460
 success connected to  Engine(mysql://hanif-ppi:***@172.16.6.10/mpi)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 ini source dari live
   ExtractDate CreatedDate  TotalPatientMPI
-0  2025-01-17  2025-01-16              937
+0  2025-01-22  2025-01-21              902
   ExtractDate  TotalPatientDWH
-0  2025-01-17              937
+0  2025-01-22                0
   ExtractDate CreatedDate  TotalPatientMPI  TotalPatientDWH
-0  2025-01-17  2025-01-16              937              937
-No mismatch detected.
+0  2025-01-22  2025-01-21              902                0
+Alert email sent successfully!
 ini target
 Empty DataFrame
 Columns: [ExtractDate, CreatedDate, TotalPatientMPI, TotalPatientDWH]
@@ -20,7 +20,7 @@ Columns: [ExtractDate, CreatedDate, TotalPatientMPI, TotalPatientDWH]
 Index: []
 total row inserted : 1
   ExtractDate CreatedDate  TotalPatientMPI  TotalPatientDWH
-0  2025-01-17  2025-01-16              937              937
+0  2025-01-22  2025-01-21              902                0
 success insert all data without update
-7.663997411727905
-scheduler tanggal : 2025-01-17 03:00:01.881715
+14.989999532699585
+scheduler tanggal : 2025-01-22 03:00:01.730460

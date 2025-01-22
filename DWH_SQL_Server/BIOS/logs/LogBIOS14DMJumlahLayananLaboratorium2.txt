@@ -1,56 +1,105 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
      TglTransaksi            NamaLayanan  Jumlah
-0      2025-01-07  25-OH VITAMIN D TOTAL       8
-1      2025-01-07               AMMONIAK       1
-2      2025-01-07    AGGREGASI TROMBOSIT       1
-3      2025-01-07  ANALISA CAIRAN ASITES       1
-4      2025-01-07                    AFP      13
+0      2025-01-12  25-OH VITAMIN D TOTAL       2
+1      2025-01-12        CHOLESTEROL LDL       2
+2      2025-01-12      ANALISA GAS DARAH       1
+3      2025-01-12           CITRATE 3 ML       8
+4      2025-01-12    AGGREGASI TROMBOSIT       1
 ...           ...                    ...     ...
-1669   2025-01-16            UREUM DARAH     129
-1670   2025-01-16           TRIGLISERIDA      38
-1671   2025-01-16           TYROGLOBULIN       2
-1672   2025-01-16            WING NEEDLE      92
-1673   2025-01-16           URIN LENGKAP      55
+1241   2025-01-21           TRIGLISERIDA      27
+1242   2025-01-21           TYROGLOBULIN       1
+1243   2025-01-21                   VDRL       3
+1244   2025-01-21           URIN LENGKAP      57
+1245   2025-01-21            WING NEEDLE      60
 
-[1674 rows x 3 columns]
+[1246 rows x 3 columns]
 TglTransaksi    object
 NamaLayanan     object
 Jumlah           int64
 dtype: object
      TglTransaksi            NamaLayanan  Jumlah
-0      2025-01-07  25-OH VITAMIN D TOTAL       8
-1      2025-01-07                    AFP      13
-2      2025-01-07    AGGREGASI TROMBOSIT       1
-3      2025-01-07          ALBUMIN (ALB)      54
-4      2025-01-07               AMMONIAK       1
+0      2025-01-12  25-OH VITAMIN D TOTAL       2
+1      2025-01-12    AGGREGASI TROMBOSIT       1
+2      2025-01-12      ANALISA GAS DARAH       1
+3      2025-01-12        CHOLESTEROL HDL       3
+4      2025-01-12        CHOLESTEROL LDL       2
 ...           ...                    ...     ...
-1533   2025-01-15                    TSH      32
-1534   2025-01-15            UREUM DARAH     122
-1535   2025-01-15           URIN LENGKAP      46
-1536   2025-01-15                   VDRL       4
-1537   2025-01-15            WING NEEDLE      68
+1112   2025-01-20           TYROGLOBULIN       5
+1113   2025-01-20            UREUM DARAH     166
+1114   2025-01-20           URIN LENGKAP      78
+1115   2025-01-20                   VDRL       4
+1116   2025-01-20            WING NEEDLE     106
 
-[1538 rows x 3 columns]
-total row update : 0
-Empty DataFrame
-Columns: [TglTransaksi, NamaLayanan, Jumlah]
-Index: []
-total row inserted : 136
+[1117 rows x 3 columns]
+total row update : 50
+     TglTransaksi                      NamaLayanan  Jumlah
+1010   2025-01-20                    ALBUMIN (ALB)      55
+1013   2025-01-20              AGGREGASI TROMBOSIT       3
+1016   2025-01-20                ANALISA GAS DARAH       4
+1018   2025-01-20                   ANTI HCV TOTAL      46
+1022   2025-01-20               ANTI HIV PENYARING      23
+1023   2025-01-20                  ASAM URAT DARAH      23
+1024   2025-01-20                             APTT      86
+1033   2025-01-20  BILIRUBIN TOTAL + DIREK+INDIREK      13
+1035   2025-01-20        BIAKAN+RES AEROB LKP URIN       7
+1039   2025-01-20                    CALSIUM DARAH      14
+1042   2025-01-20                  CHOLESTEROL LDL      53
+1044   2025-01-20                     CITRATE 3 ML      28
+1045   2025-01-20                  CHOLESTEROL HDL      16
+1046   2025-01-20                CHOLESTEROL TOTAL      17
+1049   2025-01-20                CRP (KUANTITATIF)      26
+1051   2025-01-20                  CLOTT ACTIVATOR      58
+1054   2025-01-20                          D-DIMER      11
+1055   2025-01-20                        EDTA 3 ML      66
+1056   2025-01-20                             EDTA     220
+1058   2025-01-20             FE(SI) + TIBC + UIBC       5
+1059   2025-01-20     ELEKTROLIT DARAH (NA, K, CL)     117
+1060   2025-01-20                       FIBRINOGEN       7
+1062   2025-01-20                         FERRITIN      24
+1064   2025-01-20           FOSFAT INORGANIK DARAH      12
+1066   2025-01-20                 GEL NA ACTIVATOR       4
+1067   2025-01-20                          FREE T4      25
+1070   2025-01-20                 GLIKO HB (HBA1C)      48
+1072   2025-01-20                    GLUKOSA PUASA      37
+1075   2025-01-20                  GLUKOSA SEWAKTU      86
+1078   2025-01-20                            HBSAG      51
+1079   2025-01-20     HEMATOLOGI LENGKAP TANPA LED     333
+1081   2025-01-20                 HEMATOLOGI RUTIN      53
+1092   2025-01-20                            JARUM      54
+1095   2025-01-20                  KREATININ DARAH     245
+1096   2025-01-20                   JARUM VACUETTE      74
+1099   2025-01-20                 LAJU ENDAP DARAH      62
+1101   2025-01-20               LUPUS ANTIKOAGULAN       2
+1108   2025-01-20                    PROCALCITONIN       3
+1114   2025-01-20                    PROTEIN TOTAL       6
+1116   2025-01-20                              PT.      78
+1118   2025-01-20                         PT + INR      33
+1121   2025-01-20                       SGOT (AST)     165
+1122   2025-01-20                             TPHA       4
+1124   2025-01-20                              TSH      62
+1125   2025-01-20                       SGPT (ALT)     200
+1126   2025-01-20                     TRIGLISERIDA      35
+1127   2025-01-20                      UREUM DARAH     177
+1130   2025-01-20                      WING NEEDLE     118
+1131   2025-01-20                     URIN LENGKAP      87
+1132   2025-01-20                             VDRL       5
+total row inserted : 129
      TglTransaksi            NamaLayanan  Jumlah
-1538   2025-01-16  25-OH VITAMIN D TOTAL      18
-1539   2025-01-16    AGGREGASI TROMBOSIT       4
-1540   2025-01-16   ANALISA FESES KHUSUS       1
-1541   2025-01-16                    ANA       2
-1542   2025-01-16                    AFP       2
+1011   2025-01-20  25-OH VITAMIN D TOTAL       1
+1015   2025-01-20             ANALISA HB       1
+1028   2025-01-20  BETA HIDROKSI BUTIRAT       1
+1047   2025-01-20    CLOT ACTIVATOR 6 ML       6
+1061   2025-01-20      FAKTOR XA ( AXA )       1
 ...           ...                    ...     ...
-1669   2025-01-16            UREUM DARAH     129
-1670   2025-01-16           TRIGLISERIDA      38
-1671   2025-01-16           TYROGLOBULIN       2
-1672   2025-01-16            WING NEEDLE      92
-1673   2025-01-16           URIN LENGKAP      55
+1241   2025-01-21           TRIGLISERIDA      27
+1242   2025-01-21           TYROGLOBULIN       1
+1243   2025-01-21                   VDRL       3
+1244   2025-01-21           URIN LENGKAP      57
+1245   2025-01-21            WING NEEDLE      60
 
-[136 rows x 3 columns]
-success insert all data without update
-173.41000080108643
-scheduler tanggal : 2025-01-17 07:07:01.829714
+[129 rows x 3 columns]
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS14DMJumlahLayananLaboratorium2 r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS14DMJumlahLayananLaboratorium2_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi and r.NamaLayanan = t.NamaLayanan  WHERE r.TglTransaksi = t.TglTransaksi and r.NamaLayanan = t.NamaLayanan ;
+success update and insert all data
+70.86299800872803
+scheduler tanggal : 2025-01-22 07:07:01.830461

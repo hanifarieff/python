@@ -1,19 +1,19 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
-0        1831390           29   411985657  ...     1                0   1751-7
-1        1831390           29   411985657  ...     1                0     None
-2        1831390           29   411985657  ...     1                0   1988-5
-3        1831390           29   411985657  ...     1                0     None
-4        1831390           29   411985657  ...     1                0   5195-3
+0        1961048            6   411967087  ...     1                0     None
+1        1961048            6   411967087  ...     1                0     None
+2        1957545           54   411966072  ...     1                0     None
+3        1957545           54   411966072  ...     1                0     None
+4        1957545           54   411966072  ...     1                0     None
 ...          ...          ...         ...  ...   ...              ...      ...
-29659     657482           42   411989260  ...     1                0   2093-3
-29660     657482           42   411989260  ...     1                0   2571-8
-29661    2214978            8   411988765  ...     1                0     None
-29662    2214978            8   411988766  ...     1                0     None
-29663    1544800           68   411986950  ...     1                0  29576-6
+29699    2113870           10   411995298  ...     1                0  83084-4
+29700    2113870           10   411995298  ...     1                0  83085-1
+29701    2237185            3   411995569  ...     1                0   3173-2
+29702    2237185            3   411995569  ...     1                0  38875-1
+29703    2237185            3   411997025  ...     1                0   3173-2
 
-[29664 rows x 42 columns]
+[29704 rows x 42 columns]
 PatientID                       int64
 AdmissionID                     int64
 FormNumber                      int64
@@ -58,85 +58,117 @@ FormLabDetailID                 int64
 LoincID                        object
 dtype: object
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
-0           7393          243   411987222  ...     1                0  38875-1
-1           9113          428   411940137  ...     1                0     None
-2           9113          428   411940137  ...     1                0     None
-3           9113          428   411940137  ...     1                0   2160-0
-4          22151          517   411949745  ...     1                0     None
+0           1220          257   411943418  ...     1                0     None
+1           1220          257   411943418  ...     1                0   1558-6
+2           1220          257   411943418  ...     1                0   2571-8
+3           1511          248   411951181  ...     1                0  38875-1
+4           2416          414   411955497  ...     1                0  47596-2
 ...          ...          ...         ...  ...   ...              ...      ...
-17183    2242854            1   411988518  ...     1                0     None
-17184    2242854            1   411988518  ...     1                0     None
-17185    2242855            1   411988528  ...     1                0  55231-5
-17186    2242855            1   411988528  ...     1                0   2345-7
-17187    2242855            1   411988528  ...     1                0     None
+16524    2246889            1   411996737  ...     1                0     None
+16525    2246889            1   411996737  ...     1                0     None
+16526    2246890            1   411994421  ...     1                0     None
+16527    2246890            1   411994421  ...     1                0     None
+16528    2246890            1   411995798  ...     1                0  29576-6
 
-[17188 rows x 42 columns]
+[16529 rows x 42 columns]
 ini changes
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID LoincID
-13       1613009          109   411943643  ...     1                0  1988-5
-14       1613009          109   411943643  ...     1                0    None
-15        873158          208   411984830  ...     1                0  2888-6
-16       1611658           75   411985785  ...     1                0    None
-24       1949655           27   411988392  ...     1                0    None
+0        1961048            6   411967087  ...     1                0    None
+1        1961048            6   411967087  ...     1                0    None
+2        1957545           54   411966072  ...     1                0    None
+3        1957545           54   411966072  ...     1                0    None
+4        1957545           54   411966072  ...     1                0    None
 ...          ...          ...         ...  ...   ...              ...     ...
-29658     657482           42   411989260  ...     1                0    None
-29659     657482           42   411989260  ...     1                0  2093-3
-29660     657482           42   411989260  ...     1                0  2571-8
-29661    2214978            8   411988765  ...     1                0    None
-29662    2214978            8   411988766  ...     1                0    None
+29695    2241009            2   411995995  ...     1                0    None
+29696    2113870           10   411997801  ...     1                0    None
+29697    2113870           10   411998301  ...     1                0    None
+29698    2113870           10   411997794  ...     1                0    None
+29703    2237185            3   411997025  ...     1                0  3173-2
 
-[14299 rows x 42 columns]
+[15151 rows x 42 columns]
 
 
-total row update except new : 164
+total row update except new : 43
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
-486      1933686           20   411972660  ...     1                0     None
-487      1933686           20   411972660  ...     1                0   2093-3
-591       802542           85   411987627  ...     1                0     None
-627       693526          247   411988376  ...     1                0  29576-6
-628       693526          247   411988376  ...     1                0     None
-...          ...          ...         ...  ...   ...              ...      ...
-28425    2220597            2   411964172  ...     1                0  88112-8
-28426    2220597            2   411964172  ...     1                0   1744-2
-29555     575572          314   411940206  ...     1                0   3084-1
-29556     575572          314   411940206  ...     1                0     None
-29557     575572          314   411940206  ...     1                0   2160-0
+3228     2103067           25   411994360  ...     1                0     None
+3229     2103067           25   411994360  ...     1                0     None
+3230     2103067           25   411994360  ...     1                0     None
+4188     2202439           16   411994935  ...     1                0     None
+5712     2103067           25   411994360  ...     1                0     None
+6730     2220910            8   411995451  ...     1                0     None
+6731     2220910            8   411995451  ...     1                0     None
+7068     2220910            8   411995451  ...     1                0     None
+9889     2013994           37   411996320  ...     1                0     None
+11066    1434151           24   411983277  ...     1                0     None
+11067    1434151           24   411983277  ...     1                0     None
+11068    1434151           24   411983277  ...     1                0     None
+13490    1434151           24   411983277  ...     1                0     None
+13491    1434151           24   411983277  ...     1                0  30522-7
+14110    2233464            3   411996465  ...     1                0   3173-2
+14111    2233464            3   411996465  ...     1                0   5964-2
+14113    2233464            3   411996465  ...     1                0     None
+14116    2233464            3   411996465  ...     1                0  88112-8
+14467    2239606            1   411995708  ...     1                0   1988-5
+14502    2233464            3   411996465  ...     1                0   1744-2
+14503    2233464            3   411996465  ...     1                0     None
+14524    2233464            3   411996465  ...     1                0     None
+14525    2233464            3   411996465  ...     1                0     None
+17462    2231913            1   411995349  ...     1                0     None
+17470    2231913            1   411994622  ...     1                0     None
+17471    2231913            1   411994622  ...     1                0     None
+17472    2231913            1   411994622  ...     1                0     None
+17473    2231913            1   411995349  ...     1                0     None
+17840    2231913            1   411994622  ...     1                0     None
+17841    2231913            1   411994622  ...     1                0   2160-0
+18093    2231950            1   411996342  ...     1                0     None
+18095    2231950            1   411996342  ...     1                0     None
+18279    2231913            1   411994622  ...     1                0  20977-5
+18384    2231913            1   411995349  ...     1                0  55231-5
+18767    2209781            6   411996618  ...     1                0     None
+18769    2209781            6   411996618  ...     1                0     None
+18771    2209781            6   411996618  ...     1                0     None
+18773    2209781            6   411996618  ...     1                0     None
+18775    2209781            6   411996618  ...     1                0     None
+23871    2243799            1   411996213  ...     1                0     None
+24006    2243799            1   411996213  ...     1                0     None
+24181     843582            2   411996659  ...     1                0     None
+24950    2116371           36   411996654  ...     1                0  75667-6
 
-[164 rows x 42 columns]
+[43 rows x 42 columns]
 
 
-total row update new : 1639
+total row update new : 1880
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
-13       1613009          109   411943643  ...     1                0   1988-5
-14       1613009          109   411943643  ...     1                0     None
-176      1295119          218   411975421  ...     1                0  55231-5
-185       455254          325   411975003  ...     1                0   1751-7
-379      1507792           96   411978415  ...     1                0  55231-5
+51       1841502           16   411992408  ...     1                0     None
+52       1841502           16   411992408  ...     1                0     None
+53       1841502           16   411992408  ...     1                0     None
+165      2113143           11   411960281  ...     1                0  55231-5
+183      1987001           39   411962256  ...     1                0   1988-5
 ...          ...          ...         ...  ...   ...              ...      ...
-29512    1681325           57   411987139  ...     1                0  29576-6
-29545    1999371           13   411930434  ...     1                0     None
-29548    1999371           13   411930434  ...     1                0   2888-6
-29554    1988552           43   411929501  ...     1                0   2571-8
-29558     426678           40   411987507  ...     1                0     None
+29613    2213656            1   411996199  ...     1                0  17934-1
+29691    2241009            2   411995995  ...     1                0     None
+29692    2241009            2   411995995  ...     1                0  30522-7
+29694    2241009            2   411995995  ...     1                0  55231-5
+29695    2241009            2   411995995  ...     1                0     None
 
-[1639 rows x 42 columns]
+[1880 rows x 42 columns]
 
 
-total row inserted : 12496
+total row inserted : 13228
        PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID LoincID
-15        873158          208   411984830  ...     1                0  2888-6
-16       1611658           75   411985785  ...     1                0    None
-24       1949655           27   411988392  ...     1                0    None
-28       1613009          109   411943643  ...     1                0    None
-29       1613009          109   411943643  ...     1                0    None
+0        1961048            6   411967087  ...     1                0    None
+1        1961048            6   411967087  ...     1                0    None
+2        1957545           54   411966072  ...     1                0    None
+3        1957545           54   411966072  ...     1                0    None
+4        1957545           54   411966072  ...     1                0    None
 ...          ...          ...         ...  ...   ...              ...     ...
-29658     657482           42   411989260  ...     1                0    None
-29659     657482           42   411989260  ...     1                0  2093-3
-29660     657482           42   411989260  ...     1                0  2571-8
-29661    2214978            8   411988765  ...     1                0    None
-29662    2214978            8   411988766  ...     1                0    None
+29690    2248045            1   411997782  ...     1                0    None
+29696    2113870           10   411997801  ...     1                0    None
+29697    2113870           10   411998301  ...     1                0    None
+29698    2113870           10   411997794  ...     1                0    None
+29703    2237185            3   411997025  ...     1                0  3173-2
 
-[12496 rows x 42 columns]
+[13228 rows x 42 columns]
 
 
 UPDATE r SET r.OrgID = t.OrgID, r.OrgIDSurrogateKeyID = t.OrgIDSurrogateKeyID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.OrderID = t.OrderID, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.DstOrgSurrogateKeyID = t.DstOrgSurrogateKeyID, r.ApprovalOrg = t.ApprovalOrg, r.ApprovalOrgSurrogateKeyID = t.ApprovalOrgSurrogateKeyID, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactFormulirLab r INNER JOIN (SELECT * FROM dwhrscm_talend.FactFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo  WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo  ;
@@ -146,5 +178,5 @@ DROP TABLE dwhrscm_talend.FactFormulirLab_temporary_table
 UPDATE r SET r.OrgID = t.OrgID, r.OrgIDSurrogateKeyID = t.OrgIDSurrogateKeyID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.DstOrgSurrogateKeyID = t.DstOrgSurrogateKeyID, r.ApprovalOrg = t.ApprovalOrg, r.ApprovalOrgSurrogateKeyID = t.ApprovalOrgSurrogateKeyID, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactFormulirLab r INNER JOIN (SELECT * FROM dwhrscm_talend.FactFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo ;
 DROP TABLE dwhrscm_talend.FactFormulirLab_temporary_table
 success update and insert all data
-640.4079976081848
-scheduler tanggal : 2025-01-17 01:15:01.746715
+721.810998916626
+scheduler tanggal : 2025-01-22 01:15:01.716461

@@ -1,0 +1,53 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+       PatientID  AdmissionID        OrderLab OrderCodeID  ObservationID
+0             95            1  00220000437261     Glucose              0
+1           1220          257       450121221      LDLC-M              0
+2           1220          257       450121221      PUASAD              0
+3           1220          257       450121221        TRIG              0
+4           1511          248       450121182       PTINR              0
+...          ...          ...             ...         ...            ...
+62132    2248986            1       750121188      ASTRUP              4
+62133    2248986            1       750121188      ASTRUP              5
+62134    2248986            1       750121188      ASTRUP              6
+62135    2248986            1       750121188      ASTRUP              7
+62136    2248986            1       750121188      ASTRUP              8
+
+[62137 rows x 5 columns]
+total row update : 980
+       PatientID  AdmissionID   OrderLab OrderCodeID  ObservationID
+59         20279          632  450120226        DPL2              2
+182        38912          477  450120409        DPL2              2
+227        42544          736  450120335        DPL2              2
+283        44242          225  450120346      DPL2IT              2
+335        47332            3  650120246      HE-RTN              2
+...          ...          ...        ...         ...            ...
+60204    2248071            1  750120211        DPL2              2
+60231    2248072            1  350120352      HE-RTN              2
+60370    2248080            1  750120227        DPL2              2
+60422    2248082            1  750120225      HE-RTN              2
+60444    2248084            1  750120226        DPL2              2
+
+[980 rows x 5 columns]
+total row inserted : 29847
+       PatientID  AdmissionID   OrderLab OrderCodeID  ObservationID
+1           1220          257  450121221      LDLC-M              0
+2           1220          257  450121221      PUASAD              0
+3           1220          257  450121221        TRIG              0
+4           1511          248  450121182       PTINR              0
+5           1511          248  450121182       PTINR              1
+...          ...          ...        ...         ...            ...
+62132    2248986            1  750121188      ASTRUP              4
+62133    2248986            1  750121188      ASTRUP              5
+62134    2248986            1  750121188      ASTRUP              6
+62135    2248986            1  750121188      ASTRUP              7
+62136    2248986            1  750121188      ASTRUP              8
+
+[29847 rows x 5 columns]
+UPDATE t SET t.OrderName = s.OrderName, t.OrderRequestDate = s.OrderRequestDate, t.ObservationName = s.ObservationName, t.ObservationValue = s.ObservationValue, t.ObservationUnit = s.ObservationUnit, t.AbnormalFlag = s.AbnormalFlag, t.RefRange = s.RefRange, t.ObservationNotes = s.ObservationNotes, t.ResultDate = s.ResultDate, t.DoctorResponsible = s.DoctorResponsible, t.CreatedDate = s.CreatedDate, t.StatusCode = s.StatusCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientLabObs t INNER JOIN (SELECT * FROM staging_rscm.TransPatientLabObs_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID  WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID;
+all success updated and inserted
+1216.9709997177124
+
+
+scheduler tanggal : 2025-01-22 05:10:02.109462

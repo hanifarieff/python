@@ -31,91 +31,35 @@ Type                        object
 CategoryNameNew             object
 PayplanKemkesNew            object
 dtype: object
-      OrderID  ObjectIDNull TarifNew         OrgNameNew
-0   154550419         53656  1142000  Radiologi Kencana
-1   155486973         32587  3200000  Radiologi Kencana
-2   155492896         32589  4200000  Radiologi Kencana
-3   158372378         32471   845000  Radiologi Kencana
-4   158488125         53672  1136000  Radiologi Kencana
-5   160126203         32545  4200000  Radiologi Kencana
-6   160646972         32589  4200000  Radiologi Kencana
-7   160745184         32724  5460000  Radiologi Kencana
-8   160815815         36040   600000  Radiologi Kencana
-9   160872250         32587  3200000  Radiologi Kencana
-10  160878619         32451  1041000  Radiologi Kencana
-11  160881102         32277   328000  Radiologi Kencana
-12  160886653         32543  3200000  Radiologi Kencana
-13  160886847         32545  4200000  Radiologi Kencana
-14  161015883         53656  1142000  Radiologi Kencana
-15  161016750         53672  1136000  Radiologi Kencana
-16  161141165         32538  3200000  Radiologi Kencana
-17  161170362         32742  4160000  Radiologi Kencana
-18  161172560         32702  4160000  Radiologi Kencana
-19  161173278         32545  4200000  Radiologi Kencana
-20  161198766         50159   323000  Radiologi Kencana
-21  161225768         32660  5460000  Radiologi Kencana
-22  161240348         32339  1220000  Radiologi Kencana
-23  161258226         53709  1140000  Radiologi Kencana
-24  161283029         32587  3200000  Radiologi Kencana
-25  161370773         32587  3200000  Radiologi Kencana
-26  161409972         32595  5200000  Radiologi Kencana
-27  161409978         32595  5200000  Radiologi Kencana
-28  161410095         32595  5200000  Radiologi Kencana
-29  161410150         32595  5200000  Radiologi Kencana
-30  161538770         53681  4426000  Radiologi Kencana
-31  161584546         32587  3200000  Radiologi Kencana
-32  161584775         32587  3200000  Radiologi Kencana
-33  161671115         32587  3200000  Radiologi Kencana
-34  161671119         31588   328000  Radiologi Kencana
-35  161759595         32570  3200000  Radiologi Kencana
-36  161778396         32595  5200000  Radiologi Kencana
-37  161778405         32595  5200000  Radiologi Kencana
-38  161786421         41424   600000  Radiologi Kencana
-39  161881454         32543  3200000  Radiologi Kencana
-after
-      OrderID  EmployeeID                          DoctorName  ...        Type CategoryNameNew   PayplanKemkesNew
-0   154550419        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-1   155486973        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-2   155492896        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-3   158372378        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-4   158488125        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-5   160126203        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-6   160646972        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-7   160745184        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-8   160815815        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-9   160872250        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-10  160878619        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-11  160881102        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-12  160886653        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-13  160886847        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-14  161015883        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-15  161016750        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-16  161141165        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend        tindakan          Eksekutif
-17  161170362        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend        tindakan          Eksekutif
-18  161172560        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-19  161173278        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-20  161198766        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-21  161225768        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang  Eksekutif Jaminan
-22  161240348        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-23  161258226        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-24  161283029        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-25  161370773        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-26  161409972        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-27  161409978        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-28  161410095        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-29  161410150        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-30  161538770        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-31  161584546        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-32  161584775        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-33  161671115        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-34  161671119        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-35  161759595        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-36  161778396        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-37  161778405        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-38  161786421        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
-39  161881454        1971  Marcel Prasetyo, Dr.,dr., SpRad(K)  ...  Kepdirjend       penunjang          Eksekutif
+        OrderID  ObjectIDNull TarifNew                                OrgNameNew
+0     150684323         56106   866000  Pelayanan Laboratorium Patologi Anatomik
+1     154426225         41494  1500000                OK - Kamar Operasi Kencana
+2     156290434         45155   575000              In Patient 4th Floor Kencana
+3     156290438         45155   575000              In Patient 4th Floor Kencana
+4     156335894         45155   575000              In Patient 4th Floor Kencana
+...         ...           ...      ...                                       ...
+4438  163366286        118421   688000                    Cluster Psikiatri Anak
+4439  163368352         69328   269000       Kedokteran Forensik dan Medikolegal
+4440  163368353         69450   110000       Kedokteran Forensik dan Medikolegal
+4441  163368354         69456   256000       Kedokteran Forensik dan Medikolegal
+4442  163369294        165902   750000         24 Hours Executive Clinic Kencana
 
-[40 rows x 31 columns]
+[4443 rows x 4 columns]
+after
+        OrderID  EmployeeID  ... CategoryNameNew   PayplanKemkesNew
+0     150684323       12591  ...       penunjang          Eksekutif
+1     154426225       12452  ...        tindakan          Eksekutif
+2     156290434          17  ...        visitasi  Eksekutif Jaminan
+3     156290438        1561  ...        visitasi  Eksekutif Jaminan
+4     156335894          17  ...        visitasi  Eksekutif Jaminan
+...         ...         ...  ...             ...                ...
+5636  163366286        6996  ...           jalan          Eksekutif
+5637  163368352        6600  ...        tindakan  Eksekutif Jaminan
+5638  163368353        6600  ...        tindakan  Eksekutif Jaminan
+5639  163368354        6600  ...        tindakan  Eksekutif Jaminan
+5640  163369294       19975  ...           jalan          Eksekutif
+
+[5641 rows x 31 columns]
 success insert all data
-5.52699875831604
-scheduler tanggal : 2025-01-16 14:48:45.771716
+16.82699418067932
+scheduler tanggal : 2025-01-22 13:20:22.111461

@@ -2,63 +2,63 @@ success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?
 success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
       AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
-0          15179767           -          None  ...            0      -    1
-1          15195464           -          None  ...            0      -    1
-2          15201604           -          None  ...            0      -    1
-3          15201608           -          None  ...            0      -    1
-4          15201672           -          None  ...            0      -    1
+0          15214718           -          None  ...            0      -    1
+1          15220836           -          None  ...            0      -    1
+2          15220838           -          None  ...            0      -    1
+3          15220843           -          None  ...            0      -    1
+4          15220869           -          None  ...            0      -    1
 ...             ...         ...           ...  ...          ...    ...  ...
-3485       15299428           -          None  ...            0      -    1
-3486       15299436           -          None  ...            0      -    1
-3487       15299437           -          None  ...            0      -    1
-3488       15299442           -          None  ...            0      -    1
-3489       15299447           -          None  ...            0      -    1
+3210       15315756           -          None  ...            0      -    1
+3211       15315759           -          None  ...            0      -    1
+3212       15315760           -          None  ...            0      -    1
+3213       15315762           -          None  ...            0      -    1
+3214       15315765           -          None  ...            0      -    1
 
-[3490 rows x 33 columns]
+[3215 rows x 33 columns]
              CardNo
-0     0001221538386
-1     0003627460732
-2                 -
-3                 -
-4     0002088895612
+0     0001475583603
+1     0002324020151
+2     0000203387995
+3     0001847516624
+4     0001426613668
 ...             ...
-3485  0001217192196
-3486  0001208667385
-3487  0001456226482
-3488  0001636117334
-3489  0001219645991
+3210  0002894696368
+3211  0003591766271
+3212  0003543593433
+3213  0000039569286
+3214              -
 
-[3490 rows x 1 columns]
+[3215 rows x 1 columns]
 ini filter kartu kosong
       AppointmentID KodeBooking AdmissionDate  ...  QuotaNonJKN  Notes Flag
-2          15201604           -          None  ...            0      -    1
-3          15201608           -          None  ...            0      -    1
-31         15206379           -          None  ...            0      -    1
-59         15209378           -          None  ...            0      -    1
-73         15210374           -          None  ...            0      -    1
+50         15224574           -          None  ...            0      -    1
+102        15230440           -          None  ...            0      -    1
+183        15238314           -          None  ...            0      -    1
+199        15240260           -          None  ...            0      -    1
+297        15251867           -          None  ...            0      -    1
 ...             ...         ...           ...  ...          ...    ...  ...
-3485       15298778           -          None  ...            0      -    1
-3486       15298861           -          None  ...            0      -    1
-3487       15299231           -          None  ...            0      -    1
-3488       15299289           -          None  ...            0      -    1
-3489       15299362           -          None  ...            0      -    1
+3210       15314463           -          None  ...            0      -    1
+3211       15314560           -          None  ...            0      -    1
+3212       15314881           -          None  ...            0      -    1
+3213       15315527           -          None  ...            0      -    1
+3214       15315673           -          None  ...            0      -    1
 
-[416 rows x 33 columns]
+[418 rows x 33 columns]
 ini source gabungan
              CardNo
-0     0001221538386
-1     0003627460732
-2     0002088895612
-3     0000370228768
-4     0001801199259
+0     0001475583603
+1     0002324020151
+2     0000203387995
+3     0001847516624
+4     0001426613668
 ...             ...
-3485            NaN
-3486            NaN
-3487            NaN
-3488            NaN
-3489            NaN
+3210            NaN
+3211            NaN
+3212            NaN
+3213            NaN
+3214            NaN
 
-[3490 rows x 1 columns]
+[3215 rows x 1 columns]
 AppointmentID                int64
 KodeBooking                 object
 AdmissionDate               object
@@ -93,11 +93,11 @@ QuotaNonJKN                  int64
 Notes                       object
 Flag                        object
 dtype: object
-AppointmentID                int64
+AppointmentID               object
 KodeBooking                 object
 AdmissionDate               object
-PatientID                    int64
-AdmissionID                  int64
+PatientID                   object
+AdmissionID                 object
 MedicalNo                   object
 PatientType                 object
 CardNo                      object
@@ -117,48 +117,36 @@ DoctorPracticeStartTime     object
 DoctorPracticeFinishTime    object
 VisitType                   object
 AppointmentMethod           object
-QueueNumber                  int64
-QueueNo                      int64
+QueueNumber                 object
+QueueNo                     object
 ServedEstimated             object
-RestQuotaJKN                 int64
-QuotaJKN                     int64
-RestQuotaNonJKN              int64
-QuotaNonJKN                  int64
+RestQuotaJKN                object
+QuotaJKN                    object
+RestQuotaNonJKN             object
+QuotaNonJKN                 object
 Notes                       object
 Flag                        object
 dtype: object
 after join
-total row update : 720
+total row update : 0
+Empty DataFrame
+Columns: [AppointmentID, KodeBooking, AdmissionDate, PatientID, AdmissionID, MedicalNo]
+Index: []
+total row inserted : 3215
       AppointmentID KodeBooking  ... AdmissionID  MedicalNo
-8          15202811           -  ...           0  461-40-51
-18         15204507           -  ...           0  354-10-20
-19         15204722           -  ...           0  479-79-92
-40         15207826           -  ...           0  422-05-29
-41         15207943           -  ...           0  467-79-82
+0          15214718           -  ...           0  462-07-06
+1          15220836           -  ...           0  471-11-15
+2          15220838           -  ...           0  477-55-73
+3          15220843           -  ...           0  476-29-59
+4          15220869           -  ...           0  339-66-42
 ...             ...         ...  ...         ...        ...
-3476       15294543           -  ...           0  480-82-48
-3477       15294722           -  ...           0  483-82-00
-3479       15295753           -  ...           0  483-80-91
-3481       15296723           -  ...           0  483-84-84
-3482       15298160           -  ...           0  483-84-71
+3210       15314463           -  ...           0  484-43-58
+3211       15314560           -  ...           0  483-64-15
+3212       15314881           -  ...           0  484-44-67
+3213       15315527           -  ...           0  484-44-33
+3214       15315673           -  ...           0  484-45-27
 
-[720 rows x 6 columns]
-total row inserted : 246
-      AppointmentID KodeBooking  ... AdmissionID  MedicalNo
-2883       15298464           -  ...           0  483-45-97
-2884       15298470           -  ...           0  479-13-05
-2885       15298471           -  ...           0  333-98-88
-2886       15298477           -  ...           0  459-19-79
-2887       15298479           -  ...           0  480-83-05
-...             ...         ...  ...         ...        ...
-3485       15298778           -  ...           0  483-85-77
-3486       15298861           -  ...           0  483-86-27
-3487       15299231           -  ...           0  483-86-29
-3488       15299289           -  ...           0  483-78-77
-3489       15299362           -  ...           0  483-86-66
-
-[246 rows x 6 columns]
-UPDATE r SET r.KodeBooking = t.KodeBooking, r.AdmissionDate = t.AdmissionDate, r.MedicalNo = t.MedicalNo, r.PatientType = t.PatientType, r.CardNo = t.CardNo, r.SEPNo = t.SEPNo, r.ReferenceNo = t.ReferenceNo, r.NIK = t.NIK, r.PhoneNo = t.PhoneNo, r.PoliCode = t.PoliCode, r.PoliName = t.PoliName, r.NewPatient = t.NewPatient, r.DoctorCode = t.DoctorCode, r.DoctorName = t.DoctorName, r.AppointmentDate = t.AppointmentDate, r.AppointmentTime = t.AppointmentTime, r.StatusAppointment = t.StatusAppointment, r.DoctorPracticeStartTime = t.DoctorPracticeStartTime, r.DoctorPracticeFinishTime = t.DoctorPracticeFinishTime, r.VisitType = t.VisitType, r.AppointmentMethod = t.AppointmentMethod, r.QueueNumber = t.QueueNumber, r.QueueNo = t.QueueNo, r.ServedEstimated = t.ServedEstimated, r.RestQuotaJKN = t.RestQuotaJKN, r.QuotaJKN = t.QuotaJKN, r.RestQuotaNonJKN = t.RestQuotaNonJKN, r.QuotaNonJKN = t.QuotaNonJKN, r.Notes = t.Notes , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactAppointmentNextDay r INNER JOIN (SELECT * FROM dwhrscm_talend.FactAppointmentNextDay_temporary_table) as t ON r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag WHERE r.AppointmentID = t.AppointmentID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.Flag = t.Flag ;
-success update and insert all data
-55.8769953250885
-scheduler tanggal : 2025-01-16 19:50:01.995716
+[3215 rows x 6 columns]
+success insert all data without update
+65.04700016975403
+scheduler tanggal : 2025-01-22 14:00:01.891460

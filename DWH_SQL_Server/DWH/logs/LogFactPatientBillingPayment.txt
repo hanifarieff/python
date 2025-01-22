@@ -4,5 +4,5 @@ Empty DataFrame
 Columns: [BillingTransactID, CompanyName, PatientName, MedicalNo, AdmissionDate, TransactionDate, Status]
 Index: []
 tidak ada data dari source
-1.4400036334991455
-scheduler tanggal : 2025-01-17 04:40:02.139714
+1.8149981498718262
+scheduler tanggal : 2025-01-22 04:40:02.101460

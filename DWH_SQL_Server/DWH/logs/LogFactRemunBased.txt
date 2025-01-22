@@ -34,20 +34,20 @@ CategoryNameNew             object
 PayplanKemkesNew            object
 dtype: object
 after
-               OrderID  EmployeeID  ... CategoryNameNew PayplanKemkesNew
-0       00200007259587        5666  ...       penunjang          Non JKN
-1       00200007286143         651  ...        tindakan          Non JKN
-2       00200007501686        3339  ...        tindakan              JKN
-3       00200008132124        1981  ...        tindakan              JKN
-4       00200008270839        1981  ...        tindakan              JKN
-...                ...         ...  ...             ...              ...
-294477  00210008056782         651  ...        tindakan          Non JKN
-294478  00210008057110        7105  ...           jalan              JKN
-294479  00210008057391        8068  ...        tindakan          Non JKN
-294480  00210008057522        8069  ...        tindakan              JKN
-294481  00210008057617        8067  ...        tindakan              JKN
+              OrderID  EmployeeID  ... CategoryNameNew PayplanKemkesNew
+0      00200000825335       10567  ...       penunjang              JKN
+1      00200000825336       16886  ...       penunjang              JKN
+2      00200000825337       10567  ...        tindakan              JKN
+3      00200000825338       10567  ...        tindakan              JKN
+4      00200000981452       19978  ...       penunjang              JKN
+...               ...         ...  ...             ...              ...
+32205  00220000221892       19980  ...       penunjang              JKN
+32206  00220000221893       19980  ...       penunjang              JKN
+32207  00220000221894       19980  ...       penunjang              JKN
+32208  00220000222308       19980  ...       penunjang          Non JKN
+32209  00220000222479       19980  ...       penunjang          Non JKN
 
-[294482 rows x 31 columns]
+[32210 rows x 31 columns]
 OrderID                     object
 EmployeeID                   int64
 DoctorName                  object
@@ -81,5 +81,5 @@ CategoryNameNew             object
 PayplanKemkesNew            object
 dtype: object
 success insert all data
-896.4500000476837
-scheduler tanggal : 2025-01-10 07:25:35.731257
+1311.5490000247955
+scheduler tanggal : 2025-01-22 11:53:07.460461

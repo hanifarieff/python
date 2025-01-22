@@ -61,10 +61,10 @@ source1 = pd.read_sql_query(""" SELECT
                             LEFT JOIN hris_sys_cd_educlvl edu ON edu.educlvl_cd = pr.education_id
                             WHERE 
                             -- pt.patient_id IN (2091184) AND
-                            -- (pt.created_dttm >= '2025-01-13 00:00:00' and pt.created_dttm <= '2025-01-13 23:59:59')
+                            -- (pt.created_dttm >= '2025-01-21 00:00:00' and pt.created_dttm <= '2025-01-21 23:59:59')
                             -- (pr.updated_dttm >= '2023-10-12 00:00:00' and pr.updated_dttm <= '2023-10-12 23:59:59')
                             (pt.created_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") 
-                            and pt.created_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")) 
+                            AND pt.created_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59")) 
                             -- AND pr.person_nm IS NOT NULL""", conn_mpi)
 
 # # tarik data yang update berdasarkan kolom update di tabel person

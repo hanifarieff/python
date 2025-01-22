@@ -75,7 +75,7 @@ query_source1 = f""" SELECT
                             -- adm.patient_id = 767394 and adm.admission_id = 42 AND
                             adm.admission_dttm >= {start_date} AND adm.admission_dttm <= {end_date}
                             AND adm.org_id IN (select org_id from xocp_orgs where parent_id not in ('687','1872','2418') and org_id not in ('687','1872','2418'))
-                            AND adm.status_cd NOT IN ('cancelled','nullified') 
+                            -- AND adm.status_cd NOT IN ('cancelled','nullified') 
                             ORDER BY adm.patient_id, adm.admission_id
                         ) x
                         GROUP BY x.PatientID, x.AdmissionID"""
@@ -130,7 +130,7 @@ query_source2 = f""" SELECT
                             -- (st.start_dttm >= '2024-02-01 00:00:00' AND st.start_dttm <= '2024-02-01 23:59:59')
                             st.start_dttm >= {start_date} AND st.start_dttm <= {end_date}
                             AND adm.org_id IN (select org_id from xocp_orgs where parent_id not in ('687','1872','2418') and org_id not in ('687','1872','2418'))
-                            AND adm.status_cd NOT IN ('cancelled','nullified') 
+                            -- AND adm.status_cd NOT IN ('cancelled','nullified') 
                             ORDER BY adm.patient_id, adm.admission_id
                         ) x
                         GROUP BY x.PatientID, x.AdmissionID""" 
@@ -221,6 +221,7 @@ else:
     target = pd.read_sql_query(query, conn_staging_sqlserver)
 print('cek target')
 print(target)
+
 # update 9 juli gajadi pake script di bawah ini karena tetep mau apa adanya dari EHR. 
 # seandainya di DWH udah inap dan ehr berubah jadi n, maka di dwh bakal berubah jadi n
     

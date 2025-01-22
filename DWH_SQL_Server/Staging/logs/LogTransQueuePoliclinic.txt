@@ -1,38 +1,38 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
       QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
-0               4795690      411948520  ...           0            NaT
-1               4795787      411948534  ...           0            NaT
-2               4796152      411948567  ...           0            NaT
-3               4798794      411949282  ...           0            NaT
-4               4799141      411949455  ...           0            NaT
+0               4796344      411948606  ...           0            NaT
+1               4796490      411948627  ...           0            NaT
+2               4797639      411948932  ...           0            NaT
+3               4797738      411948968  ...           0            NaT
+4               4797928      411948998  ...           0            NaT
 ...                 ...            ...  ...         ...            ...
-4579            4876727              0  ...           0            NaT
-4580            4876728       15297040  ...           0            NaT
-4581            4876729              0  ...           0            NaT
-4582            4876730              0  ...           0            NaT
-4583            4876731              0  ...           0            NaT
+4819            4892345              0  ...           0            NaT
+4820            4892346              0  ...           0            NaT
+4821            4892347              0  ...           0            NaT
+4822            4892348              0  ...           0            NaT
+4823            4892349              0  ...           0            NaT
 
-[4584 rows x 33 columns]
+[4824 rows x 33 columns]
 total row update : 0
 Empty DataFrame
 Columns: [QueuePoliclinicID, AppointmentID, ActID, PatientID, AdmissionID, Method, QueueNum, QueueDate, DestOrgID, ParentOrgID, StatusCode, CreatedDate, CreatedBy, CallDate, CallBy, CallTotal, NurseStartDate, NurseStopDate, NurseIDStart, NurseIDStop, DocIDStart, DocIDStop, StatusCodeAnalis, CallTotalAnalis, CallDateAnalis, AnalisID, AnalisIDStart, AnalisIDStop, AnalisStartDate, AnalisStopDate, UpdateDate, CancelledBy, CancelledDate]
 Index: []
-total row inserted : 4584
+total row inserted : 4824
       QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
-0               4795690      411948520  ...           0            NaT
-1               4795787      411948534  ...           0            NaT
-2               4796152      411948567  ...           0            NaT
-3               4798794      411949282  ...           0            NaT
-4               4799141      411949455  ...           0            NaT
+0               4796344      411948606  ...           0            NaT
+1               4796490      411948627  ...           0            NaT
+2               4797639      411948932  ...           0            NaT
+3               4797738      411948968  ...           0            NaT
+4               4797928      411948998  ...           0            NaT
 ...                 ...            ...  ...         ...            ...
-4579            4876727              0  ...           0            NaT
-4580            4876728       15297040  ...           0            NaT
-4581            4876729              0  ...           0            NaT
-4582            4876730              0  ...           0            NaT
-4583            4876731              0  ...           0            NaT
+4819            4892345              0  ...           0            NaT
+4820            4892346              0  ...           0            NaT
+4821            4892347              0  ...           0            NaT
+4822            4892348              0  ...           0            NaT
+4823            4892349              0  ...           0            NaT
 
-[4584 rows x 33 columns]
+[4824 rows x 33 columns]
 success insert all data without update
-40.146003007888794
-scheduler tanggal : 2025-01-17 06:00:42.162714
+40.10799813270569
+scheduler tanggal : 2025-01-22 06:00:42.114460

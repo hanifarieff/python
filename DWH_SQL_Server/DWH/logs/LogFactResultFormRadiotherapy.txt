@@ -4,7 +4,7 @@ Empty DataFrame
 Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
 Index: []
 tidak ada data dari source
-1.6810026168823242
+1.1640031337738037
 
 
-scheduler tanggal : 2025-01-17 04:45:01.796713
+scheduler tanggal : 2025-01-22 04:45:01.797461

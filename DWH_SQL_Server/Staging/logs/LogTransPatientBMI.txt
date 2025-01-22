@@ -1,40 +1,40 @@
 success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
-       OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
-0       163447138       1014  ...  Obesitas grade 1          normal
-1       163395245       1086  ...        Overweight          normal
-2       163527409       1127  ...        Overweight          normal
-3       163445831       1511  ...            Normal          normal
-4       163443819       1839  ...  Obesitas grade 1          normal
-...           ...        ...  ...               ...             ...
-13837   163549568    2243513  ...  Obesitas grade 2          normal
-13838   163551448    2243529  ...             Kurus          normal
-13839   163553926    2243593  ...        Overweight          normal
-13840   163564661    2243751  ...  Obesitas grade 1          normal
-13841   163567672    2243798  ...             Kurus          normal
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+0      163700462       1086  ...        Overweight          normal
+1      163715594       1545  ...  Obesitas grade 1          normal
+2      163727070       1713  ...  Obesitas grade 1          normal
+3      163655909       1721  ...            Normal          normal
+4      163716627       1756  ...  Obesitas grade 1          normal
+...          ...        ...  ...               ...             ...
+7993   163731993    2248637  ...             Kurus          normal
+7994   163729887    2248638  ...             Kurus          normal
+7995   163727050    2248650  ...  Obesitas grade 2          normal
+7996   163728887    2248718  ...             Kurus          normal
+7997   163723998    2248720  ...             Kurus          normal
 
-[13842 rows x 9 columns]
+[7998 rows x 9 columns]
 total row update : 0
 Empty DataFrame
 Columns: [OrderObsID, PatientID, AdmissionID, ObservationDate, PanelName, BMI, BMIStatus, BMIDetail, BMIDetailStatus]
 Index: []
-total row inserted : 3452
-       OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
-2       163527409       1127  ...        Overweight          normal
-9       163531437       5599  ...  Obesitas grade 1          normal
-17      163547926       9708  ...  Obesitas grade 1          normal
-21      163531672      10530  ...             Kurus          normal
-23      163547238      13824  ...  Obesitas grade 2          normal
-...           ...        ...  ...               ...             ...
-13837   163549568    2243513  ...  Obesitas grade 2          normal
-13838   163551448    2243529  ...             Kurus          normal
-13839   163553926    2243593  ...        Overweight          normal
-13840   163564661    2243751  ...  Obesitas grade 1          normal
-13841   163567672    2243798  ...             Kurus          normal
+total row inserted : 3605
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+0      163700462       1086  ...        Overweight          normal
+1      163715594       1545  ...  Obesitas grade 1          normal
+2      163727070       1713  ...  Obesitas grade 1          normal
+4      163716627       1756  ...  Obesitas grade 1          normal
+7      163724071       5316  ...            Normal          normal
+...          ...        ...  ...               ...             ...
+7993   163731993    2248637  ...             Kurus          normal
+7994   163729887    2248638  ...             Kurus          normal
+7995   163727050    2248650  ...  Obesitas grade 2          normal
+7996   163728887    2248718  ...             Kurus          normal
+7997   163723998    2248720  ...             Kurus          normal
 
-[3452 rows x 9 columns]
+[3605 rows x 9 columns]
 success insert without update
-41.35400104522705
+22.597999095916748
 
 
-scheduler tanggal : 2025-01-17 03:30:02.038715
+scheduler tanggal : 2025-01-22 03:30:02.010459

@@ -25,14 +25,14 @@ source = pd.read_sql_query(""" SELECT
                                     Flag
                                 FROM staging_rscm.TransPatientStay
                                 WHERE 
-                                -- CAST(AdmissionDate as date) >= '2023-04-06' AND CAST(AdmissionDate as date) <= '2023-04-10'
-                                -- (CAST(InsertDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)
-                                -- OR 
-                                -- CAST(UpdateDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(UpdateDateStaging as date) <= CAST(GETDATE() as date))
-                                -- AND PatientID = 2077831 and AdmissionID = 1     
-                                (CAST(InsertDateStaging as date) >= CAST(GETDATE() as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)
+                                -- CAST(AdmissionDate as date) >= '2024-11-22' AND CAST(AdmissionDate as date) <= '2024-11-22'
+                                (CAST(InsertDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)
                                 OR 
-                                CAST(UpdateDateStaging as date) >= CAST(GETDATE() as date) AND CAST(UpdateDateStaging as date) <= CAST(GETDATE() as date))
+                                CAST(UpdateDateStaging as date) >= CAST(DATEADD(DAY, -1, GETDATE()) as date) AND CAST(UpdateDateStaging as date) <= CAST(GETDATE() as date))
+                                -- AND PatientID = 2077831 and AdmissionID = 1     
+                                -- (CAST(InsertDateStaging as date) >= CAST(GETDATE() as date) AND CAST(InsertDateStaging as date) <= CAST(GETDATE() as date)
+                                -- OR 
+                                -- CAST(UpdateDateStaging as date) >= CAST(GETDATE() as date) AND CAST(UpdateDateStaging as date) <= CAST(GETDATE() as date))
                                 AND (MedicalNo NOT IN (SELECT MedicalNo FROM staging_rscm.DimensionDummyPatient) OR MedicalNo IS NULL)
                                 """, conn_staging_sqlserver)
 

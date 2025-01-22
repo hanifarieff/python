@@ -1,23 +1,23 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-('2025-01-07', '2025-01-08', '2025-01-09', '2025-01-10', '2025-01-11', '2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16')
+('2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16', '2025-01-17', '2025-01-18', '2025-01-19', '2025-01-20', '2025-01-21')
   TglTransaksi  Jumlah
-0   2025-01-07     633
-1   2025-01-08     634
-2   2025-01-09     572
-3   2025-01-10     556
-4   2025-01-11     180
-5   2025-01-12     122
-6   2025-01-13     741
-7   2025-01-14     638
-8   2025-01-15     622
+0   2025-01-12     122
+1   2025-01-13     741
+2   2025-01-14     638
+3   2025-01-15     630
+4   2025-01-16     620
+5   2025-01-17     559
+6   2025-01-18     156
+7   2025-01-19     119
+8   2025-01-20     521
 total row update : 1
   TglTransaksi  Jumlah
-8   2025-01-15     630
+8   2025-01-20     616
 total row inserted : 1
   TglTransaksi  Jumlah
-9   2025-01-16     595
+9   2025-01-21     553
 UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS15DMJumlahLayananRadiologi r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS15DMJumlahLayananRadiologi_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
 success update and insert all data
-105.32200002670288
-scheduler tanggal : 2025-01-17 07:08:02.005716
+102.12100100517273
+scheduler tanggal : 2025-01-22 07:08:02.002461

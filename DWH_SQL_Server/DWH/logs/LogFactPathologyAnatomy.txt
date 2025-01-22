@@ -7,7 +7,7 @@ Empty DataFrame
 Columns: [RegistrationNo, OrderID, PatientID, AdmissionID, MedicalNo, PanelID, PanelName, ObjID, ObjName, ObsValue, Behaviour, Status, CreatedUserID, CreatedDate, FinalUserID, FinalDate, TopoCode]
 Index: []
 tidak ada data dari source
-1.5639963150024414
+1.2829999923706055
 
 
-scheduler tanggal : 2025-01-17 04:05:01.937713
+scheduler tanggal : 2025-01-22 04:05:01.952461

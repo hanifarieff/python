@@ -1,48 +1,51 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-('2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16')
-    TglTransaksi                             NamaPoli  Jumlah
-0     2025-01-12             A - Lab. Patologi Klinik     176
-1     2025-01-12           IGD - Lab. Patologi Klinik      85
-2     2025-01-12                      IGD - Radiologi      56
-3     2025-01-12  Kedokteran Forensik dan Medikolegal       3
-4     2025-01-12       Kencana - Satelit Farmasi Lt.1      18
-..           ...                                  ...     ...
-568   2025-01-15                    URJT - Poli Saraf      99
-569   2025-01-15     URJT - Poli Saraf Ruang Tindakan      42
-570   2025-01-15        URJT - Poli TBC Sensitif Obat      34
-571   2025-01-15                  URJT - Poli Urologi      51
-572   2025-01-15        URJT - Poliklinik Gizi Klinik       4
+('2025-01-17', '2025-01-18', '2025-01-19', '2025-01-20', '2025-01-21')
+    TglTransaksi                               NamaPoli  Jumlah
+0     2025-01-17               A - Lab. Patologi Klinik     202
+1     2025-01-17                         Cluster Breast      11
+2     2025-01-17                 Cluster Cardiovascular      26
+3     2025-01-17                      Cluster Dentistry       9
+4     2025-01-17                      Cluster Digestive      32
+..           ...                                    ...     ...
+462   2025-01-20       URJT - Poli Saraf Ruang Tindakan      31
+463   2025-01-20          URJT - Poli TBC Sensitif Obat      45
+464   2025-01-20                    URJT - Poli Urologi      79
+465   2025-01-20          URJT - Poliklinik Gizi Klinik       7
+466   2025-01-20  URJT - Satelit Farmasi Poli Eksekutif       1
 
-[573 rows x 3 columns]
-total row update : 10
-    TglTransaksi                                         NamaPoli  Jumlah
-75    2025-01-13                                KIARA - Radiologi      63
-113   2025-01-13                  Radiologi Dan Kedokteran Nuklir     309
-230   2025-01-14                               Cluster Uro-Nephro      36
-266   2025-01-14                                KIARA - Radiologi      57
-298   2025-01-14                  Radiologi Dan Kedokteran Nuklir     290
-439   2025-01-15  Kiara - Poli Kebidanan & Kandungan - Ginekologi      25
-456   2025-01-15                                KIARA - Radiologi      47
-484   2025-01-15                  Radiologi Dan Kedokteran Nuklir     259
-486   2025-01-15                   Unit Pelayanan Transfusi Darah     260
-551   2025-01-15            URJT - Poli Hematologi Ruang Tindakan      47
-total row inserted : 183
-    TglTransaksi                                           NamaPoli  Jumlah
-573   2025-01-16                                     Cluster Breast      17
-574   2025-01-16                      Cluster Ear Nose Throat (ENT)      18
-575   2025-01-16                                  Cluster Dentistry      10
-576   2025-01-16                           A - Lab. Patologi Klinik     210
-577   2025-01-16                             Cluster Cardiovascular      23
-..           ...                                                ...     ...
-751   2025-01-16                   URJT - Poli Saraf Ruang Tindakan      28
-752   2025-01-16  URJT - Poli Rehabilitasi Medik Tindakan Medik ...      66
-753   2025-01-16                                  URJT - Poli Saraf      98
-754   2025-01-16                      URJT - Poliklinik Gizi Klinik      12
-755   2025-01-16                      URJT - Poli TBC Resisten Obat       4
+[467 rows x 3 columns]
+total row update : 82
+    TglTransaksi                         NamaPoli  Jumlah
+58    2025-01-17                KIARA - Radiologi      66
+101   2025-01-17  Radiologi Dan Kedokteran Nuklir     286
+235   2025-01-18  Radiologi Dan Kedokteran Nuklir      43
+273   2025-01-20         A - Lab. Patologi Klinik     212
+274   2025-01-20           Cluster Cardiovascular      29
+..           ...                              ...     ...
+430   2025-01-20        URJT -  Poli THT Onkologi      22
+441   2025-01-20          URJT - Poli Bedah Saraf      19
+445   2025-01-20          URJT - Poli Jiwa Dewasa      47
+464   2025-01-20                URJT - Poli Saraf     108
+470   2025-01-20              URJT - Poli Urologi      80
 
-[183 rows x 3 columns]
+[82 rows x 3 columns]
+total row inserted : 178
+    TglTransaksi                                  NamaPoli  Jumlah
+309   2025-01-20       Kedokteran Forensik dan Medikolegal       2
+311   2025-01-20                  Kanigara - Transplan Uro       1
+366   2025-01-20                  Laboratorium PTH Kencana       3
+369   2025-01-20  Pelayanan Laboratorium Patologi Anatomik      13
+471   2025-01-21                  A - Lab. Patologi Klinik     181
+..           ...                                       ...     ...
+640   2025-01-21          URJT - Poli Saraf Ruang Tindakan      35
+641   2025-01-21                         URJT - Poli Saraf      96
+642   2025-01-21                       URJT - Poli Urologi      60
+643   2025-01-21             URJT - Poli TBC Resisten Obat      10
+644   2025-01-21             URJT - Poliklinik Gizi Klinik      11
+
+[178 rows x 3 columns]
 UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli  WHERE r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli ;
 success update and insert all data
-740.8439936637878
-scheduler tanggal : 2025-01-17 06:40:01.760715
+411.4350006580353
+scheduler tanggal : 2025-01-22 06:40:01.725461

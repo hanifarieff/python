@@ -1,20 +1,20 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/BIOS?driver=SQL+Server+Native+Client+11.0)
-('2025-01-12', '2025-01-13', '2025-01-14', '2025-01-15', '2025-01-16')
+('2025-01-17', '2025-01-18', '2025-01-19', '2025-01-20', '2025-01-21')
   TglTransaksi  Jumlah
-0   2025-01-12    1364
-1   2025-01-13    7751
-2   2025-01-14    7137
-3   2025-01-15    7335
+0   2025-01-17    7749
+1   2025-01-18    2228
+2   2025-01-19    1500
+3   2025-01-20    6997
 total row update : 3
   TglTransaksi  Jumlah
-1   2025-01-13    7760
-2   2025-01-14    7147
-3   2025-01-15    7353
+0   2025-01-17    7760
+1   2025-01-18    2229
+3   2025-01-20    8146
 total row inserted : 1
   TglTransaksi  Jumlah
-4   2025-01-16    7070
+4   2025-01-21    6337
 UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS19DMJumlahKunjunganRawatJalan r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS19DMJumlahKunjunganRawatJalan_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
 success update and insert all data
-409.14399933815
-scheduler tanggal : 2025-01-17 06:35:03.157716
+278.35999846458435
+scheduler tanggal : 2025-01-22 06:35:01.998460

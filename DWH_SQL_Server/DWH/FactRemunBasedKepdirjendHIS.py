@@ -21,8 +21,8 @@ first_day_of_current_month = date.replace(day=1)
 last_day_of_previous_month = first_day_of_current_month - timedelta(days=1)
 # previous_month = last_day_of_previous_month.strftime('%m')
 # previous_year = last_day_of_previous_month.strftime('%Y')
-previous_month = '12'
-previous_year = 2024
+previous_month = '01'
+previous_year = 2025
 
 query_source = f""" SELECT 
                         b.order_id OrderID,
@@ -99,7 +99,7 @@ query_source = f""" SELECT
                     -- and c.status_cd = 'active'
                     -- AND b.order_id IN ('160972205','160972226')
                     and b.order_id NOT LIKE '00%%'
-                    and b.employee_id = 1971
+                    -- and b.employee_id = 1971
                     ORDER BY b.order_id, a.employee_id """
 source = pd.read_sql_query(query_source, conn_ehr)
 

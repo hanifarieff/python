@@ -70,13 +70,13 @@ query_source1 = f""" SELECT
                             LEFT JOIN xocp_ehr_location b on st.location_id = b.location_id AND st.in_org_id = b.org_id
                             AND b.sensus = '1'
                             WHERE 
-                            -- adm.patient_id IN (2077816) and adm.admission_id IN (1) AND
-                            (adm.admission_dttm >= '2024-12-05 00:00:00' AND adm.admission_dttm <= '2024-12-05 23:59:59')
+                            -- adm.patient_id IN (1978255) and adm.admission_id IN (5)
+                            (adm.admission_dttm >= '2023-02-21 00:00:00' AND adm.admission_dttm <= '2023-02-24 23:59:59')
                             -- AND adm.patient_id = 1649519 and adm.admission_id = 11 
                             -- adm.admission_dttm >= {start_date} AND adm.admission_dttm <= {end_date}
                             AND (adm.org_id IN (select org_id from xocp_orgs where parent_id not in ('687','1872','2418') and org_id not in ('687','1872','2418'))
                             OR adm.org_id = '0')
-                            AND adm.status_cd NOT IN ('cancelled','nullified') 
+                            -- AND adm.status_cd NOT IN ('cancelled','nullified') 
                             ORDER BY adm.patient_id, adm.admission_id
                         ) x
                         GROUP BY x.PatientID, x.AdmissionID"""
@@ -364,14 +364,14 @@ modified = changes[changes[['PatientID','AdmissionID','Flag']].apply(tuple,1).is
 total_row_upd = len(modified)
 text_upd = f'total row update : {total_row_upd}'
 print(text_upd)
-print(modified.iloc[:,:5])
+print(modified.iloc[:,:6])
 
 # ambil data yang baru
 inserted = changes[~changes[['PatientID','AdmissionID','Flag']].apply(tuple,1).isin(target[['PatientID','AdmissionID','Flag']].apply(tuple,1))]
 total_row_ins = len(inserted)
 text_ins = f'total row inserted : {total_row_ins}'
 print(text_ins)
-print(inserted.iloc[:,:5])
+print(inserted.iloc[:,:6])
 
 if modified.empty:
     if inserted.empty:

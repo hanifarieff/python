@@ -37,5 +37,5 @@ Notes                       object
 Flag                        object
 dtype: object
 tidak ada data dari source
-8.984999656677246
-scheduler tanggal : 2025-01-16 20:10:01.983713
+8.86499834060669
+scheduler tanggal : 2025-01-21 20:10:01.956463

@@ -132,12 +132,7 @@ else:
     # print(source.iloc[:,5:7].apply(tuple,1).isin(target.iloc[:,5:7].apply(tuple,1)))
     # print(source.iloc[:,7:9].apply(tuple,1).isin(target.iloc[:,7:9].apply(tuple,1)))
     # print(source.iloc[:,9:11].apply(tuple,1).isin(target.iloc[:,9:11].apply(tuple,1)))
-    # print(source.iloc[:,11:13].apply(tuple,1).isin(target.iloc[:,11:13].apply(tuple,1)))
-    # print(source.iloc[:,13:15].apply(tuple,1).isin(target.iloc[:,13:15].apply(tuple,1)))
-    # print(source.iloc[:,15:17].apply(tuple,1).isin(target.iloc[:,15:17].apply(tuple,1)))
-    # print(source.iloc[:,17:20].apply(tuple,1).isin(target.iloc[:,17:20].apply(tuple,1)))
-    # print(source.iloc[:,20:22].apply(tuple,1).isin(target.iloc[:,20:22].apply(tuple,1)))
-    # print(source.iloc[:,23:24].apply(tuple,1).isin(target.iloc[:,23:24].apply(tuple,1)))
+    
     # print(source.iloc[:,2:4].apply(tuple,1))
     # print(target.iloc[:,2:4].apply(tuple,1))
     # print(source.iloc[:,3:5].apply(tuple,1))

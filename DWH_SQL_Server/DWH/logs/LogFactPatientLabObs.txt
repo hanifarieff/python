@@ -1,50 +1,50 @@
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
 success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
-       PatientSurrogateKeyID  ...          DoctorResponsible
-0                    5981714  ...  dr. Dean Handimulya, SpPK
-1                    5736329  ...  dr. Merci Monica P, SpPK~
-2                    5736329  ...  dr. Merci Monica P, SpPK~
-3                    5736329  ...                           
-4                    5736329  ...  dr. Merci Monica P, SpPK~
-...                      ...  ...                        ...
-68100                6042371  ...            dr. MARCO LIUS~
-68101                6042371  ...            dr. MARCO LIUS~
-68102                6042371  ...            dr. MARCO LIUS~
-68103                6042371  ...            dr. MARCO LIUS~
-68104                6042371  ...            dr. MARCO LIUS~
+       PatientSurrogateKeyID  ...                           DoctorResponsible
+0                  5739079.0  ...  Merci Monica br Pasaribu, Dr. dr., SpPK(K)
+1                  5953328.0  ...                   dr. Merci Monica P, SpPK~
+2                  5953328.0  ...                   dr. Merci Monica P, SpPK~
+3                  5953328.0  ...                   dr. Merci Monica P, SpPK~
+4                  5950910.0  ...                   dr. Merci Monica P, SpPK~
+...                      ...  ...                                         ...
+64359                    NaN  ...              dr. Chrystanti Melissa Melati~
+64360                    NaN  ...              dr. Chrystanti Melissa Melati~
+64361                    NaN  ...              dr. Chrystanti Melissa Melati~
+64362                    NaN  ...              dr. Chrystanti Melissa Melati~
+64363                    NaN  ...              dr. Chrystanti Melissa Melati~
 
-[68105 rows x 6 columns]
-total row update : 301
+[64364 rows x 6 columns]
+total row update : 2364
+       PatientSurrogateKeyID  ...          DoctorResponsible
+11548              4590373.0  ...  dr. Yusuf Bahasoan, SpPK~
+11549              4590373.0  ...  dr. Yusuf Bahasoan, SpPK~
+11550              4590373.0  ...  dr. Yusuf Bahasoan, SpPK~
+11579              4590373.0  ...  dr. Yusuf Bahasoan, SpPK~
+13693              5984029.0  ...       dr. Najib Ali, SpPK~
+...                      ...  ...                        ...
+62715              6046827.0  ...               dr. Jorisca~
+62716              6046827.0  ...               dr. Jorisca~
+62717              6046827.0  ...               dr. Jorisca~
+62718              6046827.0  ...               dr. Jorisca~
+62728              6046829.0  ...     dr. Riza Octina Armah~
+
+[2364 rows x 6 columns]
+total row inserted : 29847
        PatientSurrogateKeyID  ...               DoctorResponsible
-1341                 6041321  ...      dr. Dean Handimulya, SpPK~
-1395                 5407530  ...        dr. Yusuf Bahasoan, SpPK
-1397                 5407530  ...  Selvi Nafisa Shahab, dr., SpMK
-6792                 6041427  ...       Dr. Dewi Wulandari, SpPK~
-17917                4277954  ...                dr. Yusra, SpPK~
+1                  5953328.0  ...       dr. Merci Monica P, SpPK~
+2                  5953328.0  ...       dr. Merci Monica P, SpPK~
+3                  5953328.0  ...       dr. Merci Monica P, SpPK~
+4                  5950910.0  ...       dr. Merci Monica P, SpPK~
+5                  5950910.0  ...                                
 ...                      ...  ...                             ...
-62713                6041237  ...          dr. Ninik S, DMM,SpPK~
-62714                6041237  ...                                
-62715                6041237  ...          dr. Ninik S, DMM,SpPK~
-62716                6041237  ...          dr. Ninik S, DMM,SpPK~
-62717                6041237  ...          dr. Ninik S, DMM,SpPK~
+64359                    NaN  ...  dr. Chrystanti Melissa Melati~
+64360                    NaN  ...  dr. Chrystanti Melissa Melati~
+64361                    NaN  ...  dr. Chrystanti Melissa Melati~
+64362                    NaN  ...  dr. Chrystanti Melissa Melati~
+64363                    NaN  ...  dr. Chrystanti Melissa Melati~
 
-[301 rows x 6 columns]
-total row inserted : 36264
-       PatientSurrogateKeyID  ...          DoctorResponsible
-0                    5981714  ...  dr. Dean Handimulya, SpPK
-1                    5736329  ...  dr. Merci Monica P, SpPK~
-2                    5736329  ...  dr. Merci Monica P, SpPK~
-3                    5736329  ...                           
-4                    5736329  ...  dr. Merci Monica P, SpPK~
-...                      ...  ...                        ...
-68100                6042371  ...            dr. MARCO LIUS~
-68101                6042371  ...            dr. MARCO LIUS~
-68102                6042371  ...            dr. MARCO LIUS~
-68103                6042371  ...            dr. MARCO LIUS~
-68104                6042371  ...            dr. MARCO LIUS~
-
-[36264 rows x 6 columns]
+[29847 rows x 6 columns]
 UPDATE t SET t.PatientSurrogateKeyID = s.PatientSurrogateKeyID, t.MedicalNo = s.MedicalNo, t.OrderName = s.OrderName, t.OrderRequestDate = s.OrderRequestDate, t.ObservationName = s.ObservationName, t.ObservationValue = s.ObservationValue, t.ObservationUnit = s.ObservationUnit, t.AbnormalFlag = s.AbnormalFlag, t.RefRange = s.RefRange, t.ObservationNotes = s.ObservationNotes, t.ResultDate = s.ResultDate, t.DoctorResponsible = s.DoctorResponsible, t.CreatedDate = s.CreatedDate, t.StatusCode = s.StatusCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientLabObs t INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientLabObs_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID  WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID;
 all success updated and inserted
-408.28099846839905
-scheduler tanggal : 2025-01-17 05:40:02.228713
+190.31799960136414
+scheduler tanggal : 2025-01-22 05:40:02.153461
