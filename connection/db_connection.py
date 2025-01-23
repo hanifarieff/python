@@ -17,7 +17,7 @@ transmedic = ce('postgresql+psycopg2://hanif-ppi:hanif2022@172.16.7.120:5432/tra
 
 # Function to create and return a session based on the given engine
 def create_connection(engine):
-    print("success connected to ", engine)
+    print("success connected ", engine)
     return engine.connect()
 
 # Function to close the session
