@@ -44,7 +44,7 @@ source = pd.read_sql_query("""
                                 -- WHERE (a.order_req_dttm >= '2023-02-18 00:00:00' AND a.order_req_dttm <= '2023-02-19 23:59:59')
                                 where 
                                 -- a.patient_id =1842352 and a.admission_id = 10
-                                (a.order_req_dttm >= '2025-03-08 00:00:00' AND a.order_req_dttm <= '2025-03-09 23:59:59')
+                                (a.order_req_dttm >= '2025-03-09 00:00:00' AND a.order_req_dttm <= '2025-03-09 23:59:59')
                                 -- (a.order_req_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 DAY), "%%Y-%%m-%%d 00:00:00") AND a.order_req_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 2 DAY), "%%Y-%%m-%%d 23:59:59")) 
                                 -- OR
                                 -- (b.updated_dttm >= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 00:00:00") AND b.updated_dttm <= DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 DAY), "%%Y-%%m-%%d 23:59:59"))
