@@ -1,0 +1,173 @@
+Memory before: 66.328125 MB
+        OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+0     165330685    1570965          124  ...   1655          -              -
+1     165330686    1570965          124  ...   1655          -              -
+2     165330687    1570965          124  ...   1655          -              -
+3     165330688    1570965          124  ...   1655          -              -
+4     165330908     830225          146  ...   1061          -              -
+...         ...        ...          ...  ...    ...        ...            ...
+6649  165372944     987390            4  ...   1061          -              -
+6650  165372949     987390            4  ...   1061          -              -
+6651  165373041    2012337           37  ...   1655          -              -
+6652  165373042    2012337           37  ...   1655          -              -
+6653  165373044    2012337           37  ...   1655          -              -
+
+[6654 rows x 32 columns]
+        OrderID  ...                                  KSM
+0     165330685  ...  Kelompok Staf Medis Patologi Klinik
+1     165330686  ...  Kelompok Staf Medis Patologi Klinik
+2     165330687  ...  Kelompok Staf Medis Patologi Klinik
+3     165330688  ...  Kelompok Staf Medis Patologi Klinik
+4     165330908  ...   Kelompok Staf Medis Penyakit Dalam
+...         ...  ...                                  ...
+6649  165372944  ...            Departemen Penyakit Dalam
+6650  165372949  ...        Kelompok Staf Medis Neurologi
+6651  165373041  ...  Kelompok Staf Medis Patologi Klinik
+6652  165373042  ...  Kelompok Staf Medis Patologi Klinik
+6653  165373044  ...  Kelompok Staf Medis Patologi Klinik
+
+[6654 rows x 36 columns]
+Source Data:
+        OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+0     165330685    1570965          124  ...   1655          -              -
+1     165330686    1570965          124  ...   1655          -              -
+2     165330687    1570965          124  ...   1655          -              -
+3     165330688    1570965          124  ...   1655          -              -
+4     165330908     830225          146  ...   1061          -              -
+...         ...        ...          ...  ...    ...        ...            ...
+6649  165372944     987390            4  ...   1061          -              -
+6650  165372949     987390            4  ...   1061          -              -
+6651  165373041    2012337           37  ...   1655          -              -
+6652  165373042    2012337           37  ...   1655          -              -
+6653  165373044    2012337           37  ...   1655          -              -
+
+[6654 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+ObjectGroupingName            object
+BillingPaid                   object
+OrgID                          int64
+TarifClass                    object
+AnesthesiaCode                object
+dtype: object
+Target Data:
+        OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+0     165330685    1570965          124  ...   1655          -              -
+1     165330686    1570965          124  ...   1655          -              -
+2     165330687    1570965          124  ...   1655          -              -
+3     165330688    1570965          124  ...   1655          -              -
+4     165330908     830225          146  ...   1061          -              -
+...         ...        ...          ...  ...    ...        ...            ...
+4138  165353995    2092466           48  ...    429          -              -
+4139  165353996    2092466           48  ...    429          -              -
+4140  165353997    2092466           48  ...    429          -              -
+4141  165354344    2290636            1  ...   1061          -              -
+4142  165354348     945920           14  ...   1061          -              -
+
+[4143 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+ObjectGroupingName            object
+BillingPaid                   object
+OrgID                          int64
+TarifClass                    object
+AnesthesiaCode                object
+dtype: object
+Changes Detected:
+Modified Data:
+        OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+4     165330908     830225          146  ...   1061          -              -
+10    165332069     867522           10  ...   1655          -              -
+11    165332072     867522           10  ...   1655          -              -
+12    165332073     867522           10  ...   1655          -              -
+13    165332074     867522           10  ...   1655          -              -
+...         ...        ...          ...  ...    ...        ...            ...
+4105  165352916    2278040            2  ...   1074          -              -
+4107  165352957     820791            4  ...   1074          -              -
+4108  165352973     820791            4  ...   1074          -              -
+4113  165353073    2060432           37  ...   1090          -              -
+4135  165353833     945920           14  ...   1061          -              -
+
+[1329 rows x 37 columns]
+Inserted Data:
+        OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+3465  165347065    2277462            5  ...   1107          -              -
+3466  165347070    2277462            5  ...   1107          -              -
+3593  165347524    2110831            8  ...   1107          -              -
+3959  165349172    1570965          124  ...   1107          -              -
+3960  165349176    1570965          124  ...   1107          -              -
+...         ...        ...          ...  ...    ...        ...            ...
+6649  165372944     987390            4  ...   1061          -              -
+6650  165372949     987390            4  ...   1061          -              -
+6651  165373041    2012337           37  ...   1655          -              -
+6652  165373042    2012337           37  ...   1655          -              -
+6653  165373044    2012337           37  ...   1655          -              -
+
+[2511 rows x 37 columns]
+
+Data Success Updated
+Data Success Inserted
+44.43749642372131
+Memory after: 119.40625 MB
+Memory used: 53.078125 MB
+scheduler tanggal : 2025-03-10 01:15:46.933077

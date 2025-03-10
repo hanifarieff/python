@@ -1,0 +1,94 @@
+Empty DataFrame
+Columns: [TglTransaksi, StandardRefID, Total, EmployeeGroup, IsSent]
+Index: []
+success insert 01DMAhliTeknologiLaboratoriumMedik
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28              2     35  Tidak Diketahui       0
+1   2025-02-28              2     36          Kontrak       0
+2   2025-02-28              2     57    Non PNS Tetap       0
+3   2025-02-28              2    106              PNS       0
+4   2025-02-28              2    136             PPPK       0
+success insert 02DMPharmacist
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2025-02-28              3      4  Non PNS Tetap       0
+1   2025-02-28              3     41            PNS       0
+2   2025-02-28              3     12           PPPK       0
+success insert 03DMBidan
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2025-02-28              4      4        Kontrak       0
+1   2025-02-28              4     12  Non PNS Tetap       0
+2   2025-02-28              4     38            PNS       0
+3   2025-02-28              4     11           PPPK       0
+success insert 04DMNutrisionis
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28              5     29              PNS       0
+1   2025-02-28              5    157  Tidak Diketahui       0
+2   2025-02-28              5      6             PPPK       0
+3   2025-02-28              5     16          Kontrak       0
+success insert 05DMDokterUmum
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28              6     11  Tidak Diketahui       0
+1   2025-02-28              6      1          Kontrak       0
+2   2025-02-28              6      2    Non PNS Tetap       0
+3   2025-02-28              6      1              PNS       0
+success insert 06DMDokterGigi
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28              7    411              PNS       0
+1   2025-02-28              7    138  Tidak Diketahui       0
+2   2025-02-28              7     43             PPPK       0
+3   2025-02-28              7     60    Non PNS Tetap       0
+4   2025-02-28              7     40          Kontrak       0
+success insert 07DMDokterSpesialis
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2025-02-28              8      2        Kontrak       0
+1   2025-02-28              8      2  Non PNS Tetap       0
+2   2025-02-28              8     20            PNS       0
+3   2025-02-28              8     11           PPPK       0
+success insert 08DMFisioterapis
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28              9   1063              PNS       0
+1   2025-02-28              9      1  Tidak Diketahui       0
+2   2025-02-28              9    545             PPPK       0
+3   2025-02-28              9    181    Non PNS Tetap       0
+4   2025-02-28              9    124          Kontrak       0
+success insert 09DMPerawat
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2025-02-28             10      7        Kontrak       0
+1   2025-02-28             10      3  Non PNS Tetap       0
+2   2025-02-28             10     33            PNS       0
+3   2025-02-28             10     39           PPPK       0
+success insert 10DMRadiografer
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28             11      1  Tidak Diketahui       0
+1   2025-02-28             11     28          Kontrak       0
+2   2025-02-28             11     51    Non PNS Tetap       0
+3   2025-02-28             11    157              PNS       0
+4   2025-02-28             11     66             PPPK       0
+success insert 11DMTenagaProfesionalSelainyangdisebutkandiatas
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2025-02-28             12    623              PNS       0
+1   2025-02-28             12   1329  Tidak Diketahui       0
+2   2025-02-28             12     50             PPPK       0
+3   2025-02-28             12    659    Non PNS Tetap       0
+4   2025-02-28             12     34          Kontrak       0
+success insert 26DMTenagaNonMedis
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2025-02-28             13      3  Non PNS Tetap       0
+1   2025-02-28             13      9            PNS       0
+2   2025-02-28             13      3           PPPK       0
+success insert 37DMSanitarian
+
+10.833000183105469
+scheduler tanggal : 2025-02-28 08:00:00.862456

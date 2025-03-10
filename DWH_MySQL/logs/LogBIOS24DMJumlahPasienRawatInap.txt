@@ -1,0 +1,25 @@
+successfully connect to all database
+('2024-01-08', '2024-01-09', '2024-01-10')
+  TglTransaksi KodeKelas  Jumlah
+0   2024-01-08       VIP       7
+1   2024-01-08      VVIP       1
+2   2024-01-09       VIP       4
+3   2024-01-09      VVIP       1
+4   2024-01-10       VIP       2
+5   2024-01-10      VVIP       2
+  TglTransaksi KodeKelas  Jumlah
+0   2024-01-08       VIP       2
+1   2024-01-08      VVIP       1
+total row update : 1
+  TglTransaksi KodeKelas  Jumlah
+0   2024-01-08       VIP       7
+total row inserted : 4
+  TglTransaksi KodeKelas  Jumlah
+2   2024-01-09       VIP       4
+3   2024-01-09      VVIP       1
+4   2024-01-10       VIP       2
+5   2024-01-10      VVIP       2
+UPDATE BIOS24DMJumlahPasienRawatInap r INNER JOIN (SELECT * FROM BIOS24DMJumlahPasienRawatInap_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi and r.KodeKelas = t.KodeKelas SET r.Jumlah=t.Jumlah WHERE r.TglTransaksi = t.TglTransaksi and r.KodeKelas = t.KodeKelas;
+success update and insert all data
+20.890621185302734
+scheduler tanggal : 2024-01-12 06:00:01.711390

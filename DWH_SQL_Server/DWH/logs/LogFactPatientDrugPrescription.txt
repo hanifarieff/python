@@ -1,0 +1,67 @@
+       PrescriptionID  ...  DrugQuantity
+0      00160000522365  ...             1
+1      00160000522365  ...             1
+2      00160000522365  ...             1
+3      00160000522365  ...             1
+4      00160000522365  ...             1
+...               ...  ...           ...
+23793  00160000519855  ...             1
+23794  00160000519855  ...             1
+23795  00160000519855  ...             1
+23796  00160000521210  ...             5
+23797  00160000521490  ...             5
+
+[23798 rows x 8 columns]
+
+Ini Target
+
+       PrescriptionID  ...  DrugQuantity
+0      00160000511866  ...             1
+1      00160000511906  ...           120
+2      00160000511906  ...            30
+3      00160000511906  ...            60
+4      00160000511906  ...            30
+...               ...  ...           ...
+13127  00160000535340  ...             1
+13128  00160000535340  ...             1
+13129  00160000535340  ...             1
+13130  00160000535340  ...             2
+13131  00160000535340  ...             1
+
+[13132 rows x 8 columns]
+
+
+total row update : 596
+       PrescriptionID  ...  PrescriptionStatus
+5      00160000522371  ...            dispense
+6      00160000522371  ...            dispense
+7      00160000522371  ...            dispense
+8      00160000522371  ...            dispense
+9      00160000522371  ...            dispense
+...               ...  ...                 ...
+14664  00160000535263  ...            dispense
+14676  00160000535290  ...            dispense
+23704  00160000521423  ...            dispense
+23734  00160000522010  ...            dispense
+23735  00160000522010  ...            dispense
+
+[596 rows x 18 columns]
+total row inserted : 10679
+       PrescriptionID  ...  PrescriptionStatus
+280    00160000524753  ...            dispense
+495    00160000527834  ...            dispense
+496    00160000527855  ...              normal
+1750   00160000530322  ...            dispense
+2766   00160000530420  ...            dispense
+...               ...  ...                 ...
+23768  00160000539692  ...              normal
+23769  00160000539692  ...              normal
+23770  00160000539692  ...              normal
+23771  00160000539692  ...              normal
+23772  00160000539692  ...              normal
+
+[10679 rows x 18 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.PrescriptionOrgID = t.PrescriptionOrgID, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.FrequencyCode = t.FrequencyCode, r.UnitCode = t.UnitCode, r.DispenseQuantity = t.DispenseQuantity, r.DispenseUnitCode = t.DispenseUnitCode, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.PrescriptionNotes = t.PrescriptionNotes, r.PrescriptionStatus = t.PrescriptionStatus , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientDrugPrescription r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientDrugPrescription_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID  WHERE r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+1452.3525478839874
+scheduler tanggal : 2025-03-10 02:32:01.913940

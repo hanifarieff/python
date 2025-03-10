@@ -1,0 +1,63 @@
+successfully connected
+              OrderID             PatientName  MedicalNo       AdmissionDate  ... PayplanID DMType        VerifiedDate PayplanKemkes
+0      00200005034093          MARISYA SADIRA  455-78-31 2023-08-18 14:29:14  ...      71.0      P 2023-09-01 00:00:00          BPJS
+1      00200005035140          MARISYA SADIRA  455-78-31 2023-08-18 14:29:14  ...      71.0      P 2023-09-01 00:00:00          BPJS
+2      00200005055558          MARISYA SADIRA  455-78-31 2023-08-18 14:29:14  ...      71.0      P 2023-09-01 00:00:00          BPJS
+3      00200005055621          MARISYA SADIRA  455-78-31 2023-08-18 14:29:14  ...      71.0      P 2023-09-01 00:00:00          BPJS
+4      00200005056279          MARISYA SADIRA  455-78-31 2023-08-18 14:29:14  ...      71.0      P 2023-09-01 00:00:00          BPJS
+...               ...                     ...        ...                 ...  ...       ...    ...                 ...           ...
+12612  00200004575697  GUSTI ADITIAYA PRATAMA  412-51-22 2023-07-19 18:47:31  ...      71.0      P 2023-09-02 23:08:40          BPJS
+12613  00200004575747  GUSTI ADITIAYA PRATAMA  412-51-22 2023-07-19 18:47:31  ...      71.0      P 2023-09-02 23:08:40          BPJS
+12614  00200004575781  GUSTI ADITIAYA PRATAMA  412-51-22 2023-07-19 18:47:31  ...      71.0      P 2023-09-02 23:08:40          BPJS
+12615  00200004575811  GUSTI ADITIAYA PRATAMA  412-51-22 2023-07-19 18:47:31  ...      71.0      P 2023-09-02 23:08:40          BPJS
+12616  00200004575864  GUSTI ADITIAYA PRATAMA  412-51-22 2023-07-19 18:47:31  ...      71.0      P 2023-09-02 23:08:40          BPJS
+
+[12617 rows x 23 columns]
+OrderID          object
+PatientName      object
+MedicalNo        object
+AdmissionDate    object
+OrderDate        object
+PayplanName      object
+EmployeeID        int64
+EmployeeNo       object
+IDCardNumber     object
+EmployeeName     object
+JasaMedis         int64
+Tarif            object
+HCPName          object
+OrgName          object
+Bulan            object
+Tahun            object
+ProcID           object
+ProcName         object
+CategoryName     object
+PayplanID        object
+DMType           object
+VerifiedDate     object
+PayplanKemkes    object
+dtype: object
+OrderID          False
+PatientName      False
+MedicalNo        False
+AdmissionDate     True
+OrderDate        False
+PayplanName      False
+EmployeeID       False
+EmployeeNo       False
+IDCardNumber      True
+EmployeeName     False
+JasaMedis        False
+Tarif             True
+HCPName          False
+OrgName          False
+Bulan            False
+Tahun            False
+ProcID           False
+ProcName         False
+CategoryName     False
+PayplanID         True
+DMType           False
+VerifiedDate     False
+PayplanKemkes    False
+dtype: bool

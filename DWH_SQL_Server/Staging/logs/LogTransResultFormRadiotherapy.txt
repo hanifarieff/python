@@ -1,0 +1,91 @@
+Memory before: 66.796875 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+Source Data:
+       OrderID  PatientID  ...  StatusForm  CreatedUserID
+0    163842912    2233196  ...      normal       92700422
+1    163842912    2233196  ...      normal       92700422
+2    163842912    2233196  ...      normal       92700422
+3    163842912    2233196  ...      normal       92700422
+4    163842912    2233196  ...      normal       92700422
+..         ...        ...  ...         ...            ...
+738  164473258    1849068  ...      normal          19341
+739  164473258    1849068  ...      normal          19341
+740  164473258    1849068  ...      normal          19341
+741  164473258    1849068  ...      normal          19341
+742  164473258    1849068  ...      normal          19341
+
+[743 rows x 9 columns]
+setelah ditambahkan kolom baru
+                                                Result  SatuSehatCancerResult
+0    Juni-November 2024 : \nPasien mengeluhkan perd...                      0
+1    St. Generalis:\nKU : Tampak baik\nKesadaran : ...                      0
+2    Diagnosis :\nKarsinoma endometrioid endometriu...                      0
+3    Rencana Tatalaksana:\nCek DPL\nCT Simulator Ab...                      0
+4    Pertimbangan menggunakan tambahan Interstisial...                      0
+..                                                 ...                    ...
+738  KSS Lidah T4N1M0 post kemoterapi TPF 3 siklus ...                      0
+739  - Pro radiasi CITO paliatif perdarahan 2D AP P...                      0
+740  {"header":{"Pemeriksaan/Konsultasi":1,"Tanggal...                      0
+741                                              1|2|7                      7
+742                                                 13                     13
+
+[743 rows x 2 columns]
+setelah dijalankan fungsi transform regex
+       OrderID  PatientID  ...  StatusForm CreatedUserID
+0    163842912    2233196  ...      normal      92700422
+1    163842912    2233196  ...      normal      92700422
+2    163842912    2233196  ...      normal      92700422
+3    163842912    2233196  ...      normal      92700422
+4    163842912    2233196  ...      normal      92700422
+..         ...        ...  ...         ...           ...
+952  164473258    1849068  ...      normal         19341
+953  164473258    1849068  ...      normal         19341
+954  164473258    1849068  ...      normal         19341
+955  164473258    1849068  ...      normal         19341
+956  164473258    1849068  ...      normal         19341
+
+[957 rows x 13 columns]
+       OrderID PatientID  ... StatusForm CreatedUserID
+0    163842912   2233196  ...     normal      92700422
+1    163842912   2233196  ...     normal      92700422
+2    163842912   2233196  ...     normal      92700422
+3    163842912   2233196  ...     normal      92700422
+4    163842912   2233196  ...     normal      92700422
+..         ...       ...  ...        ...           ...
+867  164422683   1814481  ...     normal         20655
+868  164422683   1814481  ...     normal         20655
+869  164422683   1814481  ...     normal         20655
+870  164422683   1814481  ...     normal         20655
+871  164422683   1814481  ...     normal         20655
+
+[872 rows x 13 columns]
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
+Index: []
+Inserted Data:
+       OrderID  PatientID  ...  StatusForm CreatedUserID
+872  164436879    2088070  ...      normal      92700417
+873  164436879    2088070  ...      normal      92700417
+874  164436879    2088070  ...      normal      92700417
+875  164436879    2088070  ...      normal      92700417
+876  164436879    2088070  ...      normal      92700417
+..         ...        ...  ...         ...           ...
+952  164473258    1849068  ...      normal         19341
+953  164473258    1849068  ...      normal         19341
+954  164473258    1849068  ...      normal         19341
+955  164473258    1849068  ...      normal         19341
+956  164473258    1849068  ...      normal         19341
+
+[85 rows x 13 columns]
+
+Tidak ada data yang berubah
+Data Success Inserted
+30.702998876571655
+
+
+Memory after: 84.54296875 MB
+Memory used: 17.74609375 MB
+scheduler tanggal : 2025-02-13 04:30:32.377995

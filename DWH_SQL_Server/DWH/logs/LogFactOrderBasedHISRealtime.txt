@@ -1,0 +1,438 @@
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+        OrderID  PatientID  AdmissionID  EmployeeID  ... PayplanName CategoryName PayplanKemkes Type
+0     155691767    1578696          112      1959.0  ...     PRIBADI     visitasi     Eksekutif    K
+1     155695121    1874326            5     10567.0  ...     PRIBADI    penunjang     Eksekutif    K
+2     155695157    1553918          159     11137.0  ...     PRIBADI    penunjang     Eksekutif    K
+3     155695158    1553918          159     11137.0  ...     PRIBADI    penunjang     Eksekutif    K
+4     155695183    1874326            5     11137.0  ...     PRIBADI    penunjang     Eksekutif    K
+...         ...        ...          ...         ...  ...         ...          ...           ...  ...
+3030  155749160    2024517            6       224.0  ...     PRIBADI     visitasi     Eksekutif    K
+3031  155749174    1767739           30         0.0  ...     PRIBADI     tindakan     Eksekutif    K
+3032  155749175    1767739           30         0.0  ...     PRIBADI     tindakan     Eksekutif    K
+3033  155749507    2036605            1      1859.0  ...     PRIBADI     visitasi     Eksekutif    K
+3034  155749527    2036605            1      7350.0  ...     PRIBADI     visitasi     Eksekutif    K
+
+[3035 rows x 25 columns]
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+EmployeeID                int64
+DoctorName               object
+KSM                      object
+NIP                      object
+NIK                      object
+PatientName              object
+MedicalNo                object
+OrgName                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+NullifiedDate            object
+VerifiedDate             object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+IDItem                   object
+MonthValue               object
+YearValue                object
+Tarif                   float64
+JasaMedis               float64
+JasaSarana              float64
+JasaRemun                object
+PayplanName              object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+        OrderID  PatientID  AdmissionID  EmployeeID  ...            PayplanName CategoryName      PayplanKemkes Type
+0     155691767    1578696          112        1959  ...                PRIBADI     visitasi          Eksekutif    K
+1     155695121    1874326            5       10567  ...                PRIBADI    penunjang          Eksekutif    K
+2     155695157    1553918          159       11137  ...                PRIBADI    penunjang          Eksekutif    K
+3     155695158    1553918          159       11137  ...                PRIBADI    penunjang          Eksekutif    K
+4     155695183    1874326            5       11137  ...                PRIBADI    penunjang          Eksekutif    K
+...         ...        ...          ...         ...  ...                    ...          ...                ...  ...
+2269  155741607    2036038            5         224  ...  ASURANSI / PERUSAHAAN     tindakan  Eksekutif Jaminan    K
+2270  155741607    2036038            5        1213  ...  ASURANSI / PERUSAHAAN     tindakan  Eksekutif Jaminan    K
+2271  155741607    2036038            5        1708  ...  ASURANSI / PERUSAHAAN     tindakan  Eksekutif Jaminan    K
+2272  155741741     743127           20        1859  ...                PRIBADI     visitasi          Eksekutif    K
+2273  155741783    1602902           30        2615  ...                PRIBADI     visitasi          Eksekutif    K
+
+[2274 rows x 29 columns]
+0       (155691767, 1578696, 112)
+1         (155695121, 1874326, 5)
+2       (155695157, 1553918, 159)
+3       (155695158, 1553918, 159)
+4         (155695183, 1874326, 5)
+                  ...            
+3025      (155748979, 1874326, 5)
+3028     (155749086, 1490369, 52)
+3030      (155749160, 2024517, 6)
+3033      (155749507, 2036605, 1)
+3034      (155749527, 2036605, 1)
+Length: 2304, dtype: object
+0       (155691767, 1578696, 112)
+1         (155695121, 1874326, 5)
+2       (155695157, 1553918, 159)
+3       (155695158, 1553918, 159)
+4         (155695183, 1874326, 5)
+                  ...            
+2269      (155741607, 2036038, 5)
+2270      (155741607, 2036038, 5)
+2271      (155741607, 2036038, 5)
+2272      (155741741, 743127, 20)
+2273     (155741783, 1602902, 30)
+Length: 2274, dtype: object
+0        (112, 1959)
+1         (5, 10567)
+2       (159, 11137)
+3       (159, 11137)
+4         (5, 11137)
+            ...     
+3025        (5, 160)
+3028     (52, 10403)
+3030        (6, 224)
+3033       (1, 1859)
+3034       (1, 7350)
+Length: 2304, dtype: object
+0        (112, 1959)
+1         (5, 10567)
+2       (159, 11137)
+3       (159, 11137)
+4         (5, 11137)
+            ...     
+2269        (5, 224)
+2270       (5, 1213)
+2271       (5, 1708)
+2272      (20, 1859)
+2273      (30, 2615)
+Length: 2274, dtype: object
+0       (1959, Natalia Widiasih Raharjanti, Dr. dr., S...
+1            (10567, Reyhan Eddy Yunus, dr., SpRad, M.Sc)
+2                       (11137, Yusra, dr., SpPK(K), PhD)
+3                       (11137, Yusra, dr., SpPK(K), PhD)
+4                       (11137, Yusra, dr., SpPK(K), PhD)
+                              ...                        
+3025            (160, Wismaji Sadewo, Dr., dr., Sp.BS(K))
+3028    (10403, Anas Alatas, dr., Sp.An-TI., Subsp.An....
+3030     (224, Andi Darma Putra, dr., SpOG, Subsp.Onk(K))
+3033    (1859, Mohammad Kurniawan, dr, Sp.S(K), FICA, ...
+3034    (7350, Agus Rizal Ardy Harlandy Hamid, Prof., ...
+Length: 2304, dtype: object
+0       (1959, Natalia Widiasih Raharjanti, Dr. dr., S...
+1            (10567, Reyhan Eddy Yunus, dr., SpRad, M.Sc)
+2                       (11137, Yusra, dr., SpPK(K), PhD)
+3                       (11137, Yusra, dr., SpPK(K), PhD)
+4                       (11137, Yusra, dr., SpPK(K), PhD)
+                              ...                        
+2269     (224, Andi Darma Putra, dr., SpOG, Subsp.Onk(K))
+2270    (1213, Kartiwa Hadi Nuryanto, dr., SpOG, Subsp...
+2271            (1708, Riyadh Firdaus, Dr. dr. Sp.An-KNA)
+2272    (1859, Mohammad Kurniawan, dr, Sp.S(K), FICA, ...
+2273      (2615, Kemal Fariz Kalista, dr., SpPD, FINASIM)
+Length: 2274, dtype: object
+0       (Natalia Widiasih Raharjanti, Dr. dr., SpKJ(K)...
+1       (Reyhan Eddy Yunus, dr., SpRad, M.Sc, Kelompok...
+2       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+3       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+4       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+                              ...                        
+3025    (Wismaji Sadewo, Dr., dr., Sp.BS(K), Kelompok ...
+3028    (Anas Alatas, dr., Sp.An-TI., Subsp.An.Kv(K), ...
+3030    (Andi Darma Putra, dr., SpOG, Subsp.Onk(K), Ke...
+3033    (Mohammad Kurniawan, dr, Sp.S(K), FICA, M.Sc, ...
+3034    (Agus Rizal Ardy Harlandy Hamid, Prof., dr., S...
+Length: 2304, dtype: object
+0       (Natalia Widiasih Raharjanti, Dr. dr., SpKJ(K)...
+1       (Reyhan Eddy Yunus, dr., SpRad, M.Sc, Kelompok...
+2       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+3       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+4       (Yusra, dr., SpPK(K), PhD, Kelompok Staf Medis...
+                              ...                        
+2269    (Andi Darma Putra, dr., SpOG, Subsp.Onk(K), Ke...
+2270    (Kartiwa Hadi Nuryanto, dr., SpOG, Subsp.Onk, ...
+2271    (Riyadh Firdaus, Dr. dr. Sp.An-KNA, Kelompok S...
+2272    (Mohammad Kurniawan, dr, Sp.S(K), FICA, M.Sc, ...
+2273    (Kemal Fariz Kalista, dr., SpPD, FINASIM, Kelo...
+Length: 2274, dtype: object
+0       (Kelompok Staf Medis Kesehatan Jiwa, 197312092...
+1       (Kelompok Staf Medis Radiologi, 10012091022121...
+2       (Kelompok Staf Medis Patologi Klinik, 19720816...
+3       (Kelompok Staf Medis Patologi Klinik, 19720816...
+4       (Kelompok Staf Medis Patologi Klinik, 19720816...
+                              ...                        
+3025       (Kelompok Staf Medis Bedah Syaraf, 0100500075)
+3028    (Kelompok Staf Medis Anestesiologi dan Terapi ...
+3030    (Kelompok Staf Medis Kebidanan dan Penyakit Ka...
+3033    (Kelompok Staf Medis Neurologi, 19790208200912...
+3034    (Kelompok Staf Medis Urologi, 197706112009121002)
+Length: 2304, dtype: object
+0       (Kelompok Staf Medis Kesehatan Jiwa, 197312092...
+1       (Kelompok Staf Medis Radiologi, 10012091022121...
+2       (Kelompok Staf Medis Patologi Klinik, 19720816...
+3       (Kelompok Staf Medis Patologi Klinik, 19720816...
+4       (Kelompok Staf Medis Patologi Klinik, 19720816...
+                              ...                        
+2269    (Kelompok Staf Medis Kebidanan dan Penyakit Ka...
+2270    (Kelompok Staf Medis Kebidanan dan Penyakit Ka...
+2271    (Kelompok Staf Medis Anestesiologi dan Terapi ...
+2272    (Kelompok Staf Medis Neurologi, 19790208200912...
+2273    (Kelompok Staf Medis Penyakit Dalam, 198410262...
+Length: 2274, dtype: object
+bates
+0                 (3175024912730004, HENDRA YOWARGANA)
+1       (3171071212850009, AFRIANTO LAURENTIUS MANALU)
+2                       (3276065608720003, TAN ANGELA)
+3                       (3276065608720003, TAN ANGELA)
+4       (3276065608720003, AFRIANTO LAURENTIUS MANALU)
+                             ...                      
+3025    (3175011003690009, AFRIANTO LAURENTIUS MANALU)
+3028        (3174010612830004, EKA SIWI AGUSTININGSIH)
+3030                      (3276061503890001, MARYANTI)
+3033         (3275080802790015, LINDA FATIMA SOEKARNO)
+3034         (3171061106770008, LINDA FATIMA SOEKARNO)
+Length: 2304, dtype: object
+0                 (3175024912730004, HENDRA YOWARGANA)
+1       (3171071212850009, AFRIANTO LAURENTIUS MANALU)
+2                       (3276065608720003, TAN ANGELA)
+3                       (3276065608720003, TAN ANGELA)
+4       (3276065608720003, AFRIANTO LAURENTIUS MANALU)
+                             ...                      
+2269                 (3276061503890001, MEGAWATI PUAR)
+2270                 (3171052610680002, MEGAWATI PUAR)
+2271                 (3175021106770004, MEGAWATI PUAR)
+2272                  (3275080802790015, ANIS ALWAINY)
+2273       (3174052610840016, JONATHAN BONTOT GULARSO)
+Length: 2274, dtype: object
+0       (463-66-51, In Patient 4th Floor Kencana)
+1                  (476-09-29, Radiologi Kencana)
+2                    (461-18-36, Lab. PK Kencana)
+3                    (461-18-36, Lab. PK Kencana)
+4                    (476-09-29, Lab. PK Kencana)
+                          ...                    
+3025    (476-09-29, In Patient 5th Floor Kencana)
+3028    (457-44-45, In Patient 5th Floor Kencana)
+3030    (478-66-66, In Patient 5th Floor Kencana)
+3033    (479-43-43, In Patient 4th Floor Kencana)
+3034    (479-43-43, In Patient 4th Floor Kencana)
+Length: 2304, dtype: object
+0       (463-66-51, In Patient 4th Floor Kencana)
+1                  (476-09-29, Radiologi Kencana)
+2                    (461-18-36, Lab. PK Kencana)
+3                    (461-18-36, Lab. PK Kencana)
+4                    (476-09-29, Lab. PK Kencana)
+                          ...                    
+2269      (478-73-30, OK - Kamar Operasi Kencana)
+2270      (478-73-30, OK - Kamar Operasi Kencana)
+2271      (478-73-30, OK - Kamar Operasi Kencana)
+2272    (385-84-66, In Patient 4th Floor Kencana)
+2273    (467-27-88, In Patient 4th Floor Kencana)
+Length: 2274, dtype: object
+0       (2024-06-04 13:49:57, 2024-06-06 19:18:29)
+1       (2024-06-03 16:47:59, 2024-06-06 00:06:14)
+2       (2024-05-10 09:55:52, 2024-06-06 00:11:09)
+3       (2024-05-10 09:55:52, 2024-06-06 00:11:11)
+4       (2024-06-03 16:47:59, 2024-06-06 00:13:27)
+                           ...                    
+3025    (2024-06-03 16:47:59, 2024-06-06 21:30:00)
+3028    (2024-06-06 08:40:57, 2024-06-06 21:30:00)
+3030    (2024-06-03 08:54:50, 2024-06-06 19:56:00)
+3033    (2024-05-28 16:59:48, 2024-06-06 19:54:00)
+3034    (2024-05-28 16:59:48, 2024-06-06 19:50:00)
+Length: 2304, dtype: object
+0       (2024-06-04 13:49:57, 2024-06-06 19:18:29)
+1       (2024-06-03 16:47:59, 2024-06-06 00:06:14)
+2       (2024-05-10 09:55:52, 2024-06-06 00:11:09)
+3       (2024-05-10 09:55:52, 2024-06-06 00:11:11)
+4       (2024-06-03 16:47:59, 2024-06-06 00:13:27)
+                           ...                    
+2269    (2024-06-05 15:55:08, 2024-06-06 17:01:13)
+2270    (2024-06-05 15:55:08, 2024-06-06 17:01:13)
+2271    (2024-06-05 15:55:08, 2024-06-06 17:01:13)
+2272    (2024-06-04 14:27:15, 2024-06-06 20:20:00)
+2273    (2024-06-02 12:05:36, 2024-06-06 20:20:00)
+Length: 2274, dtype: object
+0       (None, None)
+1       (None, None)
+2       (None, None)
+3       (None, None)
+4       (None, None)
+            ...     
+3025    (None, None)
+3028    (None, None)
+3030    (None, None)
+3033    (None, None)
+3034    (None, None)
+Length: 2304, dtype: object
+0       (None, None)
+1       (None, None)
+2       (None, None)
+3       (None, None)
+4       (None, None)
+            ...     
+2269    (None, None)
+2270    (None, None)
+2271    (None, None)
+2272    (None, None)
+2273    (None, None)
+Length: 2274, dtype: object
+0                               (45155, Visite)
+1                                (32347, C-Arm)
+2       (32061, BIAKAN+RES AEROB LKP LAIN LAIN)
+3               (32077, PULASAN GRAM LAIN-LAIN)
+4                  (35945, ANALISA CAIRAN OTAK)
+                         ...                   
+3025                            (45155, Visite)
+3028                            (45155, Visite)
+3030                            (45155, Visite)
+3033                            (45155, Visite)
+3034                            (45155, Visite)
+Length: 2304, dtype: object
+0                               (45155, Visite)
+1                                (32347, C-Arm)
+2       (32061, BIAKAN+RES AEROB LKP LAIN LAIN)
+3               (32077, PULASAN GRAM LAIN-LAIN)
+4                  (35945, ANALISA CAIRAN OTAK)
+                         ...                   
+2269              (44590, Histerektomi Radikal)
+2270              (44590, Histerektomi Radikal)
+2271              (44590, Histerektomi Radikal)
+2272                            (45155, Visite)
+2273                            (45155, Visite)
+Length: 2274, dtype: object
+0       (1, None, 6)
+1       (1, None, 6)
+2       (1, None, 6)
+3       (1, None, 6)
+4       (1, None, 6)
+            ...     
+3025    (1, None, 6)
+3028    (1, None, 6)
+3030    (1, None, 6)
+3033    (1, None, 6)
+3034    (1, None, 6)
+Length: 2304, dtype: object
+0       (1, None, 6)
+1       (1, None, 6)
+2       (1, None, 6)
+3       (1, None, 6)
+4       (1, None, 6)
+            ...     
+2269    (1, None, 6)
+2270    (2, None, 6)
+2271    (3, None, 6)
+2272    (1, None, 6)
+2273    (1, None, 6)
+Length: 2274, dtype: object
+0        (2024, 575000.0, 500000.0, 75000.0)
+1       (2024, 832000.0, 575000.0, 257000.0)
+2        (2024, 750000.0, 80000.0, 670000.0)
+3          (2024, 78000.0, 10000.0, 68000.0)
+4        (2024, 435000.0, 12000.0, 349000.0)
+                        ...                 
+3025     (2024, 575000.0, 500000.0, 75000.0)
+3028     (2024, 575000.0, 500000.0, 75000.0)
+3030     (2024, 575000.0, 500000.0, 75000.0)
+3033     (2024, 575000.0, 500000.0, 75000.0)
+3034     (2024, 575000.0, 500000.0, 75000.0)
+Length: 2304, dtype: object
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+EmployeeID                int64
+DoctorName               object
+KSM                      object
+NIP                      object
+NIK                      object
+PatientName              object
+MedicalNo                object
+OrgName                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+NullifiedDate            object
+VerifiedDate             object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+IDItem                   object
+MonthValue               object
+YearValue                object
+Tarif                   float64
+JasaMedis               float64
+JasaSarana              float64
+JasaRemun                object
+PayplanName              object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+EmployeeID                int64
+DoctorName               object
+KSM                      object
+NIP                      object
+NIK                      object
+PatientName              object
+MedicalNo                object
+OrgName                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+NullifiedDate            object
+VerifiedDate             object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+IDItem                   object
+MonthValue               object
+YearValue                object
+Tarif                   float64
+JasaMedis               float64
+JasaSarana              float64
+JasaRemun                object
+PayplanName              object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, EmployeeID, DoctorName, KSM]
+Index: []
+total row inserted : 30
+        OrderID  ...                                                KSM
+2363  155723562  ...                      Kelompok Staf Medis Radiologi
+2616  155726812  ...                      Kelompok Staf Medis Radiologi
+2626  155727038  ...                      Kelompok Staf Medis Radiologi
+2991  155743482  ...                 Kelompok Staf Medis Kesehatan Jiwa
+2992  155744202  ...                      Kelompok Staf Medis Neurologi
+2993  155745905  ...  Kelompok Staf Medis Orthopaedi dan Traumatolog...
+2994  155745905  ...  Kelompok Staf Medis Orthopaedi dan Traumatolog...
+2995  155745905  ...  Kelompok Staf Medis Anestesiologi dan Terapi I...
+2996  155745919  ...  Kelompok Staf Medis Orthopaedi dan Traumatolog...
+2997  155745919  ...  Kelompok Staf Medis Orthopaedi dan Traumatolog...
+2998  155745919  ...  Kelompok Staf Medis Anestesiologi dan Terapi I...
+2999  155745982  ...                      Kelompok Staf Medis Neurologi
+3000  155745982  ...                      Kelompok Staf Medis Neurologi
+3002  155746138  ...                      Kelompok Staf Medis Neurologi
+3003  155746138  ...                      Kelompok Staf Medis Neurologi
+3004  155746791  ...           Instalasi Pelayanan Terpadu RSCM Kencana
+3005  155746803  ...           Instalasi Pelayanan Terpadu RSCM Kencana
+3006  155746817  ...           Instalasi Pelayanan Terpadu RSCM Kencana
+3007  155746826  ...           Instalasi Pelayanan Terpadu RSCM Kencana
+3008  155746942  ...                      Kelompok Staf Medis Neurologi
+3009  155747184  ...                 Kelompok Staf Medis Penyakit Dalam
+3010  155747187  ...                        Kelompok Staf Medis Urologi
+3011  155747311  ...                      Kelompok Staf Medis Neurologi
+3012  155747529  ...                 Kelompok Staf Medis Kesehatan Anak
+3016  155748016  ...                   Kelompok Staf Medis Bedah Syaraf
+3025  155748979  ...                   Kelompok Staf Medis Bedah Syaraf
+3028  155749086  ...  Kelompok Staf Medis Anestesiologi dan Terapi I...
+3030  155749160  ...  Kelompok Staf Medis Kebidanan dan Penyakit Kan...
+3033  155749507  ...                      Kelompok Staf Medis Neurologi
+3034  155749527  ...                        Kelompok Staf Medis Urologi
+
+[30 rows x 6 columns]
+2.0229992866516113
+scheduler tanggal : 2024-06-07 10:28:00.831140

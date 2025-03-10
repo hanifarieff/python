@@ -1,0 +1,41 @@
+('2025-03-05', '2025-03-06', '2025-03-07', '2025-03-08', '2025-03-09')
+    TglTransaksi                                           NamaPoli  Jumlah
+0     2025-03-05                           A - Lab. Patologi Klinik     223
+1     2025-03-05                                     ATK. SEL PUNCA       1
+2     2025-03-05                                 Cluster Bedah Anak       1
+3     2025-03-05                                     Cluster Breast      16
+4     2025-03-05                             Cluster Cardiovascular      18
+..           ...                                                ...     ...
+620   2025-03-08                     URJT - Poli Rehabilitasi Medik      14
+621   2025-03-08   URJT - Poli Rehabilitasi Medik Fisioterapis Anak      13
+622   2025-03-08  URJT - Poli Rehabilitasi Medik Okupasi Terapi ...       4
+623   2025-03-08                                  URJT - POLI SARAF      15
+624   2025-03-08                                URJT - POLI UROLOGI       4
+
+[625 rows x 3 columns]
+total row update : 1
+    TglTransaksi                        NamaPoli  Jumlah
+611   2025-03-08  Unit Pelayanan Transfusi Darah     103
+total row inserted : 17
+    TglTransaksi                           NamaPoli  Jumlah
+625   2025-03-09                   Cluster Homecare       1
+626   2025-03-09       Cluster Reproductive Kencana       3
+627   2025-03-09           A - Lab. Patologi Klinik     185
+628   2025-03-09                    IGD - Radiologi      50
+629   2025-03-09                       Cluster Mata       2
+630   2025-03-09         IGD - Lab. Patologi Klinik      89
+631   2025-03-09          KIARA - LABORATORIUM ANAK       2
+632   2025-03-09     Kencana - Satelit Farmasi Lt.1      21
+633   2025-03-09        Lab. Patologi Klinik 24 Jam     116
+634   2025-03-09              Laboratorium External     712
+635   2025-03-09                  KIARA - Radiologi      18
+636   2025-03-09         OK - Kamar Operasi Kencana       1
+637   2025-03-09                    Lab. PK Kencana       8
+638   2025-03-09  Mikrobiologi Laboratorium Terpadu      44
+639   2025-03-09                  Radiologi Kencana      11
+640   2025-03-09    Radiologi Dan Kedokteran Nuklir      30
+641   2025-03-09     Unit Pelayanan Transfusi Darah     112
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS20DMJumlahPengunjungRawatJalanPerPoli_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli  WHERE r.TglTransaksi = t.TglTransaksi and r.NamaPoli = t.NamaPoli ;
+success update and insert all data
+885.797082901001
+scheduler tanggal : 2025-03-10 06:40:02.582973

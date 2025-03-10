@@ -1,0 +1,89 @@
+      PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+0          5316         1035  259-29-47  ...       n                n    1
+1          5599          838  305-03-22  ...       n                n    1
+2          7393          248  311-72-65  ...       n                n    1
+3          7783         1384  303-16-36  ...       n                n    1
+4          9553          122  305-09-30  ...       n                n    1
+...         ...          ...        ...  ...     ...              ...  ...
+9779    2291418            1  484-06-44  ...       n                y    1
+9780    2291419            1  484-06-45  ...       n                y    1
+9781    2291420            1  484-06-46  ...       y                y    1
+9782    2291421            1  484-06-47  ...       n                y    1
+9783    2291422            1  484-06-48  ...       n                y    1
+
+[9784 rows x 7 columns]
+        PatientID  AdmissionID       MedicalNo  ... StayInd StayIndAdmission Flag
+0            5316          133       259-29-47  ...       n             None    1
+1            5316          134       259-29-47  ...       n             None    1
+2            5316          135       259-29-47  ...       n             None    1
+3            5316          136       259-29-47  ...       n             None    1
+4            5316          137       259-29-47  ...       n             None    1
+...           ...          ...             ...  ...     ...              ...  ...
+407542    2290639            1       484-06-09  ...       n                y    1
+407543    2290640            1       484-06-10  ...       n                y    1
+407544    2290641            1       484-06-11  ...       n                y    1
+407545    2290642            1  PK250308-00-16  ...       n                n    1
+407546    2290644            1       484-06-13  ...       n                y    1
+
+[407547 rows x 7 columns]
+total row update : 36
+      PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+243       60576           10  333-91-85  ...       n                n    1
+362       46670           75  319-76-24  ...       y                y    1
+371       50973          180  333-05-56  ...       y                y    1
+1065    1198891          116  432-89-85  ...       n                n    1
+1184    1266094           84  439-00-03  ...       n                n    1
+1215    1025910          202  414-76-45  ...       n                n    1
+1237    1038299            4  415-83-76  ...       y                y    1
+1347     899198           89  403-83-04  ...       n                n    1
+1391    1129267           83  426-24-68  ...       n                n    1
+1898    1532621          143  460-69-98  ...       n                n    1
+1961    1450193            6  454-70-96  ...       n                n    1
+2845    1697534           97  471-20-55  ...       y                y    1
+3041    1743015           23  474-42-52  ...       n                n    2
+3240    1561758            7  462-16-23  ...       n                n    1
+4222    1791002           45  470-53-18  ...       n                n    1
+4783    2282032            2  485-00-16  ...       n                n    1
+4828    2282860            2  485-58-20  ...       n                n    2
+5059    2287269            1  484-04-84  ...       y                y    1
+6310    2289414            1  484-05-65  ...       n                n    1
+6311    2289415            1  484-05-66  ...       n                n    1
+6312    2289416            1  484-05-67  ...       n                n    1
+6314    2289417            2  484-05-68  ...       y                y    1
+7416    2290099            1  484-05-81  ...       y                y    1
+7442    2290126            1  484-05-82  ...       n                n    1
+7882    1825894           40  475-70-74  ...       n                n    1
+8315    2290587            1  484-05-87  ...       n                n    1
+8343    2290615            1  484-05-91  ...       n                n    1
+8346    2290617            1  484-05-93  ...       n                n    1
+8354    2290627            1  484-06-01  ...       n                n    1
+8358    2290631            1  484-06-03  ...       y                y    1
+8361    2290634            1  484-06-06  ...       n                n    1
+8363    2290636            1  485-63-96  ...       n                n    2
+8366    2290639            1  484-06-09  ...       n                n    1
+9053    2240567            7  483-89-11  ...       y                y    1
+9101    2243313            5  483-85-58  ...       n                n    1
+9147    2247436            5  484-40-68  ...       y                y    1
+
+[36 rows x 7 columns]
+total row inserted : 952
+      PatientID  AdmissionID  MedicalNo  ... StayInd StayIndAdmission Flag
+35       421316           10  308-47-57  ...       y                y    1
+46       595246           69  354-62-46  ...       n                n    1
+71       614864           99   58-07-83  ...       n                n    2
+109      726856          235  389-14-05  ...       n                y    1
+170      560219            3  352-67-06  ...       n                y    1
+...         ...          ...        ...  ...     ...              ...  ...
+9779    2291418            1  484-06-44  ...       n                y    1
+9780    2291419            1  484-06-45  ...       n                y    1
+9781    2291420            1  484-06-46  ...       y                y    1
+9782    2291421            1  484-06-47  ...       n                y    1
+9783    2291422            1  484-06-48  ...       n                y    1
+
+[952 rows x 7 columns]
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.AdmissionDate = s.AdmissionDate, t.StayInd = s.StayInd, t.StayIndAdmission = s.StayIndAdmission, t.Flag = s.Flag , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientStay t INNER JOIN (SELECT * from dwhrscm_talend.FactPatientStay_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID ;
+
+
+success update dan insert
+42.54687714576721
+scheduler tanggal : 2025-03-10 03:00:02.066267

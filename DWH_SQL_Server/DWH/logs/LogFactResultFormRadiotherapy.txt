@@ -1,0 +1,41 @@
+       OrderID  PatientID  ...  StatusForm CreatedUserID
+0    164547097    1698280  ...      normal      92700417
+1    164547097    1698280  ...      normal      92700417
+2    164547097    1698280  ...      normal      92700417
+3    164547097    1698280  ...      normal      92700417
+4    164547097    1698280  ...      normal      92700417
+..         ...        ...  ...         ...           ...
+99   164526262    1993311  ...      normal      92700420
+100  164526262    1993311  ...      normal      92700420
+101  164526262    1993311  ...      normal      92700420
+102  164526262    1993311  ...      normal      92700420
+103  164526262    1993311  ...      normal      92700420
+
+[104 rows x 14 columns]
+       OrderID  PatientID  ...  StatusForm CreatedUserID
+0    164239347    2037700  ...      normal         20654
+1    164239347    2037700  ...      normal         20654
+2    164239347    2037700  ...      normal         20654
+3    164239347    2037700  ...      normal         20654
+4    164239347    2037700  ...      normal         20654
+..         ...        ...  ...         ...           ...
+112  164550950    2267350  ...      normal         20648
+113  164550950    2267350  ...      normal         20648
+114  164550950    2267350  ...      normal         20648
+115  164550950    2267350  ...      normal         20648
+116  164550950    2267350  ...      normal         20648
+
+[117 rows x 14 columns]
+total row update : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
+Index: []
+total row inserted : 0
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, MedicalNo, ObservationDate, ObjID, SequenceID, ObjName, Checkup, CheckupDate, Result, SatuSehatCancerResult, StatusForm, CreatedUserID]
+Index: []
+tidak ada data yang baru dan berubah
+1.3690097332000732
+
+
+scheduler tanggal : 2025-02-17 04:45:01.796447

@@ -1,0 +1,132 @@
+       PrescriptionID  ...  TransactionTime
+0      00150002039938  ...         01:29:16
+1      00150002065771  ...         01:40:14
+2      00150002465446  ...         02:29:42
+3      00150002495736  ...         01:32:35
+4      00150002513949  ...         01:43:41
+...               ...  ...              ...
+10766  00160000365177  ...         00:00:00
+10767  00160000365204  ...         01:34:26
+10768  00160000365205  ...         00:00:00
+10769  00160000365217  ...         00:00:00
+10770  00160000365222  ...         00:00:00
+
+[10771 rows x 25 columns]
+PrescriptionID                  object
+PatientID                        int64
+AdmissionID                      int64
+MedicalNo                       object
+PatientName                     object
+AdmissionDate           datetime64[ns]
+OrgID                            int64
+RegistrationType                object
+ResponTimeID                    object
+ResponTimeType                  object
+ResponTimeName                  object
+ItemAmountNonRacikan             int64
+ItemAmountRacikan                int64
+OrderDate               datetime64[ns]
+DispenseDate            datetime64[ns]
+PreparedDate            datetime64[ns]
+CheckedDate             datetime64[ns]
+FinishedDate            datetime64[ns]
+GivenDate               datetime64[ns]
+DispenseUser                    object
+PreparedUser                    object
+CheckedUser                     object
+FinishedUser                    object
+GivenUser                       object
+TransactionTime                 object
+dtype: object
+PrescriptionID                  object
+PatientID                        int64
+AdmissionID                      int64
+MedicalNo                       object
+PatientName                     object
+AdmissionDate           datetime64[ns]
+OrgID                            int64
+RegistrationType                object
+ResponTimeID                    object
+ResponTimeType                  object
+ResponTimeName                  object
+ItemAmountNonRacikan             int64
+ItemAmountRacikan                int64
+OrderDate               datetime64[ns]
+DispenseDate            datetime64[ns]
+PreparedDate            datetime64[ns]
+CheckedDate             datetime64[ns]
+FinishedDate            datetime64[ns]
+GivenDate               datetime64[ns]
+DispenseUser                    object
+PreparedUser                    object
+CheckedUser                     object
+FinishedUser                    object
+GivenUser                       object
+TransactionTime                 object
+dtype: object
+total row update : 44
+       PrescriptionID  ...  TransactionTime
+142    00160000057721  ...        123:26:38
+862    00160000344152  ...         00:00:30
+2011   00160000350688  ...         01:29:43
+2311   00160000348641  ...         01:45:43
+2513   00160000064694  ...        120:56:37
+2565   00160000350173  ...         01:54:58
+2750   00160000348421  ...         01:23:51
+2785   00160000350798  ...         06:10:39
+2928   00160000352926  ...         01:40:56
+3164   00160000349748  ...         02:11:57
+3173   00160000349858  ...         06:50:35
+4042   00160000351795  ...         03:40:47
+4220   00160000356443  ...         00:22:20
+4301   00160000358224  ...         00:00:51
+4613   00160000348236  ...         01:22:09
+4670   00160000348524  ...         00:25:48
+4826   00160000358283  ...         00:05:31
+4827   00160000358292  ...         00:07:31
+5212   00160000348383  ...         01:24:12
+5345   00160000350235  ...         00:38:33
+5412   00160000350820  ...         01:53:15
+5448   00160000360484  ...         00:00:39
+5456   00160000360610  ...         00:00:26
+5538   00160000360964  ...         08:38:50
+5885   00160000350180  ...         00:42:32
+5896   00160000350476  ...         01:21:37
+5996   00160000360657  ...         08:37:37
+6066   00160000350864  ...         02:45:51
+6262   00160000357491  ...         00:38:43
+6553   00160000358574  ...         00:02:07
+6764   00160000357643  ...         00:17:37
+7639   00160000358520  ...         00:01:45
+7896   00160000360962  ...         08:40:05
+8656   00160000348623  ...         01:45:48
+8716   00160000349701  ...         01:03:14
+8836   00160000351919  ...         01:31:59
+9178   00160000358254  ...         00:00:47
+9541   00160000348332  ...         01:21:57
+9700   00160000350802  ...         02:45:50
+9841   00160000353303  ...         00:21:15
+10092  00160000357427  ...         01:11:14
+10125  00160000358271  ...         00:01:50
+10220  00160000360303  ...         00:41:09
+10258  00160000359500  ...         00:00:56
+
+[44 rows x 25 columns]
+total row inserted : 1763
+       PrescriptionID  PatientID  ...                      GivenUser TransactionTime
+52     00150002624746    2166286  ...        Vilyyani Setiawati, AMF        02:37:03
+267    00150002590104    2217057  ...  Fasa Aulia Sabrina, A.Md.Farm        00:28:34
+353    00160000187975    2243778  ...  Fasa Aulia Sabrina, A.Md.Farm        01:57:11
+428    00160000265664    2141981  ...        Vilyyani Setiawati, AMF        01:30:41
+460    00160000281602    2233871  ...          Reswindi Afrizal, AMF        00:31:05
+...               ...        ...  ...                            ...             ...
+10766  00160000365177    1627081  ...                              -        00:00:00
+10767  00160000365204     781476  ...                  Rini Rostiana        01:34:26
+10768  00160000365205    1270259  ...                              -        00:00:00
+10769  00160000365217      13824  ...                              -        00:00:00
+10770  00160000365222    2167608  ...                              -        00:00:00
+
+[1763 rows x 25 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.PatientName = t.PatientName, r.AdmissionDate = t.AdmissionDate, r.OrgID = t.OrgID, r.RegistrationType = t.RegistrationType, r.ResponTimeID = t.ResponTimeID, r.ResponTimeType = t.ResponTimeType, r.ResponTimeName = t.ResponTimeName, r.ItemAmountNonRacikan = t.ItemAmountNonRacikan, r.ItemAmountRacikan = t.ItemAmountRacikan, r.OrderDate = t.OrderDate, r.DispenseDate = t.DispenseDate, r.PreparedDate = t.PreparedDate, r.CheckedDate = t.CheckedDate, r.FinishedDate = t.FinishedDate, r.GivenDate = t.GivenDate, r.DispenseUser = t.DispenseUser, r.PreparedUser = t.PreparedUser, r.CheckedUser = t.CheckedUser, r.FinishedUser = t.FinishedUser, r.GivenUser = t.GivenUser, r.TransactionTime = t.TransactionTime , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPrescriptionResponsTime r INNER JOIN (SELECT * FROM dwhrscm_talend.FactPrescriptionResponsTime_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID WHERE r.PrescriptionID = t.PrescriptionID ;
+success update and insert all data
+48.683000326156616

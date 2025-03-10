@@ -1,0 +1,63 @@
+Memory before: 66.41796875 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.8/ehr)
+Source Data:
+      PrescriptionID  PatientID  AdmissionID  ... FinishedUser  GivenUser TransactionTime
+0     00150001649405    1224121           63  ...         1786       1786        00:01:44
+1     00150001657417    2077442            7  ...        18405      18405        00:56:51
+2     00150001686001      40014          417  ...         4572          0        44:08:44
+3     00150001694027    1722841           59  ...         4572          0        43:59:12
+4     00150001702867    1529602           32  ...         4572          0        43:55:23
+...              ...        ...          ...  ...          ...        ...             ...
+3486  00150001891684    2090418            4  ...            0          0        00:00:00
+3487  00150001891685    1813914           14  ...            0          0        00:00:00
+3488  00150001891686    2113741            1  ...            0          0        00:00:00
+3489  00150001891691    1713739           13  ...         5940       5940        05:23:18
+3490  00150001891693    1756580           79  ...         5940       5940        05:29:05
+
+[3491 rows x 22 columns]
+Source Data:
+      PrescriptionID  PatientID  AdmissionID  ... FinishedUser  GivenUser TransactionTime
+0     00150001649405    1224121           63  ...         1786       1786        00:01:44
+1     00150001657417    2077442            7  ...        18405      18405        00:56:51
+2     00150001686001      40014          417  ...         4572          0        44:08:44
+3     00150001694027    1722841           59  ...         4572          0        43:59:12
+4     00150001702867    1529602           32  ...         4572          0        43:55:23
+...              ...        ...          ...  ...          ...        ...             ...
+3486  00150001891684    2090418            4  ...            0          0        00:00:00
+3487  00150001891685    1813914           14  ...            0          0        00:00:00
+3488  00150001891686    2113741            1  ...            0          0        00:00:00
+3489  00150001891691    1713739           13  ...         5940       5940        05:23:18
+3490  00150001891693    1756580           79  ...         5940       5940        05:29:05
+
+[3491 rows x 22 columns]
+Changes Detected:
+Modified Data:
+      PrescriptionID  PatientID  AdmissionID  ... FinishedUser  GivenUser TransactionTime
+0     00150001649405    1224121           63  ...         1786       1786        00:01:44
+1     00150001657417    2077442            7  ...        18405      18405        00:56:51
+2     00150001686001      40014          417  ...         4572          0        44:08:44
+3     00150001694027    1722841           59  ...         4572          0        43:59:12
+4     00150001702867    1529602           32  ...         4572          0        43:55:23
+...              ...        ...          ...  ...          ...        ...             ...
+3486  00150001891684    2090418            4  ...            0          0        00:00:00
+3487  00150001891685    1813914           14  ...            0          0        00:00:00
+3488  00150001891686    2113741            1  ...            0          0        00:00:00
+3489  00150001891691    1713739           13  ...         5940       5940        05:23:18
+3490  00150001891693    1756580           79  ...         5940       5940        05:29:05
+
+[3491 rows x 22 columns]
+Inserted Data:
+Empty DataFrame
+Columns: [PrescriptionID, PatientID, AdmissionID, AdmissionDate, OrgID, ResponTimeID, ResponTimeType, ResponTimeName, ItemAmountNonRacikan, ItemAmountRacikan, OrderDate, DispenseDate, PreparedDate, CheckedDate, FinishedDate, GivenDate, DispenseUser, PreparedUser, CheckedUser, FinishedUser, GivenUser, TransactionTime]
+Index: []
+
+Data Success Updated
+Tidak ada data yang baru
+5.333998680114746
+
+
+Memory after: 80.1328125 MB
+Memory used: 13.71484375 MB
+scheduler tanggal : 2024-09-17 10:35:36.013443

@@ -1,0 +1,238 @@
+2025-02-14 05:00:02,146 - INFO - Memory before execution: 67.86328125
+2025-02-14 05:00:02,199 - INFO - success connect to DB!
+2025-02-14 05:00:03,275 - INFO - Extracted 36 rows from source HIS LIVE
+2025-02-14 05:00:05,222 - INFO - Total rows data modified: 0
+2025-02-14 05:00:05,222 - INFO - Total rows data inserted: 0
+2025-02-14 05:00:05,222 - INFO - There is no data updated
+2025-02-14 05:00:05,222 - INFO - There is no data new
+2025-02-14 05:00:05,225 - INFO - Memory after execution: 74.65625
+2025-02-14 05:00:05,225 - INFO - Memory used: 6.79296875
+2025-02-14 05:00:05,225 - INFO - total time execution: 3.078998565673828
+
+2025-02-15 05:00:02,064 - INFO - Memory before execution: 67.81640625
+2025-02-15 05:00:02,131 - INFO - success connect to DB!
+2025-02-15 05:00:03,722 - INFO - Extracted 26 rows from source HIS LIVE
+2025-02-15 05:00:05,379 - INFO - Total rows data modified: 0
+2025-02-15 05:00:05,379 - INFO - Total rows data inserted: 0
+2025-02-15 05:00:05,379 - INFO - There is no data updated
+2025-02-15 05:00:05,379 - INFO - There is no data new
+2025-02-15 05:00:05,381 - INFO - Memory after execution: 74.48828125
+2025-02-15 05:00:05,381 - INFO - Memory used: 6.671875
+2025-02-15 05:00:05,381 - INFO - total time execution: 3.3130006790161133
+
+2025-02-16 05:00:01,997 - INFO - Memory before execution: 67.67578125
+2025-02-16 05:00:02,075 - INFO - success connect to DB!
+2025-02-16 05:00:03,215 - INFO - Extracted 31 rows from source HIS LIVE
+2025-02-16 05:00:03,482 - INFO - Total rows data modified: 0
+2025-02-16 05:00:03,482 - INFO - Total rows data inserted: 5
+2025-02-16 05:00:03,482 - INFO - There is no data updated
+2025-02-16 05:00:03,514 - INFO - Success inserted new data 5 rows 
+2025-02-16 05:00:03,611 - INFO - Memory after execution: 74.953125
+2025-02-16 05:00:03,611 - INFO - Memory used: 7.27734375
+2025-02-16 05:00:03,611 - INFO - total time execution: 1.6109561920166016
+
+2025-02-17 05:00:02,033 - INFO - Memory before execution: 67.8203125
+2025-02-17 05:00:02,092 - INFO - success connect to DB!
+2025-02-17 05:00:03,364 - INFO - Extracted 31 rows from source HIS LIVE
+2025-02-17 05:00:05,460 - INFO - Total rows data modified: 0
+2025-02-17 05:00:05,460 - INFO - Total rows data inserted: 0
+2025-02-17 05:00:05,460 - INFO - There is no data updated
+2025-02-17 05:00:05,460 - INFO - There is no data new
+2025-02-17 05:00:05,462 - INFO - Memory after execution: 74.578125
+2025-02-17 05:00:05,462 - INFO - Memory used: 6.7578125
+2025-02-17 05:00:05,462 - INFO - total time execution: 3.4259989261627197
+
+2025-02-18 05:00:02,002 - INFO - Memory before execution: 67.828125
+2025-02-18 05:00:02,063 - INFO - success connect to DB!
+2025-02-18 05:00:03,262 - INFO - Extracted 28 rows from source HIS LIVE
+2025-02-18 05:00:05,301 - INFO - Total rows data modified: 0
+2025-02-18 05:00:05,301 - INFO - Total rows data inserted: 0
+2025-02-18 05:00:05,301 - INFO - There is no data updated
+2025-02-18 05:00:05,301 - INFO - There is no data new
+2025-02-18 05:00:05,304 - INFO - Memory after execution: 74.5625
+2025-02-18 05:00:05,304 - INFO - Memory used: 6.734375
+2025-02-18 05:00:05,304 - INFO - total time execution: 3.2980005741119385
+
+2025-02-19 05:00:02,055 - INFO - Memory before execution: 67.8515625
+2025-02-19 05:00:02,104 - INFO - success connect to DB!
+2025-02-19 05:00:03,193 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-19 05:00:03,506 - INFO - Total rows data modified: 0
+2025-02-19 05:00:03,506 - INFO - Total rows data inserted: 0
+2025-02-19 05:00:03,506 - INFO - There is no data updated
+2025-02-19 05:00:03,506 - INFO - There is no data new
+2025-02-19 05:00:03,508 - INFO - Memory after execution: 74.5546875
+2025-02-19 05:00:03,508 - INFO - Memory used: 6.703125
+2025-02-19 05:00:03,508 - INFO - total time execution: 1.4500043392181396
+
+2025-02-20 05:00:02,006 - INFO - Memory before execution: 67.98046875
+2025-02-20 05:00:02,370 - INFO - success connect to DB!
+2025-02-20 05:00:03,648 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-20 05:00:05,635 - INFO - Total rows data modified: 0
+2025-02-20 05:00:05,635 - INFO - Total rows data inserted: 0
+2025-02-20 05:00:05,635 - INFO - There is no data updated
+2025-02-20 05:00:05,635 - INFO - There is no data new
+2025-02-20 05:00:05,637 - INFO - Memory after execution: 74.56640625
+2025-02-20 05:00:05,637 - INFO - Memory used: 6.5859375
+2025-02-20 05:00:05,637 - INFO - total time execution: 3.6280019283294678
+
+2025-02-21 05:00:01,974 - INFO - Memory before execution: 67.98046875
+2025-02-21 05:00:02,052 - INFO - success connect to DB!
+2025-02-21 05:00:03,021 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-21 05:00:03,255 - INFO - Total rows data modified: 0
+2025-02-21 05:00:03,255 - INFO - Total rows data inserted: 0
+2025-02-21 05:00:03,255 - INFO - There is no data updated
+2025-02-21 05:00:03,255 - INFO - There is no data new
+2025-02-21 05:00:03,255 - INFO - Memory after execution: 74.640625
+2025-02-21 05:00:03,255 - INFO - Memory used: 6.66015625
+2025-02-21 05:00:03,255 - INFO - total time execution: 1.2812483310699463
+
+2025-02-22 05:00:02,012 - INFO - Memory before execution: 67.96484375
+2025-02-22 05:00:02,128 - INFO - success connect to DB!
+2025-02-22 05:00:03,052 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-22 05:00:05,236 - INFO - Total rows data modified: 0
+2025-02-22 05:00:05,236 - INFO - Total rows data inserted: 0
+2025-02-22 05:00:05,236 - INFO - There is no data updated
+2025-02-22 05:00:05,236 - INFO - There is no data new
+2025-02-22 05:00:05,238 - INFO - Memory after execution: 74.5703125
+2025-02-22 05:00:05,238 - INFO - Memory used: 6.60546875
+2025-02-22 05:00:05,238 - INFO - total time execution: 3.22499680519104
+
+2025-02-23 05:00:01,975 - INFO - Memory before execution: 67.96484375
+2025-02-23 05:00:02,029 - INFO - success connect to DB!
+2025-02-23 05:00:03,420 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-23 05:00:03,705 - INFO - Total rows data modified: 0
+2025-02-23 05:00:03,705 - INFO - Total rows data inserted: 0
+2025-02-23 05:00:03,705 - INFO - There is no data updated
+2025-02-23 05:00:03,705 - INFO - There is no data new
+2025-02-23 05:00:03,707 - INFO - Memory after execution: 74.68359375
+2025-02-23 05:00:03,707 - INFO - Memory used: 6.71875
+2025-02-23 05:00:03,707 - INFO - total time execution: 1.7309935092926025
+
+2025-02-25 05:00:02,119 - INFO - Memory before execution: 67.703125
+2025-02-25 05:00:45,385 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-25 05:00:45,385 - INFO - Preparing to send email notification.
+2025-02-25 05:00:45,744 - INFO - Connecting to SMTP server.
+2025-02-25 05:00:48,416 - INFO - Email sent successfully.
+
+2025-02-26 05:00:02,167 - INFO - Memory before execution: 67.9375
+2025-02-26 05:00:02,470 - INFO - success connect to DB!
+2025-02-26 05:00:03,926 - INFO - Extracted 24 rows from source HIS LIVE
+2025-02-26 05:00:06,182 - INFO - Total rows data modified: 0
+2025-02-26 05:00:06,183 - INFO - Total rows data inserted: 0
+2025-02-26 05:00:06,183 - INFO - There is no data updated
+2025-02-26 05:00:06,183 - INFO - There is no data new
+2025-02-26 05:00:06,192 - INFO - Memory after execution: 74.51171875
+2025-02-26 05:00:06,193 - INFO - Memory used: 6.57421875
+2025-02-26 05:00:06,193 - INFO - total time execution: 4.024999618530273
+
+2025-02-27 05:00:02,180 - INFO - Memory before execution: 67.9453125
+2025-02-27 05:00:02,290 - INFO - success connect to DB!
+2025-02-27 05:00:03,430 - INFO - Extracted 29 rows from source HIS LIVE
+2025-02-27 05:00:05,883 - INFO - Total rows data modified: 0
+2025-02-27 05:00:05,883 - INFO - Total rows data inserted: 5
+2025-02-27 05:00:05,883 - INFO - There is no data updated
+2025-02-27 05:00:05,915 - INFO - Success inserted new data 5 rows 
+2025-02-27 05:00:09,165 - INFO - Memory after execution: 74.8125
+2025-02-27 05:00:09,165 - INFO - Memory used: 6.8671875
+2025-02-27 05:00:09,165 - INFO - total time execution: 6.984378337860107
+
+2025-02-28 05:00:02,285 - INFO - Memory before execution: 67.9453125
+2025-02-28 05:00:02,353 - INFO - success connect to DB!
+2025-02-28 05:00:03,794 - INFO - Extracted 29 rows from source HIS LIVE
+2025-02-28 05:00:04,974 - INFO - Total rows data modified: 0
+2025-02-28 05:00:04,974 - INFO - Total rows data inserted: 0
+2025-02-28 05:00:04,974 - INFO - There is no data updated
+2025-02-28 05:00:04,974 - INFO - There is no data new
+2025-02-28 05:00:04,988 - INFO - Memory after execution: 74.62890625
+2025-02-28 05:00:04,988 - INFO - Memory used: 6.68359375
+2025-02-28 05:00:04,988 - INFO - total time execution: 2.6990089416503906
+
+2025-03-01 05:00:02,327 - INFO - Memory before execution: 67.9296875
+2025-03-01 05:00:04,501 - INFO - success connect to DB!
+2025-03-01 05:00:05,720 - INFO - Extracted 29 rows from source HIS LIVE
+2025-03-01 05:00:12,744 - INFO - Total rows data modified: 0
+2025-03-01 05:00:12,744 - INFO - Total rows data inserted: 0
+2025-03-01 05:00:12,744 - INFO - There is no data updated
+2025-03-01 05:00:12,744 - INFO - There is no data new
+2025-03-01 05:00:12,834 - INFO - Memory after execution: 74.49609375
+2025-03-01 05:00:12,834 - INFO - Memory used: 6.56640625
+2025-03-01 05:00:12,834 - INFO - total time execution: 10.505996465682983
+
+2025-03-04 05:00:02,036 - INFO - Memory before execution: 67.984375
+2025-03-04 05:00:02,493 - INFO - success connect to DB!
+2025-03-04 05:00:03,707 - INFO - Extracted 29 rows from source HIS LIVE
+2025-03-04 05:00:04,182 - INFO - Total rows data modified: 0
+2025-03-04 05:00:04,182 - INFO - Total rows data inserted: 0
+2025-03-04 05:00:04,182 - INFO - There is no data updated
+2025-03-04 05:00:04,182 - INFO - There is no data new
+2025-03-04 05:00:04,185 - INFO - Memory after execution: 74.72265625
+2025-03-04 05:00:04,186 - INFO - Memory used: 6.73828125
+2025-03-04 05:00:04,186 - INFO - total time execution: 2.1490015983581543
+
+2025-03-05 05:00:02,036 - INFO - Memory before execution: 67.92578125
+2025-03-05 05:00:02,114 - INFO - success connect to DB!
+2025-03-05 05:00:03,317 - INFO - Extracted 29 rows from source HIS LIVE
+2025-03-05 05:00:03,708 - INFO - Total rows data modified: 0
+2025-03-05 05:00:03,708 - INFO - Total rows data inserted: 0
+2025-03-05 05:00:03,708 - INFO - There is no data updated
+2025-03-05 05:00:03,708 - INFO - There is no data new
+2025-03-05 05:00:03,724 - INFO - Memory after execution: 74.7109375
+2025-03-05 05:00:03,724 - INFO - Memory used: 6.78515625
+2025-03-05 05:00:03,724 - INFO - total time execution: 1.6874971389770508
+
+2025-03-06 05:00:02,093 - INFO - Memory before execution: 67.91015625
+2025-03-06 05:00:02,249 - INFO - success connect to DB!
+2025-03-06 05:00:03,655 - INFO - Extracted 29 rows from source HIS LIVE
+2025-03-06 05:00:04,859 - INFO - Total rows data modified: 0
+2025-03-06 05:00:04,859 - INFO - Total rows data inserted: 0
+2025-03-06 05:00:04,859 - INFO - There is no data updated
+2025-03-06 05:00:04,859 - INFO - There is no data new
+2025-03-06 05:00:04,859 - INFO - Memory after execution: 74.66015625
+2025-03-06 05:00:04,859 - INFO - Memory used: 6.75
+2025-03-06 05:00:04,859 - INFO - total time execution: 2.7656242847442627
+
+2025-03-07 05:00:02,046 - INFO - Memory before execution: 67.6171875
+2025-03-07 05:00:02,109 - INFO - success connect to DB!
+2025-03-07 05:00:03,515 - INFO - Extracted 25 rows from source HIS LIVE
+2025-03-07 05:00:04,249 - INFO - Total rows data modified: 0
+2025-03-07 05:00:04,249 - INFO - Total rows data inserted: 0
+2025-03-07 05:00:04,249 - INFO - There is no data updated
+2025-03-07 05:00:04,249 - INFO - There is no data new
+2025-03-07 05:00:04,249 - INFO - Memory after execution: 74.4453125
+2025-03-07 05:00:04,249 - INFO - Memory used: 6.828125
+2025-03-07 05:00:04,249 - INFO - total time execution: 2.2031238079071045
+
+2025-03-08 05:00:02,118 - INFO - Memory before execution: 67.66796875
+2025-03-08 05:00:02,180 - INFO - success connect to DB!
+2025-03-08 05:00:03,493 - INFO - Extracted 15 rows from source HIS LIVE
+2025-03-08 05:00:04,977 - INFO - Total rows data modified: 0
+2025-03-08 05:00:04,977 - INFO - Total rows data inserted: 0
+2025-03-08 05:00:04,977 - INFO - There is no data updated
+2025-03-08 05:00:04,977 - INFO - There is no data new
+2025-03-08 05:00:04,977 - INFO - Memory after execution: 74.1171875
+2025-03-08 05:00:04,977 - INFO - Memory used: 6.44921875
+2025-03-08 05:00:04,977 - INFO - total time execution: 2.8593742847442627
+
+2025-03-09 05:00:02,124 - INFO - Memory before execution: 68.00390625
+2025-03-09 05:00:02,171 - INFO - success connect to DB!
+2025-03-09 05:00:03,515 - INFO - Extracted 15 rows from source HIS LIVE
+2025-03-09 05:00:04,249 - INFO - Total rows data modified: 0
+2025-03-09 05:00:04,249 - INFO - Total rows data inserted: 0
+2025-03-09 05:00:04,249 - INFO - There is no data updated
+2025-03-09 05:00:04,249 - INFO - There is no data new
+2025-03-09 05:00:04,249 - INFO - Memory after execution: 74.53515625
+2025-03-09 05:00:04,249 - INFO - Memory used: 6.53125
+2025-03-09 05:00:04,249 - INFO - total time execution: 2.1250085830688477
+
+2025-03-10 05:00:02,101 - INFO - Memory before execution: 67.7109375
+2025-03-10 05:00:02,179 - INFO - success connect to DB!
+2025-03-10 05:00:03,507 - INFO - Extracted 10 rows from source HIS LIVE
+2025-03-10 05:00:05,273 - INFO - Total rows data modified: 0
+2025-03-10 05:00:05,273 - INFO - Total rows data inserted: 0
+2025-03-10 05:00:05,273 - INFO - There is no data updated
+2025-03-10 05:00:05,273 - INFO - There is no data new
+2025-03-10 05:00:05,273 - INFO - Memory after execution: 74.0703125
+2025-03-10 05:00:05,273 - INFO - Memory used: 6.359375
+2025-03-10 05:00:05,273 - INFO - total time execution: 3.1718735694885254
+

@@ -1,0 +1,48 @@
+       PrescriptionID  ...  DrugQuantity
+0      00160000520303  ...             6
+1      00160000520303  ...             6
+2      00160000520303  ...             6
+3      00160000520303  ...             6
+4      00160000520304  ...             3
+...               ...  ...           ...
+45702  00160000539695  ...             3
+45703  00160000539695  ...             9
+45704  00160000539695  ...             3
+45705  00160000539696  ...             1
+45706  00160000539696  ...             1
+
+[45707 rows x 8 columns]
+total row update : 596
+       PrescriptionID  ...  PrescriptionStatus
+3417   00160000521423  ...            dispense
+5237   00160000522010  ...            dispense
+5238   00160000522010  ...            dispense
+6122   00160000522371  ...            dispense
+6123   00160000522371  ...            dispense
+...               ...  ...                 ...
+35012  00160000535331  ...            dispense
+35013  00160000535331  ...            dispense
+35014  00160000535331  ...            dispense
+35015  00160000535331  ...            dispense
+35016  00160000535331  ...            dispense
+
+[596 rows x 18 columns]
+total row inserted : 10679
+       PrescriptionID  ...  PrescriptionStatus
+11996  00160000524753  ...            dispense
+18137  00160000527834  ...            dispense
+18188  00160000527855  ...              normal
+24021  00160000530322  ...            dispense
+24419  00160000530420  ...            dispense
+...               ...  ...                 ...
+45702  00160000539695  ...            dispense
+45703  00160000539695  ...            dispense
+45704  00160000539695  ...            dispense
+45705  00160000539696  ...            dispense
+45706  00160000539696  ...            dispense
+
+[10679 rows x 18 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.PrescriptionOrgID = t.PrescriptionOrgID, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.FrequencyCode = t.FrequencyCode, r.UnitCode = t.UnitCode, r.DispenseQuantity = t.DispenseQuantity, r.DispenseUnitCode = t.DispenseUnitCode, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.PrescriptionNotes = t.PrescriptionNotes, r.PrescriptionStatus = t.PrescriptionStatus , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientDrugPrescription r INNER JOIN (SELECT * FROM staging_rscm.TransPatientDrugPrescription_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID  WHERE r.PrescriptionID = t.PrescriptionID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+15.092260837554932
+scheduler tanggal : 2025-03-10 02:20:01.620858

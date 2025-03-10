@@ -1,0 +1,47 @@
+('2025-02-23', '2025-02-24', '2025-02-25', '2025-02-26', '2025-02-27', '2025-02-28', '2025-03-01', '2025-03-02', '2025-03-03', '2025-03-04', '2025-03-05', '2025-03-06', '2025-03-07', '2025-03-08', '2025-03-09')
+    TglTransaksi        KodeKelas  Jumlah
+0     2025-02-23              HCU       1
+1     2025-02-23       ICCU/ICVCU       1
+2     2025-02-23          ISOLASI       1
+3     2025-02-23          KELAS I       1
+4     2025-02-23         KELAS II       1
+..           ...              ...     ...
+162   2025-03-08             PICU       1
+163   2025-03-08            SUITE       1
+164   2025-03-08  TIDAK DIKETAHUI       1
+165   2025-03-08              VIP      14
+166   2025-03-08             VVIP       1
+
+[167 rows x 3 columns]
+total row update : 132
+    TglTransaksi        KodeKelas  Jumlah
+0     2025-02-23              HCU       3
+2     2025-02-23          ISOLASI       4
+3     2025-02-23          KELAS I      28
+4     2025-02-23         KELAS II       7
+5     2025-02-23        KELAS III      96
+..           ...              ...     ...
+152   2025-03-07  TIDAK DIKETAHUI       7
+153   2025-03-07              VIP      16
+154   2025-03-07             VVIP       3
+157   2025-03-08              ICU       2
+160   2025-03-08        KELAS III      90
+
+[132 rows x 3 columns]
+total row inserted : 11
+    TglTransaksi   KodeKelas  Jumlah
+166   2025-03-09         HCU       1
+167   2025-03-09  ICCU/ICVCU       1
+168   2025-03-09         ICU       1
+169   2025-03-09     ISOLASI       2
+170   2025-03-09     KELAS I      30
+171   2025-03-09    KELAS II       5
+172   2025-03-09   KELAS III      99
+173   2025-03-09        NICU       1
+174   2025-03-09        PICU       4
+175   2025-03-09   PRE SUITE       1
+176   2025-03-09         VIP       8
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS24DMJumlahPasienRawatInap r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS24DMJumlahPasienRawatInap_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+492.5056369304657
+scheduler tanggal : 2025-03-10 06:00:02.032102

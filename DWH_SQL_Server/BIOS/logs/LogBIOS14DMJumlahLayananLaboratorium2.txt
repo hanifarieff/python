@@ -1,0 +1,73 @@
+    TglTransaksi            NamaLayanan  Jumlah
+0     2025-02-28                    ANA       2
+1     2025-02-28  25-OH VITAMIN D TOTAL      10
+2     2025-02-28   ANALISA FESES KHUSUS       7
+3     2025-02-28    AGGREGASI TROMBOSIT       2
+4     2025-02-28    ANALISA CAIRAN OTAK       1
+..           ...                    ...     ...
+678   2025-03-09            UREUM DARAH       3
+679   2025-03-09             SGOT (AST)       6
+680   2025-03-09            WING NEEDLE      20
+681   2025-03-09           TRIGLISERIDA       2
+682   2025-03-09           URIN LENGKAP       1
+
+[683 rows x 3 columns]
+TglTransaksi    object
+NamaLayanan     object
+Jumlah           int64
+dtype: object
+    TglTransaksi                  NamaLayanan  Jumlah
+0     2025-02-28        25-OH VITAMIN D TOTAL      10
+1     2025-02-28                          AFP       1
+2     2025-02-28          AGGREGASI TROMBOSIT       2
+3     2025-02-28                ALBUMIN (ALB)      21
+4     2025-02-28                          ANA       2
+..           ...                          ...     ...
+646   2025-03-08                          TSH       1
+647   2025-03-08                  UREUM DARAH      25
+648   2025-03-08                 URIN LENGKAP       6
+649   2025-03-08  WADAH PENAMPUNG URIN 24 JAM       2
+650   2025-03-08                  WING NEEDLE      54
+
+[651 rows x 3 columns]
+total row update : 0
+Empty DataFrame
+Columns: [TglTransaksi, NamaLayanan, Jumlah]
+Index: []
+total row inserted : 32
+    TglTransaksi                                        NamaLayanan  Jumlah
+651   2025-03-09                                      ALBUMIN (ALB)       2
+652   2025-03-09                                AGGREGASI TROMBOSIT       2
+653   2025-03-09                                    CHOLESTEROL HDL       2
+654   2025-03-09                                  CHOLESTEROL TOTAL       2
+655   2025-03-09                                ANALISA CAIRAN OTAK       1
+656   2025-03-09                                    CLOTT ACTIVATOR      12
+657   2025-03-09                                    CHOLESTEROL LDL       2
+658   2025-03-09                                       CITRATE 3 ML      10
+659   2025-03-09                                            D-DIMER       3
+660   2025-03-09                                  CRP (KUANTITATIF)       2
+661   2025-03-09                                          EDTA 3 ML      12
+662   2025-03-09                                   GLIKO HB (HBA1C)       1
+663   2025-03-09                                               EDTA      26
+664   2025-03-09                               GLUKOSA RAPID (POCT)      18
+665   2025-03-09                       ELEKTROLIT DARAH (NA, K, CL)       6
+666   2025-03-09                                      GLUKOSA PUASA       1
+667   2025-03-09                       HEMATOLOGI LENGKAP TANPA LED       6
+668   2025-03-09                                    GLUKOSA SEWAKTU       1
+669   2025-03-09                                          JARUM AGD       2
+670   2025-03-09                                   LAJU ENDAP DARAH       5
+671   2025-03-09                                   HEMATOLOGI RUTIN       2
+672   2025-03-09                   PROTEIN KWANTITATIF URIN SEWAKTU       2
+673   2025-03-09                                    KREATININ DARAH       4
+674   2025-03-09  PAKET HEMATOLOGI ONKOLOGI (HEMA LENGKAP TANPA ...       6
+675   2025-03-09                                           PT + INR       5
+676   2025-03-09                                      PROTEIN TOTAL       1
+677   2025-03-09                                         SGPT (ALT)       6
+678   2025-03-09                                        UREUM DARAH       3
+679   2025-03-09                                         SGOT (AST)       6
+680   2025-03-09                                        WING NEEDLE      20
+681   2025-03-09                                       TRIGLISERIDA       2
+682   2025-03-09                                       URIN LENGKAP       1
+success insert all data without update
+167.68749237060547
+scheduler tanggal : 2025-03-10 07:07:01.821145

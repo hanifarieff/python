@@ -1,0 +1,23 @@
+scheduler tanggal : 2025-03-10 03:00:02.300646
+ini source dari live
+  ExtractDate CreatedDate  TotalPatientMPI
+0  2025-03-10  2025-03-09              778
+  ExtractDate  TotalPatientDWH
+0  2025-03-10              778
+  ExtractDate CreatedDate  TotalPatientMPI  TotalPatientDWH
+0  2025-03-10  2025-03-09              778              778
+No mismatch detected.
+ini target
+Empty DataFrame
+Columns: [ExtractDate, CreatedDate, TotalPatientMPI, TotalPatientDWH]
+Index: []
+total row update : 0
+Empty DataFrame
+Columns: [ExtractDate, CreatedDate, TotalPatientMPI, TotalPatientDWH]
+Index: []
+total row inserted : 1
+  ExtractDate CreatedDate  TotalPatientMPI  TotalPatientDWH
+0  2025-03-10  2025-03-09              778              778
+success insert all data without update
+15.484393835067749
+scheduler tanggal : 2025-03-10 03:00:02.300646

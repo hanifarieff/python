@@ -1,0 +1,468 @@
+2025-02-13 14:53:45,311 - INFO - Memory before execution: 67.53515625
+2025-02-13 14:53:45,374 - INFO - Success connect to DB!
+2025-02-14 04:00:02,093 - INFO - Memory before execution: 67.53125
+2025-02-14 04:00:02,139 - INFO - Success connect to DB!
+2025-02-14 04:02:03,363 - INFO - Extracted 10086 rows from source EHR
+2025-02-14 04:02:13,967 - INFO - Total rows data modified: 5415
+2025-02-14 04:02:13,967 - INFO - Total rows data inserted: 4671
+2025-02-14 04:02:16,950 - INFO - success updated data 5415 rows
+2025-02-14 04:02:18,248 - INFO - Success inserted new data 4671 rows 
+2025-02-14 04:02:18,648 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-14 04:02:18,650 - INFO - Memory after execution: 90.22265625
+2025-02-14 04:02:18,650 - INFO - Memory used: 22.69140625
+2025-02-14 04:02:18,650 - INFO - total time execution: 136.5569977760315
+
+2025-02-15 04:00:03,302 - INFO - Memory before execution: 67.37109375
+2025-02-15 04:00:03,490 - INFO - Success connect to DB!
+2025-02-15 04:01:50,934 - INFO - Extracted 10264 rows from source EHR
+2025-02-15 04:01:58,889 - INFO - Total rows data modified: 5483
+2025-02-15 04:01:58,889 - INFO - Total rows data inserted: 4781
+2025-02-15 04:02:00,740 - INFO - success updated data 5483 rows
+2025-02-15 04:02:01,894 - INFO - Success inserted new data 4781 rows 
+2025-02-15 04:02:02,030 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-15 04:02:02,031 - INFO - Memory after execution: 90.5390625
+2025-02-15 04:02:02,031 - INFO - Memory used: 23.16796875
+2025-02-15 04:02:02,031 - INFO - total time execution: 118.7250018119812
+
+2025-02-16 04:00:02,115 - INFO - Memory before execution: 67.5
+2025-02-16 04:00:02,195 - INFO - Success connect to DB!
+2025-02-16 04:02:13,211 - INFO - Extracted 9007 rows from source EHR
+2025-02-16 04:02:17,751 - INFO - Total rows data modified: 5827
+2025-02-16 04:02:17,751 - INFO - Total rows data inserted: 3180
+2025-02-16 04:02:19,493 - INFO - success updated data 5827 rows
+2025-02-16 04:02:19,942 - INFO - Success inserted new data 3180 rows 
+2025-02-16 04:02:19,951 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-16 04:02:19,952 - INFO - Memory after execution: 87.78125
+2025-02-16 04:02:19,952 - INFO - Memory used: 20.28125
+2025-02-16 04:02:19,952 - INFO - total time execution: 137.8330054283142
+
+2025-02-17 04:00:02,119 - INFO - Memory before execution: 67.4140625
+2025-02-17 04:00:02,176 - INFO - Success connect to DB!
+2025-02-17 04:02:04,889 - INFO - Extracted 5673 rows from source EHR
+2025-02-17 04:02:10,574 - INFO - Total rows data modified: 3910
+2025-02-17 04:02:10,574 - INFO - Total rows data inserted: 1763
+2025-02-17 04:02:14,233 - INFO - success updated data 3910 rows
+2025-02-17 04:02:14,946 - INFO - Success inserted new data 1763 rows 
+2025-02-17 04:02:14,961 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-17 04:02:14,962 - INFO - Memory after execution: 81.59375
+2025-02-17 04:02:14,962 - INFO - Memory used: 14.1796875
+2025-02-17 04:02:14,962 - INFO - total time execution: 132.8390007019043
+
+2025-02-18 04:00:02,773 - INFO - Memory before execution: 67.4375
+2025-02-18 04:00:02,920 - INFO - Success connect to DB!
+2025-02-18 04:01:42,395 - INFO - Extracted 7126 rows from source EHR
+2025-02-18 04:01:50,546 - INFO - Total rows data modified: 2342
+2025-02-18 04:01:50,546 - INFO - Total rows data inserted: 4784
+2025-02-18 04:01:52,480 - INFO - success updated data 2342 rows
+2025-02-18 04:01:54,947 - INFO - Success inserted new data 4784 rows 
+2025-02-18 04:01:55,284 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-18 04:01:55,286 - INFO - Memory after execution: 89.25
+2025-02-18 04:01:55,286 - INFO - Memory used: 21.8125
+2025-02-18 04:01:55,286 - INFO - total time execution: 112.51199555397034
+
+2025-02-19 04:00:02,088 - INFO - Memory before execution: 67.4296875
+2025-02-19 04:00:02,138 - INFO - Success connect to DB!
+2025-02-19 04:01:59,195 - INFO - Extracted 10300 rows from source EHR
+2025-02-19 04:02:05,668 - INFO - Total rows data modified: 5632
+2025-02-19 04:02:05,668 - INFO - Total rows data inserted: 4668
+2025-02-19 04:02:07,409 - INFO - success updated data 5632 rows
+2025-02-19 04:02:08,859 - INFO - Success inserted new data 4668 rows 
+2025-02-19 04:02:09,030 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-19 04:02:09,032 - INFO - Memory after execution: 91.6015625
+2025-02-19 04:02:09,032 - INFO - Memory used: 24.171875
+2025-02-19 04:02:09,032 - INFO - total time execution: 126.93999981880188
+
+2025-02-20 04:00:02,099 - INFO - Memory before execution: 67.5546875
+2025-02-20 04:00:02,185 - INFO - Success connect to DB!
+2025-02-20 04:01:59,443 - INFO - Extracted 10016 rows from source EHR
+2025-02-20 04:02:04,703 - INFO - Total rows data modified: 5605
+2025-02-20 04:02:04,703 - INFO - Total rows data inserted: 4411
+2025-02-20 04:02:06,152 - INFO - success updated data 5605 rows
+2025-02-20 04:02:06,748 - INFO - Success inserted new data 4411 rows 
+2025-02-20 04:02:06,772 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-20 04:02:06,773 - INFO - Memory after execution: 90.51953125
+2025-02-20 04:02:06,773 - INFO - Memory used: 22.96484375
+2025-02-20 04:02:06,773 - INFO - total time execution: 124.67300152778625
+
+2025-02-21 04:00:02,067 - INFO - Memory before execution: 67.50390625
+2025-02-21 04:00:02,130 - INFO - Success connect to DB!
+2025-02-21 04:02:01,505 - INFO - Extracted 10427 rows from source EHR
+2025-02-21 04:02:10,614 - INFO - Total rows data modified: 5595
+2025-02-21 04:02:10,614 - INFO - Total rows data inserted: 4832
+2025-02-21 04:02:12,051 - INFO - success updated data 5595 rows
+2025-02-21 04:02:13,442 - INFO - Success inserted new data 4832 rows 
+2025-02-21 04:02:13,520 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-21 04:02:13,520 - INFO - Memory after execution: 92.4765625
+2025-02-21 04:02:13,520 - INFO - Memory used: 24.97265625
+2025-02-21 04:02:13,520 - INFO - total time execution: 131.43748927116394
+
+2025-02-22 04:00:02,092 - INFO - Memory before execution: 67.65625
+2025-02-22 04:00:02,153 - INFO - Success connect to DB!
+2025-02-22 04:02:02,671 - INFO - Extracted 10851 rows from source EHR
+2025-02-22 04:02:07,443 - INFO - Total rows data modified: 6216
+2025-02-22 04:02:07,443 - INFO - Total rows data inserted: 4635
+2025-02-22 04:02:08,543 - INFO - success updated data 6216 rows
+2025-02-22 04:02:08,937 - INFO - Success inserted new data 4635 rows 
+2025-02-22 04:02:08,944 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-22 04:02:08,945 - INFO - Memory after execution: 90.9375
+2025-02-22 04:02:08,945 - INFO - Memory used: 23.28125
+2025-02-22 04:02:08,945 - INFO - total time execution: 126.85099697113037
+
+2025-02-23 04:00:02,129 - INFO - Memory before execution: 67.5546875
+2025-02-23 04:00:02,203 - INFO - Success connect to DB!
+2025-02-23 04:02:07,579 - INFO - Extracted 8281 rows from source EHR
+2025-02-23 04:02:13,984 - INFO - Total rows data modified: 5480
+2025-02-23 04:02:13,984 - INFO - Total rows data inserted: 2801
+2025-02-23 04:02:14,654 - INFO - success updated data 5480 rows
+2025-02-23 04:02:14,939 - INFO - Success inserted new data 2801 rows 
+2025-02-23 04:02:14,944 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-23 04:02:14,945 - INFO - Memory after execution: 86.5234375
+2025-02-23 04:02:14,945 - INFO - Memory used: 18.96875
+2025-02-23 04:02:14,945 - INFO - total time execution: 132.80799913406372
+
+2025-02-24 04:00:02,139 - INFO - Memory before execution: 67.546875
+2025-02-24 04:00:02,191 - INFO - Success connect to DB!
+2025-02-24 04:02:16,576 - INFO - Extracted 4928 rows from source EHR
+2025-02-24 04:02:18,457 - INFO - Total rows data modified: 3263
+2025-02-24 04:02:18,457 - INFO - Total rows data inserted: 1665
+2025-02-24 04:02:19,560 - INFO - success updated data 3263 rows
+2025-02-24 04:02:19,929 - INFO - Success inserted new data 1665 rows 
+2025-02-24 04:02:19,934 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-24 04:02:19,935 - INFO - Memory after execution: 80.2734375
+2025-02-24 04:02:19,935 - INFO - Memory used: 12.7265625
+2025-02-24 04:02:19,935 - INFO - total time execution: 137.79200172424316
+
+2025-02-25 04:00:02,088 - INFO - Memory before execution: 67.62890625
+2025-02-25 04:00:45,385 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-25 04:00:45,385 - INFO - Preparing to send email notification.
+2025-02-25 04:00:46,994 - INFO - Connecting to SMTP server.
+2025-02-25 04:00:49,853 - INFO - Email sent successfully.
+2025-02-25 14:21:14,871 - INFO - Memory before execution: 67.56640625
+2025-02-25 14:21:14,933 - INFO - Success connect to DB!
+2025-02-25 14:26:41,159 - INFO - Extracted 6991 rows from source EHR
+2025-02-25 14:26:44,467 - INFO - Total rows data modified: 2208
+2025-02-25 14:26:44,467 - INFO - Total rows data inserted: 4783
+2025-02-25 14:26:45,442 - INFO - success updated data 2208 rows
+2025-02-25 14:26:46,291 - INFO - Success inserted new data 4783 rows 
+2025-02-25 14:26:46,308 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-25 14:26:46,310 - INFO - Memory after execution: 90.0234375
+2025-02-25 14:26:46,310 - INFO - Memory used: 22.45703125
+2025-02-25 14:26:46,310 - INFO - total time execution: 331.43799924850464
+
+2025-02-26 04:00:02,168 - INFO - Memory before execution: 67.54296875
+2025-02-26 04:00:02,331 - INFO - Success connect to DB!
+2025-02-26 04:02:00,891 - INFO - Extracted 10221 rows from source EHR
+2025-02-26 04:02:16,401 - INFO - Total rows data modified: 5536
+2025-02-26 04:02:16,401 - INFO - Total rows data inserted: 4685
+2025-02-26 04:02:18,089 - INFO - success updated data 5536 rows
+2025-02-26 04:02:19,086 - INFO - Success inserted new data 4685 rows 
+2025-02-26 04:02:19,094 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-26 04:02:19,095 - INFO - Memory after execution: 95.421875
+2025-02-26 04:02:19,095 - INFO - Memory used: 27.87890625
+2025-02-26 04:02:19,095 - INFO - total time execution: 136.9259979724884
+
+2025-02-27 04:00:02,186 - INFO - Memory before execution: 67.48046875
+2025-02-27 04:00:02,546 - INFO - Success connect to DB!
+2025-02-27 04:01:56,617 - INFO - Extracted 10373 rows from source EHR
+2025-02-27 04:02:20,554 - INFO - Total rows data modified: 5696
+2025-02-27 04:02:20,554 - INFO - Total rows data inserted: 4677
+2025-02-27 04:02:35,570 - INFO - success updated data 5696 rows
+2025-02-27 04:02:38,867 - INFO - Success inserted new data 4677 rows 
+2025-02-27 04:02:38,960 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-27 04:02:38,960 - INFO - Memory after execution: 95.1796875
+2025-02-27 04:02:38,960 - INFO - Memory used: 27.69921875
+2025-02-27 04:02:38,960 - INFO - total time execution: 156.77408647537231
+
+2025-02-28 04:00:02,223 - INFO - Memory before execution: 67.546875
+2025-02-28 04:00:02,284 - INFO - Success connect to DB!
+2025-02-28 04:01:59,148 - INFO - Extracted 10412 rows from source EHR
+2025-02-28 04:02:27,256 - INFO - Total rows data modified: 5794
+2025-02-28 04:02:27,256 - INFO - Total rows data inserted: 4618
+2025-02-28 04:02:39,212 - INFO - success updated data 5794 rows
+2025-02-28 04:02:43,840 - INFO - Success inserted new data 4618 rows 
+2025-02-28 04:02:44,580 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-28 04:02:44,582 - INFO - Memory after execution: 92.29296875
+2025-02-28 04:02:44,582 - INFO - Memory used: 24.74609375
+2025-02-28 04:02:44,582 - INFO - total time execution: 162.35699939727783
+
+2025-03-01 04:00:21,934 - INFO - Memory before execution: 67.40625
+2025-03-01 04:00:23,425 - INFO - Success connect to DB!
+2025-03-01 04:02:16,879 - INFO - Extracted 10643 rows from source EHR
+2025-03-01 04:02:50,615 - INFO - Total rows data modified: 5756
+2025-03-01 04:02:50,615 - INFO - Total rows data inserted: 4887
+2025-03-01 04:02:59,072 - INFO - success updated data 5756 rows
+2025-03-01 04:03:02,774 - INFO - Success inserted new data 4887 rows 
+2025-03-01 04:03:02,952 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-01 04:03:02,969 - INFO - Memory after execution: 90.0234375
+2025-03-01 04:03:02,969 - INFO - Memory used: 22.6171875
+2025-03-01 04:03:02,969 - INFO - total time execution: 161.00700211524963
+
+2025-03-04 04:00:02,074 - INFO - Memory before execution: 67.578125
+2025-03-04 04:00:02,312 - INFO - Success connect to DB!
+2025-03-04 04:01:40,419 - INFO - Extracted 6936 rows from source EHR
+2025-03-04 04:01:44,851 - INFO - Total rows data modified: 479
+2025-03-04 04:01:44,852 - INFO - Total rows data inserted: 6457
+2025-03-04 04:01:45,711 - INFO - success updated data 479 rows
+2025-03-04 04:01:46,690 - INFO - Success inserted new data 6457 rows 
+2025-03-04 04:01:46,701 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-04 04:01:46,703 - INFO - Memory after execution: 88.3671875
+2025-03-04 04:01:46,703 - INFO - Memory used: 20.7890625
+2025-03-04 04:01:46,703 - INFO - total time execution: 104.625
+
+2025-03-05 04:00:01,971 - INFO - Memory before execution: 67.57421875
+2025-03-05 04:00:02,034 - INFO - Success connect to DB!
+2025-03-05 04:01:57,144 - INFO - Extracted 10052 rows from source EHR
+2025-03-05 04:02:19,300 - INFO - Total rows data modified: 5363
+2025-03-05 04:02:19,300 - INFO - Total rows data inserted: 4689
+2025-03-05 04:02:33,082 - INFO - success updated data 5363 rows
+2025-03-05 04:02:36,269 - INFO - Success inserted new data 4689 rows 
+2025-03-05 04:02:39,425 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-05 04:02:39,425 - INFO - Memory after execution: 87.7578125
+2025-03-05 04:02:39,425 - INFO - Memory used: 20.18359375
+2025-03-05 04:02:39,425 - INFO - total time execution: 157.45435166358948
+
+2025-03-06 04:00:02,007 - INFO - Memory before execution: 67.578125
+2025-03-06 04:00:02,398 - INFO - Success connect to DB!
+2025-03-06 04:02:23,857 - INFO - Extracted 10350 rows from source EHR
+2025-03-06 04:02:31,441 - INFO - Total rows data modified: 5605
+2025-03-06 04:02:31,441 - INFO - Total rows data inserted: 4745
+2025-03-06 04:02:34,738 - INFO - success updated data 5605 rows
+2025-03-06 04:02:35,519 - INFO - Success inserted new data 4745 rows 
+2025-03-06 04:02:35,535 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-06 04:02:35,535 - INFO - Memory after execution: 88.42578125
+2025-03-06 04:02:35,535 - INFO - Memory used: 20.84765625
+2025-03-06 04:02:35,535 - INFO - total time execution: 153.52808737754822
+
+2025-03-07 04:00:01,976 - INFO - Memory before execution: 67.53125
+2025-03-07 04:00:02,023 - INFO - Success connect to DB!
+2025-03-07 04:01:22,039 - INFO - Extracted 10723 rows from source EHR
+2025-03-07 04:01:30,039 - INFO - Total rows data modified: 5898
+2025-03-07 04:01:30,039 - INFO - Total rows data inserted: 4825
+2025-03-07 04:01:31,679 - INFO - success updated data 5898 rows
+2025-03-07 04:01:32,586 - INFO - Success inserted new data 4825 rows 
+2025-03-07 04:01:32,601 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-07 04:01:32,601 - INFO - Memory after execution: 96.21875
+2025-03-07 04:01:32,601 - INFO - Memory used: 28.6875
+2025-03-07 04:01:32,601 - INFO - total time execution: 90.62499856948853
+
+2025-03-08 04:00:02,008 - INFO - Memory before execution: 67.45703125
+2025-03-08 04:00:02,102 - INFO - Success connect to DB!
+2025-03-08 04:01:38,071 - INFO - Extracted 10538 rows from source EHR
+2025-03-08 04:01:45,149 - INFO - Total rows data modified: 5705
+2025-03-08 04:01:45,149 - INFO - Total rows data inserted: 4833
+2025-03-08 04:01:45,914 - INFO - success updated data 5705 rows
+2025-03-08 04:01:46,321 - INFO - Success inserted new data 4833 rows 
+2025-03-08 04:01:46,321 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-08 04:01:46,321 - INFO - Memory after execution: 96.16015625
+2025-03-08 04:01:46,321 - INFO - Memory used: 28.703125
+2025-03-08 04:01:46,321 - INFO - total time execution: 104.31249475479126
+
+2025-03-09 04:00:01,989 - INFO - Memory before execution: 67.671875
+2025-03-09 04:00:02,255 - INFO - Success connect to DB!
+2025-03-09 04:01:20,708 - INFO - Extracted 9240 rows from source EHR
+2025-03-09 04:01:25,255 - INFO - Total rows data modified: 5709
+2025-03-09 04:01:25,255 - INFO - Total rows data inserted: 3531
+2025-03-09 04:01:26,036 - INFO - success updated data 5709 rows
+2025-03-09 04:01:26,505 - INFO - Success inserted new data 3531 rows 
+2025-03-09 04:01:26,520 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-09 04:01:26,520 - INFO - Memory after execution: 93.42578125
+2025-03-09 04:01:26,520 - INFO - Memory used: 25.75390625
+2025-03-09 04:01:26,520 - INFO - total time execution: 84.53124618530273
+
+2025-03-10 04:00:02,027 - INFO - Memory before execution: 67.55078125
+2025-03-10 04:00:02,074 - INFO - Success connect to DB!
+2025-03-10 04:01:39,047 - INFO - Extracted 5655 rows from source EHR
+2025-03-10 04:01:41,812 - INFO - Total rows data modified: 3926
+2025-03-10 04:01:41,812 - INFO - Total rows data inserted: 1729
+2025-03-10 04:01:42,547 - INFO - success updated data 3926 rows
+2025-03-10 04:01:42,719 - INFO - Success inserted new data 1729 rows 
+2025-03-10 04:01:42,719 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-10 04:01:42,719 - INFO - Memory after execution: 87.1796875
+2025-03-10 04:01:42,719 - INFO - Memory used: 19.62890625
+2025-03-10 04:01:42,719 - INFO - total time execution: 100.69207859039307
+

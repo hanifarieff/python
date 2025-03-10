@@ -1,0 +1,21 @@
+('2025-02-28', '2025-03-01', '2025-03-02', '2025-03-03', '2025-03-04', '2025-03-05', '2025-03-06', '2025-03-07', '2025-03-08', '2025-03-09')
+  TglTransaksi  Jumlah
+0   2025-02-28    1387
+1   2025-03-01     295
+2   2025-03-02     341
+3   2025-03-03    1669
+4   2025-03-04    1548
+5   2025-03-05    1673
+6   2025-03-06      29
+7   2025-03-07    1501
+8   2025-03-08     450
+total row update : 1
+  TglTransaksi  Jumlah
+8   2025-03-08     452
+total row inserted : 1
+  TglTransaksi  Jumlah
+9   2025-03-09     393
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS15DMJumlahLayananRadiologi r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS15DMJumlahLayananRadiologi_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+117.34374642372131
+scheduler tanggal : 2025-03-10 07:08:01.961767

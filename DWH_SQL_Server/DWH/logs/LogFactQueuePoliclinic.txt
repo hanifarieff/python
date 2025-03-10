@@ -1,0 +1,39 @@
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              5044056              0  ...           0            NaT
+1              5043827              0  ...           0            NaT
+2              5043836              0  ...           0            NaT
+3              5043830              0  ...           0            NaT
+4              5043834              0  ...           0            NaT
+..                 ...            ...  ...         ...            ...
+639            5044018       15465624  ...           0            NaT
+640            5043831       15450655  ...           0            NaT
+641            5044163       15462934  ...           0            NaT
+642            5044053       15470170  ...           0            NaT
+643            5044005       15455797  ...           0            NaT
+
+[644 rows x 35 columns]
+total row update : 2
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+88             5044228              0  ...           0            NaT
+194            5043941       15461345  ...           0            NaT
+
+[2 rows x 35 columns]
+total row inserted : 149
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+7              5044356              0  ...           0            NaT
+9              5044320              0  ...           0            NaT
+11             5044282              0  ...           0            NaT
+15             5044314              0  ...           0            NaT
+16             5044347              0  ...           0            NaT
+..                 ...            ...  ...         ...            ...
+549            5044321              0  ...           0            NaT
+552            5044286              0  ...           0            NaT
+558            5044332              0  ...           0            NaT
+559            5044334              0  ...           0            NaT
+582            5044378              0  ...           0            NaT
+
+[149 rows x 35 columns]
+UPDATE r SET r.PatientSurrogateKeyID = t.PatientSurrogateKeyID, r.Method = t.Method, r.QueueNum = t.QueueNum, r.QueueDate = t.QueueDate, r.DestOrgSurrogateKeyID = t.DestOrgSurrogateKeyID, r.ParentOrgID = t.ParentOrgID, r.StatusCode = t.StatusCode, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.CallDate = t.CallDate, r.CallBy = t.CallBy, r.CallTotal = t.CallTotal, r.NurseStartDate = t.NurseStartDate, r.NurseStopDate = t.NurseStopDate, r.NurseIDStart = t.NurseIDStart, r.NurseIDStop = t.NurseIDStop, r.DocIDStart = t.DocIDStart, r.DocIDStop = t.DocIDStop, r.StatusCodeAnalis = t.StatusCodeAnalis, r.CallTotalAnalis = t.CallTotalAnalis, r.CallDateAnalis = t.CallDateAnalis, r.AnalisID = t.AnalisID, r.AnalisIDStart = t.AnalisIDStart, r.AnalisIDStop = t.AnalisIDStop, r.AnalisStartDate = t.AnalisStartDate, r.AnalisStopDate = t.AnalisStopDate, r.UpdateDate = t.UpdateDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactQueuePoliclinic r INNER JOIN (SELECT * FROM dwhrscm_talend.FactQueuePoliclinic_temporary_table) as t ON r.QueuePoliclinicID = t.QueuePoliclinicID AND r.AppointmentID = t.AppointmentID AND r.ActID = t.ActID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.DestOrgID = t.DestOrgID WHERE r.QueuePoliclinicID = t.QueuePoliclinicID AND r.AppointmentID = t.AppointmentID AND r.ActID = t.ActID AND r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.DestOrgID = t.DestOrgID ;
+DROP TABLE dwhrscm_talend.FactQueuePoliclinic_temporary_table
+success update and insert all data
+7.968749284744263

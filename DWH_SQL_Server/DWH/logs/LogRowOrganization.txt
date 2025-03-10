@@ -1,0 +1,23 @@
+scheduler tanggal : 2025-03-10 01:30:02.034159
+ini source dari live
+  ExtractDate  TotalRowOrgLive
+0  2025-03-10             2795
+  ExtractDate  TotalRowOrgDWH
+0  2025-03-10            2795
+  ExtractDate  TotalRowOrgLive  TotalRowOrgDWH
+0  2025-03-10             2795            2795
+No mismatch detected.
+ini target
+Empty DataFrame
+Columns: [ExtractDate, TotalRowOrgLive, TotalRowOrgDWH]
+Index: []
+total row update : 0
+Empty DataFrame
+Columns: [ExtractDate, TotalRowOrgLive, TotalRowOrgDWH]
+Index: []
+total row inserted : 1
+  ExtractDate  TotalRowOrgLive  TotalRowOrgDWH
+0  2025-03-10             2795            2795
+success insert all data without update
+0.250002384185791
+scheduler tanggal : 2025-03-10 01:30:02.034159

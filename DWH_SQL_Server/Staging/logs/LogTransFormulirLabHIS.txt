@@ -1,0 +1,63 @@
+       PatientID  AdmissionID  FormNumber  ...  CreatedBy StatusCode     OrderLab
+0          36386           11      350430  ...       9095   approved  82503051001
+1          36386           11      350430  ...       9095   approved  82503051001
+2          36386           11      350440  ...       9095   approved  82503051009
+3          36386           11      350440  ...       9095   approved  82503051009
+4          36386           11      350440  ...       9095   approved  82503051009
+...          ...          ...         ...  ...        ...        ...          ...
+14312    2291401            1      354818  ...       1300   approved  92503090716
+14313    2291401            1      354818  ...       1300   approved  92503090716
+14314    2291402            1      354819  ...       1300   approved  92503090717
+14315    2291402            1      354819  ...       1300   approved  92503090717
+14316    2291402            1      354819  ...       1300   approved  92503090717
+
+[14317 rows x 11 columns]
+ini changes
+       PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+35         36386           11      354080  ...     2          765854     None
+36         36386           11      354080  ...     2          765855   1988-5
+37         36386           11      354080  ...     2          765856  33959-8
+38         36386           11      354080  ...     2          765857  17861-6
+39         36386           11      354080  ...     2          765858  47596-2
+...          ...          ...         ...  ...   ...             ...      ...
+14312    2291401            1      354818  ...     2          768120     None
+14313    2291401            1      354818  ...     2          768121   3016-3
+14314    2291402            1      354819  ...     2          768122     None
+14315    2291402            1      354819  ...     2          768123     None
+14316    2291402            1      354819  ...     2          768124   3016-3
+
+[2438 rows x 39 columns]
+
+
+total row update except new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, ApprovalOrg, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row update new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, ApprovalOrg, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row inserted : 2438
+       PatientID  AdmissionID  FormNumber  ...  Flag FormLabDetailID  LoincID
+35         36386           11      354080  ...     2          765854     None
+36         36386           11      354080  ...     2          765855   1988-5
+37         36386           11      354080  ...     2          765856  33959-8
+38         36386           11      354080  ...     2          765857  17861-6
+39         36386           11      354080  ...     2          765858  47596-2
+...          ...          ...         ...  ...   ...             ...      ...
+14312    2291401            1      354818  ...     2          768120     None
+14313    2291401            1      354818  ...     2          768121   3016-3
+14314    2291402            1      354819  ...     2          768122     None
+14315    2291402            1      354819  ...     2          768123     None
+14316    2291402            1      354819  ...     2          768124   3016-3
+
+[2438 rows x 39 columns]
+
+
+success insert all data without update
+73.48437452316284
+scheduler tanggal : 2025-03-10 01:03:02.564964

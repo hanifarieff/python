@@ -1,0 +1,147 @@
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
+0                 5922506     372891  ...           0 2024-09-18 12:02:24
+1                 5514102     372891  ...           0 2024-04-04 11:10:20
+2                 5921889    1343394  ...           0 2024-09-18 00:05:49
+3                 4600207    1343394  ...           0 2024-04-01 13:13:50
+4                 5923250    2000787  ...           0 2024-09-19 00:06:12
+...                   ...        ...  ...         ...                 ...
+2124              5922922    2143361  ...           0 2024-09-18 12:02:39
+2125              5922593    2143032  ...           0 2024-09-18 12:02:39
+2126              5923154    2143593  ...           0 2024-09-18 12:02:39
+2127              5923387    2143736  ...           0 2024-09-19 00:06:40
+2128              5923287    2143636  ...           0 2024-09-19 00:06:40
+
+[2129 rows x 48 columns]
+PatientSurrogateKey              int64
+PatientID                        int64
+PersonID                         int64
+Confidentiality                 object
+PatientStatus                   object
+MigrationID                     object
+MedicalNo                       object
+PatientName                     object
+BirthDate                       object
+PlaceOfBirth                    object
+ReligionName                    object
+BloodType                       object
+Gender                          object
+Occupation                      object
+Education                       object
+MaritalStatus                   object
+Nationality                     object
+PatientCreatedDate              object
+PatientDeceasedDate             object
+PatientUpdatedDate      datetime64[ns]
+NIK                             object
+TelephoneNo                     object
+PhoneNo                         object
+BPJSNo                          object
+Email                           object
+Address                         object
+District                        object
+County                          object
+City                            object
+Province                        object
+PostalCode                      object
+PatientNullifiedDate    datetime64[ns]
+PersonStatusCode                object
+PatientStatusCode               object
+PersonTitle                     object
+FamilyName                      object
+ExternalID                      object
+PassportNo                      object
+FatherName                      object
+MotherName                      object
+SpouseName                      object
+Race                            object
+ScdActive                        int64
+ScdStart                datetime64[ns]
+ScdEnd                  datetime64[ns]
+EmployeeID                       int64
+IsEmployee                       int64
+InsertedDateDWH         datetime64[ns]
+dtype: object
+PatientSurrogateKey              int64
+PatientID                        int64
+PersonID                         int64
+Confidentiality                 object
+PatientStatus                   object
+MigrationID                     object
+MedicalNo                       object
+PatientName                     object
+BirthDate               datetime64[ns]
+PlaceOfBirth                    object
+ReligionName                    object
+BloodType                       object
+Gender                          object
+Occupation                      object
+Education                       object
+MaritalStatus                   object
+Nationality                     object
+PatientCreatedDate      datetime64[ns]
+PatientDeceasedDate             object
+PatientUpdatedDate      datetime64[ns]
+NIK                             object
+TelephoneNo                     object
+PhoneNo                         object
+BPJSNo                          object
+Address                         object
+District                        object
+County                          object
+City                            object
+Province                        object
+PostalCode                      object
+PatientNullifiedDate            object
+PersonStatusCode                object
+PatientStatusCode               object
+PersonTitle                     object
+FamilyName                      object
+ExternalID                      object
+PassportNo                      object
+FatherName                      object
+MotherName                      object
+SpouseName                      object
+Race                            object
+ScdActive                        int64
+ScdStart                datetime64[ns]
+ScdEnd                  datetime64[ns]
+EmployeeID                       int64
+IsEmployee                       int64
+InsertedDateDWH         datetime64[ns]
+dtype: object
+ini modified
+      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
+0                 5922506     372891  ...           0 2024-09-18 12:02:24
+1                 5514102     372891  ...           0 2024-04-04 11:10:20
+2                 5921889    1343394  ...           0 2024-09-18 00:05:49
+3                 4600207    1343394  ...           0 2024-04-01 13:13:50
+5                 5750689    2000787  ...           0 2024-04-18 00:05:58
+...                   ...        ...  ...         ...                 ...
+2121              5922430    2142866  ...           0 2024-09-18 12:02:24
+2123              5922326    2142866  ...           0 2024-09-18 00:06:03
+2124              5922922    2143361  ...           0 2024-09-18 12:02:39
+2125              5922593    2143032  ...           0 2024-09-18 12:02:39
+2126              5923154    2143593  ...           0 2024-09-18 12:02:39
+
+[1555 rows x 48 columns]
+ini insert
+      PatientSurrogateKey  PatientID  ...  IsEmployee     InsertedDateDWH
+4                 5923250    2000787  ...           0 2024-09-19 00:06:12
+11                5923243    2091140  ...           0 2024-09-19 00:06:12
+15                5923207    2121685  ...           0 2024-09-19 00:06:12
+21                5923233    2133215  ...           0 2024-09-19 00:06:12
+26                5923201    2138706  ...           0 2024-09-19 00:06:12
+...                   ...        ...  ...         ...                 ...
+2118              5923619    2143968  ...           0 2024-09-19 00:06:40
+2119              5923410    2143759  ...           0 2024-09-19 00:06:40
+2122              5923310    2143659  ...           0 2024-09-19 00:06:40
+2127              5923387    2143736  ...           0 2024-09-19 00:06:40
+2128              5923287    2143636  ...           0 2024-09-19 00:06:40
+
+[574 rows x 48 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.PersonID = t.PersonID, r.Confidentiality = t.Confidentiality, r.PatientStatus = t.PatientStatus, r.MigrationID = t.MigrationID, r.MedicalNo = t.MedicalNo, r.PatientName = t.PatientName, r.BirthDate = t.BirthDate, r.PlaceOfBirth = t.PlaceOfBirth, r.ReligionName = t.ReligionName, r.BloodType = t.BloodType, r.Gender = t.Gender, r.Occupation = t.Occupation, r.Education = t.Education, r.MaritalStatus = t.MaritalStatus, r.Nationality = t.Nationality, r.PatientCreatedDate = t.PatientCreatedDate, r.PatientDeceasedDate = t.PatientDeceasedDate, r.PatientUpdatedDate = t.PatientUpdatedDate, r.NIK = t.NIK, r.TelephoneNo = t.TelephoneNo, r.PhoneNo = t.PhoneNo, r.BPJSNo = t.BPJSNo, r.Email = t.Email, r.Address = t.Address, r.District = t.District, r.County = t.County, r.City = t.City, r.Province = t.Province, r.PostalCode = t.PostalCode, r.PatientNullifiedDate = t.PatientNullifiedDate, r.PersonStatusCode = t.PersonStatusCode, r.PatientStatusCode = t.PatientStatusCode, r.PersonTitle = t.PersonTitle, r.FamilyName = t.FamilyName, r.ExternalID = t.ExternalID, r.PassportNo = t.PassportNo, r.FatherName = t.FatherName, r.MotherName = t.MotherName, r.SpouseName = t.SpouseName, r.Race = t.Race, r.ScdActive = t.ScdActive, r.ScdStart = t.ScdStart, r.ScdEnd = t.ScdEnd, r.EmployeeID = t.EmployeeID, r.IsEmployee = t.IsEmployee, r.InsertedDateDWH = t.InsertedDateDWH FROM dwhrscm_talend.DimPatientMPINew r INNER JOIN (SELECT * FROM dwhrscm_talend.DimPatientMPINew_temporary_table) as t ON r.PatientSurrogateKey = t.PatientSurrogateKey WHERE r.PatientSurrogateKey = t.PatientSurrogateKey ;
+success update and insert all data
+28.895997762680054
+scheduler tanggal : 2024-09-19 00:12:01.350441

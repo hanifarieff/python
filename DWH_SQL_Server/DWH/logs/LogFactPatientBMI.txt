@@ -1,0 +1,36 @@
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+0      165295887     996421  ...        Overweight          normal
+1      165316245     654399  ...        Overweight          normal
+2      165334650    1592940  ...            Normal          normal
+3      165306055    1950852  ...            Normal          normal
+4      165298987    1057553  ...            Normal          normal
+...          ...        ...  ...               ...             ...
+4304   165324598    2289317  ...  Obesitas grade 1          normal
+4305   165345186    2289403  ...             Kurus          normal
+4306   165351120     536313  ...        Overweight          normal
+4307   165367428     536313  ...        Overweight          normal
+4308   165355048    2290646  ...  Obesitas grade 1          normal
+
+[4309 rows x 9 columns]
+total row update : 0
+Empty DataFrame
+Columns: [OrderObsID, PatientID, AdmissionID, ObservationDate, PanelName, BMI, BMIStatus, BMIDetail, BMIDetailStatus]
+Index: []
+total row inserted : 240
+      OrderObsID  PatientID  ...         BMIDetail BMIDetailStatus
+37     165369163    2229515  ...             Kurus          normal
+84     165358446    2271526  ...  Obesitas grade 1          normal
+102    165372699     727970  ...             Kurus          normal
+156    165367139    2217870  ...  Obesitas grade 2          normal
+196    165365570    2275806  ...  Obesitas grade 1          normal
+...          ...        ...  ...               ...             ...
+4275   165367284    2289406  ...            Normal          normal
+4276   165369371    2266274  ...  Obesitas grade 1          normal
+4294   165366471    2128266  ...            Normal          normal
+4307   165367428     536313  ...        Overweight          normal
+4308   165355048    2290646  ...  Obesitas grade 1          normal
+
+[240 rows x 9 columns]
+success insert without update
+5.343755483627319
+scheduler tanggal : 2025-03-10 03:40:01.936049

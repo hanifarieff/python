@@ -1,0 +1,44 @@
+      BillingTransactID  ...             Status
+0               1135612  ...   Sudah Dibayarkan
+1               1138050  ...   Sudah Dibayarkan
+2               1146990  ...   Sudah Ditagihkan
+3               1147573  ...   Sudah Ditagihkan
+4               1147677  ...   Sudah Ditagihkan
+...                 ...  ...                ...
+2800            1153263  ...  Belum ada invoice
+2801            1153265  ...  Belum ada invoice
+2802            1153266  ...  Belum ada invoice
+2803            1153268  ...  Belum ada invoice
+2804            1153269  ...  Belum ada invoice
+
+[2805 rows x 7 columns]
+BillingTransactID             int64
+CompanyName                  object
+PatientName                  object
+MedicalNo                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+Status                       object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [BillingTransactID, CompanyName, PatientName, MedicalNo, AdmissionDate, TransactionDate, Status]
+Index: []
+total row inserted : 1164
+      BillingTransactID  ...             Status
+1641            1151779  ...  Belum ada invoice
+1642            1151780  ...  Belum ada invoice
+1643            1151781  ...  Belum ada invoice
+1644            1151782  ...  Belum ada invoice
+1645            1151783  ...  Belum ada invoice
+...                 ...  ...                ...
+2800            1153263  ...  Belum ada invoice
+2801            1153265  ...  Belum ada invoice
+2802            1153266  ...  Belum ada invoice
+2803            1153268  ...  Belum ada invoice
+2804            1153269  ...  Belum ada invoice
+
+[1164 rows x 7 columns]
+success insert without update
+2.1718719005584717
+scheduler tanggal : 2025-03-10 04:40:02.018467

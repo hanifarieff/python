@@ -1,0 +1,113 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+    PatientID  AdmissionID  FormNumber RegistrationNo  ... PayplanID TissueSource  DiagnosticHistory PADiagnose
+0      855619            6       43460      M24-00133  ...         8         None                  -          -
+1     1018783           12       43511      M24-00135  ...         8         None      SERVIKS LICIN          -
+2     1045933           87       44550      M24-00141  ...         8         None                  -          -
+3     1503687           26       43281      M24-00131  ...         8         None                  -          -
+4     1503687           26       43281      M24-00131  ...         8         None                  -          -
+5     1561507            3       43350      M24-00132  ...         8         None                  -          -
+6     1573313           13       44449      M24-00140  ...         8         None         GIN TENANG          -
+7     1584949           33       44132      M24-00139  ...         8         None  GINEKOLOGI TENANG          -
+8     1620036           18       43124      M24-00130  ...         8         None                  -          -
+9     1896893           99       43549      M24-00136  ...         8         None                  -          -
+10    2168755            1       43235      LM24-0009  ...         8         None                  -          -
+11    2170232            1       43476      M24-00134  ...        17         None          SCREENING          -
+12    2172750            1       43766      M24-00137  ...         8         None                  -          -
+13    2173023            2       43796      M24-00138  ...         8         None                  -          -
+14    2178369            1       44280      LM24-0010  ...         8         None                  -          -
+
+[15 rows x 22 columns]
+    PatientID  AdmissionID     TransactionDate       BillingID BillingTransactID
+0      855619            6 2024-10-18 16:12:43         1062678            991864
+1     1018783           12 2024-10-18 18:55:52         1062994            991983
+2     1045933           87 2024-10-31 11:36:32         1076366           1005626
+3     1503687           26 2024-10-17 13:46:34         1061410            990344
+4     1503687           26 2024-10-17 14:04:26         1061410            990397
+5     1561507            3 2024-10-17 18:12:43         1061789            990800
+6     1573313           13 2024-10-30 12:32:13         1075082           1004137
+7     1584949           33                 NaT             NaN               NaN
+8     1620036           18 2024-10-16 11:27:52         1013607            988692
+9     1896893           99 2024-10-21 11:18:52         1060426            993696
+10    2168755            1 2024-10-17 10:26:43  00210001502423    00210000049800
+11    2170232            1 2024-10-18 17:03:46         1063005            991903
+12    2172750            1 2024-10-23 09:30:38         1066932            995926
+13    2173023            2 2024-10-23 11:42:59         1066768            996270
+14    2178369            1 2024-10-29 10:51:21  00210001568215    00210000051801
+data source setelah join ke billing yang dari EHR
+fix source data types
+PatientID                     int64
+AdmissionID                   int64
+FormNumber                    int64
+RegistrationNo               object
+FormStatus                   object
+Type                         object
+ObjID                        object
+ObjName                      object
+DoctorID                      int64
+DoctorName                   object
+Hospital                     object
+FormCreatedDate      datetime64[ns]
+OrgID                         int64
+ParentOrgID                   int64
+BillingTransactID            object
+BillingID                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+PayplanID                    object
+TissueSource                 object
+DiagnosticHistory            object
+PADiagnose                   object
+dtype: object
+PatientID            object
+AdmissionID          object
+FormNumber           object
+RegistrationNo       object
+FormStatus           object
+Type                 object
+ObjID                object
+ObjName              object
+DoctorID             object
+DoctorName           object
+Hospital             object
+FormCreatedDate      object
+OrgID                object
+ParentOrgID          object
+BillingTransactID    object
+BillingID            object
+AdmissionDate        object
+TransactionDate      object
+PayplanID            object
+TissueSource         object
+DiagnosticHistory    object
+PADiagnose           object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, RegistrationNo, FormStatus, Type, ObjID, ObjName, DoctorID, DoctorName, Hospital, FormCreatedDate, OrgID, ParentOrgID, BillingTransactID, BillingID, AdmissionDate, TransactionDate, PayplanID, TissueSource, DiagnosticHistory, PADiagnose]
+Index: []
+total row inserted : 15
+    PatientID  AdmissionID  FormNumber RegistrationNo  ... PayplanID TissueSource  DiagnosticHistory PADiagnose
+0      855619            6       43460      M24-00133  ...         8         None                  -          -
+1     1018783           12       43511      M24-00135  ...         8         None      SERVIKS LICIN          -
+2     1045933           87       44550      M24-00141  ...         8         None                  -          -
+3     1503687           26       43281      M24-00131  ...         8         None                  -          -
+4     1503687           26       43281      M24-00131  ...         8         None                  -          -
+5     1561507            3       43350      M24-00132  ...         8         None                  -          -
+6     1573313           13       44449      M24-00140  ...         8         None         GIN TENANG          -
+7     1584949           33       44132      M24-00139  ...         8         None  GINEKOLOGI TENANG          -
+8     1620036           18       43124      M24-00130  ...         8         None                  -          -
+9     1896893           99       43549      M24-00136  ...         8         None                  -          -
+10    2168755            1       43235      LM24-0009  ...         8         None                  -          -
+11    2170232            1       43476      M24-00134  ...        17         None          SCREENING          -
+12    2172750            1       43766      M24-00137  ...         8         None                  -          -
+13    2173023            2       43796      M24-00138  ...         8         None                  -          -
+14    2178369            1       44280      LM24-0010  ...         8         None                  -          -
+
+[15 rows x 22 columns]
+success insert without update
+3.6491758823394775
+
+
+scheduler tanggal : 2024-11-28 13:30:55.630245

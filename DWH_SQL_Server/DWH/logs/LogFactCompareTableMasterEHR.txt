@@ -1,0 +1,45 @@
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  11339487
+   ID              TableName  RowTotal
+0   2  xocp_ehr_patient_stay   2109583
+   ID  TableName  RowTotal
+0   3  xocp_orgs      2795
+   ID             TableName  RowTotal
+0   4  xocp_ehr_patient_act   5532663
+   ID         TableName  RowTotal
+0   5  xocp_ehr_patient   1729331
+   ID         TableName  RowTotal
+0   6  xocp_ehr_payplan        81
+   ID         TableName  RowTotal
+0   7  xocp_ehr_company       322
+   ID               TableName  RowTotal
+0   8  xocp_ehr_patient_order  68691056
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  11339487
+1   2       xocp_ehr_patient_stay   2109583
+2   3                   xocp_orgs      2795
+3   4        xocp_ehr_patient_act   5532663
+4   5            xocp_ehr_patient   1729331
+5   6            xocp_ehr_payplan        81
+6   7            xocp_ehr_company       322
+7   8      xocp_ehr_patient_order  68691056
+total row update master : 5
+   ID                   TableName  RowTotal
+0   1  xocp_ehr_patient_admission  11339487
+1   2       xocp_ehr_patient_stay   2109583
+3   4        xocp_ehr_patient_act   5532663
+4   5            xocp_ehr_patient   1729331
+7   8      xocp_ehr_patient_order  68691056
+
+
+total row insert master : 0
+Empty DataFrame
+Columns: [ID, TableName, RowTotal]
+Index: []
+UPDATE r SET r.TableName = t.TableName, r.RowTotal = t.RowTotal , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactRowNumberMaster r INNER JOIN (SELECT * FROM dwhrscm_talend.FactRowNumberMaster_temporary_table) as t ON r.ID = t.ID  WHERE r.ID = t.ID ;
+success update and insert all data master
+
+CPU usage: 1.8 %
+67.61328125
+112.20312857627869
+scheduler tanggal : 2025-03-09 23:00:02.132259

@@ -1,0 +1,54 @@
+      BillingTransactID  ...             Status
+0               1136837  ...   Sudah Dibayarkan
+1               1136895  ...   Sudah Dibayarkan
+2               1136910  ...   Sudah Ditagihkan
+3               1136627  ...   Sudah Ditagihkan
+4               1137337  ...   Sudah Ditagihkan
+...                 ...  ...                ...
+9491            1153263  ...  Belum ada invoice
+9492            1153265  ...  Belum ada invoice
+9493            1153266  ...  Belum ada invoice
+9494            1153268  ...  Belum ada invoice
+9495            1153269  ...  Belum ada invoice
+
+[9496 rows x 6 columns]
+BillingTransactID             int64
+CompanyName                  object
+PatientName                  object
+MedicalNo                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+Status                       object
+dtype: object
+BillingTransactID             int64
+CompanyName                  object
+PatientName                  object
+MedicalNo                    object
+AdmissionDate        datetime64[ns]
+TransactionDate      datetime64[ns]
+Status                       object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [BillingTransactID, CompanyName, PatientName, MedicalNo, AdmissionDate, TransactionDate, Status]
+Index: []
+total row inserted : 1164
+      BillingTransactID  ...             Status
+8332            1151779  ...  Belum ada invoice
+8333            1151780  ...  Belum ada invoice
+8334            1151781  ...  Belum ada invoice
+8335            1151782  ...  Belum ada invoice
+8336            1151783  ...  Belum ada invoice
+...                 ...  ...                ...
+9491            1153263  ...  Belum ada invoice
+9492            1153265  ...  Belum ada invoice
+9493            1153266  ...  Belum ada invoice
+9494            1153268  ...  Belum ada invoice
+9495            1153269  ...  Belum ada invoice
+
+[1164 rows x 7 columns]
+success insert without update
+227.58573579788208
+
+
+scheduler tanggal : 2025-03-10 04:30:01.791272

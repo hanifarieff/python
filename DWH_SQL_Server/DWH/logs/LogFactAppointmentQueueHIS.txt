@@ -1,0 +1,39 @@
+Empty DataFrame
+Columns: [AppointmentID, KodeBooking, AdmissionDate, PatientID, AdmissionID, MedicalNo, PatientType, CardNo, SEPNo, ReferenceNo, NIK, PhoneNo, PoliCode, PoliName, NewPatient, DoctorCode, DoctorName, AppointmentDate, AppointmentTime, DoctorPracticeStartTime, DoctorPracticeFinishTime, VisitType, AppointmentMethod, QueueNumber, QueueNo, ServedEstimated, RestQuotaJKN, QuotaJKN, RestQuotaNonJKN, QuotaNonJKN, Notes, Flag]
+Index: []
+AppointmentID               object
+KodeBooking                 object
+AdmissionDate               object
+PatientID                   object
+AdmissionID                 object
+MedicalNo                   object
+PatientType                 object
+CardNo                      object
+SEPNo                       object
+ReferenceNo                 object
+NIK                         object
+PhoneNo                     object
+PoliCode                    object
+PoliName                    object
+NewPatient                  object
+DoctorCode                  object
+DoctorName                  object
+AppointmentDate             object
+AppointmentTime             object
+DoctorPracticeStartTime     object
+DoctorPracticeFinishTime    object
+VisitType                   object
+AppointmentMethod           object
+QueueNumber                 object
+QueueNo                     object
+ServedEstimated             object
+RestQuotaJKN                object
+QuotaJKN                    object
+RestQuotaNonJKN             object
+QuotaNonJKN                 object
+Notes                       object
+Flag                        object
+dtype: object
+tidak ada data dari source
+0.3437521457672119
+scheduler tanggal : 2025-03-09 20:20:01.860554

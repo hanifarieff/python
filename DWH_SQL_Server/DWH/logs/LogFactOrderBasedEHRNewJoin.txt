@@ -1,0 +1,160 @@
+Memory before: 66.7109375 MB
+          OrderID  PatientID  AdmissionID           OrderDate  ... Type BillingPaid TarifClass AnesthesiaCode
+0  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+1  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+2  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+
+[3 rows x 24 columns]
+          OrderID  PatientID  AdmissionID           OrderDate  ... Type BillingPaid TarifClass AnesthesiaCode
+0  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+1  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+2  00210007706311    2179832            9 2024-12-10 12:03:09  ...    P           1          -              -
+
+[3 rows x 24 columns]
+          OrderID  PatientID  AdmissionID           OrderDate  ... BillingPaid TarifClass AnesthesiaCode CategoryName
+0  00210007706311    2179832            9 2024-12-10 12:03:09  ...           1          -              -     tindakan
+1  00210007706311    2179832            9 2024-12-10 12:03:09  ...           1          -              -     tindakan
+2  00210007706311    2179832            9 2024-12-10 12:03:09  ...           1          -              -     tindakan
+
+[3 rows x 25 columns]
+          OrderID  PatientID  AdmissionID  EmployeeID  ... ObjectGroupingName OrgID TarifClass AnesthesiaCode
+0  00210007706311    2179832            9        1212  ...     Prosedur Bedah  2020          -              -
+1  00210007706311    2179832            9        1704  ...     Prosedur Bedah  2020          -              -
+2  00210007706311    2179832            9        1212  ...     Prosedur Bedah  2020          -              -
+
+[3 rows x 37 columns]
+Source Data:
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                      float64
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                 float64
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                       float64
+MonthValue                    object
+YearValue                     object
+Tarif                         object
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                    float64
+PayplanName                  float64
+CategoryName                  object
+PayplanKemkes                float64
+Type                          object
+Status                        object
+BillingPaid                   object
+ObjectGroupingName            object
+OrgID                         object
+TarifClass                    object
+AnesthesiaCode                object
+dtype: object
+ini target
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+ObjectGroupingName            object
+OrgID                         object
+TarifClass                    object
+AnesthesiaCode                object
+dtype: object
+Target Data:
+          OrderID  PatientID  AdmissionID  EmployeeID  ... ObjectGroupingName OrgID TarifClass AnesthesiaCode
+0  00210007706311    2179832            9        1212  ...     Prosedur Bedah  None       None           None
+1  00210007706311    2179832            9        1704  ...     Prosedur Bedah  None       None           None
+2  00210007706311    2179832            9        1212  ...     Prosedur Bedah  None       None           None
+
+[3 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+ObjectGroupingName            object
+OrgID                         object
+TarifClass                    object
+AnesthesiaCode                object
+dtype: object
+Changes Detected:
+Modified Data:
+          OrderID  PatientID  AdmissionID  EmployeeID  ... ObjectGroupingName OrgID TarifClass AnesthesiaCode
+0  00210007706311    2179832            9        1212  ...     Prosedur Bedah  2020          -              -
+1  00210007706311    2179832            9        1704  ...     Prosedur Bedah  2020          -              -
+2  00210007706311    2179832            9        1212  ...     Prosedur Bedah  2020          -              -
+
+[3 rows x 37 columns]
+Inserted Data:
+Empty DataFrame
+Columns: [OrderID, EmployeeID, OrgName, CategoryName, ObjectGroupingName]
+Index: []

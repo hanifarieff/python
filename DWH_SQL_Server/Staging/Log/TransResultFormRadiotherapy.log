@@ -1,0 +1,302 @@
+ 2025-02-14 04:30:01,750 - INFO - Memory before execution: 67.78515625
+2025-02-14 04:30:15,333 - INFO - Extracted 715 rows from source HIS LIVE
+2025-02-14 04:30:15,343 - INFO - Success create column SatuSehatCancerResult!
+2025-02-14 04:30:16,207 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-14 04:30:16,221 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-14 04:30:21,812 - INFO - Total rows data modified: 0
+2025-02-14 04:30:21,813 - INFO - Total rows data inserted: 59
+2025-02-14 04:30:21,813 - INFO - There is no data updated
+2025-02-14 04:30:21,846 - INFO - Success inserted new data 59 rows 
+2025-02-14 04:30:21,864 - INFO - Memory after execution: 85.01171875
+2025-02-14 04:30:21,864 - INFO - Memory used: 17.2265625
+2025-02-14 04:30:21,864 - INFO - total time execution: 20.111998558044434
+
+2025-02-15 04:30:01,716 - INFO - Memory before execution: 67.9296875
+2025-02-15 04:30:20,112 - INFO - Extracted 774 rows from source HIS LIVE
+2025-02-15 04:30:20,121 - INFO - Success create column SatuSehatCancerResult!
+2025-02-15 04:30:21,067 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-15 04:30:21,083 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-15 04:30:31,371 - INFO - Total rows data modified: 1
+2025-02-15 04:30:31,372 - INFO - Total rows data inserted: 103
+2025-02-15 04:30:31,669 - INFO - success updated data 1 rows
+2025-02-15 04:30:32,214 - INFO - Success inserted new data 103 rows 
+2025-02-15 04:30:32,230 - INFO - Memory after execution: 85.84375
+2025-02-15 04:30:32,230 - INFO - Memory used: 17.9140625
+2025-02-15 04:30:32,230 - INFO - total time execution: 30.513000965118408
+
+2025-02-16 04:30:01,676 - INFO - Memory before execution: 67.90625
+2025-02-16 04:30:16,619 - INFO - Extracted 774 rows from source HIS LIVE
+2025-02-16 04:30:16,628 - INFO - Success create column SatuSehatCancerResult!
+2025-02-16 04:30:17,516 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-16 04:30:17,532 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-16 04:30:24,097 - INFO - Total rows data modified: 0
+2025-02-16 04:30:24,098 - INFO - Total rows data inserted: 0
+2025-02-16 04:30:24,098 - INFO - There is no data updated
+2025-02-16 04:30:24,098 - INFO - There is no data new 
+2025-02-16 04:30:24,100 - INFO - Memory after execution: 85.87109375
+2025-02-16 04:30:24,100 - INFO - Memory used: 17.96484375
+2025-02-16 04:30:24,100 - INFO - total time execution: 22.421996355056763
+
+2025-02-17 04:30:01,743 - INFO - Memory before execution: 67.890625
+2025-02-17 04:30:18,966 - INFO - Extracted 774 rows from source HIS LIVE
+2025-02-17 04:30:18,975 - INFO - Success create column SatuSehatCancerResult!
+2025-02-17 04:30:19,921 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-17 04:30:19,936 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-17 04:30:27,790 - INFO - Total rows data modified: 0
+2025-02-17 04:30:27,790 - INFO - Total rows data inserted: 0
+2025-02-17 04:30:27,790 - INFO - There is no data updated
+2025-02-17 04:30:27,790 - INFO - There is no data new 
+2025-02-17 04:30:27,793 - INFO - Memory after execution: 85.8203125
+2025-02-17 04:30:27,793 - INFO - Memory used: 17.9296875
+2025-02-17 04:30:27,793 - INFO - total time execution: 26.047998428344727
+
+2025-02-18 04:30:01,700 - INFO - Memory before execution: 67.953125
+2025-02-18 04:30:16,133 - INFO - Extracted 902 rows from source HIS LIVE
+2025-02-18 04:30:16,143 - INFO - Success create column SatuSehatCancerResult!
+2025-02-18 04:30:17,205 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-18 04:30:17,227 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-18 04:30:30,012 - INFO - Total rows data modified: 1
+2025-02-18 04:30:30,012 - INFO - Total rows data inserted: 176
+2025-02-18 04:30:30,142 - INFO - success updated data 1 rows
+2025-02-18 04:30:30,228 - INFO - Success inserted new data 176 rows 
+2025-02-18 04:30:30,232 - INFO - Memory after execution: 86.9453125
+2025-02-18 04:30:30,232 - INFO - Memory used: 18.9921875
+2025-02-18 04:30:30,232 - INFO - total time execution: 28.53199791908264
+
+2025-02-19 04:30:01,800 - INFO - Memory before execution: 67.9375
+2025-02-19 04:30:18,902 - INFO - Extracted 954 rows from source HIS LIVE
+2025-02-19 04:30:18,916 - INFO - Success create column SatuSehatCancerResult!
+2025-02-19 04:30:20,103 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-19 04:30:20,133 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-19 04:30:28,737 - INFO - Total rows data modified: 0
+2025-02-19 04:30:28,737 - INFO - Total rows data inserted: 68
+2025-02-19 04:30:28,737 - INFO - There is no data updated
+2025-02-19 04:30:28,842 - INFO - Success inserted new data 68 rows 
+2025-02-19 04:30:28,845 - INFO - Memory after execution: 87.4296875
+2025-02-19 04:30:28,845 - INFO - Memory used: 19.4921875
+2025-02-19 04:30:28,845 - INFO - total time execution: 27.040998220443726
+
+2025-02-20 04:30:01,705 - INFO - Memory before execution: 68.015625
+2025-02-20 04:30:20,479 - INFO - Extracted 978 rows from source HIS LIVE
+2025-02-20 04:30:20,490 - INFO - Success create column SatuSehatCancerResult!
+2025-02-20 04:30:21,607 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-20 04:30:21,628 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-20 04:30:43,194 - INFO - Total rows data modified: 1
+2025-02-20 04:30:43,195 - INFO - Total rows data inserted: 115
+2025-02-20 04:30:43,542 - INFO - success updated data 1 rows
+2025-02-20 04:30:43,899 - INFO - Success inserted new data 115 rows 
+2025-02-20 04:30:43,975 - INFO - Memory after execution: 87.16015625
+2025-02-20 04:30:43,975 - INFO - Memory used: 19.14453125
+2025-02-20 04:30:43,975 - INFO - total time execution: 42.26799941062927
+
+2025-02-21 04:30:01,676 - INFO - Memory before execution: 68.0234375
+2025-02-21 04:30:14,426 - INFO - Extracted 933 rows from source HIS LIVE
+2025-02-21 04:30:14,442 - INFO - Success create column SatuSehatCancerResult!
+2025-02-21 04:30:15,567 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-21 04:30:15,582 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-21 04:30:24,926 - INFO - Total rows data modified: 0
+2025-02-21 04:30:24,926 - INFO - Total rows data inserted: 130
+2025-02-21 04:30:24,926 - INFO - There is no data updated
+2025-02-21 04:30:25,004 - INFO - Success inserted new data 130 rows 
+2025-02-21 04:30:25,020 - INFO - Memory after execution: 87.35546875
+2025-02-21 04:30:25,020 - INFO - Memory used: 19.33203125
+2025-02-21 04:30:25,020 - INFO - total time execution: 23.34375262260437
+
+2025-02-22 04:30:01,813 - INFO - Memory before execution: 68.1015625
+2025-02-22 04:30:17,100 - INFO - Extracted 995 rows from source HIS LIVE
+2025-02-22 04:30:17,113 - INFO - Success create column SatuSehatCancerResult!
+2025-02-22 04:30:18,277 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-22 04:30:18,297 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-22 04:30:32,887 - INFO - Total rows data modified: 0
+2025-02-22 04:30:32,888 - INFO - Total rows data inserted: 77
+2025-02-22 04:30:32,888 - INFO - There is no data updated
+2025-02-22 04:30:33,013 - INFO - Success inserted new data 77 rows 
+2025-02-22 04:30:33,024 - INFO - Memory after execution: 87.390625
+2025-02-22 04:30:33,024 - INFO - Memory used: 19.2890625
+2025-02-22 04:30:33,024 - INFO - total time execution: 31.208000659942627
+
+2025-02-23 04:30:01,706 - INFO - Memory before execution: 68.07421875
+2025-02-23 04:30:19,122 - INFO - Extracted 995 rows from source HIS LIVE
+2025-02-23 04:30:19,132 - INFO - Success create column SatuSehatCancerResult!
+2025-02-23 04:30:20,304 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-23 04:30:20,323 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-23 04:30:26,478 - INFO - Total rows data modified: 0
+2025-02-23 04:30:26,478 - INFO - Total rows data inserted: 0
+2025-02-23 04:30:26,478 - INFO - There is no data updated
+2025-02-23 04:30:26,478 - INFO - There is no data new 
+2025-02-23 04:30:26,480 - INFO - Memory after execution: 87.35546875
+2025-02-23 04:30:26,480 - INFO - Memory used: 19.28125
+2025-02-23 04:30:26,480 - INFO - total time execution: 24.769983530044556
+
+2025-02-24 04:30:01,711 - INFO - Memory before execution: 68.09765625
+2025-02-24 04:30:15,043 - INFO - Extracted 918 rows from source HIS LIVE
+2025-02-24 04:30:15,053 - INFO - Success create column SatuSehatCancerResult!
+2025-02-24 04:30:16,128 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-24 04:30:16,145 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-24 04:30:30,100 - INFO - Total rows data modified: 0
+2025-02-24 04:30:30,100 - INFO - Total rows data inserted: 0
+2025-02-24 04:30:30,100 - INFO - There is no data updated
+2025-02-24 04:30:30,100 - INFO - There is no data new 
+2025-02-24 04:30:30,102 - INFO - Memory after execution: 87.1171875
+2025-02-24 04:30:30,102 - INFO - Memory used: 19.01953125
+2025-02-24 04:30:30,102 - INFO - total time execution: 28.38700032234192
+
+2025-02-25 04:30:01,744 - INFO - Memory before execution: 67.62890625
+2025-02-25 04:30:45,307 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-25 04:30:45,307 - INFO - Preparing to send email notification.
+2025-02-25 04:30:45,682 - INFO - Connecting to SMTP server.
+2025-02-25 04:30:48,291 - INFO - Email sent successfully.
+
+2025-02-26 04:30:01,744 - INFO - Memory before execution: 68.09375
+2025-02-26 04:30:16,848 - INFO - Extracted 972 rows from source HIS LIVE
+2025-02-26 04:30:16,859 - INFO - Success create column SatuSehatCancerResult!
+2025-02-26 04:30:18,011 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-26 04:30:18,029 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-26 04:30:25,720 - INFO - Total rows data modified: 0
+2025-02-26 04:30:25,720 - INFO - Total rows data inserted: 201
+2025-02-26 04:30:25,720 - INFO - There is no data updated
+2025-02-26 04:30:25,955 - INFO - Success inserted new data 201 rows 
+2025-02-26 04:30:25,968 - INFO - Memory after execution: 88.48828125
+2025-02-26 04:30:25,968 - INFO - Memory used: 20.39453125
+2025-02-26 04:30:25,968 - INFO - total time execution: 24.220001935958862
+
+2025-02-27 04:30:01,751 - INFO - Memory before execution: 68.0078125
+2025-02-27 04:30:19,173 - INFO - Extracted 923 rows from source HIS LIVE
+2025-02-27 04:30:19,189 - INFO - Success create column SatuSehatCancerResult!
+2025-02-27 04:30:20,361 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-27 04:30:20,376 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-27 04:30:25,704 - INFO - Total rows data modified: 0
+2025-02-27 04:30:25,704 - INFO - Total rows data inserted: 45
+2025-02-27 04:30:25,704 - INFO - There is no data updated
+2025-02-27 04:30:25,923 - INFO - Success inserted new data 45 rows 
+2025-02-27 04:30:25,939 - INFO - Memory after execution: 87.27734375
+2025-02-27 04:30:25,939 - INFO - Memory used: 19.26953125
+2025-02-27 04:30:25,939 - INFO - total time execution: 24.17186999320984
+
+2025-02-28 04:30:01,838 - INFO - Memory before execution: 68.02734375
+2025-02-28 04:30:16,882 - INFO - Extracted 971 rows from source HIS LIVE
+2025-02-28 04:30:16,896 - INFO - Success create column SatuSehatCancerResult!
+2025-02-28 04:30:18,081 - INFO - Success transform column Result untuk ObjID : 69763
+2025-02-28 04:30:18,101 - INFO - Success transform column Result untuk ObjID : 69764
+2025-02-28 04:30:33,264 - INFO - Total rows data modified: 0
+2025-02-28 04:30:33,264 - INFO - Total rows data inserted: 101
+2025-02-28 04:30:33,264 - INFO - There is no data updated
+2025-02-28 04:30:33,566 - INFO - Success inserted new data 101 rows 
+2025-02-28 04:30:33,581 - INFO - Memory after execution: 87.66796875
+2025-02-28 04:30:33,581 - INFO - Memory used: 19.640625
+2025-02-28 04:30:33,581 - INFO - total time execution: 31.739998817443848
+
+2025-03-01 04:30:01,772 - INFO - Memory before execution: 68.0
+2025-03-01 04:30:22,468 - INFO - Extracted 1029 rows from source HIS LIVE
+2025-03-01 04:30:22,478 - INFO - Success create column SatuSehatCancerResult!
+2025-03-01 04:30:23,738 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-01 04:30:23,760 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-01 04:34:25,971 - INFO - Total rows data modified: 0
+2025-03-01 04:34:25,971 - INFO - Total rows data inserted: 70
+2025-03-01 04:34:25,972 - INFO - There is no data updated
+2025-03-01 04:34:27,705 - INFO - Success inserted new data 70 rows 
+2025-03-01 04:34:27,887 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2013, 'Lost connection to server during query')
+2025-03-01 04:34:27,888 - INFO - Memory after execution: 45.92578125
+2025-03-01 04:34:27,888 - INFO - Memory used: -22.07421875
+2025-03-01 04:34:27,888 - INFO - total time execution: 266.1130030155182
+
+2025-03-04 04:30:02,577 - INFO - Memory before execution: 68.0
+2025-03-04 04:30:18,561 - INFO - Extracted 979 rows from source HIS LIVE
+2025-03-04 04:30:18,572 - INFO - Success create column SatuSehatCancerResult!
+2025-03-04 04:30:19,738 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-04 04:30:19,757 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-04 04:30:30,478 - INFO - Total rows data modified: 0
+2025-03-04 04:30:30,478 - INFO - Total rows data inserted: 61
+2025-03-04 04:30:30,478 - INFO - There is no data updated
+2025-03-04 04:30:30,559 - INFO - Success inserted new data 61 rows 
+2025-03-04 04:30:30,612 - INFO - Memory after execution: 87.77734375
+2025-03-04 04:30:30,612 - INFO - Memory used: 19.77734375
+2025-03-04 04:30:30,612 - INFO - total time execution: 28.0309956073761
+
+2025-03-05 04:30:02,555 - INFO - Memory before execution: 68.0078125
+2025-03-05 04:30:19,695 - INFO - Extracted 924 rows from source HIS LIVE
+2025-03-05 04:30:19,695 - INFO - Success create column SatuSehatCancerResult!
+2025-03-05 04:30:20,727 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-05 04:30:20,758 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-05 04:30:29,211 - INFO - Total rows data modified: 0
+2025-03-05 04:30:29,211 - INFO - Total rows data inserted: 22
+2025-03-05 04:30:29,211 - INFO - There is no data updated
+2025-03-05 04:30:29,242 - INFO - Success inserted new data 22 rows 
+2025-03-05 04:30:29,305 - INFO - Memory after execution: 86.99609375
+2025-03-05 04:30:29,305 - INFO - Memory used: 18.98828125
+2025-03-05 04:30:29,305 - INFO - total time execution: 26.749993324279785
+
+2025-03-06 04:30:02,583 - INFO - Memory before execution: 67.97265625
+2025-03-06 04:30:20,692 - INFO - Extracted 967 rows from source HIS LIVE
+2025-03-06 04:30:20,708 - INFO - Success create column SatuSehatCancerResult!
+2025-03-06 04:30:21,817 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-06 04:30:21,833 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-06 04:30:41,489 - INFO - Total rows data modified: 0
+2025-03-06 04:30:41,489 - INFO - Total rows data inserted: 109
+2025-03-06 04:30:41,489 - INFO - There is no data updated
+2025-03-06 04:30:41,614 - INFO - Success inserted new data 109 rows 
+2025-03-06 04:30:41,614 - INFO - Memory after execution: 87.75
+2025-03-06 04:30:41,614 - INFO - Memory used: 19.77734375
+2025-03-06 04:30:41,614 - INFO - total time execution: 39.031243562698364
+
+2025-03-07 04:30:02,596 - INFO - Memory before execution: 68.046875
+2025-03-07 04:30:20,565 - INFO - Extracted 944 rows from source HIS LIVE
+2025-03-07 04:30:20,565 - INFO - Success create column SatuSehatCancerResult!
+2025-03-07 04:30:21,674 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-07 04:30:21,705 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-07 04:30:26,674 - INFO - Total rows data modified: 0
+2025-03-07 04:30:26,674 - INFO - Total rows data inserted: 50
+2025-03-07 04:30:26,674 - INFO - There is no data updated
+2025-03-07 04:30:26,721 - INFO - Success inserted new data 50 rows 
+2025-03-07 04:30:26,721 - INFO - Memory after execution: 87.08203125
+2025-03-07 04:30:26,721 - INFO - Memory used: 19.03515625
+2025-03-07 04:30:26,721 - INFO - total time execution: 24.12500023841858
+
+2025-03-08 04:30:02,553 - INFO - Memory before execution: 67.96875
+2025-03-08 04:30:21,147 - INFO - Extracted 957 rows from source HIS LIVE
+2025-03-08 04:30:21,163 - INFO - Success create column SatuSehatCancerResult!
+2025-03-08 04:30:22,256 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-08 04:30:22,288 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-08 04:30:37,038 - INFO - Total rows data modified: 6
+2025-03-08 04:30:37,038 - INFO - Total rows data inserted: 19
+2025-03-08 04:30:37,366 - INFO - success updated data 6 rows
+2025-03-08 04:30:37,460 - INFO - Success inserted new data 19 rows 
+2025-03-08 04:30:37,475 - INFO - Memory after execution: 87.6171875
+2025-03-08 04:30:37,475 - INFO - Memory used: 19.6484375
+2025-03-08 04:30:37,475 - INFO - total time execution: 34.92188358306885
+
+2025-03-09 04:30:02,574 - INFO - Memory before execution: 67.77734375
+2025-03-09 04:30:20,433 - INFO - Extracted 957 rows from source HIS LIVE
+2025-03-09 04:30:20,433 - INFO - Success create column SatuSehatCancerResult!
+2025-03-09 04:30:21,527 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-09 04:30:21,558 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-09 04:30:26,480 - INFO - Total rows data modified: 0
+2025-03-09 04:30:26,480 - INFO - Total rows data inserted: 0
+2025-03-09 04:30:26,480 - INFO - There is no data updated
+2025-03-09 04:30:26,480 - INFO - There is no data new 
+2025-03-09 04:30:26,496 - INFO - Memory after execution: 87.03125
+2025-03-09 04:30:26,496 - INFO - Memory used: 19.25390625
+2025-03-09 04:30:26,496 - INFO - total time execution: 23.921874046325684
+
+2025-03-10 04:30:02,619 - INFO - Memory before execution: 68.00390625
+2025-03-10 04:30:18,588 - INFO - Extracted 830 rows from source HIS LIVE
+2025-03-10 04:30:18,603 - INFO - Success create column SatuSehatCancerResult!
+2025-03-10 04:30:19,603 - INFO - Success transform column Result untuk ObjID : 69763
+2025-03-10 04:30:19,619 - INFO - Success transform column Result untuk ObjID : 69764
+2025-03-10 04:30:23,916 - INFO - Total rows data modified: 0
+2025-03-10 04:30:23,916 - INFO - Total rows data inserted: 0
+2025-03-10 04:30:23,916 - INFO - There is no data updated
+2025-03-10 04:30:23,916 - INFO - There is no data new 
+2025-03-10 04:30:23,916 - INFO - Memory after execution: 86.08984375
+2025-03-10 04:30:23,916 - INFO - Memory used: 18.0859375
+2025-03-10 04:30:23,916 - INFO - total time execution: 21.296859741210938
+

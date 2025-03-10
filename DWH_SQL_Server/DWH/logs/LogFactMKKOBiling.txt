@@ -1,0 +1,56 @@
+'2024-08-01 00:00:00'
+'2024-08-01 23:59:59'
+ini source
+       TransactionID PayplanGroup PayplanType
+0     00210000036497         umum     reguler
+1     00210000036498         umum     reguler
+2     00210000036499         umum     reguler
+3     00210000036500         umum     reguler
+4     00210000036502         umum     reguler
+...              ...          ...         ...
+6626          904939   perusahaan     reguler
+6627          904940   perusahaan     reguler
+6628          904941   perusahaan     reguler
+6629          904942   perusahaan     reguler
+6630          904943   perusahaan     reguler
+
+[6631 rows x 3 columns]
+total row update : 27
+       TransactionID       BillingID  ...  AdmissionID Status
+2645  00210000747839  00210001070403  ...           16  final
+3390  00210000748618  00210001070501  ...           10  final
+4241  00210000750650  00210001073420  ...            9  final
+4710  00210000749978  00210001073013  ...            6  final
+4711  00210000749979  00210001072844  ...          143  final
+4721  00210000749989  00210001072783  ...            8  final
+4735  00210000750003  00210001069294  ...            4  final
+4743  00210000750011  00210001071514  ...            2  final
+5245  00210000745354  00210001059587  ...           30  final
+5249  00210000745391  00210001051270  ...            8  final
+5268  00210000745737  00210001013258  ...           22  final
+5271  00210000745765  00210001035446  ...            1  final
+5276  00210000745854  00210001005401  ...            1  final
+5278  00210000745899  00210001038764  ...           97  final
+5321  00210000746738  00210001031424  ...           74  final
+5329  00210000746824  00210001057142  ...          218  final
+5335  00210000746911  00210001051663  ...           29  final
+5338  00210000746963  00210001056853  ...            6  final
+5348  00210000747394  00210001028180  ...            1  final
+5359  00210000748228  00210000961187  ...            2  final
+5360  00210000748242  00210001043819  ...            1  final
+5362  00210000748364  00210001044023  ...           46  final
+5364  00210000748464  00210001043250  ...            1  final
+5369  00210000748641  00210001056691  ...            6  final
+5376  00210000748886  00210000851772  ...            1  final
+5390  00210000749901  00210000795889  ...            1  final
+5391  00210000749961  00210000929759  ...            2  final
+
+[27 rows x 13 columns]
+total row inserted : 0
+Empty DataFrame
+Columns: [TransactionID, BillingID, Amount, TransactionDate, PayplanID, PatientType, PayplanGroup, PayplanType, PayplanNo, RevenueType, PatientID, AdmissionID, Status]
+Index: []
+UPDATE r SET r.Amount = t.Amount, r.TransactionDate = t.TransactionDate, r.PayplanID = t.PayplanID, r.PatientType = t.PatientType, r.PayplanGroup = t.PayplanGroup, r.PayplanType = t.PayplanType, r.PayplanNo = t.PayplanNo, r.RevenueType = t.RevenueType, r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.Status = t.Status , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactMKKOBilling r INNER JOIN (SELECT * FROM dwhrscm_talend.FactMKKOBilling_temporary_table) as t ON r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID  WHERE r.TransactionID = t.TransactionID AND r.BillingID = t.BillingID ;
+success update and insert all data
+14.765621185302734
+scheduler tanggal : 2025-03-09 23:55:02.712040

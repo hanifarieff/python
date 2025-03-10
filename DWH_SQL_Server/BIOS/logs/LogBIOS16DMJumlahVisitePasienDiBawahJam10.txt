@@ -1,0 +1,20 @@
+('2025-02-28', '2025-03-02', '2025-03-03', '2025-03-04', '2025-03-05', '2025-03-06', '2025-03-07', '2025-03-08', '2025-03-09')
+  TglTransaksi  Jumlah
+0   2025-02-28    1038
+1   2025-03-02     245
+2   2025-03-03     972
+3   2025-03-04    1042
+4   2025-03-05    1155
+5   2025-03-06    1128
+6   2025-03-07    1220
+7   2025-03-08     302
+total row update : 0
+Empty DataFrame
+Columns: [TglTransaksi, Jumlah]
+Index: []
+total row inserted : 1
+  TglTransaksi  Jumlah
+8   2025-03-09     244
+success insert all data without update
+22.703126907348633
+scheduler tanggal : 2025-03-10 06:15:01.716377

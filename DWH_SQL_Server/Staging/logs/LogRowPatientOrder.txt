@@ -1,0 +1,6 @@
+scheduler tanggal : 2025-03-10 06:00:01.922729
+         extract_date created_date  total_row
+0 2025-03-10 06:00:05   2024-12-02      32747
+success insert
+0.6874995231628418
+scheduler tanggal : 2025-03-10 06:00:01.922729

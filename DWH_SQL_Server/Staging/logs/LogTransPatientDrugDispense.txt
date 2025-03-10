@@ -1,0 +1,62 @@
+       PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
+0      00090000886946       90  ... 2025-03-08 07:07:07            0
+1      00090000886946       91  ... 2025-03-08 08:46:28            0
+2      00090000886946       92  ... 2025-03-09 08:22:48            0
+3      00090000886946       93  ... 2025-03-09 08:34:58            0
+4      00090000886946       94  ... 2025-03-09 13:54:55            0
+...               ...      ...  ...                 ...          ...
+29011  00160000539665       22  ... 2025-03-09 23:59:35            0
+29012  00160000539665       22  ... 2025-03-09 23:59:35            0
+29013  00160000539667       51  ... 2025-03-09 23:51:35            0
+29014  00160000539677      154  ... 2025-03-09 23:55:07            0
+29015  00160000539693        7  ... 2025-03-09 23:58:32            0
+
+[29016 rows x 20 columns]
+       PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
+0      00090000886946       30  ... 2025-02-06 20:02:19            0
+1      00090000886946       31  ... 2025-02-06 20:07:53            0
+2      00090000886946       32  ... 2025-02-07 02:02:50            0
+3      00090000886946       33  ... 2025-02-07 02:27:04            0
+4      00090000886946       34  ... 2025-02-07 11:05:31            0
+...               ...      ...  ...                 ...          ...
+35682  00160000535320       25  ... 2025-03-08 23:56:40            0
+35683  00160000535320       25  ... 2025-03-08 23:56:40            0
+35684  00160000535321       28  ... 2025-03-08 23:51:48            0
+35685  00160000535322       99  ... 2025-03-08 23:52:00            0
+35686  00160000535324       43  ... 2025-03-08 23:57:07            0
+
+[35687 rows x 20 columns]
+total row update : 1333
+       PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
+324    00160000185088      540  ... 2025-03-08 16:50:58            1
+325    00160000185088      540  ... 2025-03-08 16:50:58            1
+368    00160000192015      539  ... 2025-03-08 16:50:58            1
+680    00160000345895      231  ... 2025-03-08 16:22:10            0
+724    00160000352118       19  ... 2025-03-09 13:49:38            0
+...               ...      ...  ...                 ...          ...
+20668  00160000535282        1  ... 2025-03-08 23:36:20            1
+20669  00160000535282        1  ... 2025-03-08 23:36:20            1
+20670  00160000535283       81  ... 2025-03-08 23:36:20            1
+20690  00160000535300       16  ... 2025-03-08 23:42:40            1
+20708  00160000535305        3  ... 2025-03-08 23:49:22            1
+
+[1333 rows x 20 columns]
+total row inserted : 12704
+       PrescriptionID  OrderID  ...    DrugDispenseDate  BillingPaid
+2      00090000886946       92  ... 2025-03-09 08:22:48            0
+3      00090000886946       93  ... 2025-03-09 08:34:58            0
+4      00090000886946       94  ... 2025-03-09 13:54:55            0
+5      00090000886946       95  ... 2025-03-09 16:51:55            0
+12     00140001702374      130  ... 2025-03-09 07:39:20            0
+...               ...      ...  ...                 ...          ...
+29011  00160000539665       22  ... 2025-03-09 23:59:35            0
+29012  00160000539665       22  ... 2025-03-09 23:59:35            0
+29013  00160000539667       51  ... 2025-03-09 23:51:35            0
+29014  00160000539677      154  ... 2025-03-09 23:55:07            0
+29015  00160000539693        7  ... 2025-03-09 23:58:32            0
+
+[12704 rows x 20 columns]
+UPDATE r SET r.PatientID = t.PatientID, r.AdmissionID = t.AdmissionID, r.MedicalNo = t.MedicalNo, r.DrugID = t.DrugID, r.DrugName = t.DrugName, r.DrugQuantity = t.DrugQuantity, r.DrugUnitPrice = t.DrugUnitPrice, r.DrugTotalPrice = t.DrugTotalPrice, r.UnitCode = t.UnitCode, r.DispenseStatus = t.DispenseStatus, r.DispenseMethod = t.DispenseMethod, r.IsFornas = t.IsFornas, r.CreatedID = t.CreatedID, r.DoctorID = t.DoctorID, r.DrugPrescriptionDate = t.DrugPrescriptionDate, r.DrugDispenseDate = t.DrugDispenseDate, r.BillingPaid = t.BillingPaid , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientDrugDispense r INNER JOIN (SELECT * FROM staging_rscm.TransPatientDrugDispense_temporary_table) as t ON r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID WHERE r.PrescriptionID = t.PrescriptionID AND r.OrderID = t.OrderID AND r.SequenceID = t.SequenceID ;
+success update and insert all data
+154.4264588356018
+scheduler tanggal : 2025-03-10 04:00:02.152138

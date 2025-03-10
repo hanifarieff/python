@@ -1,0 +1,9 @@
+Empty DataFrame
+Columns: [AppointmentID, KodeBooking, AdmissionDate, PatientID, AdmissionID, MedicalNo, PatientType, CardNo, SEPNo, NIK, PhoneNo, OrgID, NewPatient, DoctorEmployeeID, AppointmentDate, AppointmentTime, StatusAppointment, DoctorPracticeStartTime, DoctorPracticeFinishTime, VisitType, AppointmentMethod, ReferenceNo, QueueNumber, QueueNo, ServedEstimated, RestQuotaJKN, QuotaJKN, RestQuotaNonJKN, QuotaNonJKN, Notes, Flag]
+Index: []
+DoctorEmployeeID     int64
+DoctorCode          object
+dtype: object
+DoctorEmployeeID     int64
+DoctorName          object
+dtype: object

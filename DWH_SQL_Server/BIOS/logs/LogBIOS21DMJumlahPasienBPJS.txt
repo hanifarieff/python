@@ -1,0 +1,15 @@
+('2025-03-07', '2025-03-08', '2025-03-09')
+  TglTransaksi  Jumlah
+0   2025-03-07    3813
+1   2025-03-08     444
+total row update : 2
+  TglTransaksi  Jumlah
+0   2025-03-07    3810
+1   2025-03-08     438
+total row inserted : 1
+  TglTransaksi  Jumlah
+2   2025-03-09     122
+UPDATE r SET r.Jumlah=t.Jumlah , r.IsSent = 0 , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.BIOS21DMJumlahPasienBPJS r INNER JOIN (SELECT * FROM dwhrscm_talend.BIOS21DMJumlahPasienBPJS_temporary_table) as t ON r.TglTransaksi = t.TglTransaksi  WHERE r.TglTransaksi = t.TglTransaksi ;
+success update and insert all data
+274.0399763584137
+scheduler tanggal : 2025-03-10 05:50:01.989377

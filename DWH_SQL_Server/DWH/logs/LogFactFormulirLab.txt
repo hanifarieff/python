@@ -1,0 +1,137 @@
+       PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
+0        1552131           50   412076922  ...     1                0   3173-2
+1        1552131           50   412076922  ...     1                0   2345-7
+2        1552131           50   412076922  ...     1                0     None
+3        1552131           50   412076922  ...     1                0   2160-0
+4        1552131           50   412076935  ...     1                0  55231-5
+...          ...          ...         ...  ...   ...              ...      ...
+14802    2124685           33   412077768  ...     1                0   2160-0
+14803    2124685           33   412077768  ...     1                0  38875-1
+14804    2124685           33   412077768  ...     1                0     None
+14805    2124685           33   412077768  ...     1                0     None
+14806    2124685           33   412077768  ...     1                0  20977-5
+
+[14807 rows x 42 columns]
+PatientID                       int64
+AdmissionID                     int64
+FormNumber                      int64
+OrgID                           int64
+OrgIDSurrogateKeyID           float64
+ObjectID                       object
+ObjectName                     object
+AdmissionDate                  object
+CreatedDate                    object
+CreatedBy                       int64
+StatusCode                     object
+OrderLab                       object
+OrderID                        object
+PriorityPatient                object
+DoctorEmployeeID                int64
+VerifiedBy                      int64
+VerifiedDate                   object
+RejectedBy                      int64
+RejectedDate                   object
+ApprovedBy                      int64
+ApprovedDate                   object
+CancelledBy                     int64
+CancelledDate                  object
+DstOrg                          int64
+DstOrgSurrogateKeyID            int64
+ApprovalOrg                     int64
+ApprovalOrgSurrogateKeyID       int64
+Diagnose                       object
+AddedNotes                     object
+Modality                       object
+PatientStatus                  object
+FastingStatus                  object
+UrineStatus                    object
+ThalasemiaStatus               object
+LiquidSamplingStatus           object
+OperationPreparationStatus     object
+OrderNo                        object
+OrderIDRME                      int64
+ScheduleID                      int64
+Flag                            int64
+FormLabDetailID                 int64
+LoincID                        object
+dtype: object
+      PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
+0         29493          113   412076988  ...     1                0  55231-5
+1         29493          113   412076988  ...     1                0     None
+2         29493          113   412076988  ...     1                0     None
+3         29493          113   412076988  ...     1                0     None
+4         36386           11      352940  ...     2           762277   1751-7
+...         ...          ...         ...  ...   ...              ...      ...
+8568    2290637            1   412077148  ...     1                0     None
+8569    2290637            1   412077149  ...     1                0  55231-5
+8570    2290637            1   412077172  ...     1                0  17861-6
+8571    2290637            1   412077172  ...     1                0     None
+8572    2290642            1   412077178  ...     1                0     None
+
+[8573 rows x 42 columns]
+ini changes
+       PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
+13       1371227           37   412077308  ...     1                0  20977-5
+14       1371227           37   412077308  ...     1                0     None
+15       1371227           37   412077308  ...     1                0  17861-6
+16       1371227           37   412077308  ...     1                0  55231-5
+32       1375694           57      354824  ...     2           768144   2160-0
+...          ...          ...         ...  ...   ...              ...      ...
+14802    2124685           33   412077768  ...     1                0   2160-0
+14803    2124685           33   412077768  ...     1                0  38875-1
+14804    2124685           33   412077768  ...     1                0     None
+14805    2124685           33   412077768  ...     1                0     None
+14806    2124685           33   412077768  ...     1                0  20977-5
+
+[6350 rows x 42 columns]
+
+
+total row update except new : 0
+Empty DataFrame
+Columns: [PatientID, AdmissionID, FormNumber, OrgID, OrgIDSurrogateKeyID, ObjectID, ObjectName, AdmissionDate, CreatedDate, CreatedBy, StatusCode, OrderLab, OrderID, PriorityPatient, DoctorEmployeeID, VerifiedBy, VerifiedDate, RejectedBy, RejectedDate, ApprovedBy, ApprovedDate, CancelledBy, CancelledDate, DstOrg, DstOrgSurrogateKeyID, ApprovalOrg, ApprovalOrgSurrogateKeyID, Diagnose, AddedNotes, Modality, PatientStatus, FastingStatus, UrineStatus, ThalasemiaStatus, LiquidSamplingStatus, OperationPreparationStatus, OrderNo, OrderIDRME, ScheduleID, Flag, FormLabDetailID, LoincID]
+Index: []
+
+
+total row update new : 112
+       PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
+207      1687471           22   412077177  ...     1                0  20977-5
+789      1089643          315   412076755  ...     1                0     None
+823      2005394           12   412076947  ...     1                0     None
+824      2005394           12   412076947  ...     1                0     None
+825      2005394           12   412076947  ...     1                0     None
+...          ...          ...         ...  ...   ...              ...      ...
+14183    2173049           11   412076620  ...     1                0     None
+14195    2206086           11   412076587  ...     1                0  55231-5
+14196    2206086           11   412076587  ...     1                0     None
+14466    2206086           11   412076587  ...     1                0   2160-0
+14467    2206086           11   412076587  ...     1                0  20977-5
+
+[112 rows x 42 columns]
+
+
+total row inserted : 6238
+       PatientID  AdmissionID  FormNumber  ...  Flag  FormLabDetailID  LoincID
+13       1371227           37   412077308  ...     1                0  20977-5
+14       1371227           37   412077308  ...     1                0     None
+15       1371227           37   412077308  ...     1                0  17861-6
+16       1371227           37   412077308  ...     1                0  55231-5
+32       1375694           57      354824  ...     2           768144   2160-0
+...          ...          ...         ...  ...   ...              ...      ...
+14802    2124685           33   412077768  ...     1                0   2160-0
+14803    2124685           33   412077768  ...     1                0  38875-1
+14804    2124685           33   412077768  ...     1                0     None
+14805    2124685           33   412077768  ...     1                0     None
+14806    2124685           33   412077768  ...     1                0  20977-5
+
+[6238 rows x 42 columns]
+
+
+UPDATE r SET r.OrgID = t.OrgID, r.OrgIDSurrogateKeyID = t.OrgIDSurrogateKeyID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.OrderID = t.OrderID, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.DstOrgSurrogateKeyID = t.DstOrgSurrogateKeyID, r.ApprovalOrg = t.ApprovalOrg, r.ApprovalOrgSurrogateKeyID = t.ApprovalOrgSurrogateKeyID, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactFormulirLab r INNER JOIN (SELECT * FROM dwhrscm_talend.FactFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo  WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderNo = t.OrderNo  ;
+DROP TABLE dwhrscm_talend.FactFormulirLab_temporary_table
+
+
+UPDATE r SET r.OrgID = t.OrgID, r.OrgIDSurrogateKeyID = t.OrgIDSurrogateKeyID, r.ObjectName = t.ObjectName, r.AdmissionDate = t.AdmissionDate, r.CreatedDate = t.CreatedDate, r.CreatedBy = t.CreatedBy, r.StatusCode = t.StatusCode, r.OrderLab = t.OrderLab, r.PriorityPatient = t.PriorityPatient, r.DoctorEmployeeID = t.DoctorEmployeeID, r.VerifiedBy = t.VerifiedBy, r.VerifiedDate = t.VerifiedDate, r.RejectedBy = t.RejectedBy, r.RejectedDate = t.RejectedDate, r.ApprovedBy = t.ApprovedBy, r.ApprovedDate = t.ApprovedDate, r.CancelledBy = t.CancelledBy, r.CancelledDate = t.CancelledDate, r.DstOrg = t.DstOrg, r.DstOrgSurrogateKeyID = t.DstOrgSurrogateKeyID, r.ApprovalOrg = t.ApprovalOrg, r.ApprovalOrgSurrogateKeyID = t.ApprovalOrgSurrogateKeyID, r.Diagnose = t.Diagnose, r.AddedNotes = t.AddedNotes, r.Modality = t.Modality, r.PatientStatus = t.PatientStatus, r.FastingStatus = t.FastingStatus, r.UrineStatus = t.UrineStatus, r.ThalasemiaStatus = t.ThalasemiaStatus, r.LiquidSamplingStatus = t.LiquidSamplingStatus, r.OperationPreparationStatus = t.OperationPreparationStatus, r.OrderIDRME = t.OrderIDRME, r.ScheduleID = t.ScheduleID, r.Flag = t.Flag, r.FormLabDetailID = t.FormLabDetailID, r.LoincID = t.LoincID , r.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactFormulirLab r INNER JOIN (SELECT * FROM dwhrscm_talend.FactFormulirLab_temporary_table) as t ON r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo WHERE r.PatientID = t.PatientID AND r.AdmissionID = t.AdmissionID AND r.FormNumber = t.FormNumber AND r.ObjectID = t.ObjectID AND r.OrderID = t.OrderID AND r.OrderNo = t.OrderNo ;
+DROP TABLE dwhrscm_talend.FactFormulirLab_temporary_table
+success update and insert all data
+523.0036556720734
+scheduler tanggal : 2025-03-10 01:15:01.729953

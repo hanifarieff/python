@@ -1,0 +1,20 @@
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.11/ehr)
+order_id      object
+proc_id       object
+role_id       object
+proc_tarif    object
+dtype: object
+             order_id         proc_id     role_id  proc_tarif
+0      00190007104596  PROCx000026265  RLc0036605     2904000
+1      00190007249996  PROCx000045681  RLc0068967     2983000
+2      00200000079630  PROCx000026265  RLc0036605     2904000
+3      00200000143100  PROCx000045752  RLc0068572     4553000
+4      00200000174981  PROCx000045692  RLc0068512     2237000
+...               ...             ...         ...         ...
+73104  00200005932056  PROCx000044593  RLc0074597      115000
+73105  00200005932057  PROCx000044593  RLc0074597      115000
+73106  00200005932062  PROCx000044247  RLc0063824       63000
+73107  00200005932196  PROCx000044247  RLc0063824       63000
+73108  00200005932606  PROCx000044228  RLc0060733      142000
+
+[73108 rows x 4 columns]

@@ -1,0 +1,36 @@
+            BedID     BedCode  ... StatusCode       UpdateDateApp
+0  BED_x000007524  618 A Bayi  ...   inactive 2025-03-08 22:12:34
+1  BED_x000007525      RREA01  ...   inactive 2025-03-09 12:40:51
+2  BED_x000008191       305 C  ...   inactive 2025-03-07 12:21:09
+3  BED_x000008192  618 A Bayi  ...   inactive 2025-03-08 22:12:58
+4  BED_x000008193        105C  ...   inactive 2025-03-09 14:12:20
+
+[5 rows x 7 columns]
+      BedID BedCode  ... StatusCode       UpdateDateApp
+0         1          ...     active 2025-02-24 08:50:41
+1         2          ...   inactive                 NaT
+2         3          ...   inactive 2023-01-12 14:41:01
+3         5          ...     active 2024-03-16 07:56:06
+4         6          ...     active 2024-11-08 17:51:52
+...     ...     ...  ...        ...                 ...
+1766   1784          ...   inactive 2024-08-26 15:18:16
+1767   1785          ...   inactive 2024-08-26 15:18:20
+1768   1786          ...   inactive 2024-08-26 15:18:33
+1769   1787          ...   inactive 2024-08-26 15:18:38
+1770   1788          ...   inactive 2024-08-26 15:18:41
+
+[1771 rows x 7 columns]
+ini modified
+            BedID BedCode  ... ScdActive Flag
+0  BED_x000007525  RREA01  ...         1    1
+
+[1 rows x 10 columns]
+ini inserted
+            BedID BedCode  ... ScdActive Flag
+0  BED_x000008193    105C  ...         1    1
+
+[1 rows x 10 columns]
+success update data existing
+success insert new data and updated data
+10.843754053115845
+scheduler tanggal : 2025-03-10 05:00:02.273608

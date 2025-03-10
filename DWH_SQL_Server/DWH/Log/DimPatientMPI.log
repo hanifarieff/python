@@ -1,0 +1,695 @@
+2025-02-20 12:05:01,753 - INFO - Memory before execution: 67.4453125
+2025-02-20 12:05:01,878 - INFO - success connect to DB!
+2025-02-20 12:05:12,081 - INFO - Extracted 2586 rows from DB Staging
+2025-02-20 12:05:13,612 - INFO - Total rows data modified: 2586
+2025-02-20 12:05:13,612 - INFO - Here's sample data modified:
+ PatientID
+    527694
+    120407
+2025-02-20 12:05:13,612 - INFO - Total rows data inserted: 0
+2025-02-20 12:05:13,612 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-20 12:05:16,581 - INFO - success updated data 2586 rows
+2025-02-20 12:05:16,581 - INFO - There is no data new
+2025-02-20 12:05:16,581 - INFO - Memory after execution: 87.8828125
+2025-02-20 12:05:16,581 - INFO - Memory used: 20.4375
+2025-02-20 12:05:16,581 - INFO - total time execution: 14.828146934509277
+
+2025-02-21 00:10:01,833 - INFO - Memory before execution: 67.546875
+2025-02-21 00:10:02,036 - INFO - success connect to DB!
+2025-02-21 00:10:02,411 - INFO - Extracted 2687 rows from DB Staging
+2025-02-21 00:10:04,224 - INFO - Total rows data modified: 1439
+2025-02-21 00:10:04,224 - INFO - Here's sample data modified:
+ PatientID
+   1987929
+   1845207
+2025-02-21 00:10:04,224 - INFO - Total rows data inserted: 1248
+2025-02-21 00:10:04,224 - INFO - Here's sample data inserted:
+ PatientID
+   2274964
+   2274991
+2025-02-21 00:10:06,552 - INFO - success updated data 1439 rows
+2025-02-21 00:10:08,583 - INFO - Success inserted new data 1248 rows 
+2025-02-21 00:10:08,739 - INFO - Memory after execution: 85.82421875
+2025-02-21 00:10:08,739 - INFO - Memory used: 18.27734375
+2025-02-21 00:10:08,739 - INFO - total time execution: 6.906250953674316
+
+2025-02-21 12:05:01,819 - INFO - Memory before execution: 67.60546875
+2025-02-21 12:05:01,998 - INFO - success connect to DB!
+2025-02-21 12:05:09,743 - INFO - Extracted 2687 rows from DB Staging
+2025-02-21 12:05:11,072 - INFO - Total rows data modified: 2687
+2025-02-21 12:05:11,073 - INFO - Here's sample data modified:
+ PatientID
+   1987929
+   1976206
+2025-02-21 12:05:11,073 - INFO - Total rows data inserted: 0
+2025-02-21 12:05:11,075 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-21 12:05:11,620 - INFO - success updated data 2687 rows
+2025-02-21 12:05:11,624 - INFO - There is no data new
+2025-02-21 12:05:11,625 - INFO - Memory after execution: 87.2109375
+2025-02-21 12:05:11,626 - INFO - Memory used: 19.60546875
+2025-02-21 12:05:11,626 - INFO - total time execution: 9.804996967315674
+
+2025-02-22 00:10:02,773 - INFO - Memory before execution: 67.44140625
+2025-02-22 00:10:03,047 - INFO - success connect to DB!
+2025-02-22 00:10:03,480 - INFO - Extracted 2689 rows from DB Staging
+2025-02-22 00:10:04,990 - INFO - Total rows data modified: 1521
+2025-02-22 00:10:04,992 - INFO - Here's sample data modified:
+ PatientID
+    502773
+   1831068
+2025-02-22 00:10:04,992 - INFO - Total rows data inserted: 1168
+2025-02-22 00:10:04,993 - INFO - Here's sample data inserted:
+ PatientID
+   2275826
+   2275434
+2025-02-22 00:10:05,791 - INFO - success updated data 1521 rows
+2025-02-22 00:10:09,053 - INFO - Success inserted new data 1168 rows 
+2025-02-22 00:10:09,058 - INFO - Memory after execution: 85.42578125
+2025-02-22 00:10:09,059 - INFO - Memory used: 17.984375
+2025-02-22 00:10:09,059 - INFO - total time execution: 6.285000324249268
+
+2025-02-22 12:05:01,836 - INFO - Memory before execution: 67.484375
+2025-02-22 12:05:01,980 - INFO - success connect to DB!
+2025-02-22 12:05:10,180 - INFO - Extracted 2689 rows from DB Staging
+2025-02-22 12:05:11,579 - INFO - Total rows data modified: 2689
+2025-02-22 12:05:11,581 - INFO - Here's sample data modified:
+ PatientID
+   1831068
+   1831962
+2025-02-22 12:05:11,581 - INFO - Total rows data inserted: 0
+2025-02-22 12:05:11,582 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-22 12:05:13,239 - INFO - success updated data 2689 rows
+2025-02-22 12:05:13,243 - INFO - There is no data new
+2025-02-22 12:05:13,244 - INFO - Memory after execution: 87.78515625
+2025-02-22 12:05:13,245 - INFO - Memory used: 20.30078125
+2025-02-22 12:05:13,245 - INFO - total time execution: 11.40799617767334
+
+2025-02-23 00:10:01,933 - INFO - Memory before execution: 67.42578125
+2025-02-23 00:10:02,077 - INFO - success connect to DB!
+2025-02-23 00:10:02,632 - INFO - Extracted 2264 rows from DB Staging
+2025-02-23 00:10:03,788 - INFO - Total rows data modified: 1385
+2025-02-23 00:10:03,789 - INFO - Here's sample data modified:
+ PatientID
+   1408948
+   1412790
+2025-02-23 00:10:03,789 - INFO - Total rows data inserted: 879
+2025-02-23 00:10:03,790 - INFO - Here's sample data inserted:
+ PatientID
+   2275898
+   2275415
+2025-02-23 00:10:04,381 - INFO - success updated data 1385 rows
+2025-02-23 00:10:04,871 - INFO - Success inserted new data 879 rows 
+2025-02-23 00:10:04,876 - INFO - Memory after execution: 84.1171875
+2025-02-23 00:10:04,876 - INFO - Memory used: 16.69140625
+2025-02-23 00:10:04,876 - INFO - total time execution: 2.939997911453247
+
+2025-02-23 12:05:01,874 - INFO - Memory before execution: 67.43359375
+2025-02-23 12:05:01,965 - INFO - success connect to DB!
+2025-02-23 12:05:09,493 - INFO - Extracted 2264 rows from DB Staging
+2025-02-23 12:05:10,498 - INFO - Total rows data modified: 2264
+2025-02-23 12:05:10,499 - INFO - Here's sample data modified:
+ PatientID
+   1092044
+   1081533
+2025-02-23 12:05:10,500 - INFO - Total rows data inserted: 0
+2025-02-23 12:05:10,501 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-23 12:05:11,157 - INFO - success updated data 2264 rows
+2025-02-23 12:05:11,162 - INFO - There is no data new
+2025-02-23 12:05:11,163 - INFO - Memory after execution: 85.42578125
+2025-02-23 12:05:11,164 - INFO - Memory used: 17.9921875
+2025-02-23 12:05:11,164 - INFO - total time execution: 9.289002656936646
+
+2025-02-24 00:10:01,916 - INFO - Memory before execution: 67.69140625
+2025-02-24 00:10:45,200 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-24 00:10:45,200 - INFO - Preparing to send email notification.
+2025-02-24 00:10:45,925 - INFO - Connecting to SMTP server.
+2025-02-24 00:10:48,661 - INFO - Email sent successfully.
+2025-02-24 07:24:21,106 - INFO - Memory before execution: 67.73046875
+2025-02-24 07:24:21,195 - INFO - success connect to DB!
+2025-02-24 07:24:21,600 - INFO - Extracted 1406 rows from DB Staging
+2025-02-24 07:24:21,911 - INFO - Total rows data modified: 1037
+2025-02-24 07:24:21,913 - INFO - Here's sample data modified:
+ PatientID
+   1821866
+   1671448
+2025-02-24 07:24:21,913 - INFO - Total rows data inserted: 369
+2025-02-24 07:24:21,914 - INFO - Here's sample data inserted:
+ PatientID
+   2267160
+   2266893
+2025-02-24 07:24:22,670 - INFO - success updated data 1037 rows
+2025-02-24 07:24:28,241 - INFO - Success inserted new data 369 rows 
+2025-02-24 07:24:28,246 - INFO - Memory after execution: 81.6328125
+2025-02-24 07:24:28,247 - INFO - Memory used: 13.90234375
+2025-02-24 07:24:28,247 - INFO - total time execution: 7.139997482299805
+
+2025-02-24 12:05:01,820 - INFO - Memory before execution: 67.48046875
+2025-02-24 12:05:01,914 - INFO - success connect to DB!
+2025-02-24 12:05:13,037 - INFO - Extracted 1406 rows from DB Staging
+2025-02-24 12:05:13,857 - INFO - Total rows data modified: 1406
+2025-02-24 12:05:13,858 - INFO - Here's sample data modified:
+ PatientID
+   1893165
+   1846991
+2025-02-24 12:05:13,858 - INFO - Total rows data inserted: 0
+2025-02-24 12:05:13,859 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-24 12:05:14,216 - INFO - success updated data 1406 rows
+2025-02-24 12:05:14,219 - INFO - There is no data new
+2025-02-24 12:05:14,220 - INFO - Memory after execution: 81.80859375
+2025-02-24 12:05:14,220 - INFO - Memory used: 14.328125
+2025-02-24 12:05:14,220 - INFO - total time execution: 12.398998022079468
+
+2025-02-25 00:10:01,811 - INFO - Memory before execution: 67.60546875
+2025-02-25 00:10:01,921 - INFO - success connect to DB!
+2025-02-25 00:10:13,733 - INFO - Extracted 471 rows from DB Staging
+2025-02-25 00:10:14,436 - INFO - Total rows data modified: 468
+2025-02-25 00:10:14,436 - INFO - Here's sample data modified:
+ PatientID
+   1821866
+   1715324
+2025-02-25 00:10:14,436 - INFO - Total rows data inserted: 3
+2025-02-25 00:10:14,436 - INFO - Here's sample data inserted:
+ PatientID
+   2278779
+   2232279
+2025-02-25 00:10:16,921 - INFO - success updated data 468 rows
+2025-02-25 00:10:17,983 - INFO - Success inserted new data 3 rows 
+2025-02-25 00:10:17,999 - INFO - Memory after execution: 77.6171875
+2025-02-25 00:10:17,999 - INFO - Memory used: 10.01171875
+2025-02-25 00:10:17,999 - INFO - total time execution: 16.18750023841858
+
+2025-02-25 08:30:28,816 - INFO - Memory before execution: 67.6171875
+2025-02-25 08:30:28,886 - INFO - success connect to DB!
+2025-02-25 08:30:29,309 - INFO - Extracted 1728 rows from DB Staging
+2025-02-25 08:30:30,252 - INFO - Total rows data modified: 662
+2025-02-25 08:30:30,255 - INFO - Here's sample data modified:
+ PatientID
+   1872512
+   1821866
+2025-02-25 08:30:30,255 - INFO - Total rows data inserted: 1066
+2025-02-25 08:30:30,257 - INFO - Here's sample data inserted:
+ PatientID
+   2278436
+   2278445
+2025-02-25 08:30:31,579 - INFO - success updated data 662 rows
+2025-02-25 08:30:37,435 - INFO - Success inserted new data 1066 rows 
+2025-02-25 08:30:37,778 - INFO - Memory after execution: 82.25390625
+2025-02-25 08:30:37,778 - INFO - Memory used: 14.63671875
+2025-02-25 08:30:37,778 - INFO - total time execution: 8.96271300315857
+
+2025-02-25 12:05:01,895 - INFO - Memory before execution: 67.72265625
+2025-02-25 12:05:01,998 - INFO - success connect to DB!
+2025-02-25 12:05:15,177 - INFO - Extracted 1728 rows from DB Staging
+2025-02-25 12:05:16,235 - INFO - Total rows data modified: 1728
+2025-02-25 12:05:16,236 - INFO - Here's sample data modified:
+ PatientID
+    204464
+    503074
+2025-02-25 12:05:16,237 - INFO - Total rows data inserted: 0
+2025-02-25 12:05:16,238 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-25 12:05:18,004 - INFO - success updated data 1728 rows
+2025-02-25 12:05:18,020 - INFO - There is no data new
+2025-02-25 12:05:18,020 - INFO - Memory after execution: 84.11328125
+2025-02-25 12:05:18,020 - INFO - Memory used: 16.390625
+2025-02-25 12:05:18,020 - INFO - total time execution: 16.124921560287476
+
+2025-02-26 00:10:01,818 - INFO - Memory before execution: 67.421875
+2025-02-26 00:10:02,224 - INFO - success connect to DB!
+2025-02-26 00:10:03,912 - INFO - Extracted 2451 rows from DB Staging
+2025-02-26 00:10:05,668 - INFO - Total rows data modified: 1439
+2025-02-26 00:10:05,670 - INFO - Here's sample data modified:
+ PatientID
+   1126866
+   1108021
+2025-02-26 00:10:05,670 - INFO - Total rows data inserted: 1012
+2025-02-26 00:10:05,671 - INFO - Here's sample data inserted:
+ PatientID
+   2219892
+   2264112
+2025-02-26 00:10:06,389 - INFO - success updated data 1439 rows
+2025-02-26 00:10:09,052 - INFO - Success inserted new data 1012 rows 
+2025-02-26 00:10:09,056 - INFO - Memory after execution: 84.83203125
+2025-02-26 00:10:09,057 - INFO - Memory used: 17.41015625
+2025-02-26 00:10:09,057 - INFO - total time execution: 7.237998008728027
+
+2025-02-26 12:05:03,577 - INFO - Memory before execution: 67.3984375
+2025-02-26 12:05:04,346 - INFO - success connect to DB!
+2025-02-26 12:05:12,065 - INFO - Extracted 2451 rows from DB Staging
+2025-02-26 12:05:13,350 - INFO - Total rows data modified: 2451
+2025-02-26 12:05:13,351 - INFO - Here's sample data modified:
+ PatientID
+   1675164
+   1676319
+2025-02-26 12:05:13,351 - INFO - Total rows data inserted: 0
+2025-02-26 12:05:13,352 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-26 12:05:14,512 - INFO - success updated data 2451 rows
+2025-02-26 12:05:14,537 - INFO - There is no data new
+2025-02-26 12:05:14,554 - INFO - Memory after execution: 87.40234375
+2025-02-26 12:05:14,554 - INFO - Memory used: 20.00390625
+2025-02-26 12:05:14,554 - INFO - total time execution: 10.97399353981018
+
+2025-02-27 00:10:01,822 - INFO - Memory before execution: 67.53125
+2025-02-27 00:10:02,291 - INFO - success connect to DB!
+2025-02-27 00:10:03,212 - INFO - Extracted 2174 rows from DB Staging
+2025-02-27 00:10:04,744 - INFO - Total rows data modified: 1363
+2025-02-27 00:10:04,744 - INFO - Here's sample data modified:
+ PatientID
+     24446
+   1762246
+2025-02-27 00:10:04,744 - INFO - Total rows data inserted: 811
+2025-02-27 00:10:04,744 - INFO - Here's sample data inserted:
+ PatientID
+   2280619
+   2280444
+2025-02-27 00:10:07,712 - INFO - success updated data 1363 rows
+2025-02-27 00:10:11,494 - INFO - Success inserted new data 811 rows 
+2025-02-27 00:10:11,509 - INFO - Memory after execution: 83.8359375
+2025-02-27 00:10:11,509 - INFO - Memory used: 16.3046875
+2025-02-27 00:10:11,509 - INFO - total time execution: 9.68749713897705
+
+2025-02-27 12:05:03,599 - INFO - Memory before execution: 67.4140625
+2025-02-27 12:05:03,834 - INFO - success connect to DB!
+2025-02-27 12:05:04,364 - INFO - Extracted 2174 rows from DB Staging
+2025-02-27 12:05:05,541 - INFO - Total rows data modified: 2174
+2025-02-27 12:05:05,542 - INFO - Here's sample data modified:
+ PatientID
+   1980847
+   1814119
+2025-02-27 12:05:05,542 - INFO - Total rows data inserted: 0
+2025-02-27 12:05:05,543 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-27 12:05:06,019 - INFO - success updated data 2174 rows
+2025-02-27 12:05:06,023 - INFO - There is no data new
+2025-02-27 12:05:06,024 - INFO - Memory after execution: 85.83984375
+2025-02-27 12:05:06,024 - INFO - Memory used: 18.42578125
+2025-02-27 12:05:06,024 - INFO - total time execution: 2.4229955673217773
+
+2025-02-28 00:10:03,466 - INFO - Memory before execution: 67.390625
+2025-02-28 00:10:03,747 - INFO - success connect to DB!
+2025-02-28 00:10:04,297 - INFO - Extracted 2101 rows from DB Staging
+2025-02-28 00:10:05,682 - INFO - Total rows data modified: 1166
+2025-02-28 00:10:05,683 - INFO - Here's sample data modified:
+ PatientID
+   1816795
+   1739543
+2025-02-28 00:10:05,684 - INFO - Total rows data inserted: 935
+2025-02-28 00:10:05,685 - INFO - Here's sample data inserted:
+ PatientID
+   2277004
+    625816
+2025-02-28 00:10:06,500 - INFO - success updated data 1166 rows
+2025-02-28 00:10:10,972 - INFO - Success inserted new data 935 rows 
+2025-02-28 00:10:10,977 - INFO - Memory after execution: 83.78515625
+2025-02-28 00:10:10,977 - INFO - Memory used: 16.39453125
+2025-02-28 00:10:10,977 - INFO - total time execution: 7.508999586105347
+
+2025-02-28 12:05:02,540 - INFO - Memory before execution: 67.4375
+2025-02-28 12:05:02,720 - INFO - success connect to DB!
+2025-02-28 12:05:10,297 - INFO - Extracted 2101 rows from DB Staging
+2025-02-28 12:05:11,382 - INFO - Total rows data modified: 2101
+2025-02-28 12:05:11,383 - INFO - Here's sample data modified:
+ PatientID
+    138883
+   1237824
+2025-02-28 12:05:11,383 - INFO - Total rows data inserted: 0
+2025-02-28 12:05:11,384 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-28 12:05:11,903 - INFO - success updated data 2101 rows
+2025-02-28 12:05:11,907 - INFO - There is no data new
+2025-02-28 12:05:11,908 - INFO - Memory after execution: 85.48828125
+2025-02-28 12:05:11,908 - INFO - Memory used: 18.05078125
+2025-02-28 12:05:11,908 - INFO - total time execution: 9.365998029708862
+
+2025-03-01 00:10:03,195 - INFO - Memory before execution: 67.38671875
+2025-03-01 00:10:03,484 - INFO - success connect to DB!
+2025-03-01 00:10:04,382 - INFO - Extracted 2122 rows from DB Staging
+2025-03-01 00:10:05,756 - INFO - Total rows data modified: 1269
+2025-03-01 00:10:05,758 - INFO - Here's sample data modified:
+ PatientID
+   1942381
+   1816795
+2025-03-01 00:10:05,758 - INFO - Total rows data inserted: 853
+2025-03-01 00:10:05,760 - INFO - Here's sample data inserted:
+ PatientID
+   2167531
+   2090858
+2025-03-01 00:10:06,449 - INFO - success updated data 1269 rows
+2025-03-01 00:10:08,924 - INFO - Success inserted new data 853 rows 
+2025-03-01 00:10:08,932 - INFO - Memory after execution: 83.85546875
+2025-03-01 00:10:08,932 - INFO - Memory used: 16.46875
+2025-03-01 00:10:08,932 - INFO - total time execution: 5.733999490737915
+
+2025-03-01 12:05:01,921 - INFO - Memory before execution: 67.58203125
+2025-03-01 12:05:19,299 - INFO - success connect to DB!
+2025-03-01 12:20:29,595 - INFO - Extracted 2122 rows from DB Staging
+2025-03-01 12:20:53,127 - INFO - Total rows data modified: 2122
+2025-03-01 12:20:53,129 - INFO - Here's sample data modified:
+ PatientID
+   1976932
+   1979352
+2025-03-01 12:20:53,129 - INFO - Total rows data inserted: 0
+2025-03-01 12:20:53,130 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-01 12:24:18,616 - ERROR - (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][SQL Server Native Client 11.0][SQL Server]A timeout occurred while waiting for memory resources to execute the query in resource pool 'internal' (1). Rerun the query. (8645) (SQLExecDirectW)")
+[SQL: UPDATE t SET t.PatientID = s.PatientID, t.PersonID = s.PersonID, t.Confidentiality = s.Confidentiality, t.PatientStatus = s.PatientStatus, t.MigrationID = s.MigrationID, t.MedicalNo = s.MedicalNo, t.PatientName = s.PatientName, t.BirthDate = s.BirthDate, t.Gender = s.Gender, t.MaritalStatus = s.MaritalStatus, t.ReligionID = s.ReligionID, t.NIK = s.NIK, t.Address = s.Address, t.PatientCreatedDate = s.PatientCreatedDate, t.PatientUpdatedDate = s.PatientUpdatedDate, t.PatientNullifiedDate = s.PatientNullifiedDate, t.RegionalCode = s.RegionalCode, t.PersonStatusCode = s.PersonStatusCode, t.PatientStatusCode = s.PatientStatusCode, t.PersonTitle = s.PersonTitle, t.FamilyName = s.FamilyName, t.ExternalID = s.ExternalID, t.PassportNo = s.PassportNo, t.FatherName = s.FatherName, t.MotherName = s.MotherName, t.SpouseName = s.SpouseName, t.PlaceOfBirth = s.PlaceOfBirth, t.PostalCode = s.PostalCode, t.Race = s.Race, t.Education = s.Education, t.Occupation = s.Occupation, t.BloodType = s.BloodType, t.Nationality = s.Nationality, t.TelephoneNo = s.TelephoneNo, t.PhoneNo = s.PhoneNo, t.Email = s.Email, t.ScdActive = s.ScdActive, t.ScdStart = s.ScdStart, t.ScdEnd = s.ScdEnd, t.EmployeeID = s.EmployeeID, t.IsEmployee = s.IsEmployee, t.InsertedDateDWH = s.InsertedDateDWH FROM dwhrscm_talend.DimPatientMPI t INNER JOIN (SELECT * FROM dwhrscm_talend.DimPatientMPI_temporary_table) AS s ON t.PatientSurrogateKey = s.PatientSurrogateKey WHERE t.PatientSurrogateKey = s.PatientSurrogateKey;]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-03-01 12:24:18,617 - INFO - Preparing to send email notification.
+2025-03-01 12:24:19,001 - INFO - Connecting to SMTP server.
+2025-03-01 12:24:21,965 - INFO - Email sent successfully.
+
+2025-03-01 12:24:22,159 - INFO - Memory after execution: 39.41015625
+2025-03-01 12:24:22,159 - INFO - Memory used: -28.171875
+2025-03-01 12:24:22,159 - INFO - total time execution: 1160.2359988689423
+
+2025-03-03 11:32:41,460 - INFO - Memory before execution: 67.62109375
+2025-03-03 11:32:41,539 - INFO - success connect to DB!
+2025-03-03 11:32:43,110 - INFO - Extracted 860 rows from DB Staging
+2025-03-03 11:32:43,394 - INFO - Total rows data modified: 0
+2025-03-03 11:32:43,396 - INFO - Here's sample data modified:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-03 11:32:43,396 - INFO - Total rows data inserted: 860
+2025-03-03 11:32:43,397 - INFO - Here's sample data inserted:
+ PatientID
+   2282782
+   2282783
+2025-03-03 11:32:43,397 - INFO - There is no data updated
+2025-03-03 11:32:43,697 - INFO - Success inserted new data 860 rows 
+2025-03-03 11:32:43,707 - INFO - Memory after execution: 78.2421875
+2025-03-03 11:32:43,708 - INFO - Memory used: 10.62109375
+2025-03-03 11:32:43,708 - INFO - total time execution: 2.245997667312622
+
+2025-03-03 12:05:01,673 - INFO - Memory before execution: 67.50390625
+2025-03-03 12:05:01,737 - INFO - success connect to DB!
+2025-03-03 12:05:09,493 - INFO - Extracted 860 rows from DB Staging
+2025-03-03 12:05:09,649 - INFO - Total rows data modified: 860
+2025-03-03 12:05:09,651 - INFO - Here's sample data modified:
+ PatientID
+   2282782
+   2282783
+2025-03-03 12:05:09,651 - INFO - Total rows data inserted: 0
+2025-03-03 12:05:09,652 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-03 12:05:10,945 - INFO - success updated data 860 rows
+2025-03-03 12:05:10,949 - INFO - There is no data new
+2025-03-03 12:05:10,950 - INFO - Memory after execution: 79.71875
+2025-03-03 12:05:10,951 - INFO - Memory used: 12.21484375
+2025-03-03 12:05:10,951 - INFO - total time execution: 9.27699089050293
+
+2025-03-04 00:10:01,653 - INFO - Memory before execution: 67.375
+2025-03-04 00:10:01,822 - INFO - success connect to DB!
+2025-03-04 00:10:02,686 - INFO - Extracted 2380 rows from DB Staging
+2025-03-04 00:10:03,968 - INFO - Total rows data modified: 1034
+2025-03-04 00:10:03,970 - INFO - Here's sample data modified:
+ PatientID
+   1721236
+   1766345
+2025-03-04 00:10:03,970 - INFO - Total rows data inserted: 1346
+2025-03-04 00:10:03,971 - INFO - Here's sample data inserted:
+ PatientID
+   2282744
+   2048598
+2025-03-04 00:10:07,333 - INFO - success updated data 1034 rows
+2025-03-04 00:10:08,494 - INFO - Success inserted new data 1346 rows 
+2025-03-04 00:10:08,501 - INFO - Memory after execution: 84.53515625
+2025-03-04 00:10:08,501 - INFO - Memory used: 17.16015625
+2025-03-04 00:10:08,501 - INFO - total time execution: 6.848000526428223
+
+2025-03-04 10:01:40,611 - INFO - Memory before execution: 67.6796875
+2025-03-04 10:01:40,725 - INFO - success connect to DB!
+2025-03-04 10:01:44,967 - INFO - Extracted 3126 rows from DB Staging
+2025-03-04 10:01:49,208 - INFO - Total rows data modified: 2380
+2025-03-04 10:01:49,210 - INFO - Here's sample data modified:
+ PatientID
+   1766345
+   1990073
+2025-03-04 10:01:49,210 - INFO - Total rows data inserted: 746
+2025-03-04 10:01:49,211 - INFO - Here's sample data inserted:
+ PatientID
+   2284281
+   2283642
+2025-03-04 10:01:55,497 - INFO - success updated data 2380 rows
+2025-03-04 10:01:57,658 - INFO - Success inserted new data 746 rows 
+2025-03-04 10:01:57,663 - INFO - Memory after execution: 89.69921875
+2025-03-04 10:01:57,663 - INFO - Memory used: 22.01953125
+2025-03-04 10:01:57,663 - INFO - total time execution: 17.049992084503174
+
+2025-03-04 12:05:01,685 - INFO - Memory before execution: 67.4765625
+2025-03-04 12:05:01,913 - INFO - success connect to DB!
+2025-03-04 12:05:10,108 - INFO - Extracted 3126 rows from DB Staging
+2025-03-04 12:05:11,386 - INFO - Total rows data modified: 3126
+2025-03-04 12:05:11,388 - INFO - Here's sample data modified:
+ PatientID
+    500069
+    519405
+2025-03-04 12:05:11,388 - INFO - Total rows data inserted: 0
+2025-03-04 12:05:11,389 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-04 12:05:12,597 - INFO - success updated data 3126 rows
+2025-03-04 12:05:12,602 - INFO - There is no data new
+2025-03-04 12:05:12,603 - INFO - Memory after execution: 89.17578125
+2025-03-04 12:05:12,603 - INFO - Memory used: 21.69921875
+2025-03-04 12:05:12,603 - INFO - total time execution: 10.91799807548523
+
+2025-03-05 00:10:01,655 - INFO - Memory before execution: 67.53125
+2025-03-05 00:10:02,483 - INFO - success connect to DB!
+2025-03-05 00:10:04,171 - INFO - Extracted 3481 rows from DB Staging
+2025-03-05 00:10:07,390 - INFO - Total rows data modified: 2422
+2025-03-05 00:10:07,390 - INFO - Here's sample data modified:
+ PatientID
+   1657634
+   1662833
+2025-03-05 00:10:07,390 - INFO - Total rows data inserted: 1059
+2025-03-05 00:10:07,390 - INFO - Here's sample data inserted:
+ PatientID
+   2284395
+   2284419
+2025-03-05 00:10:10,921 - INFO - success updated data 2422 rows
+2025-03-05 00:10:14,796 - INFO - Success inserted new data 1059 rows 
+2025-03-05 00:10:14,827 - INFO - Memory after execution: 89.87890625
+2025-03-05 00:10:14,827 - INFO - Memory used: 22.34765625
+2025-03-05 00:10:14,827 - INFO - total time execution: 13.171876192092896
+
+2025-03-05 12:05:01,709 - INFO - Memory before execution: 67.4921875
+2025-03-05 12:05:01,857 - INFO - success connect to DB!
+2025-03-05 12:05:09,294 - INFO - Extracted 3481 rows from DB Staging
+2025-03-05 12:05:10,091 - INFO - Total rows data modified: 3481
+2025-03-05 12:05:10,091 - INFO - Here's sample data modified:
+ PatientID
+   1047203
+   1043976
+2025-03-05 12:05:10,091 - INFO - Total rows data inserted: 0
+2025-03-05 12:05:10,091 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-05 12:05:11,138 - INFO - success updated data 3481 rows
+2025-03-05 12:05:11,169 - INFO - There is no data new
+2025-03-05 12:05:11,169 - INFO - Memory after execution: 91.08203125
+2025-03-05 12:05:11,169 - INFO - Memory used: 23.58984375
+2025-03-05 12:05:11,169 - INFO - total time execution: 9.460418701171875
+
+2025-03-06 00:10:01,685 - INFO - Memory before execution: 67.5390625
+2025-03-06 00:10:02,279 - INFO - success connect to DB!
+2025-03-06 00:10:03,373 - INFO - Extracted 2597 rows from DB Staging
+2025-03-06 00:10:04,701 - INFO - Total rows data modified: 1409
+2025-03-06 00:10:04,701 - INFO - Here's sample data modified:
+ PatientID
+   1934313
+   1812536
+2025-03-06 00:10:04,701 - INFO - Total rows data inserted: 1188
+2025-03-06 00:10:04,701 - INFO - Here's sample data inserted:
+ PatientID
+   2285557
+   2285669
+2025-03-06 00:10:06,873 - INFO - success updated data 1409 rows
+2025-03-06 00:10:09,685 - INFO - Success inserted new data 1188 rows 
+2025-03-06 00:10:10,013 - INFO - Memory after execution: 86.3671875
+2025-03-06 00:10:10,013 - INFO - Memory used: 18.828125
+2025-03-06 00:10:10,013 - INFO - total time execution: 8.328121900558472
+
+2025-03-06 12:05:01,774 - INFO - Memory before execution: 67.515625
+2025-03-06 12:05:06,723 - INFO - success connect to DB!
+2025-03-06 12:05:18,530 - INFO - Extracted 2597 rows from DB Staging
+2025-03-06 12:05:29,091 - INFO - Total rows data modified: 2597
+2025-03-06 12:05:29,092 - INFO - Here's sample data modified:
+ PatientID
+   1650065
+   1635118
+2025-03-06 12:05:29,093 - INFO - Total rows data inserted: 0
+2025-03-06 12:05:29,094 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-06 12:05:40,762 - INFO - success updated data 2597 rows
+2025-03-06 12:05:40,999 - INFO - There is no data new
+2025-03-06 12:05:41,100 - INFO - Memory after execution: 88.19921875
+2025-03-06 12:05:41,101 - INFO - Memory used: 20.68359375
+2025-03-06 12:05:41,101 - INFO - total time execution: 39.32599925994873
+
+2025-03-07 00:10:01,711 - INFO - Memory before execution: 67.5234375
+2025-03-07 00:10:02,383 - INFO - success connect to DB!
+2025-03-07 00:10:03,383 - INFO - Extracted 2564 rows from DB Staging
+2025-03-07 00:10:05,867 - INFO - Total rows data modified: 1534
+2025-03-07 00:10:05,867 - INFO - Here's sample data modified:
+ PatientID
+   1988706
+   1956864
+2025-03-07 00:10:05,867 - INFO - Total rows data inserted: 1030
+2025-03-07 00:10:05,867 - INFO - Here's sample data inserted:
+ PatientID
+   2286439
+   2286444
+2025-03-07 00:10:07,352 - INFO - success updated data 1534 rows
+2025-03-07 00:10:08,945 - INFO - Success inserted new data 1030 rows 
+2025-03-07 00:10:09,133 - INFO - Memory after execution: 85.23046875
+2025-03-07 00:10:09,133 - INFO - Memory used: 17.70703125
+2025-03-07 00:10:09,133 - INFO - total time execution: 7.421872138977051
+
+2025-03-07 12:05:01,716 - INFO - Memory before execution: 67.4140625
+2025-03-07 12:05:01,863 - INFO - success connect to DB!
+2025-03-07 12:05:08,903 - INFO - Extracted 2564 rows from DB Staging
+2025-03-07 12:05:09,808 - INFO - Total rows data modified: 2564
+2025-03-07 12:05:09,808 - INFO - Here's sample data modified:
+ PatientID
+   1988706
+   1970223
+2025-03-07 12:05:09,808 - INFO - Total rows data inserted: 0
+2025-03-07 12:05:09,808 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-07 12:05:10,883 - INFO - success updated data 2564 rows
+2025-03-07 12:05:10,899 - INFO - There is no data new
+2025-03-07 12:05:10,914 - INFO - Memory after execution: 87.9921875
+2025-03-07 12:05:10,914 - INFO - Memory used: 20.578125
+2025-03-07 12:05:10,914 - INFO - total time execution: 9.198016166687012
+
+2025-03-08 00:10:01,758 - INFO - Memory before execution: 67.421875
+2025-03-08 00:10:02,320 - INFO - success connect to DB!
+2025-03-08 00:10:03,805 - INFO - Extracted 2627 rows from DB Staging
+2025-03-08 00:10:04,523 - INFO - Total rows data modified: 1341
+2025-03-08 00:10:04,539 - INFO - Here's sample data modified:
+ PatientID
+    971488
+    972324
+2025-03-08 00:10:04,539 - INFO - Total rows data inserted: 1286
+2025-03-08 00:10:04,539 - INFO - Here's sample data inserted:
+ PatientID
+   2287516
+   2287620
+2025-03-08 00:10:10,398 - INFO - success updated data 1341 rows
+2025-03-08 00:10:14,133 - INFO - Success inserted new data 1286 rows 
+2025-03-08 00:10:14,133 - INFO - Memory after execution: 85.17578125
+2025-03-08 00:10:14,133 - INFO - Memory used: 17.75390625
+2025-03-08 00:10:14,133 - INFO - total time execution: 12.374992370605469
+
+2025-03-08 12:05:01,837 - INFO - Memory before execution: 67.46875
+2025-03-08 12:05:02,025 - INFO - success connect to DB!
+2025-03-08 12:05:11,571 - INFO - Extracted 2627 rows from DB Staging
+2025-03-08 12:05:12,165 - INFO - Total rows data modified: 2627
+2025-03-08 12:05:12,165 - INFO - Here's sample data modified:
+ PatientID
+   1180991
+   1182587
+2025-03-08 12:05:12,165 - INFO - Total rows data inserted: 0
+2025-03-08 12:05:12,181 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-08 12:05:15,587 - INFO - success updated data 2627 rows
+2025-03-08 12:05:15,587 - INFO - There is no data new
+2025-03-08 12:05:15,587 - INFO - Memory after execution: 87.24609375
+2025-03-08 12:05:15,587 - INFO - Memory used: 19.77734375
+2025-03-08 12:05:15,587 - INFO - total time execution: 13.749987840652466
+
+2025-03-09 00:10:01,790 - INFO - Memory before execution: 67.42578125
+2025-03-09 00:10:02,509 - INFO - success connect to DB!
+2025-03-09 00:10:04,197 - INFO - Extracted 2778 rows from DB Staging
+2025-03-09 00:10:05,478 - INFO - Total rows data modified: 1481
+2025-03-09 00:10:05,478 - INFO - Here's sample data modified:
+ PatientID
+   1629574
+   1602244
+2025-03-09 00:10:05,478 - INFO - Total rows data inserted: 1297
+2025-03-09 00:10:05,478 - INFO - Here's sample data inserted:
+ PatientID
+   2288289
+   2288294
+2025-03-09 00:10:06,712 - INFO - success updated data 1481 rows
+2025-03-09 00:10:08,369 - INFO - Success inserted new data 1297 rows 
+2025-03-09 00:10:08,384 - INFO - Memory after execution: 85.609375
+2025-03-09 00:10:08,384 - INFO - Memory used: 18.18359375
+2025-03-09 00:10:08,384 - INFO - total time execution: 6.593743562698364
+
+2025-03-09 12:05:01,806 - INFO - Memory before execution: 67.41015625
+2025-03-09 12:05:01,993 - INFO - success connect to DB!
+2025-03-09 12:05:09,243 - INFO - Extracted 2778 rows from DB Staging
+2025-03-09 12:05:09,900 - INFO - Total rows data modified: 2778
+2025-03-09 12:05:09,900 - INFO - Here's sample data modified:
+ PatientID
+   1038299
+   1038876
+2025-03-09 12:05:09,900 - INFO - Total rows data inserted: 0
+2025-03-09 12:05:09,900 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-09 12:05:11,587 - INFO - success updated data 2778 rows
+2025-03-09 12:05:11,587 - INFO - There is no data new
+2025-03-09 12:05:11,587 - INFO - Memory after execution: 87.69140625
+2025-03-09 12:05:11,587 - INFO - Memory used: 20.28125
+2025-03-09 12:05:11,587 - INFO - total time execution: 9.781245708465576
+
+2025-03-10 00:10:01,798 - INFO - Memory before execution: 67.42578125
+2025-03-10 00:10:02,407 - INFO - success connect to DB!
+2025-03-10 00:10:04,079 - INFO - Extracted 2267 rows from DB Staging
+2025-03-10 00:10:05,157 - INFO - Total rows data modified: 1423
+2025-03-10 00:10:05,157 - INFO - Here's sample data modified:
+ PatientID
+   1661558
+   2124685
+2025-03-10 00:10:05,157 - INFO - Total rows data inserted: 844
+2025-03-10 00:10:05,157 - INFO - Here's sample data inserted:
+ PatientID
+   2289455
+   2289584
+2025-03-10 00:10:07,407 - INFO - success updated data 1423 rows
+2025-03-10 00:10:08,188 - INFO - Success inserted new data 844 rows 
+2025-03-10 00:10:08,204 - INFO - Memory after execution: 83.8046875
+2025-03-10 00:10:08,204 - INFO - Memory used: 16.37890625
+2025-03-10 00:10:08,204 - INFO - total time execution: 6.406250476837158
+

@@ -1,0 +1,23 @@
+  TanggalKirim             JenisPegawai  Jumlah
+0   2025-03-10          JumlahPenunjang    1053
+1   2025-03-10  JumlahStaffAdministrasi    1383
+2   2025-03-10            JumlahPerawat    1964
+3   2025-03-10             JumlahDokter     598
+4   2025-03-10          Tidak Diketahui       1
+Empty DataFrame
+Columns: [TanggalKirim, JenisPegawai, Jumlah]
+Index: []
+total row update : 0
+Empty DataFrame
+Columns: [TanggalKirim, JenisPegawai, Jumlah]
+Index: []
+total row inserted : 5
+  TanggalKirim             JenisPegawai  Jumlah
+0   2025-03-10          JumlahPenunjang    1053
+1   2025-03-10  JumlahStaffAdministrasi    1383
+2   2025-03-10            JumlahPerawat    1964
+3   2025-03-10             JumlahDokter     598
+4   2025-03-10          Tidak Diketahui       1
+success insert all data without update
+21.18749475479126
+scheduler tanggal : 2025-03-10 02:00:02.254793

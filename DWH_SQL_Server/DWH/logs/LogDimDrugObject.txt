@@ -1,0 +1,6 @@
+Empty DataFrame
+Columns: [ID, ObjID, KfaID, KfaCode, KfaName, StatusCode, CreatedUserID, CreatedDate, UpdateUserID, UpdateDate]
+Index: []
+tidak ada data dari source
+0.4531283378601074
+scheduler tanggal : 2025-03-10 01:00:02.208947

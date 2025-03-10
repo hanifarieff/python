@@ -1,0 +1,21 @@
+    EmployeeID AttendanceDate     AttendanceStart  ...           EmployeeName EmployeeOrgID  EmployeeNo
+0        10066     2025-02-03 2025-02-03 07:28:07  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+1        10066     2025-02-04 2025-02-04 08:36:57  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+2        10066     2025-02-05 2025-02-05 07:25:32  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+3        10066     2025-02-06 2025-02-06 08:13:59  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+4        10066     2025-02-07 2025-02-07 08:55:50  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+5        10066     2025-02-08 2025-02-08 07:46:50  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+6        10066     2025-02-10 2025-02-10 07:32:50  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+7        10066     2025-02-12 2025-02-12 07:13:30  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+8        10066     2025-02-13 2025-02-13 08:32:38  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+9        10066     2025-02-14 2025-02-14 09:02:58  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+10       10066     2025-02-17 2025-02-17 08:44:37  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+11       10066     2025-02-19 2025-02-19 07:06:40  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+12       10066     2025-02-20 2025-02-20 08:25:42  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+13       10066     2025-02-21 2025-02-21 07:54:55  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+14       10066     2025-02-22 2025-02-22 07:41:06  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+15       10066     2025-02-26 2025-02-26 07:12:57  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+16       10066     2025-02-27 2025-02-27 07:42:49  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+17       10066     2025-02-28 2025-02-28 08:40:40  ...  Tri Wahyuningsih, SKM          2535   NPS143959
+
+[18 rows x 7 columns]

@@ -1,0 +1,5 @@
+successfully connect to all database
+()
+Empty DataFrame
+Columns: [TglTransaksi, Jumlah]
+Index: []

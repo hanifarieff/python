@@ -1,0 +1,53 @@
+     ReportID  ... IsAddendum
+0     1797820  ...          n
+1     1797821  ...          n
+2     1797841  ...          n
+3     1797860  ...          n
+4     1797869  ...          n
+..        ...  ...        ...
+387   1797354  ...          n
+388   1797360  ...          n
+389   1797367  ...          n
+390   1797391  ...          n
+391   1797395  ...          n
+
+[392 rows x 12 columns]
+     ReportID AccessionNumber  ...             ResponsibleObserverName IsAddendum
+0     1798689              CT  ...    dr Mohammad Reynalzi Yugo, SpRad          y
+1     1798516              MR  ...   dr. Heltara Ramandika, SpRad (K).          n
+2     1798681              CR  ...  Dr. dr. Marcel Prasetyo, SpRad (K)          n
+3     1799092              KA  ...  dr. Damayanti Sekarsari, SpRad (K)          n
+4     1797666              CR  ...     dr. Thariqah Salamah, SpRad (K)          n
+..        ...             ...  ...                                 ...        ...
+223   1799500              CT  ...            dr. Radius Kusuma, SpRad          n
+224   1799508              GD  ...            dr. Radius Kusuma, SpRad          n
+225   1799509              GD  ...            dr. Radius Kusuma, SpRad          n
+226   1799510              GD  ...            dr. Radius Kusuma, SpRad          n
+227   1799511              GD  ...            dr. Radius Kusuma, SpRad          n
+
+[228 rows x 12 columns]
+total row update : 0
+Empty DataFrame
+Columns: [ReportID, AccessionNumber, OrderID, MedicalNo, OrderDate, ObservationDate, ServiceID, ServiceName]
+Index: []
+Empty DataFrame
+Columns: [ServiceName, Report, ResponsibleObserverID, ResponsibleObserverName, IsAddendum]
+Index: []
+total row inserted : 164
+     ReportID AccessionNumber  ...            ResponsibleObserverName IsAddendum
+212   1799512              US  ...           dr. Radius Kusuma, SpRad          n
+213   1799513               R  ...           dr. Radius Kusuma, SpRad          n
+214   1799514              GD  ...           dr. Radius Kusuma, SpRad          n
+215   1799515              GD  ...           dr. Radius Kusuma, SpRad          n
+216   1799516               R  ...           dr. Radius Kusuma, SpRad          n
+..        ...             ...  ...                                ...        ...
+371   1799671              CT  ...  dr. Heltara Ramandika, SpRad (K).          n
+372   1799672              KA  ...        dr. H.F. Wulandari, Sp.A(K)          n
+373   1799673              KA  ...        dr. H.F. Wulandari, Sp.A(K)          n
+374   1799674              GD  ...  dr. Heltara Ramandika, SpRad (K).          n
+375   1799675              US  ...   dr Mohammad Reynalzi Yugo, SpRad          n
+
+[164 rows x 12 columns]
+success insert all data without update
+11.203124523162842
+scheduler tanggal : 2025-03-09 23:35:02.065660

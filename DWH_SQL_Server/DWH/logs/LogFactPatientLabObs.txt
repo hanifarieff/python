@@ -1,0 +1,48 @@
+       PatientSurrogateKeyID  PatientID  ...                OrderName                 DoctorResponsible
+0                    5739079         95  ...                  Glucose             Najib Ali, dr., Sp.PK
+1                    5739079         95  ...                  Glucose     Sanny Kusuma Sary, dr., Sp.PK
+2                    6019238      12797  ...  Hemato Onkologi Non LED  dr. Reiva Wisdharilla M D, SpPK~
+3                    5709262      15641  ...    Darah Perifer Lengkap      dr. Sanny Kusuma Sary, SpPK~
+4                    6036159      29493  ...                  Glucose             Najib Ali, dr., Sp.PK
+...                      ...        ...  ...                      ...                               ...
+32476                6096742    2291419  ...              Ureum Darah              DR. DINDA YENVIARTI~
+32477                6096742    2291419  ...              Ureum Darah              DR. DINDA YENVIARTI~
+32478                6096742    2291419  ...   Elektrolit (Na, K, Cl)              DR. DINDA YENVIARTI~
+32479                6096742    2291419  ...   Elektrolit (Na, K, Cl)              DR. DINDA YENVIARTI~
+32480                6096742    2291419  ...   Elektrolit (Na, K, Cl)              DR. DINDA YENVIARTI~
+
+[32481 rows x 6 columns]
+total row update : 75
+       PatientSurrogateKeyID  PatientID  ...                 OrderName                  DoctorResponsible
+12                   6036159      29493  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+5565                 6093438    1533932  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+7399                 4239794    1687471  ...              Lipase Darah               dr. Najib Ali, SpPK~
+7401                 4239794    1687471  ...        Amilase Pankreatik               dr. Najib Ali, SpPK~
+7542                 6055876    1697534  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+...                      ...        ...  ...                       ...                                ...
+24569                6093336    2288248  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+24572                6093308    2288259  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+24740                6093313    2288264  ...  Biakan+Res Anaerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+24742                6093337    2288266  ...    Biakan+Res Aerob Darah  dr. Yulia Rosa Saharman, SpMK(K)~
+26294                6093968    2288781  ...            Screening G6PD       dr. Sanny Kusuma Sary, SpPK~
+
+[75 rows x 6 columns]
+total row inserted : 13650
+       PatientSurrogateKeyID  PatientID  ...               OrderName              DoctorResponsible
+1                    5739079         95  ...                 Glucose  Sanny Kusuma Sary, dr., Sp.PK
+7                    6036159      29493  ...                 Glucose  Sanny Kusuma Sary, dr., Sp.PK
+8                    6036159      29493  ...                 Glucose  Sanny Kusuma Sary, dr., Sp.PK
+9                    6036159      29493  ...                 Glucose  Sanny Kusuma Sary, dr., Sp.PK
+10                   6036159      29493  ...                 Glucose  Sanny Kusuma Sary, dr., Sp.PK
+...                      ...        ...  ...                     ...                            ...
+32476                6096742    2291419  ...             Ureum Darah           DR. DINDA YENVIARTI~
+32477                6096742    2291419  ...             Ureum Darah           DR. DINDA YENVIARTI~
+32478                6096742    2291419  ...  Elektrolit (Na, K, Cl)           DR. DINDA YENVIARTI~
+32479                6096742    2291419  ...  Elektrolit (Na, K, Cl)           DR. DINDA YENVIARTI~
+32480                6096742    2291419  ...  Elektrolit (Na, K, Cl)           DR. DINDA YENVIARTI~
+
+[13650 rows x 6 columns]
+UPDATE t SET t.PatientSurrogateKeyID = s.PatientSurrogateKeyID, t.MedicalNo = s.MedicalNo, t.OrderName = s.OrderName, t.OrderRequestDate = s.OrderRequestDate, t.ObservationName = s.ObservationName, t.ObservationValue = s.ObservationValue, t.ObservationUnit = s.ObservationUnit, t.AbnormalFlag = s.AbnormalFlag, t.RefRange = s.RefRange, t.ObservationNotes = s.ObservationNotes, t.ResultDate = s.ResultDate, t.DoctorResponsible = s.DoctorResponsible, t.CreatedDate = s.CreatedDate, t.StatusCode = s.StatusCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactPatientLabObs t INNER JOIN (SELECT * FROM dwhrscm_talend.FactPatientLabObs_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID  WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID;
+all success updated and inserted
+163.03772521018982
+scheduler tanggal : 2025-03-10 09:16:37.852709

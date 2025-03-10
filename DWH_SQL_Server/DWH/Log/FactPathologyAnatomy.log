@@ -1,0 +1,193 @@
+2025-02-20 04:05:01,988 - INFO - Memory before execution: 67.671875
+2025-02-20 04:05:02,087 - INFO - success connect to DB!
+2025-02-20 04:05:05,905 - INFO - Extracted 1527 rows from DB Staging
+2025-02-20 04:05:07,095 - INFO - Total rows data modified: 128
+2025-02-20 04:05:07,095 - INFO - Total rows data inserted: 420
+2025-02-20 04:05:07,801 - INFO - success updated data 128 rows
+2025-02-20 04:05:08,590 - INFO - Success inserted new data 420 rows 
+2025-02-20 04:05:08,602 - INFO - Memory after execution: 79.93359375
+2025-02-20 04:05:08,602 - INFO - Memory used: 12.26171875
+2025-02-20 04:05:08,602 - INFO - total time execution: 6.612996578216553
+
+2025-02-21 04:05:02,031 - INFO - Memory before execution: 67.6015625
+2025-02-21 04:05:02,093 - INFO - success connect to DB!
+2025-02-21 04:05:05,343 - INFO - Extracted 1832 rows from DB Staging
+2025-02-21 04:05:06,453 - INFO - Total rows data modified: 125
+2025-02-21 04:05:06,453 - INFO - Total rows data inserted: 786
+2025-02-21 04:05:06,718 - INFO - success updated data 125 rows
+2025-02-21 04:05:07,203 - INFO - Success inserted new data 786 rows 
+2025-02-21 04:05:07,203 - INFO - Memory after execution: 80.37890625
+2025-02-21 04:05:07,203 - INFO - Memory used: 12.77734375
+2025-02-21 04:05:07,203 - INFO - total time execution: 5.171869277954102
+
+2025-02-22 04:05:01,984 - INFO - Memory before execution: 67.67578125
+2025-02-22 04:05:02,068 - INFO - success connect to DB!
+2025-02-22 04:05:04,819 - INFO - Extracted 1841 rows from DB Staging
+2025-02-22 04:05:06,025 - INFO - Total rows data modified: 234
+2025-02-22 04:05:06,025 - INFO - Total rows data inserted: 349
+2025-02-22 04:05:07,054 - INFO - success updated data 234 rows
+2025-02-22 04:05:07,164 - INFO - Success inserted new data 349 rows 
+2025-02-22 04:05:07,553 - INFO - Memory after execution: 80.61328125
+2025-02-22 04:05:07,553 - INFO - Memory used: 12.9375
+2025-02-22 04:05:07,553 - INFO - total time execution: 5.566998243331909
+
+2025-02-23 04:05:02,003 - INFO - Memory before execution: 67.63671875
+2025-02-23 04:05:02,077 - INFO - success connect to DB!
+2025-02-23 04:05:03,814 - INFO - Extracted 1907 rows from DB Staging
+2025-02-23 04:05:04,790 - INFO - Total rows data modified: 15
+2025-02-23 04:05:04,790 - INFO - Total rows data inserted: 514
+2025-02-23 04:05:05,074 - INFO - success updated data 15 rows
+2025-02-23 04:05:05,199 - INFO - Success inserted new data 514 rows 
+2025-02-23 04:05:05,210 - INFO - Memory after execution: 81.23828125
+2025-02-23 04:05:05,210 - INFO - Memory used: 13.6015625
+2025-02-23 04:05:05,210 - INFO - total time execution: 3.202993392944336
+
+2025-02-24 04:05:03,065 - INFO - Memory before execution: 67.6328125
+2025-02-24 04:05:03,147 - INFO - success connect to DB!
+2025-02-24 04:05:05,436 - INFO - Extracted 1112 rows from DB Staging
+2025-02-24 04:05:06,146 - INFO - Total rows data modified: 0
+2025-02-24 04:05:06,146 - INFO - Total rows data inserted: 0
+2025-02-24 04:05:06,146 - INFO - There is no data updated
+2025-02-24 04:05:06,146 - INFO - There is no data new
+2025-02-24 04:05:06,148 - INFO - Memory after execution: 77.46875
+2025-02-24 04:05:06,148 - INFO - Memory used: 9.8359375
+2025-02-24 04:05:06,148 - INFO - total time execution: 3.079998731613159
+
+2025-02-25 04:05:01,994 - INFO - Memory before execution: 67.4765625
+2025-02-25 04:05:46,385 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-25 04:05:46,385 - INFO - Preparing to send email notification.
+2025-02-25 04:05:48,057 - INFO - Connecting to SMTP server.
+2025-02-25 04:05:50,682 - INFO - Email sent successfully.
+2025-02-25 10:39:49,776 - INFO - Memory before execution: 67.7734375
+2025-02-25 10:39:50,255 - INFO - success connect to DB!
+2025-02-25 10:39:53,541 - INFO - Extracted 1300 rows from DB Staging
+2025-02-25 10:39:54,656 - INFO - Total rows data modified: 580
+2025-02-25 10:39:54,657 - INFO - Total rows data inserted: 600
+2025-02-25 10:39:55,083 - INFO - success updated data 580 rows
+2025-02-25 10:39:58,497 - INFO - Success inserted new data 600 rows 
+2025-02-25 10:39:58,528 - INFO - Memory after execution: 79.9765625
+2025-02-25 10:39:58,528 - INFO - Memory used: 12.203125
+2025-02-25 10:39:58,528 - INFO - total time execution: 8.751858711242676
+
+2025-02-26 04:05:02,077 - INFO - Memory before execution: 67.61328125
+2025-02-26 04:05:02,162 - INFO - success connect to DB!
+2025-02-26 04:05:04,050 - INFO - Extracted 1669 rows from DB Staging
+2025-02-26 04:05:05,385 - INFO - Total rows data modified: 11
+2025-02-26 04:05:05,385 - INFO - Total rows data inserted: 489
+2025-02-26 04:05:05,724 - INFO - success updated data 11 rows
+2025-02-26 04:05:06,575 - INFO - Success inserted new data 489 rows 
+2025-02-26 04:05:06,578 - INFO - Memory after execution: 79.98828125
+2025-02-26 04:05:06,579 - INFO - Memory used: 12.375
+2025-02-26 04:05:06,579 - INFO - total time execution: 4.499999523162842
+
+2025-02-27 04:05:02,023 - INFO - Memory before execution: 67.63671875
+2025-02-27 04:05:02,132 - INFO - success connect to DB!
+2025-02-27 04:05:03,945 - INFO - Extracted 2179 rows from DB Staging
+2025-02-27 04:05:05,195 - INFO - Total rows data modified: 97
+2025-02-27 04:05:05,195 - INFO - Total rows data inserted: 413
+2025-02-27 04:05:05,476 - INFO - success updated data 97 rows
+2025-02-27 04:05:06,101 - INFO - Success inserted new data 413 rows 
+2025-02-27 04:05:06,101 - INFO - Memory after execution: 81.21484375
+2025-02-27 04:05:06,101 - INFO - Memory used: 13.578125
+2025-02-27 04:05:06,101 - INFO - total time execution: 4.078123569488525
+
+2025-02-28 04:05:04,966 - INFO - Memory before execution: 67.546875
+2025-02-28 04:05:05,094 - INFO - success connect to DB!
+2025-02-28 04:05:06,483 - INFO - Extracted 1528 rows from DB Staging
+2025-02-28 04:05:07,275 - INFO - Total rows data modified: 6
+2025-02-28 04:05:07,275 - INFO - Total rows data inserted: 512
+2025-02-28 04:05:07,460 - INFO - success updated data 6 rows
+2025-02-28 04:05:07,887 - INFO - Success inserted new data 512 rows 
+2025-02-28 04:05:07,891 - INFO - Memory after execution: 80.03125
+2025-02-28 04:05:07,891 - INFO - Memory used: 12.484375
+2025-02-28 04:05:07,891 - INFO - total time execution: 2.9220073223114014
+
+2025-03-01 04:05:02,132 - INFO - Memory before execution: 67.640625
+2025-03-01 04:05:04,728 - INFO - success connect to DB!
+2025-03-01 04:05:07,157 - INFO - Extracted 1394 rows from DB Staging
+2025-03-01 04:05:11,231 - INFO - Total rows data modified: 328
+2025-03-01 04:05:11,231 - INFO - Total rows data inserted: 213
+2025-03-01 04:05:13,498 - INFO - success updated data 328 rows
+2025-03-01 04:05:14,522 - INFO - Success inserted new data 213 rows 
+2025-03-01 04:05:14,710 - INFO - Memory after execution: 79.53515625
+2025-03-01 04:05:14,710 - INFO - Memory used: 11.89453125
+2025-03-01 04:05:14,710 - INFO - total time execution: 12.577005863189697
+
+2025-03-04 04:05:01,865 - INFO - Memory before execution: 67.6484375
+2025-03-04 04:05:02,428 - INFO - success connect to DB!
+2025-03-04 04:05:03,474 - INFO - Extracted 309 rows from DB Staging
+2025-03-04 04:05:04,140 - INFO - Total rows data modified: 14
+2025-03-04 04:05:04,140 - INFO - Total rows data inserted: 295
+2025-03-04 04:05:04,500 - INFO - success updated data 14 rows
+2025-03-04 04:05:04,647 - INFO - Success inserted new data 295 rows 
+2025-03-04 04:05:04,650 - INFO - Memory after execution: 76.2421875
+2025-03-04 04:05:04,651 - INFO - Memory used: 8.59375
+2025-03-04 04:05:04,651 - INFO - total time execution: 2.7829997539520264
+
+2025-03-05 04:05:01,889 - INFO - Memory before execution: 67.73828125
+2025-03-05 04:05:02,030 - INFO - success connect to DB!
+2025-03-05 04:05:03,717 - INFO - Extracted 713 rows from DB Staging
+2025-03-05 04:05:04,296 - INFO - Total rows data modified: 2
+2025-03-05 04:05:04,296 - INFO - Total rows data inserted: 404
+2025-03-05 04:05:04,499 - INFO - success updated data 2 rows
+2025-03-05 04:05:04,624 - INFO - Success inserted new data 404 rows 
+2025-03-05 04:05:04,624 - INFO - Memory after execution: 77.3046875
+2025-03-05 04:05:04,624 - INFO - Memory used: 9.56640625
+2025-03-05 04:05:04,624 - INFO - total time execution: 2.7343735694885254
+
+2025-03-06 04:05:01,935 - INFO - Memory before execution: 67.6796875
+2025-03-06 04:05:02,013 - INFO - success connect to DB!
+2025-03-06 04:05:04,388 - INFO - Extracted 1102 rows from DB Staging
+2025-03-06 04:05:05,060 - INFO - Total rows data modified: 154
+2025-03-06 04:05:05,060 - INFO - Total rows data inserted: 314
+2025-03-06 04:05:05,279 - INFO - success updated data 154 rows
+2025-03-06 04:05:05,700 - INFO - Success inserted new data 314 rows 
+2025-03-06 04:05:05,700 - INFO - Memory after execution: 78.47265625
+2025-03-06 04:05:05,700 - INFO - Memory used: 10.79296875
+2025-03-06 04:05:05,700 - INFO - total time execution: 3.765615224838257
+
+2025-03-07 04:05:01,915 - INFO - Memory before execution: 67.640625
+2025-03-07 04:05:01,993 - INFO - success connect to DB!
+2025-03-07 04:05:05,837 - INFO - Extracted 1242 rows from DB Staging
+2025-03-07 04:05:06,587 - INFO - Total rows data modified: 15
+2025-03-07 04:05:06,587 - INFO - Total rows data inserted: 372
+2025-03-07 04:05:06,774 - INFO - success updated data 15 rows
+2025-03-07 04:05:07,274 - INFO - Success inserted new data 372 rows 
+2025-03-07 04:05:07,274 - INFO - Memory after execution: 78.83984375
+2025-03-07 04:05:07,274 - INFO - Memory used: 11.19921875
+2025-03-07 04:05:07,274 - INFO - total time execution: 5.359374284744263
+
+2025-03-08 04:05:02,060 - INFO - Memory before execution: 67.55078125
+2025-03-08 04:05:02,201 - INFO - success connect to DB!
+2025-03-08 04:05:04,310 - INFO - Extracted 1241 rows from DB Staging
+2025-03-08 04:05:05,045 - INFO - Total rows data modified: 14
+2025-03-08 04:05:05,045 - INFO - Total rows data inserted: 382
+2025-03-08 04:05:05,592 - INFO - success updated data 14 rows
+2025-03-08 04:05:05,967 - INFO - Success inserted new data 382 rows 
+2025-03-08 04:05:05,967 - INFO - Memory after execution: 78.90625
+2025-03-08 04:05:05,967 - INFO - Memory used: 11.35546875
+2025-03-08 04:05:05,967 - INFO - total time execution: 3.9062411785125732
+
+2025-03-09 04:05:01,927 - INFO - Memory before execution: 67.6796875
+2025-03-09 04:05:02,005 - INFO - success connect to DB!
+2025-03-09 04:05:02,536 - INFO - Extracted 779 rows from DB Staging
+2025-03-09 04:05:03,255 - INFO - Total rows data modified: 0
+2025-03-09 04:05:03,255 - INFO - Total rows data inserted: 0
+2025-03-09 04:05:03,255 - INFO - There is no data updated
+2025-03-09 04:05:03,255 - INFO - There is no data new
+2025-03-09 04:05:03,255 - INFO - Memory after execution: 76.30859375
+2025-03-09 04:05:03,255 - INFO - Memory used: 8.62890625
+2025-03-09 04:05:03,255 - INFO - total time execution: 1.3281264305114746
+
+2025-03-10 04:05:01,970 - INFO - Memory before execution: 67.6171875
+2025-03-10 04:05:02,033 - INFO - success connect to DB!
+2025-03-10 04:05:03,861 - INFO - Extracted 396 rows from DB Staging
+2025-03-10 04:05:04,502 - INFO - Total rows data modified: 0
+2025-03-10 04:05:04,502 - INFO - Total rows data inserted: 0
+2025-03-10 04:05:04,502 - INFO - There is no data updated
+2025-03-10 04:05:04,502 - INFO - There is no data new
+2025-03-10 04:05:04,502 - INFO - Memory after execution: 75.046875
+2025-03-10 04:05:04,502 - INFO - Memory used: 7.4296875
+2025-03-10 04:05:04,502 - INFO - total time execution: 2.51562762260437
+

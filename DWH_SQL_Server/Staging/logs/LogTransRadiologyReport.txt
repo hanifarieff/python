@@ -1,0 +1,140 @@
+      ReportID  ... IsAddendum
+0      1797797  ...          n
+1      1797798  ...          n
+2      1797800  ...          n
+3      1797801  ...          n
+4      1797802  ...          y
+...        ...  ...        ...
+1873   1799671  ...          n
+1874   1799672  ...          n
+1875   1799673  ...          n
+1876   1799674  ...          n
+1877   1799675  ...          n
+
+[1878 rows x 12 columns]
+      ReportID  MedicalNo  ...                ResponsibleObserverName IsAddendum
+0      1798200  485-57-07  ...  dr. Reyhan Eddy Yunus, SpRad (K), MSc          n
+1      1798650  448-34-37  ...               dr. Radius Kusuma, SpRad          n
+2      1799016  484-73-73  ...          dr Mohamad Yanuar Amal, SpRad          n
+3      1798113  480-67-43  ...     Dr. dr. Marcel Prasetyo, SpRad (K)          n
+4      1798057  481-14-95  ...     Dr. dr. Marcel Prasetyo, SpRad (K)          n
+...        ...        ...  ...                                    ...        ...
+1709   1799500  456-89-69  ...               dr. Radius Kusuma, SpRad          n
+1710   1799508  482-45-79  ...               dr. Radius Kusuma, SpRad          n
+1711   1799509  381-12-11  ...               dr. Radius Kusuma, SpRad          n
+1712   1799510  484-06-03  ...               dr. Radius Kusuma, SpRad          n
+1713   1799511  484-06-04  ...               dr. Radius Kusuma, SpRad          n
+
+[1714 rows x 12 columns]
+total row update : 43
+      ReportID  ...                                        ServiceName
+19     1797817  ...                                          SCANOGRAM
+22     1797820  ...                                  SCOLIOSIS PROGRAM
+23     1797821  ...                                          SCANOGRAM
+43     1797841  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+62     1797860  ...                                  SCOLIOSIS PROGRAM
+71     1797869  ...                                    PELVIS 1 POSISI
+87     1797885  ...                                  PROGRAM SKOLIOSIS
+115    1797913  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+126    1797924  ...                                  PROGRAM SKOLIOSIS
+141    1797939  ...                                        BONE SURVEY
+227    1798024  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+526    1798324  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+717    1798515  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+718    1798516  ...                                MRI CARDIAC KONTRAS
+747    1798546  ...                                            CT OTAK
+759    1798558  ...                                             PELVIS
+766    1798564  ...                              WHOLE BODY SCAN I-131
+783    1798581  ...                                          SCANOGRAM
+785    1798584  ...                         SHOULDER IMPINGMENT SERIES
+840    1798638  ...                             USG PERGELANGAN TANGAN
+883    1798681  ...                                              PEDIS
+891    1798689  ...                                 CT THORAKS KONTRAS
+922    1798720  ...                                    PEDIS BILATERAL
+976    1798774  ...                                   ABDOMEN 1 POSISI
+984    1798782  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+986    1798784  ...                                   ABDOMEN 1 POSISI
+1056   1798855  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1057   1798854  ...                                   ABDOMEN 1 POSISI
+1058   1798856  ...                                   ABDOMEN 1 POSISI
+1059   1798857  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1064   1798862  ...                                   ABDOMEN 1 POSISI
+1065   1798863  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1108   1798906  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1122   1798920  ...                                  SCOLIOSIS PROGRAM
+1174   1798972  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1294   1799092  ...                      MRI HIPOFISIS DYNAMIC KONTRAS
+1302   1799100  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1408   1799206  ...                                        BONE SURVEY
+1464   1799262  ...                                             PELVIS
+1512   1799310  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1517   1799315  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+1526   1799324  ...                                   ABDOMEN 1 POSISI
+1528   1799326  ...  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...
+
+[43 rows x 8 columns]
+                                            ServiceName  ... IsAddendum
+19                                            SCANOGRAM  ...          n
+22                                    SCOLIOSIS PROGRAM  ...          n
+23                                            SCANOGRAM  ...          n
+43    THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+62                                    SCOLIOSIS PROGRAM  ...          n
+71                                      PELVIS 1 POSISI  ...          n
+87                                    PROGRAM SKOLIOSIS  ...          n
+115   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+126                                   PROGRAM SKOLIOSIS  ...          n
+141                                         BONE SURVEY  ...          n
+227   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+526   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+717   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+718                                 MRI CARDIAC KONTRAS  ...          n
+747                                             CT OTAK  ...          n
+759                                              PELVIS  ...          n
+766                               WHOLE BODY SCAN I-131  ...          n
+783                                           SCANOGRAM  ...          n
+785                          SHOULDER IMPINGMENT SERIES  ...          n
+840                              USG PERGELANGAN TANGAN  ...          n
+883                                               PEDIS  ...          n
+891                                  CT THORAKS KONTRAS  ...          y
+922                                     PEDIS BILATERAL  ...          n
+976                                    ABDOMEN 1 POSISI  ...          n
+984   THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+986                                    ABDOMEN 1 POSISI  ...          y
+1056  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1057                                   ABDOMEN 1 POSISI  ...          n
+1058                                   ABDOMEN 1 POSISI  ...          n
+1059  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1064                                   ABDOMEN 1 POSISI  ...          y
+1065  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          y
+1108  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1122                                  SCOLIOSIS PROGRAM  ...          n
+1174  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1294                      MRI HIPOFISIS DYNAMIC KONTRAS  ...          n
+1302  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1408                                        BONE SURVEY  ...          n
+1464                                             PELVIS  ...          n
+1512  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1517  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+1526                                   ABDOMEN 1 POSISI  ...          n
+1528  THORAX 1 PROYEKSI ( PA / AP / LATERAL / TOP LO...  ...          n
+
+[43 rows x 5 columns]
+total row inserted : 164
+      ReportID  MedicalNo  ...            ResponsibleObserverName IsAddendum
+1714   1799512  484-05-83  ...           dr. Radius Kusuma, SpRad          n
+1715   1799513  345-40-02  ...           dr. Radius Kusuma, SpRad          n
+1716   1799514  484-06-05  ...           dr. Radius Kusuma, SpRad          n
+1717   1799515  484-40-68  ...           dr. Radius Kusuma, SpRad          n
+1718   1799516  405-45-31  ...           dr. Radius Kusuma, SpRad          n
+...        ...        ...  ...                                ...        ...
+1873   1799671  484-06-12  ...  dr. Heltara Ramandika, SpRad (K).          n
+1874   1799672  484-02-20  ...        dr. H.F. Wulandari, Sp.A(K)          n
+1875   1799673  484-02-20  ...        dr. H.F. Wulandari, Sp.A(K)          n
+1876   1799674  484-06-45  ...  dr. Heltara Ramandika, SpRad (K).          n
+1877   1799675  462-80-60  ...   dr Mohammad Reynalzi Yugo, SpRad          n
+
+[164 rows x 12 columns]
+UPDATE r SET r.MedicalNo = t.MedicalNo, r.AccessionNumber = t.AccessionNumber, r.OrderID = t.OrderID, r.OrderDate = t.OrderDate, r.ObservationDate = t.ObservationDate, r.ServiceID = t.ServiceID, r.ServiceName = t.ServiceName, r.Report = t.Report, r.ResponsibleObserverID = t.ResponsibleObserverID, r.ResponsibleObserverName = t.ResponsibleObserverName, r.IsAddendum = t.IsAddendum , r.UpdateDateStaging = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransRadiologyReport r INNER JOIN (SELECT * FROM staging_rscm.TransRadiologyReport_temporary_table) as t ON r.ReportID = t.ReportID  WHERE r.ReportID = t.ReportID ;
+success update and insert all data
+19.640616416931152
+scheduler tanggal : 2025-03-09 23:30:01.733842

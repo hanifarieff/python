@@ -1,0 +1,1 @@
+(1130, "Host '172.16.5.224' is not allowed to connect to this MariaDB server")

@@ -1,0 +1,159 @@
+Memory before: 66.36328125 MB
+             OrderID  PatientID  AdmissionID  ...  OrgID TarifClass AnesthesiaCode
+0     00190005755529    1563261            6  ...    691       None           None
+1     00210004214889    1795482           16  ...    552       None           None
+2     00210004216691    1795482           16  ...    552       None           None
+3     00210004555330    1795482           16  ...    552       None           None
+4     00210004555330    1795482           16  ...    552       None           None
+...              ...        ...          ...  ...    ...        ...            ...
+9436  00220001453641    1703931           15  ...    201       None           None
+9437  00220001453643    1703931           15  ...    201       None           None
+9438  00220001453643    1703931           15  ...    201       None           None
+9439  00220001453644    1089643          315  ...    200       None           None
+9440  00220001453645    2291420            1  ...    486       None           None
+
+[9441 rows x 36 columns]
+Source Data:
+             OrderID  PatientID  ...  AnesthesiaCode  ObjectGroupingName
+0     00190005755529    1563261  ...            None          konsultasi
+1     00210004214889    1795482  ...            None           radiologi
+2     00210004216691    1795482  ...            None           radiologi
+3     00210004555330    1795482  ...            None           radiologi
+4     00210004555330    1795482  ...            None           radiologi
+...              ...        ...  ...             ...                 ...
+9436  00220001453641    1703931  ...            None                None
+9437  00220001453643    1703931  ...            None                None
+9438  00220001453643    1703931  ...            None                None
+9439  00220001453644    1089643  ...            None        laboratorium
+9440  00220001453645    2291420  ...            None           radiologi
+
+[9441 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+OrgID                          int64
+TarifClass                    object
+AnesthesiaCode                object
+ObjectGroupingName            object
+dtype: object
+Target Data:
+             OrderID  PatientID  ...  AnesthesiaCode  ObjectGroupingName
+0     00190005755529    1563261  ...            None          konsultasi
+1     00210004214889    1795482  ...            None           radiologi
+2     00210004214889    1795482  ...            None           radiologi
+3     00210004216691    1795482  ...            None           radiologi
+4     00210004216691    1795482  ...            None           radiologi
+...              ...        ...  ...             ...                 ...
+5358  00220001445485    2256977  ...           LOCAL                None
+5359  00220001445486    2256977  ...           LOCAL                None
+5360  00220001445487    2256977  ...           LOCAL                None
+5361  00220001445488    2256977  ...           LOCAL                None
+5362  00220001445501    1652716  ...           LOCAL                None
+
+[5363 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+OrgID                        float64
+TarifClass                    object
+AnesthesiaCode                object
+ObjectGroupingName            object
+dtype: object
+Changes Detected:
+Modified Data:
+             OrderID  PatientID  ...  AnesthesiaCode  ObjectGroupingName
+1     00210004214889    1795482  ...            None           radiologi
+2     00210004216691    1795482  ...            None           radiologi
+3     00210004555330    1795482  ...            None           radiologi
+4     00210004555330    1795482  ...            None           radiologi
+6     00210006209347    1795482  ...            None           radiologi
+...              ...        ...  ...             ...                 ...
+5416  00220001445422    1652716  ...           LOCAL                None
+5419  00220001445430    1652716  ...           LOCAL                None
+5428  00220001445457    2290641  ...            None        laboratorium
+5432  00220001445477    1652716  ...           LOCAL                None
+5439  00220001445501    1652716  ...           LOCAL                None
+
+[798 rows x 37 columns]
+Inserted Data:
+             OrderID  EmployeeID  ... CategoryName ObjectGroupingName
+5     00210005859044        6061  ...    penunjang          radiologi
+9     00210007505674        6061  ...    penunjang          radiologi
+10    00210007528911        6061  ...    penunjang          radiologi
+12    00220000475883        2097  ...     visitasi         konsultasi
+16    00220000892640        6061  ...     tindakan          radiologi
+...              ...         ...  ...          ...                ...
+9436  00220001453641       19981  ...    penunjang               None
+9437  00220001453643       19981  ...    penunjang               None
+9438  00220001453643       19981  ...    penunjang               None
+9439  00220001453644       19981  ...    penunjang       laboratorium
+9440  00220001453645       16886  ...    penunjang          radiologi
+
+[4097 rows x 5 columns]
+
+Data Success Updated
+Data Success Inserted
+967.7968306541443
+Memory after: 86.22265625 MB
+Memory used: 19.859375 MB
+scheduler tanggal : 2025-03-10 03:46:09.592263

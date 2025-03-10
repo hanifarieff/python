@@ -1,0 +1,62 @@
+Memory before: 66.84375 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/StagingRSCM?driver=SQL+Server+Native+Client+11.0)
+Ini source fix setelah transform kolom
+      OrderID  PatientID  AdmissionID  ...   SnomedID  StatusForm  CreatedUserID
+0   163439232    1550052           72  ...   13648007      normal          20461
+1   163439232    1550052           72  ...  258354003      normal          20461
+2   163439232    1550052           72  ...          -      normal          20461
+3   163439232    1550052           72  ...          -      normal          20461
+4   163439232    1550052           72  ...   55189008      normal          20461
+..        ...        ...          ...  ...        ...         ...            ...
+58  164280351    1620712           37  ...   18639004      normal          20461
+59  164280351    1620712           37  ...  258353009      normal          20461
+60  164280351    1620712           37  ...          -      normal          20461
+61  164280351    1620712           37  ...          -      normal          20461
+62  164280351    1620712           37  ...   68566005      normal          20461
+
+[63 rows x 11 columns]
+      OrderID PatientID AdmissionID  ...   SnomedID StatusForm CreatedUserID
+0   163439232   1550052          72  ...   13648007     normal         20461
+1   163439232   1550052          72  ...  258354003     normal         20461
+2   163439232   1550052          72  ...          -     normal         20461
+3   163439232   1550052          72  ...          -     normal         20461
+4   163439232   1550052          72  ...   55189008     normal         20461
+..        ...       ...         ...  ...        ...        ...           ...
+58  164280351   1620712          37  ...   18639004     normal         20461
+59  164280351   1620712          37  ...  258353009     normal         20461
+60  164280351   1620712          37  ...          -     normal         20461
+61  164280351   1620712          37  ...          -     normal         20461
+62  164280351   1620712          37  ...   68566005     normal         20461
+
+[63 rows x 11 columns]
+OrderID                    object
+PatientID                  object
+AdmissionID                object
+ObservationDate    datetime64[ns]
+ObjID                      object
+SequenceID                 object
+ObjName                    object
+Result                     object
+SnomedID                   object
+StatusForm                 object
+CreatedUserID              object
+dtype: object
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+Inserted Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, ObservationDate, ObjID, SequenceID, ObjName, Result, SnomedID, StatusForm, CreatedUserID]
+Index: []
+
+Tidak ada data yang berubah
+Tidak ada data yang baru
+2.235002040863037
+
+
+Memory after: 73.88671875 MB
+Memory used: 7.04296875 MB
+scheduler tanggal : 2025-02-13 05:00:04.212999

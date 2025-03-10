@@ -1,0 +1,8 @@
+2025-01-24 14:37:00,590 - INFO - Script started.
+2025-01-24 14:37:00,591 - DEBUG - Running script logic...
+2025-01-24 14:37:00,591 - WARNING - Simulated warning: Database connection might be slow.
+2025-01-24 14:37:00,591 - ERROR - Script failed with error: Simulated database connection error.
+2025-01-24 14:37:00,591 - INFO - Preparing to send email notification.
+2025-01-24 14:37:00,783 - DEBUG - Connecting to SMTP server.
+2025-01-24 14:37:03,425 - INFO - Email sent successfully.
+2025-01-24 14:37:03,425 - INFO - Script finished.

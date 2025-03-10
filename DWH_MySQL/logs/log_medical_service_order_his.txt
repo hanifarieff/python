@@ -1,0 +1,102 @@
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.11/ehr)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.5.33/dwhrscm_talend)
+success connected to  Engine(mysql://hanif-ppi:***@172.16.19.21/his)
+        OrderID       AdmissionDate  ... PayplanKemkes Type
+0     148227161 2023-09-27 10:53:26  ...     Eksekutif    K
+1     148227162 2023-09-27 10:53:26  ...     Eksekutif    K
+2     148227163 2023-09-27 10:53:26  ...     Eksekutif    K
+3     148227176 2023-09-12 09:09:05  ...     Eksekutif    K
+4     148227177 2023-09-12 09:09:05  ...     Eksekutif    K
+...         ...                 ...  ...           ...  ...
+3235  148287941 2023-09-29 14:52:13  ...     Eksekutif    K
+3236  148288016 2023-09-30 17:15:40  ...     Eksekutif    K
+3237  148288498 2023-09-29 11:02:56  ...     Eksekutif    K
+3238  148288634 2023-09-30 17:15:40  ...     Eksekutif    K
+3239  148288637 2023-09-30 17:15:40  ...     Eksekutif    K
+
+[3240 rows x 17 columns]
+        OrderID       AdmissionDate           OrderDate  ... RoleNo    Tarif      JM
+0     148227161 2023-09-27 10:53:26 2023-09-28 00:50:35  ...      1   123000   11000
+1     148227162 2023-09-27 10:53:26 2023-09-28 00:50:36  ...      -   138000       -
+2     148227163 2023-09-27 10:53:26 2023-09-28 00:50:36  ...      -   730000       -
+3     148227176 2023-09-12 09:09:05 2023-09-28 00:51:59  ...      1   123000   11000
+4     148227177 2023-09-12 09:09:05 2023-09-28 00:51:59  ...      -   138000       -
+...         ...                 ...                 ...  ...    ...      ...     ...
+3235  148287941 2023-09-29 14:52:13 2023-09-30 22:22:05  ...      -    64000       -
+3236  148288016 2023-09-30 17:15:40 2023-09-30 22:31:25  ...      1   648000  411000
+3237  148288498 2023-09-29 11:02:56 2023-09-30 19:14:42  ...      -    64000       -
+3238  148288634 2023-09-30 17:15:40 2023-09-30 23:54:33  ...      1   340000   27000
+3239  148288637 2023-09-30 17:15:40 2023-09-30 23:54:57  ...      1  1045000  300000
+
+[3240 rows x 10 columns]
+OrderID                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+MedicalNo                object
+OrgName                  object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+Tarif                    object
+JM                       object
+PayplanName              object
+EmployeeID                int64
+PersonName               object
+NIK                      object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+OrderID                  object
+AdmissionDate    datetime64[ns]
+OrderDate        datetime64[ns]
+MedicalNo                object
+OrgName                  object
+ObjID                    object
+ObjName                  object
+RoleNo                   object
+Tarif                    object
+JM                       object
+PayplanName              object
+EmployeeID                int64
+PersonName               object
+NIK                      object
+CategoryName             object
+PayplanKemkes            object
+Type                     object
+dtype: object
+total row update : 12
+        OrderID       AdmissionDate  ...                       OrgName  ObjID
+269   148235784 2023-09-28 09:11:16  ...  In Patient 5th Floor Kencana  45155
+270   148235786 2023-09-28 09:11:16  ...  In Patient 5th Floor Kencana  39530
+590   148246595 2023-09-29 08:06:28  ...               Cluster Teratai  45606
+915   148253962 2023-09-29 08:32:51  ...               Cluster Teratai  45606
+918   148253979 2023-09-29 09:11:05  ...               Cluster Teratai  45606
+1108  148257530 2023-09-29 10:51:33  ...              Cluster Esthetic  45607
+1169  148258403 2023-09-23 18:50:27  ...               Lab. PK Kencana  46997
+1177  148258723 2023-09-29 11:16:13  ...              Cluster Esthetic  45607
+1211  148259640 2023-09-29 11:56:20  ...              Cluster Esthetic  45607
+1294  148261742 2023-09-18 03:45:10  ...  In Patient 4th Floor Kencana  45155
+1626  148266380 2023-09-24 08:01:42  ...  In Patient 7th Floor Kencana  45155
+1895  148269565 2023-09-29 09:10:53  ...               Cluster Teratai  45606
+
+[12 rows x 6 columns]
+total row inserted : 1158
+        OrderID       AdmissionDate  ...                            OrgName  ObjID
+2019  148272344 2023-09-29 21:57:20  ...                   Cluster Homecare  53445
+2043  148273368 2023-09-29 14:52:13  ...                    Lab. PK Kencana  46997
+2044  148273377 2023-09-06 12:17:13  ...     Unit Pelayanan Transfusi Darah  46917
+2045  148273378 2023-09-06 12:17:13  ...     Unit Pelayanan Transfusi Darah  46916
+2046  148273379 2023-09-06 12:17:13  ...     Unit Pelayanan Transfusi Darah  47230
+...         ...                 ...  ...                                ...    ...
+3235  148287941 2023-09-29 14:52:13  ...                    Lab. PK Kencana  46997
+3236  148288016 2023-09-30 17:15:40  ...  24 Hours Executive Clinic Kencana  42814
+3237  148288498 2023-09-29 11:02:56  ...                    Lab. PK Kencana  46997
+3238  148288634 2023-09-30 17:15:40  ...  24 Hours Executive Clinic Kencana  42879
+3239  148288637 2023-09-30 17:15:40  ...  24 Hours Executive Clinic Kencana  53460
+
+[1158 rows x 6 columns]
+UPDATE FactMedicalServiceOrder r INNER JOIN (SELECT * FROM FactMedicalServiceOrder_temporary_table) as t ON r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo SET r.AdmissionDate = t.AdmissionDate, r.OrderDate = t.OrderDate, r.MedicalNo = t.MedicalNo, r.OrgName = t.OrgName, r.ObjID = t.ObjID, r.ObjName = t.ObjName, r.Tarif = t.Tarif, r.JM = t.JM, r.PayplanName = t.PayplanName, r.EmployeeID = t.EmployeeID, r.PersonName = t.PersonName, r.NIK = t.NIK, r.CategoryName = t.CategoryName, r.PayplanKemkes = t.PayplanKemkes, r.Type = t.Type WHERE r.OrderID = t.OrderID AND r.RoleNo = t.RoleNo ;
+success update and insert all data
+34.095266580581665
+scheduler tanggal : 2023-10-01 05:05:00.533715

@@ -1,0 +1,20 @@
+successfully connect to HIS & DWH SQL Server database
+   PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0     873122           26  394-14-91 2022-09-03 12:28:11       n     2
+1    1431383            1  452-88-21 2021-04-23 12:54:37       n     2
+2    1431383            3  452-88-21 2022-09-02 11:11:00       n     2
+3    1587529            1  463-82-95 2022-09-02 15:09:40       n     2
+total row update : 1
+   PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+1    1431383            1  452-88-21 2021-04-23 12:54:37       n     2
+total row inserted : 3
+   PatientID  AdmissionID  MedicalNo       AdmissionDate StayInd  Flag
+0     873122           26  394-14-91 2022-09-03 12:28:11       n     2
+2    1431383            3  452-88-21 2022-09-02 11:11:00       n     2
+3    1587529            1  463-82-95 2022-09-02 15:09:40       n     2
+UPDATE t SET t.MedicalNo = s.MedicalNo, t.AdmissionDate = s.AdmissionDate, t.StayInd = s.StayInd FROM staging_rscm.TransPatientStay t INNER JOIN (SELECT * from staging_rscm.TransPatientStay_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.Flag = s.Flag;
+
+
+success update dan insert
+0.8046510219573975
+scheduler tanggal : 2022-12-20 07:44:20.521224

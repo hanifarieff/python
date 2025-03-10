@@ -1,0 +1,98 @@
+successfully connect to all database
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31              1     18        Kontrak       0
+1   2023-08-31              1     45  Non PNS Tetap       0
+2   2023-08-31              1     77            PNS       0
+3   2023-08-31              1     18           PPPK       0
+success insert 01DMAhliTeknologiLaboratoriumMedik_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31              2     28  Tidak Diketahui       0
+1   2023-08-31              2     53             PPPK       0
+2   2023-08-31              2     48          Kontrak       0
+3   2023-08-31              2    139    Non PNS Tetap       0
+4   2023-08-31              2    115              PNS       0
+success insert 02DMPharmacist_V3
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31              3     10  Non PNS Tetap       0
+1   2023-08-31              3     46            PNS       0
+2   2023-08-31              3      6           PPPK       0
+success insert 03DMBidan_V3
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31              4      6        Kontrak       0
+1   2023-08-31              4     16  Non PNS Tetap       0
+2   2023-08-31              4     41            PNS       0
+3   2023-08-31              4      8           PPPK       0
+success insert 04DMNutrisionis_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31              5     22  Tidak Diketahui       0
+1   2023-08-31              5      3             PPPK       0
+2   2023-08-31              5     24          Kontrak       0
+3   2023-08-31              5      7    Non PNS Tetap       0
+4   2023-08-31              5     29              PNS       0
+success insert 05DMDokterUmum_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31              6     11  Tidak Diketahui       0
+1   2023-08-31              6      1          Kontrak       0
+2   2023-08-31              6      1    Non PNS Tetap       0
+3   2023-08-31              6      3              PNS       0
+success insert 06DMDokterGigi_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31              7     88  Tidak Diketahui       0
+1   2023-08-31              7     12             PPPK       0
+2   2023-08-31              7     62          Kontrak       0
+3   2023-08-31              7     67    Non PNS Tetap       0
+4   2023-08-31              7    446              PNS       0
+success insert 07DMDokterSpesialis_V3
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31              8      2        Kontrak       0
+1   2023-08-31              8      6  Non PNS Tetap       0
+2   2023-08-31              8     21            PNS       0
+3   2023-08-31              8      4           PPPK       0
+success insert 08DMFisioterapis_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31              9     42  Tidak Diketahui       0
+1   2023-08-31              9    250             PPPK       0
+2   2023-08-31              9    161          Kontrak       0
+3   2023-08-31              9    476    Non PNS Tetap       0
+4   2023-08-31              9   1117              PNS       0
+success insert 09DMPerawat_V3
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31             10     10        Kontrak       0
+1   2023-08-31             10     21  Non PNS Tetap       0
+2   2023-08-31             10     34            PNS       0
+3   2023-08-31             10     15           PPPK       0
+success insert 10DMRadiografer_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31             11      1  Tidak Diketahui       0
+1   2023-08-31             11     29             PPPK       0
+2   2023-08-31             11     54          Kontrak       0
+3   2023-08-31             11    109    Non PNS Tetap       0
+4   2023-08-31             11    202              PNS       0
+success insert 11DMTenagaProfesionalSelainyangdisebutkandiatas_V3
+
+  TglTransaksi  StandardRefID  Total    EmployeeGroup  IsSent
+0   2023-08-31             12   1331  Tidak Diketahui       0
+1   2023-08-31             12      9             PPPK       0
+2   2023-08-31             12     47          Kontrak       0
+3   2023-08-31             12    712    Non PNS Tetap       0
+4   2023-08-31             12    698              PNS       0
+success insert 12DMTenagaNonMedis_V3
+
+  TglTransaksi  StandardRefID  Total  EmployeeGroup  IsSent
+0   2023-08-31             13      4  Non PNS Tetap       0
+1   2023-08-31             13      9            PNS       0
+2   2023-08-31             13      1           PPPK       0
+success insert 87DMSanitarian
+
+0.5739989280700684
+scheduler tanggal : 2023-08-31 08:00:00.587317

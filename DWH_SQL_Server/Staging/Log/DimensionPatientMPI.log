@@ -1,0 +1,577 @@
+2025-02-21 00:05:02,569 - INFO - Script Started
+2025-02-21 00:05:02,569 - INFO - Memory before execution: 67.73046875
+2025-02-21 00:05:02,787 - INFO - Success connect ke DB MPI
+2025-02-21 00:05:27,240 - INFO - Extracted 3014 rows from source MPI
+2025-02-21 00:05:27,256 - INFO - Success connect ke DB EHR
+2025-02-21 00:05:27,412 - INFO - success combine with EHR
+2025-02-21 00:05:27,475 - INFO - Success connect ke DB Staging
+2025-02-21 00:05:27,475 - INFO - mulai proses insert ke temporary
+2025-02-21 00:05:42,458 - INFO - Total rows data modified: 160
+2025-02-21 00:05:42,458 - INFO - Here's sample data modified:
+ PatientID
+   2203792
+   1361979
+   2249536
+   2206475
+   2263475
+2025-02-21 00:05:42,458 - INFO - Total rows data inserted: 1076
+2025-02-21 00:05:42,458 - INFO - Here's sample data inserted:
+ PatientID
+   2275851
+   2275852
+   2275853
+   2275854
+   2275855
+2025-02-21 00:06:15,880 - INFO - success insert new data 1076 rows and updated data 160 rows
+2025-02-21 00:06:15,880 - INFO - Memory after execution: 91.01171875
+2025-02-21 00:06:15,895 - INFO - Memory used: 23.28125
+2025-02-21 00:06:15,895 - INFO - total time execution: 73.32691097259521
+
+2025-02-22 00:05:03,859 - INFO - Script Started
+2025-02-22 00:05:03,861 - INFO - Memory before execution: 67.71484375
+2025-02-22 00:05:04,050 - INFO - Success connect ke DB MPI
+2025-02-22 00:05:44,187 - INFO - Extracted 2922 rows from source MPI
+2025-02-22 00:05:44,193 - INFO - Success connect ke DB EHR
+2025-02-22 00:05:44,311 - INFO - success combine with EHR
+2025-02-22 00:05:44,420 - INFO - Success connect ke DB Staging
+2025-02-22 00:05:44,420 - INFO - mulai proses insert ke temporary
+2025-02-22 00:05:57,653 - INFO - Total rows data modified: 148
+2025-02-22 00:05:57,655 - INFO - Here's sample data modified:
+ PatientID
+   2275826
+   2275434
+   2275862
+   2270523
+     30408
+2025-02-22 00:05:57,656 - INFO - Total rows data inserted: 1020
+2025-02-22 00:05:57,657 - INFO - Here's sample data inserted:
+ PatientID
+   2276927
+   2276928
+   2276929
+   2276930
+   2276931
+2025-02-22 00:06:31,827 - INFO - success insert new data 1020 rows and updated data 148 rows
+2025-02-22 00:06:31,867 - INFO - Memory after execution: 64.37890625
+2025-02-22 00:06:31,868 - INFO - Memory used: -3.3359375
+2025-02-22 00:06:31,868 - INFO - total time execution: 88.00699615478516
+
+2025-02-23 00:05:03,593 - INFO - Script Started
+2025-02-23 00:05:03,595 - INFO - Memory before execution: 67.796875
+2025-02-23 00:05:05,613 - INFO - Success connect ke DB MPI
+2025-02-23 00:05:21,419 - INFO - Extracted 1065 rows from source MPI
+2025-02-23 00:05:21,426 - INFO - Success connect ke DB EHR
+2025-02-23 00:05:21,549 - INFO - success combine with EHR
+2025-02-23 00:05:21,616 - INFO - Success connect ke DB Staging
+2025-02-23 00:05:21,616 - INFO - mulai proses insert ke temporary
+2025-02-23 00:05:32,715 - INFO - Total rows data modified: 75
+2025-02-23 00:05:32,716 - INFO - Here's sample data modified:
+ PatientID
+   2275898
+   2275415
+   2263455
+    778111
+   1696691
+2025-02-23 00:05:32,717 - INFO - Total rows data inserted: 804
+2025-02-23 00:05:32,718 - INFO - Here's sample data inserted:
+ PatientID
+   2277947
+   2277948
+   2277949
+   2277950
+   2277951
+2025-02-23 00:06:08,158 - INFO - success insert new data 804 rows and updated data 75 rows
+2025-02-23 00:06:08,162 - INFO - Memory after execution: 38.46875
+2025-02-23 00:06:08,162 - INFO - Memory used: -29.328125
+2025-02-23 00:06:08,162 - INFO - total time execution: 64.56699728965759
+
+2025-02-24 00:05:02,695 - INFO - Script Started
+2025-02-24 00:05:02,698 - INFO - Memory before execution: 67.7578125
+2025-02-24 00:05:02,914 - INFO - Success connect ke DB MPI
+2025-02-24 00:05:13,479 - INFO - Extracted 435 rows from source MPI
+2025-02-24 00:05:13,484 - INFO - Success connect ke DB EHR
+2025-02-24 00:05:13,594 - INFO - success combine with EHR
+2025-02-24 00:05:57,828 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-24 00:05:57,828 - INFO - Preparing to send email notification.
+2025-02-24 00:05:58,764 - INFO - Connecting to SMTP server.
+2025-02-24 00:06:01,817 - INFO - Email sent successfully.
+
+2025-02-24 07:14:52,961 - INFO - Script Started
+2025-02-24 07:14:52,961 - INFO - Memory before execution: 67.984375
+2025-02-24 07:14:53,117 - INFO - Success connect ke DB MPI
+2025-02-24 07:15:09,910 - INFO - Extracted 435 rows from source MPI
+2025-02-24 07:15:09,917 - INFO - Success connect ke DB EHR
+2025-02-24 07:15:10,095 - INFO - success combine with EHR
+2025-02-24 07:15:10,175 - INFO - Success connect ke DB Staging
+2025-02-24 07:15:10,176 - INFO - mulai proses insert ke temporary
+2025-02-24 07:15:22,989 - INFO - Total rows data modified: 97
+2025-02-24 07:15:22,991 - INFO - Here's sample data modified:
+ PatientID
+   2267160
+   2266893
+2025-02-24 07:15:22,991 - INFO - Total rows data inserted: 272
+2025-02-24 07:15:22,993 - INFO - Here's sample data inserted:
+ PatientID
+   2278751
+   2278752
+2025-02-24 07:15:57,440 - INFO - success insert new data 272 rows and updated data 97 rows
+2025-02-24 07:15:57,444 - INFO - Memory after execution: 82.53125
+2025-02-24 07:15:57,445 - INFO - Memory used: 14.546875
+2025-02-24 07:15:57,445 - INFO - total time execution: 64.48299169540405
+
+2025-02-24 15:48:31,140 - INFO - Script Started
+2025-02-24 15:48:31,140 - INFO - Memory before execution: 67.703125
+2025-02-24 15:48:31,577 - INFO - Success connect ke DB MPI
+2025-02-24 15:48:49,171 - INFO - Extracted 435 rows from source MPI
+2025-02-24 15:48:49,171 - INFO - Success connect ke DB EHR
+2025-02-24 15:48:49,483 - INFO - success combine with EHR
+2025-02-24 15:48:49,515 - INFO - Success connect ke DB Staging
+2025-02-24 15:48:49,515 - INFO - Process load to Temporary Table
+2025-02-24 15:49:06,671 - INFO - Total rows data modified: 3
+2025-02-24 15:49:06,671 - INFO - Here's sample data modified:
+ PatientID
+   2278779
+   2232279
+2025-02-24 15:49:06,671 - INFO - Total rows data inserted: 0
+2025-02-24 15:49:06,671 - INFO - Here's sample data inserted:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-02-24 15:49:22,265 - INFO - success updated data 3 rows
+2025-02-24 15:49:22,265 - INFO - Memory after execution: 80.2109375
+2025-02-24 15:49:22,265 - INFO - Memory used: 12.5078125
+2025-02-24 15:49:22,265 - INFO - total time execution: 51.12499260902405
+
+2025-02-25 00:05:02,030 - INFO - Script Started
+2025-02-25 00:05:02,030 - INFO - Memory before execution: 67.69921875
+2025-02-25 00:05:02,202 - INFO - Success connect ke DB MPI
+2025-02-25 00:05:49,811 - INFO - Extracted 3078 rows from source MPI
+2025-02-25 00:05:49,827 - INFO - Success connect ke DB EHR
+2025-02-25 00:05:52,983 - INFO - success combine with EHR
+2025-02-25 00:06:37,327 - ERROR - (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][SQL Server Native Client 11.0]Login timeout expired (0); [08001] [Microsoft][SQL Server Native Client 11.0]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-02-25 00:06:37,327 - INFO - Preparing to send email notification.
+2025-02-25 00:06:37,733 - INFO - Connecting to SMTP server.
+2025-02-25 00:06:40,624 - INFO - Email sent successfully.
+2025-02-25 08:27:42,776 - INFO - Script Started
+2025-02-25 08:27:42,776 - INFO - Memory before execution: 67.95703125
+2025-02-25 08:27:42,979 - INFO - Success connect ke DB MPI
+2025-02-25 08:28:57,414 - INFO - Extracted 3076 rows from source MPI
+2025-02-25 08:28:57,430 - INFO - Success connect ke DB EHR
+2025-02-25 08:28:57,530 - INFO - success combine with EHR
+2025-02-25 08:28:57,580 - INFO - Success connect ke DB Staging
+2025-02-25 08:28:57,580 - INFO - Process load to Temporary Table
+2025-02-25 08:29:03,437 - INFO - Total rows data modified: 191
+2025-02-25 08:29:03,437 - INFO - Here's sample data modified:
+ PatientID
+   2278436
+   2278445
+2025-02-25 08:29:03,437 - INFO - Total rows data inserted: 875
+2025-02-25 08:29:03,437 - INFO - Here's sample data inserted:
+ PatientID
+   2279023
+   2279024
+2025-02-25 08:29:35,951 - INFO - success insert new data 875 rows and updated data 191 rows
+2025-02-25 08:29:35,951 - INFO - Memory after execution: 92.0078125
+2025-02-25 08:29:35,951 - INFO - Memory used: 24.05078125
+2025-02-25 08:29:35,951 - INFO - total time execution: 113.17544960975647
+
+2025-02-26 00:05:02,027 - INFO - Script Started
+2025-02-26 00:05:02,027 - INFO - Memory before execution: 67.7109375
+2025-02-26 00:05:02,250 - INFO - Success connect ke DB MPI
+2025-02-26 00:05:27,884 - INFO - Extracted 2820 rows from source MPI
+2025-02-26 00:05:27,890 - INFO - Success connect ke DB EHR
+2025-02-26 00:05:27,989 - INFO - success combine with EHR
+2025-02-26 00:05:28,129 - INFO - Success connect ke DB Staging
+2025-02-26 00:05:28,129 - INFO - Process load to Temporary Table
+2025-02-26 00:05:42,623 - INFO - Total rows data modified: 197
+2025-02-26 00:05:42,624 - INFO - Here's sample data modified:
+ PatientID
+   2219892
+   2264112
+2025-02-26 00:05:42,625 - INFO - Total rows data inserted: 815
+2025-02-26 00:05:42,626 - INFO - Here's sample data inserted:
+ PatientID
+   2279898
+   2279899
+2025-02-26 00:06:21,827 - INFO - success insert new data 815 rows and updated data 197 rows
+2025-02-26 00:06:21,828 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-26 00:06:21,831 - INFO - Memory after execution: 66.015625
+2025-02-26 00:06:21,831 - INFO - Memory used: -1.6953125
+2025-02-26 00:06:21,831 - INFO - total time execution: 79.80399680137634
+
+2025-02-27 00:05:02,090 - INFO - Script Started
+2025-02-27 00:05:02,090 - INFO - Memory before execution: 67.7265625
+2025-02-27 00:05:02,356 - INFO - Success connect ke DB MPI
+2025-02-27 00:05:49,172 - INFO - Extracted 2559 rows from source MPI
+2025-02-27 00:05:49,172 - INFO - Success connect ke DB EHR
+2025-02-27 00:05:49,312 - INFO - success combine with EHR
+2025-02-27 00:05:49,359 - INFO - Success connect ke DB Staging
+2025-02-27 00:05:49,359 - INFO - Process load to Temporary Table
+2025-02-27 00:06:15,094 - INFO - Total rows data modified: 169
+2025-02-27 00:06:15,109 - INFO - Here's sample data modified:
+ PatientID
+   2280619
+   2280444
+2025-02-27 00:06:15,109 - INFO - Total rows data inserted: 642
+2025-02-27 00:06:15,109 - INFO - Here's sample data inserted:
+ PatientID
+   2280713
+   2280714
+2025-02-27 00:06:48,187 - INFO - success insert new data 642 rows and updated data 169 rows
+2025-02-27 00:06:48,187 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-27 00:06:48,203 - INFO - Memory after execution: 88.8515625
+2025-02-27 00:06:48,203 - INFO - Memory used: 21.125
+2025-02-27 00:06:48,203 - INFO - total time execution: 106.11286091804504
+
+2025-02-28 00:05:02,201 - INFO - Script Started
+2025-02-28 00:05:02,204 - INFO - Memory before execution: 67.73828125
+2025-02-28 00:05:02,440 - INFO - Success connect ke DB MPI
+2025-02-28 00:05:54,404 - INFO - Extracted 2744 rows from source MPI
+2025-02-28 00:05:54,411 - INFO - Success connect ke DB EHR
+2025-02-28 00:05:54,604 - INFO - success combine with EHR
+2025-02-28 00:05:54,673 - INFO - Success connect ke DB Staging
+2025-02-28 00:05:54,673 - INFO - Process load to Temporary Table
+2025-02-28 00:06:11,951 - INFO - Total rows data modified: 204
+2025-02-28 00:06:11,953 - INFO - Here's sample data modified:
+ PatientID
+   2277004
+    625816
+2025-02-28 00:06:11,953 - INFO - Total rows data inserted: 731
+2025-02-28 00:06:11,955 - INFO - Here's sample data inserted:
+ PatientID
+   2281355
+   2281356
+2025-02-28 00:06:47,838 - INFO - success insert new data 731 rows and updated data 204 rows
+2025-02-28 00:06:47,854 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-02-28 00:06:47,901 - INFO - Memory after execution: 66.13671875
+2025-02-28 00:06:47,902 - INFO - Memory used: -1.6015625
+2025-02-28 00:06:47,902 - INFO - total time execution: 105.69800209999084
+
+2025-03-01 00:05:02,252 - INFO - Script Started
+2025-03-01 00:05:02,255 - INFO - Memory before execution: 67.70703125
+2025-03-01 00:05:02,494 - INFO - Success connect ke DB MPI
+2025-03-01 00:05:48,751 - INFO - Extracted 2873 rows from source MPI
+2025-03-01 00:05:48,759 - INFO - Success connect ke DB EHR
+2025-03-01 00:05:48,879 - INFO - success combine with EHR
+2025-03-01 00:05:48,941 - INFO - Success connect ke DB Staging
+2025-03-01 00:05:48,941 - INFO - Process load to Temporary Table
+2025-03-01 00:06:02,394 - INFO - Total rows data modified: 157
+2025-03-01 00:06:02,396 - INFO - Here's sample data modified:
+ PatientID
+   2167531
+   2090858
+2025-03-01 00:06:02,397 - INFO - Total rows data inserted: 696
+2025-03-01 00:06:02,399 - INFO - Here's sample data inserted:
+ PatientID
+   2282086
+   2282087
+2025-03-01 00:06:37,521 - INFO - success insert new data 696 rows and updated data 157 rows
+2025-03-01 00:06:37,558 - INFO - Memory after execution: 61.6796875
+2025-03-01 00:06:37,559 - INFO - Memory used: -6.02734375
+2025-03-01 00:06:37,559 - INFO - total time execution: 95.3039960861206
+
+2025-03-03 11:30:19,076 - INFO - Script Started
+2025-03-03 11:30:19,076 - INFO - Memory before execution: 67.95703125
+2025-03-03 11:30:19,306 - INFO - Success connect ke DB MPI
+2025-03-03 11:30:33,670 - INFO - Extracted 860 rows from source MPI
+2025-03-03 11:30:33,676 - INFO - Success connect ke DB EHR
+2025-03-03 11:30:33,948 - INFO - success combine with EHR
+2025-03-03 11:30:34,006 - INFO - Success connect ke DB Staging
+2025-03-03 11:30:34,006 - INFO - Process load to Temporary Table
+2025-03-03 11:31:15,922 - INFO - Total rows data modified: 0
+2025-03-03 11:31:15,924 - INFO - Here's sample data modified:
+Empty DataFrame
+Columns: [PatientID]
+Index: []
+2025-03-03 11:31:15,924 - INFO - Total rows data inserted: 860
+2025-03-03 11:31:15,926 - INFO - Here's sample data inserted:
+ PatientID
+   2282782
+   2282783
+2025-03-03 11:31:34,256 - INFO - success inserted 860 rows without data updated!
+2025-03-03 11:31:34,257 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-03 11:31:34,260 - INFO - Memory after execution: 81.3671875
+2025-03-03 11:31:34,260 - INFO - Memory used: 13.41015625
+2025-03-03 11:31:34,260 - INFO - total time execution: 75.1839952468872
+
+2025-03-04 00:05:02,033 - INFO - Script Started
+2025-03-04 00:05:02,033 - INFO - Memory before execution: 67.7109375
+2025-03-04 00:05:02,205 - INFO - Success connect ke DB MPI
+2025-03-04 00:05:45,209 - INFO - Extracted 3208 rows from source MPI
+2025-03-04 00:05:45,215 - INFO - Success connect ke DB EHR
+2025-03-04 00:05:45,410 - INFO - success combine with EHR
+2025-03-04 00:05:45,470 - INFO - Success connect ke DB Staging
+2025-03-04 00:05:45,470 - INFO - Process load to Temporary Table
+2025-03-04 00:06:02,939 - INFO - Total rows data modified: 178
+2025-03-04 00:06:02,941 - INFO - Here's sample data modified:
+ PatientID
+   2282744
+   2048598
+2025-03-04 00:06:02,941 - INFO - Total rows data inserted: 1168
+2025-03-04 00:06:02,943 - INFO - Here's sample data inserted:
+ PatientID
+   2284388
+   2284389
+2025-03-04 00:06:40,195 - INFO - success insert new data 1168 rows and updated data 178 rows
+2025-03-04 00:06:40,205 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-04 00:06:40,222 - INFO - Memory after execution: 60.74609375
+2025-03-04 00:06:40,222 - INFO - Memory used: -6.96484375
+2025-03-04 00:06:40,222 - INFO - total time execution: 98.18900108337402
+
+2025-03-04 10:00:19,782 - INFO - Script Started
+2025-03-04 10:00:19,783 - INFO - Memory before execution: 67.84375
+2025-03-04 10:00:20,005 - INFO - Success connect ke DB MPI
+2025-03-04 10:00:33,015 - INFO - Extracted 746 rows from source MPI
+2025-03-04 10:00:33,024 - INFO - Success connect ke DB EHR
+2025-03-04 10:00:33,445 - INFO - success combine with EHR
+2025-03-04 10:00:33,522 - INFO - Success connect ke DB Staging
+2025-03-04 10:00:33,522 - INFO - Process load to Temporary Table
+2025-03-04 10:00:50,746 - INFO - Total rows data modified: 1
+2025-03-04 10:00:50,747 - INFO - Here's sample data modified:
+ PatientID
+   2284281
+2025-03-04 10:00:50,748 - INFO - Total rows data inserted: 745
+2025-03-04 10:00:50,749 - INFO - Here's sample data inserted:
+ PatientID
+   2283642
+   2283643
+2025-03-04 10:00:52,234 - INFO - success update data existing
+2025-03-04 10:01:28,675 - INFO - success insert new data 745 rows and updated data 1 rows
+2025-03-04 10:01:28,679 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-04 10:01:28,685 - INFO - Memory after execution: 81.3203125
+2025-03-04 10:01:28,686 - INFO - Memory used: 13.4765625
+2025-03-04 10:01:28,686 - INFO - total time execution: 68.90299487113953
+
+2025-03-05 00:05:01,949 - INFO - Script Started
+2025-03-05 00:05:01,949 - INFO - Memory before execution: 67.69140625
+2025-03-05 00:05:02,168 - INFO - Success connect ke DB MPI
+2025-03-05 00:05:45,371 - INFO - Extracted 3811 rows from source MPI
+2025-03-05 00:05:45,386 - INFO - Success connect ke DB EHR
+2025-03-05 00:05:45,527 - INFO - success combine with EHR
+2025-03-05 00:05:45,589 - INFO - Success connect ke DB Staging
+2025-03-05 00:05:45,589 - INFO - Process load to Temporary Table
+2025-03-05 00:06:05,386 - INFO - Total rows data modified: 188
+2025-03-05 00:06:05,386 - INFO - Here's sample data modified:
+ PatientID
+   2284395
+   2284419
+2025-03-05 00:06:05,386 - INFO - Total rows data inserted: 871
+2025-03-05 00:06:05,386 - INFO - Here's sample data inserted:
+ PatientID
+   2285555
+   2285556
+2025-03-05 00:06:44,839 - INFO - success insert new data 871 rows and updated data 188 rows
+2025-03-05 00:06:44,839 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-05 00:06:44,839 - INFO - Memory after execution: 92.4921875
+2025-03-05 00:06:44,839 - INFO - Memory used: 24.80078125
+2025-03-05 00:06:44,839 - INFO - total time execution: 102.89063477516174
+
+2025-03-06 00:05:02,007 - INFO - Script Started
+2025-03-06 00:05:02,007 - INFO - Memory before execution: 67.71484375
+2025-03-06 00:05:02,194 - INFO - Success connect ke DB MPI
+2025-03-06 00:05:40,038 - INFO - Extracted 3706 rows from source MPI
+2025-03-06 00:05:40,054 - INFO - Success connect ke DB EHR
+2025-03-06 00:05:40,163 - INFO - success combine with EHR
+2025-03-06 00:05:40,241 - INFO - Success connect ke DB Staging
+2025-03-06 00:05:40,241 - INFO - Process load to Temporary Table
+2025-03-06 00:05:52,679 - INFO - Total rows data modified: 179
+2025-03-06 00:05:52,679 - INFO - Here's sample data modified:
+ PatientID
+   2285557
+   2285669
+2025-03-06 00:05:52,679 - INFO - Total rows data inserted: 1009
+2025-03-06 00:05:52,679 - INFO - Here's sample data inserted:
+ PatientID
+   2286426
+   2286427
+2025-03-06 00:06:25,007 - INFO - success insert new data 1009 rows and updated data 179 rows
+2025-03-06 00:06:25,007 - INFO - Memory after execution: 92.51953125
+2025-03-06 00:06:25,007 - INFO - Memory used: 24.8046875
+2025-03-06 00:06:25,007 - INFO - total time execution: 83.0000057220459
+
+2025-03-07 00:05:01,977 - INFO - Script Started
+2025-03-07 00:05:01,977 - INFO - Memory before execution: 67.73046875
+2025-03-07 00:05:02,211 - INFO - Success connect ke DB MPI
+2025-03-07 00:05:38,727 - INFO - Extracted 3568 rows from source MPI
+2025-03-07 00:05:38,742 - INFO - Success connect ke DB EHR
+2025-03-07 00:05:38,961 - INFO - success combine with EHR
+2025-03-07 00:05:39,211 - INFO - Success connect ke DB Staging
+2025-03-07 00:05:39,211 - INFO - Process load to Temporary Table
+2025-03-07 00:05:58,930 - INFO - Total rows data modified: 195
+2025-03-07 00:05:58,930 - INFO - Here's sample data modified:
+ PatientID
+   2286439
+   2286444
+2025-03-07 00:05:58,930 - INFO - Total rows data inserted: 835
+2025-03-07 00:05:58,930 - INFO - Here's sample data inserted:
+ PatientID
+   2287435
+   2287436
+2025-03-07 00:06:35,352 - INFO - success insert new data 835 rows and updated data 195 rows
+2025-03-07 00:06:35,352 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-07 00:06:35,352 - INFO - Memory after execution: 92.2734375
+2025-03-07 00:06:35,352 - INFO - Memory used: 24.54296875
+2025-03-07 00:06:35,352 - INFO - total time execution: 93.37499523162842
+
+2025-03-08 00:05:01,955 - INFO - Script Started
+2025-03-08 00:05:01,955 - INFO - Memory before execution: 67.76171875
+2025-03-08 00:05:02,158 - INFO - Success connect ke DB MPI
+2025-03-08 00:05:24,767 - INFO - Extracted 3731 rows from source MPI
+2025-03-08 00:05:24,783 - INFO - Success connect ke DB EHR
+2025-03-08 00:05:25,033 - INFO - success combine with EHR
+2025-03-08 00:05:25,236 - INFO - Success connect ke DB Staging
+2025-03-08 00:05:25,236 - INFO - Process load to Temporary Table
+2025-03-08 00:05:45,892 - INFO - Total rows data modified: 138
+2025-03-08 00:05:45,892 - INFO - Here's sample data modified:
+ PatientID
+   2287516
+   2287620
+2025-03-08 00:05:45,892 - INFO - Total rows data inserted: 1148
+2025-03-08 00:05:45,908 - INFO - Here's sample data inserted:
+ PatientID
+   2288270
+   2288271
+2025-03-08 00:06:28,048 - INFO - success insert new data 1148 rows and updated data 138 rows
+2025-03-08 00:06:28,048 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-08 00:06:28,048 - INFO - Memory after execution: 92.50390625
+2025-03-08 00:06:28,048 - INFO - Memory used: 24.7421875
+2025-03-08 00:06:28,048 - INFO - total time execution: 86.09374356269836
+
+2025-03-09 00:05:01,991 - INFO - Script Started
+2025-03-09 00:05:01,991 - INFO - Memory before execution: 67.7421875
+2025-03-09 00:05:02,147 - INFO - Success connect ke DB MPI
+2025-03-09 00:05:13,507 - INFO - Extracted 2642 rows from source MPI
+2025-03-09 00:05:13,522 - INFO - Success connect ke DB EHR
+2025-03-09 00:05:13,663 - INFO - success combine with EHR
+2025-03-09 00:05:13,788 - INFO - Success connect ke DB Staging
+2025-03-09 00:05:13,788 - INFO - Process load to Temporary Table
+2025-03-09 00:05:27,600 - INFO - Total rows data modified: 70
+2025-03-09 00:05:27,600 - INFO - Here's sample data modified:
+ PatientID
+   2288289
+   2288294
+2025-03-09 00:05:27,600 - INFO - Total rows data inserted: 1227
+2025-03-09 00:05:27,600 - INFO - Here's sample data inserted:
+ PatientID
+   2289418
+   2289419
+2025-03-09 00:06:06,413 - INFO - success insert new data 1227 rows and updated data 70 rows
+2025-03-09 00:06:06,444 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-09 00:06:06,444 - INFO - Memory after execution: 62.74609375
+2025-03-09 00:06:06,444 - INFO - Memory used: -4.99609375
+2025-03-09 00:06:06,444 - INFO - total time execution: 64.45311856269836
+
+2025-03-10 00:05:01,977 - INFO - Script Started
+2025-03-10 00:05:01,992 - INFO - Memory before execution: 67.7421875
+2025-03-10 00:05:02,211 - INFO - Success connect ke DB MPI
+2025-03-10 00:05:15,321 - INFO - Extracted 2154 rows from source MPI
+2025-03-10 00:05:15,336 - INFO - Success connect ke DB EHR
+2025-03-10 00:05:15,446 - INFO - success combine with EHR
+2025-03-10 00:05:15,602 - INFO - Success connect ke DB Staging
+2025-03-10 00:05:15,602 - INFO - Process load to Temporary Table
+2025-03-10 00:05:33,461 - INFO - Total rows data modified: 66
+2025-03-10 00:05:33,461 - INFO - Here's sample data modified:
+ PatientID
+   2289455
+   2289584
+2025-03-10 00:05:33,461 - INFO - Total rows data inserted: 778
+2025-03-10 00:05:33,461 - INFO - Here's sample data inserted:
+ PatientID
+   2290645
+   2290646
+2025-03-10 00:06:16,133 - INFO - success insert new data 778 rows and updated data 66 rows
+2025-03-10 00:06:16,133 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 753, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\pool\base.py", line 1004, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\umsi\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb.OperationalError: (2006, 'Server has gone away')
+2025-03-10 00:06:16,133 - INFO - Memory after execution: 93.28125
+2025-03-10 00:06:16,133 - INFO - Memory used: 25.5390625
+2025-03-10 00:06:16,133 - INFO - total time execution: 74.14061617851257
+

@@ -1,0 +1,50 @@
+       PatientID  AdmissionID        OrderLab OrderCodeID  ObservationID
+0             95            1  00220001444718     Glucose              0
+1            734          210       450307162       EGFRA              0
+2            734          210       450307162       EGFRA              1
+3            734          210       450307162       EGFRA              2
+4            734          210       450307162         URE              0
+...          ...          ...             ...         ...            ...
+43903    2290642            1       350308198        PTGA             13
+43904    2290642            1       350308198        PTGA             14
+43905    2290642            1       350308198        PTGA             15
+43906    2290642            1       350308198        PTGA             16
+43907    2290642            1       350308198        PTGA             17
+
+[43908 rows x 5 columns]
+total row update : 1123
+       PatientID  AdmissionID     OrderLab OrderCodeID  ObservationID
+7          12797          100    450307191      DPL2RF              2
+86         41252          160    650307245        DPL2              2
+133        41252          160    650308042        DPL2              2
+174        41252          160    650308106        DPL2              2
+228        42781          548    450307266      HE-RTN              2
+...          ...          ...          ...         ...            ...
+43680    2290619            1    750308157        DPL2              2
+43733    2290630            1    750308168        DPL2              2
+43772    2290632            1    750308169        DPL2              2
+43827    2290636            1  82503081076      HE-RTN              2
+43846    2290637            1    750308177      DPL2IT              2
+
+[1123 rows x 5 columns]
+total row inserted : 174
+       PatientID  AdmissionID     OrderLab OrderCodeID  ObservationID
+34334    2287269            1    550307545       MCRSP              0
+34335    2287269            1    550307545       MCRSP              1
+37334    2288545            1  92503070622       SG6PD              0
+37335    2288545            1  92503070622       SG6PD              1
+38151    2288745            1  92503070695       SG6PD              0
+...          ...          ...          ...         ...            ...
+40210    2289367            1  92503070846        TSHN              1
+40239    2289384            1  92503070862       SG6PD              0
+40240    2289384            1  92503070862       SG6PD              1
+41990    2289795            1  92503080209       SG6PD              0
+41991    2289795            1  92503080209       SG6PD              1
+
+[174 rows x 5 columns]
+UPDATE t SET t.OrderName = s.OrderName, t.OrderRequestDate = s.OrderRequestDate, t.ObservationName = s.ObservationName, t.ObservationValue = s.ObservationValue, t.ObservationUnit = s.ObservationUnit, t.AbnormalFlag = s.AbnormalFlag, t.RefRange = s.RefRange, t.ObservationNotes = s.ObservationNotes, t.ResultDate = s.ResultDate, t.DoctorResponsible = s.DoctorResponsible, t.CreatedDate = s.CreatedDate, t.StatusCode = s.StatusCode , t.UpdateDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM staging_rscm.TransPatientLabObs t INNER JOIN (SELECT * FROM staging_rscm.TransPatientLabObs_temporary_table) AS s ON t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID  WHERE t.PatientID = s.PatientID AND t.AdmissionID = s.AdmissionID AND t.OrderLab = s.OrderLab AND t.OrderCodeID = s.OrderCodeID AND t.OrderNameID = s.OrderNameID AND t.ObservationID = s.ObservationID;
+all success updated and inserted
+61.1438410282135
+
+
+scheduler tanggal : 2025-03-10 10:35:37.985285

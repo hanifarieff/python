@@ -1,0 +1,5 @@
+success connected to  Engine(postgresql+psycopg2://hanif-ppi:***@172.16.7.120:5432/transmedic-lat)
+(100000, 104)
+success insert
+356.35300374031067
+scheduler tanggal : 2024-06-19 08:40:02.681623

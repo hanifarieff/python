@@ -1,0 +1,7 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.2/his)
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+     OrderID  PatientID  AdmissionID  EmployeeID  ... CategoryName PayplanKemkes Type  Status
+0  159602080    1477176           51     14544.0  ...        jalan     Eksekutif    K  normal
+
+[1 rows x 27 columns]

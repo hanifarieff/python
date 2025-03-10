@@ -1,0 +1,30 @@
+   ID                   TableName  RowTotal
+0   9  xocp_his_patient_admission   8268831
+1  10   xocp_his_patient_location     52276
+2  11                   xocp_orgs      2211
+3  12        xocp_his_patient_act   1108954
+4  13            xocp_his_patient    947992
+5  14        xocp_his_obj_payplan    433106
+6  15     xocp_his_formulir_darah    323665
+7  16      xocp_his_patient_order  34083914
+total row update master : 6
+   ID                   TableName  RowTotal
+0   9  xocp_his_patient_admission   8268831
+1  10   xocp_his_patient_location     52276
+3  12        xocp_his_patient_act   1108954
+4  13            xocp_his_patient    947992
+6  15     xocp_his_formulir_darah    323665
+7  16      xocp_his_patient_order  34083914
+
+
+total row insert master : 0
+Empty DataFrame
+Columns: [ID, TableName, RowTotal]
+Index: []
+UPDATE r SET r.TableName = t.TableName, r.RowTotal = t.RowTotal , r.UpdatedDateDWH = CONVERT(DATETIME2(0), GETDATE(),120) FROM dwhrscm_talend.FactRowNumberMaster r INNER JOIN (SELECT * FROM dwhrscm_talend.FactRowNumberMaster_temporary_table) as t ON r.ID = t.ID  WHERE r.ID = t.ID ;
+success update and insert all data master
+
+CPU usage: -20.7 %
+72.2265625
+46.0468807220459
+scheduler tanggal : 2025-03-09 23:00:02.163506

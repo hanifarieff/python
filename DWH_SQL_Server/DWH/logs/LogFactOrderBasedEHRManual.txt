@@ -1,0 +1,142 @@
+Memory before: 66.46875 MB
+              OrderID  PatientID  AdmissionID  EmployeeID  ... BillingPaid OrgID TarifClass AnesthesiaCode
+0      00220000667417    2222237            3      2684.0  ...           1   100    KELAS_2          LOCAL
+1      00220000714005    2203315           11     11917.0  ...           1   426       None           None
+2      00220000756350    2023622           16       738.0  ...           1   178    KELAS_2          LOCAL
+3      00220001071341    2240578            7      5499.0  ...           0  1168    KELAS_2          LOCAL
+4      00220001146355    1663124           57     10905.0  ...           0   200    KELAS_2          LOCAL
+...               ...        ...          ...         ...  ...         ...   ...        ...            ...
+14309  00220001195729    2233871           17      3599.0  ...           0   104    KELAS_2          LOCAL
+14310  00220001195742    2119671            9      5996.0  ...           0  2224    KELAS_2          LOCAL
+14311  00220001195764    2163213            9        37.0  ...           0  2696    KELAS_2          LOCAL
+14312  00220001195808    2204239           10     18509.0  ...           0   175    KELAS_2          LOCAL
+14313  00220001195809    2279001            1     21064.0  ...           0   104    KELAS_2          LOCAL
+
+[14314 rows x 36 columns]
+Source Data:
+              OrderID  PatientID  AdmissionID  EmployeeID  ... OrgID TarifClass AnesthesiaCode ObjectGroupingName
+0      00220000667417    2222237            3        2684  ...   100    KELAS_2          LOCAL               None
+1      00220000714005    2203315           11       11917  ...   426       None           None               None
+2      00220000756350    2023622           16         738  ...   178    KELAS_2          LOCAL               None
+3      00220001071341    2240578            7        5499  ...  1168    KELAS_2          LOCAL               None
+4      00220001146355    1663124           57       10905  ...   200    KELAS_2          LOCAL               None
+...               ...        ...          ...         ...  ...   ...        ...            ...                ...
+14309  00220001195729    2233871           17        3599  ...   104    KELAS_2          LOCAL               None
+14310  00220001195742    2119671            9        5996  ...  2224    KELAS_2          LOCAL               None
+14311  00220001195764    2163213            9          37  ...  2696    KELAS_2          LOCAL               None
+14312  00220001195808    2204239           10       18509  ...   175    KELAS_2          LOCAL               None
+14313  00220001195809    2279001            1       21064  ...   104    KELAS_2          LOCAL               None
+
+[14314 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+OrgID                          int64
+TarifClass                    object
+AnesthesiaCode                object
+ObjectGroupingName            object
+dtype: object
+Target Data:
+          OrderID  PatientID  AdmissionID  EmployeeID  ... OrgID TarifClass AnesthesiaCode ObjectGroupingName
+0  00220000667417    2222237            3        2684  ...   100    KELAS_2          LOCAL               None
+1  00220000714005    2203315           11       11917  ...   426       None           None               None
+2  00220000756350    2023622           16         738  ...   178    KELAS_2          LOCAL               None
+3  00220001071341    2240578            7        5499  ...  1168    KELAS_2          LOCAL               None
+
+[4 rows x 37 columns]
+OrderID                       object
+PatientID                      int64
+AdmissionID                    int64
+EmployeeID                     int64
+DoctorName                    object
+KSM                           object
+NIP                           object
+NIK                           object
+PatientName                   object
+MedicalNo                     object
+SEPNo                         object
+OrgName                       object
+AdmissionDate         datetime64[ns]
+OrderDate             datetime64[ns]
+NullifiedDate         datetime64[ns]
+VerifiedDate                  object
+ObjID                         object
+ObjName                       object
+ObjRoleName                   object
+RoleNo                        object
+IDItem                        object
+MonthValue                    object
+YearValue                     object
+Tarif                        float64
+JasaMedis                    float64
+JasaSarana                   float64
+JasaRemun                     object
+PayplanName                   object
+CategoryName                  object
+PayplanKemkes                 object
+Type                          object
+Status                        object
+BillingPaid                   object
+OrgID                          int64
+TarifClass                    object
+AnesthesiaCode                object
+ObjectGroupingName            object
+dtype: object
+Changes Detected:
+Modified Data:
+          OrderID  PatientID  AdmissionID  EmployeeID  ... OrgID TarifClass AnesthesiaCode ObjectGroupingName
+3  00220001071341    2240578            7        5499  ...  1168    KELAS_2          LOCAL               None
+
+[1 rows x 37 columns]
+Inserted Data:
+              OrderID  EmployeeID                   OrgName CategoryName ObjectGroupingName
+4      00220001146355       10905  A - Lab. Patologi Klinik    penunjang               None
+5      00220001146361       10905  A - Lab. Patologi Klinik    penunjang       laboratorium
+6      00220001146365       10905  A - Lab. Patologi Klinik    penunjang               None
+7      00220001146366       10905  A - Lab. Patologi Klinik    penunjang               None
+8      00220001146367       10905  A - Lab. Patologi Klinik    penunjang               None
+...               ...         ...                       ...          ...                ...
+14309  00220001195729        3599   Instalasi Gawat Darurat     tindakan               None
+14310  00220001195742        5996               Kiara - BCH     visitasi               None
+14311  00220001195764          37               IPKT - HCU      visitasi               None
+14312  00220001195808       18509                   A - THT     tindakan               None
+14313  00220001195809       21064   Instalasi Gawat Darurat     visitasi               None
+
+[14310 rows x 5 columns]
+
+Data Success Updated
+Data Success Inserted
+427.82200384140015
+Memory after: 118.96875 MB
+Memory used: 52.5 MB
+scheduler tanggal : 2025-02-25 14:47:51.338829

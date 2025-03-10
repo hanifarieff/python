@@ -1,0 +1,22 @@
+('2025-03-05', '2025-03-06', '2025-03-07', '2025-03-08', '2025-03-09')
+  TglTransaksi  Jumlah
+0   2025-03-05    7925
+1   2025-03-06    8030
+2   2025-03-07    8110
+3   2025-03-08    6412
+4   2025-03-09    4068
+  TglTransaksi  Jumlah
+0   2025-03-05    7925
+1   2025-03-06    8030
+2   2025-03-07    8110
+3   2025-03-08    6426
+total row update : 1
+  TglTransaksi  Jumlah
+3   2025-03-08    6412
+total row inserted : 1
+  TglTransaksi  Jumlah
+4   2025-03-09    4068
+ WHERE r.TglTransaksi = t.TglTransaksi 
+success update and insert all data
+28.513593196868896
+scheduler tanggal : 2025-03-10 04:15:01.803364

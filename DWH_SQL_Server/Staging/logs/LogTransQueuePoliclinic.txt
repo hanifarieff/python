@@ -1,0 +1,36 @@
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              5044263              0  ...           0           None
+1              5044264              0  ...           0           None
+2              5044265              0  ...           0           None
+3              5044266              0  ...           0           None
+4              5044267              0  ...           0           None
+..                 ...            ...  ...         ...            ...
+144            5044407              0  ...           0           None
+145            5044408              0  ...           0           None
+146            5044409              0  ...           0           None
+147            5044410              0  ...           0           None
+148            5044411              0  ...           0           None
+
+[149 rows x 33 columns]
+total row update : 0
+Empty DataFrame
+Columns: [QueuePoliclinicID, AppointmentID, ActID, PatientID, AdmissionID, Method, QueueNum, QueueDate, DestOrgID, ParentOrgID, StatusCode, CreatedDate, CreatedBy, CallDate, CallBy, CallTotal, NurseStartDate, NurseStopDate, NurseIDStart, NurseIDStop, DocIDStart, DocIDStop, StatusCodeAnalis, CallTotalAnalis, CallDateAnalis, AnalisID, AnalisIDStart, AnalisIDStop, AnalisStartDate, AnalisStopDate, UpdateDate, CancelledBy, CancelledDate]
+Index: []
+total row inserted : 149
+     QueuePoliclinicID  AppointmentID  ... CancelledBy  CancelledDate
+0              5044263              0  ...           0           None
+1              5044264              0  ...           0           None
+2              5044265              0  ...           0           None
+3              5044266              0  ...           0           None
+4              5044267              0  ...           0           None
+..                 ...            ...  ...         ...            ...
+144            5044407              0  ...           0           None
+145            5044408              0  ...           0           None
+146            5044409              0  ...           0           None
+147            5044410              0  ...           0           None
+148            5044411              0  ...           0           None
+
+[149 rows x 33 columns]
+success insert all data without update
+42.171876668930054
+scheduler tanggal : 2025-03-10 06:00:44.188353

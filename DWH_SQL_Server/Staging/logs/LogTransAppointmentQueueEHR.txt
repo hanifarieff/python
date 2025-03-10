@@ -1,0 +1,112 @@
+      AppointmentID  KodeBooking       AdmissionDate  ... QuotaNonJKN  Notes  Flag
+0                 0   1010493-11 2025-03-08 16:32:32  ...           0      -     1
+1                 0  1013953-164 2025-03-09 08:16:03  ...           0      -     1
+2                 0    1038299-4 2025-03-08 17:01:49  ...           0      -     1
+3                 0   1061586-72 2025-03-09 18:02:48  ...           0      -     1
+4                 0   1093043-89 2025-03-09 10:00:37  ...           0      -     1
+...             ...          ...                 ...  ...         ...    ...   ...
+2377       15471773    2289449-1 2025-03-08 08:12:53  ...           0      -     1
+2378       15471817   1251434-40 2025-03-08 09:46:01  ...           0      -     1
+2379       15472026    2289948-1 2025-03-08 10:09:35  ...           0      -     1
+2380       15472116   2256256-13 2025-03-08 10:54:14  ...           0      -     1
+2381       15472181   594451-460 2025-03-08 11:55:20  ...           0      -     1
+
+[2382 rows x 28 columns]
+AppointmentID                        int64
+KodeBooking                         object
+AdmissionDate               datetime64[ns]
+AdmissionDateOnly                   object
+PatientID                            int64
+AdmissionID                          int64
+PatientType                         object
+CardNo                              object
+PoliCode                            object
+PoliName                            object
+NewPatient                          object
+DoctorCode                          object
+DoctorName                          object
+AppointmentDate                     object
+AppointmentTime                     object
+DoctorPracticeStartTime             object
+DoctorPracticeFinishTime            object
+VisitType                           object
+AppointmentMethod                   object
+QueueNumber                          int32
+QueueNo                              int32
+ServedEstimated                     object
+RestQuotaJKN                         int64
+QuotaJKN                             int64
+RestQuotaNonJKN                      int64
+QuotaNonJKN                          int64
+Notes                               object
+Flag                                object
+dtype: object
+CardNo               object
+SEPNo                object
+ReferenceNo          object
+AdmissionDateOnly    object
+rank                  int64
+dtype: object
+               CardNo                SEPNo  ... AdmissionDateOnly rank
+0       0000033396557  0901R0010523V063473  ...              None    1
+1       0000033396557  0901R0010523V063473  ...              None    1
+2       0000033396557  0901R0010523V063473  ...              None    1
+3       0000035299539  0901R0010523V063506  ...              None    1
+4       0000035299539  0901R0010523V063506  ...              None    1
+...               ...                  ...  ...               ...  ...
+190491  0000038074206  0901R0011223V003160  ...        2023-12-03    1
+190492  0000040525018  0901R0011223V013022  ...        2023-12-07    1
+190493  0001632545008  0138R0111223V008342  ...        2023-12-19    1
+190494  0000201941177  0901R0011223V042374  ...        2023-12-20    1
+190495  0000370234067  0901R0011223V045726  ...        2023-12-21    1
+
+[190496 rows x 5 columns]
+AppointmentID                        int64
+KodeBooking                         object
+AdmissionDate               datetime64[ns]
+PatientID                            int64
+AdmissionID                          int64
+PatientType                         object
+CardNo                              object
+SEPNo                               object
+ReferenceNo                         object
+PoliCode                            object
+PoliName                            object
+NewPatient                          object
+DoctorCode                          object
+DoctorName                          object
+AppointmentDate                     object
+AppointmentTime                     object
+DoctorPracticeStartTime             object
+DoctorPracticeFinishTime            object
+VisitType                           object
+AppointmentMethod                   object
+QueueNumber                          int64
+QueueNo                              int64
+ServedEstimated                     object
+RestQuotaJKN                         int64
+QuotaJKN                             int64
+RestQuotaNonJKN                      int64
+QuotaNonJKN                          int64
+Notes                               object
+Flag                                object
+dtype: object
+total row update : 0
+Empty DataFrame
+Columns: [AppointmentID, KodeBooking, AdmissionDate, PatientID, AdmissionID, PatientType]
+Index: []
+total row inserted : 2382
+      AppointmentID  KodeBooking  ... AdmissionID  PatientType
+0                 0   1010493-11  ...          11          JKN
+1                 0  1013953-164  ...         164          JKN
+2                 0    1038299-4  ...           4          JKN
+3                 0   1061586-72  ...          72          JKN
+4                 0   1093043-89  ...          89          JKN
+...             ...          ...  ...         ...          ...
+2377       15471773    2289449-1  ...           1          JKN
+2378       15471817   1251434-40  ...          40          JKN
+2379       15472026    2289948-1  ...           1          JKN
+2380       15472116   2256256-13  ...          13          JKN
+2381       15472181   594451-460  ...         460          JKN
+
+[2382 rows x 6 columns]

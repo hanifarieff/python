@@ -1,0 +1,95 @@
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+ select 
+                            a.OrderID, 
+                            a.PatientID, 
+                            a.AdmissionID, 
+                            c.PatientName,
+                            c.MedicalNo,
+                            a.AdmissionDate, 
+                            a.ProcName,
+                            a.LocationNow as Ruangan,
+                            '2024-09-30' as TanggalReport,
+                            b.PayplanNo as SEP
+                        from dwhrscm_talend.[127DMInpatientMutation] a
+                        left join dwhrscm_talend.FactPatientAdmission b on a.PatientID = b.PatientID and a.AdmissionID = b.AdmissionID
+                        left join dwhrscm_talend.DimPatientMPI c on a.PatientID = c.PatientID and c.ScdActive = '1'
+                        where ((a.AdmissionDate <= '2024-09-30 23:59:59' AND (a.DischargeDate > '2024-09-30 23:59:59' OR a.DischargeDate IS NULL))
+                        OR
+                        a.AdmissionDate >= '2024-09-30 00:00:00' AND a.DischargeDate <= '2024-09-30 23:59:59' )
+                        and b.PayPlanID != 71 and a.OrderID LIKE '00%'
+            
+                      OrderID  PatientID  AdmissionID  ...                             Ruangan TanggalReport SEP
+0   00210003556091               2050284            1  ...  RUANG 508 B ( Geriatri kelas III )    2024-09-30    
+1   00210000858392               1822266           16  ...                    Ruang 306 (VVIP)    2024-09-30    
+2   00210006076853               1638110            9  ...       Ruang 313 (Transplant Ginjal)    2024-09-30    
+3   00210003729315               1580648           14  ...                 Ruang 220 (Kelas 1)    2024-09-30    
+4   00210002282617               1997407            1  ...                              NICU 1    2024-09-30    
+..                        ...        ...          ...  ...                                 ...           ...  ..
+65  00210005942149               1647320           92  ...                       Ruang 305 VIP    2024-09-30    
+66  00210005788025               2144103            1  ...                            RRE B 01    2024-09-30    
+67  00210005740371               2141955            1  ...                            RRE A 04    2024-09-30    
+68  00210001449831               1336563          109  ...                       Ruang 306 VIP    2024-09-30    
+69  00210005429633               2116303           10  ...                       Ruang 309 VIP    2024-09-30    
+
+[70 rows x 10 columns]
+       PatientID  AdmissionID     Tarif     TarifTotal         EklaimGroup  Jaminan
+0        1672258            5  190000.0  1358886850.67  prosedur_non_bedah  pribadi
+1        1672258            5  190000.0  1358886850.67  prosedur_non_bedah  pribadi
+2        1672258            5  190000.0  1358886850.67  prosedur_non_bedah  pribadi
+3        1672258            5  119000.0  1358886850.67  prosedur_non_bedah  pribadi
+4        1672258            5  119000.0  1358886850.67  prosedur_non_bedah  pribadi
+...          ...          ...       ...            ...                 ...      ...
+22844    2154271            1  31931.78           None                obat      NaN
+22845    2154271            1  44024.22           None                obat      NaN
+22846    2154271            1      6656           None                obat      NaN
+22847    2154271            1  39947.14           None                obat      NaN
+22848    2154271            1      6528           None                obat      NaN
+
+[22849 rows x 6 columns]
+                         OrderID  PatientID  AdmissionID  ...    TarifTotal         EklaimGroup  Jaminan
+0      00210003556091               2050284            1  ...  7.834687e+06  prosedur_non_bedah  pribadi
+1      00210003556091               2050284            1  ...  7.834687e+06          konsultasi  pribadi
+2      00210003556091               2050284            1  ...  7.834687e+06          konsultasi  pribadi
+3      00210003556091               2050284            1  ...  7.834687e+06          konsultasi  pribadi
+4      00210003556091               2050284            1  ...  7.834687e+06          konsultasi  pribadi
+...                          ...        ...          ...  ...           ...                 ...      ...
+56119  00210001449831               1336563          109  ...  7.842862e+08                obat  pribadi
+56120  00210001449831               1336563          109  ...  7.842862e+08                obat  pribadi
+56121  00210001449831               1336563          109  ...  7.842862e+08                obat  pribadi
+56122  00210005429633               2116303           10  ...           NaN  prosedur_non_bedah  pribadi
+56123  00210005429633               2116303           10  ...           NaN           akomodasi  pribadi
+
+[56124 rows x 14 columns]
+OrderID          False
+PatientID        False
+AdmissionID      False
+PatientName      False
+MedicalNo        False
+AdmissionDate    False
+ProcName         False
+Ruangan          False
+TanggalReport    False
+SEP              False
+Tarif             True
+TarifTotal        True
+EklaimGroup       True
+Jaminan           True
+dtype: bool
+OrderID                  object
+PatientID                 int64
+AdmissionID               int64
+PatientName              object
+MedicalNo                object
+AdmissionDate    datetime64[ns]
+ProcName                 object
+Ruangan                  object
+TanggalReport            object
+SEP                      object
+Tarif                   float64
+TarifTotal              float64
+EklaimGroup              object
+Jaminan                  object
+dtype: object
+insert all data
+223.62799668312073

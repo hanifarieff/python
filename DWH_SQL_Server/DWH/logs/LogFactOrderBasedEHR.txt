@@ -1,0 +1,300 @@
+Memory before: 66.3359375 MB
+success connected to  Engine(mysql://hanif-ppi:***@192.168.119.9/ehr)
+success connected to  Engine(mssql+pyodbc://andhi-ppi:***@172.16.19.36/DWH_RSCM?driver=SQL+Server+Native+Client+11.0)
+ini range tanggal
+2024-09-26
+              OrderID  PatientID  AdmissionID  ...  PayplanKemkes Type  Status
+0      00210005396176    1767509           50  ...           BPJS    P  normal
+1      00210005907369    2148100            1  ...           BPJS    P  normal
+2      00210005930108    2127309            1  ...           BPJS    P  normal
+3      00210005931371    2148100            1  ...           BPJS    P  normal
+4      00210005932076    1048083          428  ...           BPJS    P  normal
+...               ...        ...          ...  ...            ...  ...     ...
+15902  00210006173480    2091726            6  ...           BPJS    P  normal
+15903  00210006173483    2091726            6  ...           BPJS    P  normal
+15904  00210006173878    2140821            1  ...           BPJS    P  normal
+15905  00210006173879    2140821            1  ...           BPJS    P  normal
+15906  00210006175703    2149504            1  ...           BPJS    P  normal
+
+[15907 rows x 32 columns]
+Source Data:
+Target Data:
+              OrderID  PatientID  AdmissionID  ...  Type  Status  ObjectGroupingName
+0      00210005396176    1767509           50  ...     P  normal  Prosedur Non Bedah
+1      00210005907369    2148100            1  ...     P  normal  Prosedur Non Bedah
+2      00210005930108    2127309            1  ...     P  normal          konsultasi
+3      00210005931371    2148100            1  ...     P  normal          konsultasi
+4      00210005932076    1048083          428  ...     P  normal          konsultasi
+...               ...        ...          ...  ...   ...     ...                 ...
+15864  00210006150799    2137916            4  ...     P  normal          konsultasi
+15865  00210006151742    2135276            1  ...     P  normal  Prosedur Non Bedah
+15866  00210006153087    2145656            1  ...     P  normal          konsultasi
+15867  00210006154282    1238778           14  ...     P  normal  Prosedur Non Bedah
+15868  00210006158641    2135276            1  ...     P  normal  Prosedur Non Bedah
+
+[15869 rows x 33 columns]
+Changes Detected:
+Modified Data:
+              OrderID  PatientID  AdmissionID  ...  Type  Status ObjectGroupingName
+733    00210005943065    2139318            1  ...     P  normal                NaN
+799    00210005943159    2072222           11  ...     P  normal                NaN
+820    00210005943209    2150141            1  ...     P  normal                NaN
+879    00210005943343    1683959           77  ...     P  normal                NaN
+915    00210005943468    2113952           16  ...     P  normal                NaN
+...               ...        ...          ...  ...   ...     ...                ...
+15840  00210006127376    1818111            6  ...     P  normal                NaN
+15841  00210006127387    1818111            6  ...     P  normal                NaN
+15844  00210006129259    2098592            9  ...     P  normal                NaN
+15851  00210006131326    1526343          119  ...     P  normal                NaN
+15866  00210006146252    2066937            5  ...     P  normal                NaN
+
+[1271 rows x 33 columns]
+Inserted Data:
+              OrderID  PatientID  AdmissionID  ...  Type  Status  ObjectGroupingName
+3238   00210005948585    2132054            1  ...     P  normal           radiologi
+3936   00210005950079    1152323          238  ...     P  normal           radiologi
+6263   00210005955185     672091          124  ...     P  normal  Prosedur Non Bedah
+6578   00210005955877    2135276            1  ...     P  normal                 NaN
+9295   00210005961842    2133536            2  ...     P  normal           radiologi
+10260  00210005963864     530388          300  ...     P  normal  Prosedur Non Bedah
+11426  00210005965952    2150444            1  ...     P  normal           radiologi
+15135  00210006013102    2139313            3  ...     P  normal  Prosedur Non Bedah
+15877  00210006159728    2139311            1  ...     P  normal  Prosedur Non Bedah
+15878  00210006160351    2135276            1  ...     P  normal           penunjang
+15879  00210006160473    1563983          127  ...     P  normal  Prosedur Non Bedah
+15880  00210006160476    1563983          127  ...     P  normal  Prosedur Non Bedah
+15881  00210006160490     116494          118  ...     P  normal  Prosedur Non Bedah
+15882  00210006160637     116494          118  ...     P  normal                 NaN
+15883  00210006160728    2043786            7  ...     P  normal          konsultasi
+15884  00210006160742    2043786            7  ...     P  normal          konsultasi
+15885  00210006161136    2078238            6  ...     P  normal  Prosedur Non Bedah
+15886  00210006161139    2078238            6  ...     P  normal  Prosedur Non Bedah
+15887  00210006161199    1426062           39  ...     P  normal          konsultasi
+15888  00210006161450    2135276            1  ...     P  normal          konsultasi
+15889  00210006161458    2135276            1  ...     P  normal          konsultasi
+15890  00210006161894    2146083            1  ...     P  normal                 NaN
+15891  00210006161917    2146083            1  ...     P  normal                 NaN
+15892  00210006161923    2146083            1  ...     P  normal                 NaN
+15893  00210006161950     966966           13  ...     P  normal          konsultasi
+15894  00210006162719    1916953           28  ...     P  normal          konsultasi
+15895  00210006162738    1916953           28  ...     P  normal           penunjang
+15896  00210006172608    2104326           11  ...     P  normal          konsultasi
+15897  00210006172617    2104326           11  ...     P  normal          konsultasi
+15898  00210006173077    2146101            1  ...     P  normal          konsultasi
+15899  00210006173415    2091726            6  ...     P  normal          konsultasi
+15900  00210006173416    2091726            6  ...     P  normal          konsultasi
+15901  00210006173474    2091726            6  ...     P  normal  Prosedur Non Bedah
+15902  00210006173480    2091726            6  ...     P  normal  Prosedur Non Bedah
+15903  00210006173483    2091726            6  ...     P  normal                 NaN
+15904  00210006173878    2140821            1  ...     P  normal          konsultasi
+15905  00210006173879    2140821            1  ...     P  normal          konsultasi
+15906  00210006175703    2149504            1  ...     P  normal  Prosedur Non Bedah
+
+[38 rows x 33 columns]
+
+Data Success Updated
+Data Success Inserted
+ini range tanggal
+2024-09-27
+              OrderID  PatientID  AdmissionID  ...  PayplanKemkes Type     Status
+0      00200005987452    1751714            1  ...           BPJS    P  nullified
+1      00210005970464    2151046            1  ...           BPJS    P     normal
+2      00210005970465    2151046            1  ...           BPJS    P     normal
+3      00210005970466    2151046            1  ...           BPJS    P     normal
+4      00210005970467    2151046            1  ...           BPJS    P     normal
+...               ...        ...          ...  ...            ...  ...        ...
+16468  00210006173510    2091726            6  ...           BPJS    P     normal
+16469  00210006173881    2140821            1  ...           BPJS    P     normal
+16470  00210006173885    2140821            1  ...           BPJS    P     normal
+16471  00210006173903    2140821            1  ...           BPJS    P     normal
+16472  00210006173924    2140821            1  ...           BPJS    P     normal
+
+[16473 rows x 32 columns]
+Source Data:
+Target Data:
+              OrderID  PatientID  ...     Status  ObjectGroupingName
+0      00200005987452    1751714  ...  nullified          konsultasi
+1      00210005970464    2151046  ...     normal        laboratorium
+2      00210005970465    2151046  ...     normal        laboratorium
+3      00210005970466    2151046  ...     normal                None
+4      00210005970467    2151046  ...     normal                None
+...               ...        ...  ...        ...                 ...
+16405  00210006154085    2138676  ...     normal  Prosedur Non Bedah
+16406  00210006154086    2138676  ...     normal  Prosedur Non Bedah
+16407  00210006158638    2135276  ...     normal  Prosedur Non Bedah
+16408  00210006159336    2090309  ...     normal          konsultasi
+16409  00210006159354    2090309  ...     normal  Prosedur Non Bedah
+
+[16410 rows x 33 columns]
+Changes Detected:
+Modified Data:
+              OrderID  PatientID  AdmissionID  ...  Type  Status ObjectGroupingName
+708    00210005971810    1991847           10  ...     P  normal                NaN
+1058   00210005972532    1979821           16  ...     P  normal                NaN
+1062   00210005972538    1845235           21  ...     P  normal                NaN
+1066   00210005972552    1300793           61  ...     P  normal                NaN
+1217   00210005973017    1118665           72  ...     P  normal                NaN
+...               ...        ...          ...  ...   ...     ...                ...
+16400  00210006134698    2148107            1  ...     P  normal                NaN
+16401  00210006134701    2148107            1  ...     P  normal                NaN
+16403  00210006135062    1455395          148  ...     P  normal                NaN
+16405  00210006142365    2152016            1  ...     P  normal                NaN
+16410  00210006146178    2066937            5  ...     P  normal                NaN
+
+[1136 rows x 33 columns]
+Inserted Data:
+              OrderID  PatientID  AdmissionID  ...  Type  Status  ObjectGroupingName
+4383   00210005979240     937099          451  ...     P  normal  Prosedur Non Bedah
+5511   00210005981435    2133962            3  ...     P  normal           radiologi
+6754   00210005984116       6275          136  ...     P  normal           radiologi
+6871   00210005984356    2151064            1  ...     P  normal    Patologi Anatomi
+9133   00210005988877    2146101            1  ...     P  normal           penunjang
+...               ...        ...          ...  ...   ...     ...                 ...
+16468  00210006173510    2091726            6  ...     P  normal                 NaN
+16469  00210006173881    2140821            1  ...     P  normal          konsultasi
+16470  00210006173885    2140821            1  ...     P  normal          konsultasi
+16471  00210006173903    2140821            1  ...     P  normal                 NaN
+16472  00210006173924    2140821            1  ...     P  normal          konsultasi
+
+[63 rows x 33 columns]
+
+Data Success Updated
+Data Success Inserted
+ini range tanggal
+2024-09-28
+             OrderID  PatientID  AdmissionID  ...  PayplanKemkes Type  Status
+0     00210005933413    2043786            7  ...           BPJS    P  normal
+1     00210005998418    1722677           61  ...           BPJS    P  normal
+2     00210005998995    2115957            5  ...           BPJS    P  normal
+3     00210005998998     973379           86  ...           BPJS    P  normal
+4     00210005999002    2149182            1  ...           BPJS    P  normal
+...              ...        ...          ...  ...            ...  ...     ...
+4922  00210006173105    2146101            1  ...           BPJS    P  normal
+4923  00210006173419    2091726            6  ...           BPJS    P  normal
+4924  00210006173511    2091726            6  ...           BPJS    P  normal
+4925  00210006173904    2140821            1  ...           BPJS    P  normal
+4926  00210006173913    1640506          119  ...           BPJS    P  normal
+
+[4927 rows x 32 columns]
+Source Data:
+Target Data:
+          OrderID  PatientID  AdmissionID  ...  Type  Status ObjectGroupingName
+0  00210005933413    2043786            7  ...     P  normal         konsultasi
+
+[1 rows x 33 columns]
+Changes Detected:
+Modified Data:
+          OrderID  PatientID  AdmissionID  ...  Type  Status ObjectGroupingName
+0  00210005933413    2043786            7  ...     P  normal         konsultasi
+
+[1 rows x 33 columns]
+Inserted Data:
+             OrderID  PatientID  AdmissionID  ...  Type  Status  ObjectGroupingName
+1     00210005998418    1722677           61  ...     P  normal          konsultasi
+2     00210005998995    2115957            5  ...     P  normal        laboratorium
+3     00210005998998     973379           86  ...     P  normal        laboratorium
+4     00210005999002    2149182            1  ...     P  normal           radiologi
+5     00210005999009    1371970           24  ...     P  normal        laboratorium
+...              ...        ...          ...  ...   ...     ...                 ...
+4922  00210006173105    2146101            1  ...     P  normal          konsultasi
+4923  00210006173419    2091726            6  ...     P  normal          konsultasi
+4924  00210006173511    2091726            6  ...     P  normal  Prosedur Non Bedah
+4925  00210006173904    2140821            1  ...     P  normal                 NaN
+4926  00210006173913    1640506          119  ...     P  normal  Prosedur Non Bedah
+
+[4926 rows x 33 columns]
+
+Data Success Updated
+Data Success Inserted
+ini range tanggal
+2024-09-29
+             OrderID  PatientID  AdmissionID  ...  PayplanKemkes Type     Status
+0     00210000136407    1023166          214  ...           BPJS    P     normal
+1     00210005396088    1767509           50  ...           BPJS    P     normal
+2     00210005480671    1494385           11  ...           BPJS    P  nullified
+3     00210006007677    1348187          127  ...           BPJS    P     normal
+4     00210006007860    2147229            1  ...           BPJS    P     normal
+...              ...        ...          ...  ...            ...  ...        ...
+4466  00210006173106    2146101            1  ...           BPJS    P     normal
+4467  00210006173513    2091726            6  ...           BPJS    P     normal
+4468  00210006173775    1640506          119  ...           BPJS    P     normal
+4469  00210006173905    2140821            1  ...           BPJS    P     normal
+4470  00210006173912    1640506          119  ...           BPJS    P     normal
+
+[4471 rows x 32 columns]
+Source Data:
+Target Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, EmployeeID, DoctorName, KSM, NIP, NIK, PatientName, MedicalNo, SEPNo, OrgName, AdmissionDate, OrderDate, NullifiedDate, VerifiedDate, ObjID, ObjName, ObjRoleName, RoleNo, IDItem, MonthValue, YearValue, Tarif, JasaMedis, JasaSarana, JasaRemun, PayplanName, CategoryName, PayplanKemkes, Type, Status, ObjectGroupingName]
+Index: []
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, EmployeeID, DoctorName, KSM, NIP, NIK, PatientName, MedicalNo, SEPNo, OrgName, AdmissionDate, OrderDate, NullifiedDate, VerifiedDate, ObjID, ObjName, ObjRoleName, RoleNo, IDItem, MonthValue, YearValue, Tarif, JasaMedis, JasaSarana, JasaRemun, PayplanName, CategoryName, PayplanKemkes, Type, Status, ObjectGroupingName]
+Index: []
+Inserted Data:
+             OrderID  PatientID  ...     Status  ObjectGroupingName
+0     00210000136407    1023166  ...     normal          konsultasi
+1     00210005396088    1767509  ...     normal  Prosedur Non Bedah
+2     00210005480671    1494385  ...  nullified          konsultasi
+3     00210006007677    1348187  ...     normal          konsultasi
+4     00210006007860    2147229  ...     normal        laboratorium
+...              ...        ...  ...        ...                 ...
+4466  00210006173106    2146101  ...     normal          konsultasi
+4467  00210006173513    2091726  ...     normal  Prosedur Non Bedah
+4468  00210006173775    1640506  ...     normal          konsultasi
+4469  00210006173905    2140821  ...     normal                 NaN
+4470  00210006173912    1640506  ...     normal  Prosedur Non Bedah
+
+[4471 rows x 33 columns]
+
+Tidak ada data yang berubah
+Data Success Inserted
+ini range tanggal
+2024-09-30
+              OrderID  PatientID  AdmissionID  ...  PayplanKemkes Type     Status
+0      00210005412272     611041            3  ...           BPJS    P  nullified
+1      00210005412274     611041            3  ...           BPJS    P  nullified
+2      00210005412362     611041            3  ...           BPJS    P  nullified
+3      00210005412419     611041            3  ...           BPJS    P  nullified
+4      00210005412542     611041            3  ...           BPJS    P  nullified
+...               ...        ...          ...  ...            ...  ...        ...
+16698  00210006173911    1640506          119  ...           BPJS    P     normal
+16699  00210006173926    2140821            1  ...           BPJS    P     normal
+16700  00210006173927    2140821            1  ...           BPJS    P     normal
+16701  00210006173929    2140821            1  ...           BPJS    P     normal
+16702  00210006173975    2037722           10  ...           BPJS    P     normal
+
+[16703 rows x 32 columns]
+Source Data:
+Target Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, EmployeeID, DoctorName, KSM, NIP, NIK, PatientName, MedicalNo, SEPNo, OrgName, AdmissionDate, OrderDate, NullifiedDate, VerifiedDate, ObjID, ObjName, ObjRoleName, RoleNo, IDItem, MonthValue, YearValue, Tarif, JasaMedis, JasaSarana, JasaRemun, PayplanName, CategoryName, PayplanKemkes, Type, Status, ObjectGroupingName]
+Index: []
+Changes Detected:
+Modified Data:
+Empty DataFrame
+Columns: [OrderID, PatientID, AdmissionID, EmployeeID, DoctorName, KSM, NIP, NIK, PatientName, MedicalNo, SEPNo, OrgName, AdmissionDate, OrderDate, NullifiedDate, VerifiedDate, ObjID, ObjName, ObjRoleName, RoleNo, IDItem, MonthValue, YearValue, Tarif, JasaMedis, JasaSarana, JasaRemun, PayplanName, CategoryName, PayplanKemkes, Type, Status, ObjectGroupingName]
+Index: []
+Inserted Data:
+              OrderID  PatientID  ...     Status  ObjectGroupingName
+0      00210005412272     611041  ...  nullified  Prosedur Non Bedah
+1      00210005412274     611041  ...  nullified                 NaN
+2      00210005412362     611041  ...  nullified          konsultasi
+3      00210005412419     611041  ...  nullified          konsultasi
+4      00210005412542     611041  ...  nullified          konsultasi
+...               ...        ...  ...        ...                 ...
+16698  00210006173911    1640506  ...     normal  Prosedur Non Bedah
+16699  00210006173926    2140821  ...     normal          konsultasi
+16700  00210006173927    2140821  ...     normal          konsultasi
+16701  00210006173929    2140821  ...     normal          konsultasi
+16702  00210006173975    2037722  ...     normal          konsultasi
+
+[16703 rows x 33 columns]
+
+Tidak ada data yang berubah
+Data Success Inserted
+473.76999855041504
+Memory after: 290.69140625 MB
+Memory used: 224.35546875 MB
+scheduler tanggal : 2024-10-06 03:22:54.578878
