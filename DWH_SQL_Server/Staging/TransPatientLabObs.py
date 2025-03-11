@@ -63,7 +63,7 @@ else:
     ordernameid = tuple(source["OrderNameID"].unique())
     observationid = tuple(source["ObservationID"].unique())
 
-    # bikin function remove comma jika ada variable yang isinya cuma 1, variable ini akan di pakai IN CLAUSE di query target
+    # bikin function remove coa jika ada variable yang isinya cuma 1, variable ini akan di pakai IN CLAUSE di query target
     def remove_comma(x):
         if len(x) == 1:
             return str(x).replace(',','')
